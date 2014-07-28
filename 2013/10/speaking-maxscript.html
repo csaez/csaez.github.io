@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CESAR SAEZ - Speaking Maxscript</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../favicon.ico?v=2">
+  <link href="http://www.cesarsaez.me/feeds\all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
+  <link href="http://www.cesarsaez.me/feeds\blog.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Categories Atom Feed" />
+  <!-- include stylesheets -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet" type="text/css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+  <link href="../../theme/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="../../theme/css/style.css" rel="stylesheet" media="screen">
+  <link href="../../theme/css/pygment.css" rel="stylesheet" media="screen">
+
+
+
+    <meta name="tags" contents="3dsmax" />
+    <meta name="tags" contents="code" />
+    <meta name="tags" contents="thoughts" />
+
+</head>
+
+<body>
+
+
+  <!-- nav section -->
+  <div class="nav-wrapper">
+    <nav class="navbar navbar-top navbar-inverse" role="navigation" id="nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <a class="navbar-brand" href="../..">CESAR SAEZ</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <div class="navbar-form navbar-left form-group">
+            <input type="text" class="form-control" placeholder="Search" id="search-msg"onkeypress="if(event.keyCode==13){window.open('http://www.duckduckgo.com/?q='+document.getElementById('search-msg').value+'+site%3Acesarsaez.me')}">
+            </div>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tags <b class="caret"></b></a>
+              <ul class="dropdown-menu">              <li><a href="../../tag/3dsmax.html" style="text-transform: capitalize"><span class="badge">1</span> 3dsmax</a></li>
+              <li><a href="../../tag/code.html" style="text-transform: capitalize"><span class="badge">15</span> code</a></li>
+              <li><a href="../../tag/interviews.html" style="text-transform: capitalize"><span class="badge">2</span> interviews</a></li>
+              <li><a href="../../tag/jkv.html" style="text-transform: capitalize"><span class="badge">3</span> J&KV</a></li>
+              <li><a href="../../tag/lectures.html" style="text-transform: capitalize"><span class="badge">3</span> Lectures</a></li>
+              <li><a href="../../tag/maya.html" style="text-transform: capitalize"><span class="badge">2</span> Maya</a></li>
+              <li><a href="../../tag/rd.html" style="text-transform: capitalize"><span class="badge">13</span> R&D</a></li>
+              <li><a href="../../tag/reel.html" style="text-transform: capitalize"><span class="badge">2</span> reel</a></li>
+              <li><a href="../../tag/riglab.html" style="text-transform: capitalize"><span class="badge">7</span> riglab</a></li>
+              <li><a href="../../tag/showcase.html" style="text-transform: capitalize"><span class="badge">5</span> Showcase</a></li>
+              <li><a href="../../tag/softimage.html" style="text-transform: capitalize"><span class="badge">17</span> Softimage</a></li>
+              <li><a href="../../tag/thoughts.html" style="text-transform: capitalize"><span class="badge">16</span> Thoughts</a></li>
+              <li><a href="../../tag/tips.html" style="text-transform: capitalize"><span class="badge">9</span> tips</a></li>
+              <li><a href="../../tag/tools.html" style="text-transform: capitalize"><span class="badge">8</span> Tools</a></li>
+              <li><a href="../../tag/works.html" style="text-transform: capitalize"><span class="badge">10</span> Works</a></li>
+              </ul>
+            </li>
+              <li><a href="../../pages/reel.html">Reel</a></li>
+              <li><a href="mailto:cesarte@gmail.com">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- body section -->
+<div class="container">
+  <!-- tags -->
+  <p class="tags lead">
+  <a href="../../tag/3dsmax.html">3dsmax</a>,   <a href="../../tag/code.html">code</a>,   <a href="../../tag/thoughts.html">thoughts</a>  </p>
+  <!-- title -->
+  <h1 class="article-title">Speaking Maxscript</h1>
+  <!-- date and author -->
+  <ul class="list-inline">
+    <li class="text-muted"><span class="glyphicon glyphicon-time"></span> October 31, 2013</li>
+    <li class="text-muted"><span class="glyphicon glyphicon-user"></span> Cesar Saez</li>
+    <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="#disqus_thread">Comments</a></li>
+  </ul>
+  <!-- image -->
+  <hr>
+  <!-- article contents -->
+  <div class="article-content">
+    
+    <p>Hi guys,</p>
+<p>Today a friend asked for a quick way to create independent copies/instances
+of an object at each vertex position of another mesh in 3dsmax.</p>
+<p>I haven't worked with 3dsmax for a long time, but it seemed to be a job
+for maxscript and she knows nothing about scripting, so I took a deep
+breath and gave it a shot.</p>
+<div class="highlight"><pre><span class="k">for</span> <span class="n">v</span> <span class="n">in</span> $<span class="p">[</span>1<span class="p">].</span><span class="n">mesh</span><span class="p">.</span><span class="n">verts</span> <span class="n">do</span> <span class="p">(</span><span class="n">instance</span> $<span class="p">[</span>2<span class="p">]).</span><span class="n">pos</span> <span class="p">=</span> <span class="n">v</span><span class="p">.</span><span class="n">pos</span> <span class="o">*</span> $<span class="p">[</span>1<span class="p">].</span><span class="n">transform</span>
+</pre></div>
+
+
+<p>Here's the thing: maxscript turned out to be surprisingly straight forward,
+I mean, this kind of stuff could be done in any DCC, but things like operator
+overloading or grouping by parentheses really help to lower the
+barrier and keep things simple.</p>
+<p>Maxscript has some annoying parts for sure, but I have to admit it's a
+lot simpler/easy-to-use than I remembered.</p>
+<p>Cheers!</p>
+  </div>
+</div>
+<!-- comments -->
+<div class="comments">
+  <div class="container" id="disqus_thread">
+    <script type="text/javascript">
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + 'csaez' + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</div>
+
+
+  <!-- pre-footer section -->
+  <div class="pre-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+<h4>about me</h4>
+
+<p>Hello, my name is César and I love figure out how things work... yep, I was one of those kids who question everything. That passion led me to get a BESc, but at some point in my career I met computer graphics and I fell in love.</p>
+
+<p>Since then, I have had the opportunity to experience different cultures and meet amazing people while traveling around the world working as character technical director.</p>
+
+<p>If you have any comments, questions or some snide remarks; just <a href="mailto:cesarte@gmail.com">drop me a line</a>.</p>        </div>
+        <div class="col-md-2" id="social-links">
+          <h4>social</h4>
+          <ul class="list-unstyled">
+            <li><a href="http://www.google.com/+CesarSaez"><i class="fa fa-google-plus"></i> Google+</a></li>
+            <li><a href="http://twitter.com/csaezmargotta"><i class="fa fa-twitter"></i> Twitter</a></li>
+            <li><a href="http://www.linkedin.com/in/cesarsaez"><i class="fa fa-linkedin"></i> Linked in</a></li>
+            <li><a href="http://www.github.com/csaez"><i class="fa fa-github"></i> Github</a></li>
+            <li><a href="http://www.vimeo.com/csaez"><i class="fa fa-vimeo-square"></i> Vimeo</a></li>
+            <li><a href="http://feeds2.feedburner.com/csaez"><i class="fa fa-rss"></i> Feed</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <small>Copyright © 2013 CESAR SAEZ | Powered by <a href="http://getpelican.com/" target="blank">Pelican</a></small>
+    </div>
+   </div>
+</div>
+
+<!-- load scripts -->
+<script type="text/javascript" src="//code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="../../theme/js/bootstrap.min.js"></script>
+<script>
+  $(function() {
+    $('#nav-wrapper').height($("#nav").height());
+
+    $('#nav').affix({
+        offset: { top: $('#nav').offset().top }
+    });
+  });
+</script>
+
+<!-- GOOGLE_ANALYTICS -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45090469-1', 'cesarsaez.me');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

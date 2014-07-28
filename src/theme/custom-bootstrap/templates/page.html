@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="article-content">
+    <!-- <h1>{{ page.title }}</h1> -->
+    {{ page.content }}
+    {% import 'translations.html' as translations with context %}
+    {{ translations.translations_for(page) }}
+    </div>
+</div>
+{% endblock %}
