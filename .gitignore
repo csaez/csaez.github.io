@@ -1,0 +1,10 @@
+# Pelican
+# ===================
+
+# ignore source files
+output/
+src/
+cache/
+*.sh
+*.py
+*.pyc
