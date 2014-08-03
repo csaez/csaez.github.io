@@ -13,8 +13,9 @@
     {% endfor %}
   </ol>
   <div class="carousel-inner">
-    {% for a in dates %}
-      {% if "Showcase" in a.tags%}
+    {% for tag, articles in tags %}
+      {% if tag == "Showcase" %}
+        {% for a in articles|sort(attribute='date', reverse=True) %}
     <div class={% if loop.index0 == 0 %}"item active"{% else %}"item"{% endif %}>
       <div class="fill" {% if a.cover %}style="background-image:url('{{ SITEURL }}/images/{{ a.cover }}');"{% endif %}>
         <div class="container">
@@ -26,8 +27,10 @@
         </div>
       </div>
     </div>
+        {% endfor %}
       {% endif %}
     {% endfor %}
+
   </div>
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>

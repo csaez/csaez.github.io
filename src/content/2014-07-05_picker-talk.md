@@ -2,7 +2,7 @@ Title: Picker Talk
 Description: Talk on strategies to develop a custom Character Picker for Autodesk Maya.
 Cover: picker-talk_large.jpg
 Author: Cesar Saez
-Tags: Lectures, Code, Maya, Showcase
+Tags: Lectures, Code, Maya
 
 {% img img-right {filename}images/picker_talk.png %}
 
