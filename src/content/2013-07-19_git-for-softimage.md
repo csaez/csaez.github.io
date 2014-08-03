@@ -1,6 +1,8 @@
 Title: Git For Softimage
+Description: Open source implementation of Git as VCS for Softimage projects.
+Cover: git-for-softimage_large.jpg
 Author: Cesar Saez
-Tags: Tools, Softimage, code
+Tags: Tools, Softimage, Code, Showcase
 
 {% img img-right {filename}images/git.png 250 %}
 Hi folks,

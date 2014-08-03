@@ -1,5 +1,5 @@
 Title: RigLab: Metadata
-Description: Metadata and python's magic methods.
+Description: Article on metadata and python magic methods.
 Cover: metadata_large.jpg
 Author: Cesar Saez
 Tags: Riglab, R&D, Code, Tips, Showcase
