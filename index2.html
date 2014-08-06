@@ -99,11 +99,11 @@
             <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tags <b class="caret"></b></a>
               <ul class="dropdown-menu">              <li><a href="./tag/3dsmax.html" style="text-transform: capitalize"><span class="badge">1</span> 3dsmax</a></li>
-              <li><a href="./tag/code.html" style="text-transform: capitalize"><span class="badge">15</span> code</a></li>
+              <li><a href="./tag/code.html" style="text-transform: capitalize"><span class="badge">16</span> code</a></li>
               <li><a href="./tag/interviews.html" style="text-transform: capitalize"><span class="badge">2</span> interviews</a></li>
               <li><a href="./tag/jkv.html" style="text-transform: capitalize"><span class="badge">3</span> J&KV</a></li>
               <li><a href="./tag/lectures.html" style="text-transform: capitalize"><span class="badge">3</span> Lectures</a></li>
-              <li><a href="./tag/maya.html" style="text-transform: capitalize"><span class="badge">2</span> Maya</a></li>
+              <li><a href="./tag/maya.html" style="text-transform: capitalize"><span class="badge">3</span> Maya</a></li>
               <li><a href="./tag/rd.html" style="text-transform: capitalize"><span class="badge">13</span> R&D</a></li>
               <li><a href="./tag/reel.html" style="text-transform: capitalize"><span class="badge">2</span> reel</a></li>
               <li><a href="./tag/riglab.html" style="text-transform: capitalize"><span class="badge">7</span> riglab</a></li>
@@ -111,7 +111,7 @@
               <li><a href="./tag/softimage.html" style="text-transform: capitalize"><span class="badge">17</span> Softimage</a></li>
               <li><a href="./tag/thoughts.html" style="text-transform: capitalize"><span class="badge">16</span> Thoughts</a></li>
               <li><a href="./tag/tips.html" style="text-transform: capitalize"><span class="badge">9</span> Tips</a></li>
-              <li><a href="./tag/tools.html" style="text-transform: capitalize"><span class="badge">8</span> Tools</a></li>
+              <li><a href="./tag/tools.html" style="text-transform: capitalize"><span class="badge">9</span> Tools</a></li>
               <li><a href="./tag/works.html" style="text-transform: capitalize"><span class="badge">10</span> Works</a></li>
               </ul>
             </li>
@@ -126,6 +126,35 @@
 
   <!-- body section -->
 <div class="container">
+  <div>
+    <p class="tags lead">
+    <a href="./tag/works.html">Works</a>,     <a href="./tag/softimage.html">Softimage</a>,     <a href="./tag/rd.html">R&D</a>,     <a href="./tag/jkv.html">J&KV</a>    </p>
+    <h1 class="article-title"><a href="./2013/12/justin-rnd.html">Justin's R&D</a></h1>
+    <ul class="list-inline">
+      <li class="text-muted"><span class="glyphicon glyphicon-time"></span> December 01, 2013</li>
+      <li class="text-muted"><span class="glyphicon glyphicon-user"></span> Cesar Saez</li>
+      <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2013/12/justin-rnd.html#disqus_thread">Comments</a></li>
+    </ul>
+  </div>
+  <hr>
+
+  <div class="article-content"><div class="flex-video widescreen"><iframe src="//player.vimeo.com/video/80699674?title=0&amp;byline=0&amp;portrait=0" width="900" height="675" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+
+<p>Hi guys,</p>
+<p>Yesterday I found some early R&amp;D work I did for
+<a href="http://justinandtheknightsofvalour.com">Justin</a> before joining the team
+in Spain (april 2009).</p>
+<p>These videos are from the early days and we ended up redesigning almost
+everything, but it's interesting see the progression and initial goals.</p>
+<p>It is also interesting see how naive I was at the time, jumping right into it
+without thinking too much in terms of a system (unified guide? really?)...
+good old days :)</p>
+<p>More videos <a href="http://vimeo.com/album/2630777">here</a>.</p>
+<p>Hope you enjoy,
+Cheers!</p></div>
+
+</div>
+<hr class="post-separator"><div class="container">
   <div>
     <p class="tags lead">
     <a href="./tag/thoughts.html">Thoughts</a>,     <a href="./tag/tips.html">Tips</a>    </p>
@@ -395,34 +424,6 @@ projects, give it a try, it's free and open!</p>
 <p>By the way, if you're not familiar with distributed version control
 systems there are a few key concepts that must be considered, don't
 forget to check the <a href="http://github.com/csaez/gitforsoftimage/wiki">documentation</a>.</p></div>
-
-</div>
-<hr class="post-separator"><div class="container">
-  <div>
-    <p class="tags lead">
-    <a href="./tag/tools.html">Tools</a>,     <a href="./tag/softimage.html">Softimage</a>,     <a href="./tag/code.html">code</a>    </p>
-    <h1 class="article-title"><a href="./2013/06/quicklauncher.html">QuickLauncher</a></h1>
-    <ul class="list-inline">
-      <li class="text-muted"><span class="glyphicon glyphicon-time"></span> June 30, 2013</li>
-      <li class="text-muted"><span class="glyphicon glyphicon-user"></span> Cesar Saez</li>
-      <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2013/06/quicklauncher.html#disqus_thread">Comments</a></li>
-    </ul>
-  </div>
-  <hr>
-
-  <div class="article-content"><p><img src="./images/quicklauncher.gif" class="img-right" width="250">
-Hey folks,</p>
-<p>Today I want to share a tool I've been using for a while, it's a simple
-menu to search and launch softimage commnads and scripts (you can set
-the script directory on the preferences).</p>
-<p>In order to make it fast I'm caching the commands and script paths (just
-the paths, the script itself is loaded on runtime), so if you add a new
-script file or connect/disconnect workgroups please make sure that the
-cache is reloaded (there's a command just for that) and everything
-should be fine.</p>
-<p>The menu requires <a href="http://github.com/caron/PyQtForSoftimage">PyQtForSoftimage</a> and it's available <a href="http://github.com/csaez/quicklauncher">here</a>.</p>
-<p>Give it a try and let me know what you think :-)</p>
-<p>Cheers!</p></div>
 
 </div>
 <div class="container"><hr>

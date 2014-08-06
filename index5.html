@@ -99,11 +99,11 @@
             <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tags <b class="caret"></b></a>
               <ul class="dropdown-menu">              <li><a href="./tag/3dsmax.html" style="text-transform: capitalize"><span class="badge">1</span> 3dsmax</a></li>
-              <li><a href="./tag/code.html" style="text-transform: capitalize"><span class="badge">15</span> code</a></li>
+              <li><a href="./tag/code.html" style="text-transform: capitalize"><span class="badge">16</span> code</a></li>
               <li><a href="./tag/interviews.html" style="text-transform: capitalize"><span class="badge">2</span> interviews</a></li>
               <li><a href="./tag/jkv.html" style="text-transform: capitalize"><span class="badge">3</span> J&KV</a></li>
               <li><a href="./tag/lectures.html" style="text-transform: capitalize"><span class="badge">3</span> Lectures</a></li>
-              <li><a href="./tag/maya.html" style="text-transform: capitalize"><span class="badge">2</span> Maya</a></li>
+              <li><a href="./tag/maya.html" style="text-transform: capitalize"><span class="badge">3</span> Maya</a></li>
               <li><a href="./tag/rd.html" style="text-transform: capitalize"><span class="badge">13</span> R&D</a></li>
               <li><a href="./tag/reel.html" style="text-transform: capitalize"><span class="badge">2</span> reel</a></li>
               <li><a href="./tag/riglab.html" style="text-transform: capitalize"><span class="badge">7</span> riglab</a></li>
@@ -111,7 +111,7 @@
               <li><a href="./tag/softimage.html" style="text-transform: capitalize"><span class="badge">17</span> Softimage</a></li>
               <li><a href="./tag/thoughts.html" style="text-transform: capitalize"><span class="badge">16</span> Thoughts</a></li>
               <li><a href="./tag/tips.html" style="text-transform: capitalize"><span class="badge">9</span> Tips</a></li>
-              <li><a href="./tag/tools.html" style="text-transform: capitalize"><span class="badge">8</span> Tools</a></li>
+              <li><a href="./tag/tools.html" style="text-transform: capitalize"><span class="badge">9</span> Tools</a></li>
               <li><a href="./tag/works.html" style="text-transform: capitalize"><span class="badge">10</span> Works</a></li>
               </ul>
             </li>
@@ -126,6 +126,52 @@
 
   <!-- body section -->
 <div class="container">
+  <div>
+    <p class="tags lead">
+    <a href="./tag/code.html">Code</a>,     <a href="./tag/tips.html">tips</a>,     <a href="./tag/softimage.html">Softimage</a>    </p>
+    <h1 class="article-title"><a href="./2011/11/oneundo-decorator.html">OneUndo decorator</a></h1>
+    <ul class="list-inline">
+      <li class="text-muted"><span class="glyphicon glyphicon-time"></span> November 03, 2011</li>
+      <li class="text-muted"><span class="glyphicon glyphicon-user"></span> Cesar Saez</li>
+      <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2011/11/oneundo-decorator.html#disqus_thread">Comments</a></li>
+    </ul>
+  </div>
+  <hr>
+
+  <div class="article-content"><p>Hi folks,</p>
+<p>I'm posting another entry from my old blog, this time it's a decorator
+for Softimage that help us to wrap all the calls inside a function in an
+unique undo.</p>
+<p>The decorator itself should look something like this...</p>
+<div class="highlight"><pre><span class="nx">from</span> <span class="nx">functools</span> <span class="kr">import</span> <span class="nx">wraps</span>
+
+<span class="nx">def</span> <span class="nx">OneUndo</span><span class="p">(</span><span class="kd">function</span><span class="p">)</span><span class="o">:</span>
+    <span class="err">@</span><span class="nx">wraps</span><span class="p">(</span><span class="kd">function</span><span class="p">)</span>
+    <span class="nx">def</span> <span class="nx">_decorated</span><span class="p">(</span><span class="o">*</span><span class="nx">args</span><span class="p">,</span> <span class="o">**</span><span class="nx">kwargs</span><span class="p">)</span><span class="o">:</span>
+        <span class="k">try</span><span class="o">:</span>
+            <span class="nx">Application</span><span class="p">.</span><span class="nx">BeginUndo</span><span class="p">()</span>
+            <span class="nx">f</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="o">*</span><span class="nx">args</span><span class="p">,</span> <span class="o">**</span><span class="nx">kwargs</span><span class="p">)</span>
+        <span class="k">finally</span><span class="o">:</span>
+            <span class="nx">Application</span><span class="p">.</span><span class="nx">EndUndo</span><span class="p">()</span>
+            <span class="k">return</span> <span class="nx">f</span>
+    <span class="k">return</span> <span class="nx">_decorated</span>
+</pre></div>
+
+
+<p>And a basic example...</p>
+<div class="highlight"><pre><span class="p">@</span><span class="n">OneUndo</span>
+<span class="n">def</span> <span class="n">CreateNulls</span><span class="p">(</span><span class="nb">size</span><span class="p">=</span>100<span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">Application</span><span class="p">.</span><span class="n">ActiveSceneRoot</span><span class="p">.</span><span class="n">AddNull</span><span class="p">()</span>
+            <span class="k">for</span> <span class="nb">i</span> <span class="n">in</span> <span class="n">range</span><span class="p">(</span><span class="nb">size</span><span class="p">)]</span>
+
+<span class="n">CreateNulls</span><span class="p">()</span>
+</pre></div>
+
+
+<p>Have Fun!</p></div>
+
+</div>
+<hr class="post-separator"><div class="container">
   <div>
     <p class="tags lead">
     <a href="./tag/reel.html">reel</a>,     <a href="./tag/works.html">works</a>    </p>

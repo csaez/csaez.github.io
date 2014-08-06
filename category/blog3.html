@@ -100,11 +100,11 @@
             <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tags <b class="caret"></b></a>
               <ul class="dropdown-menu">              <li><a href="../tag/3dsmax.html" style="text-transform: capitalize"><span class="badge">1</span> 3dsmax</a></li>
-              <li><a href="../tag/code.html" style="text-transform: capitalize"><span class="badge">15</span> code</a></li>
+              <li><a href="../tag/code.html" style="text-transform: capitalize"><span class="badge">16</span> code</a></li>
               <li><a href="../tag/interviews.html" style="text-transform: capitalize"><span class="badge">2</span> interviews</a></li>
               <li><a href="../tag/jkv.html" style="text-transform: capitalize"><span class="badge">3</span> J&KV</a></li>
               <li><a href="../tag/lectures.html" style="text-transform: capitalize"><span class="badge">3</span> Lectures</a></li>
-              <li><a href="../tag/maya.html" style="text-transform: capitalize"><span class="badge">2</span> Maya</a></li>
+              <li><a href="../tag/maya.html" style="text-transform: capitalize"><span class="badge">3</span> Maya</a></li>
               <li><a href="../tag/rd.html" style="text-transform: capitalize"><span class="badge">13</span> R&D</a></li>
               <li><a href="../tag/reel.html" style="text-transform: capitalize"><span class="badge">2</span> reel</a></li>
               <li><a href="../tag/riglab.html" style="text-transform: capitalize"><span class="badge">7</span> riglab</a></li>
@@ -112,7 +112,7 @@
               <li><a href="../tag/softimage.html" style="text-transform: capitalize"><span class="badge">17</span> Softimage</a></li>
               <li><a href="../tag/thoughts.html" style="text-transform: capitalize"><span class="badge">16</span> Thoughts</a></li>
               <li><a href="../tag/tips.html" style="text-transform: capitalize"><span class="badge">9</span> Tips</a></li>
-              <li><a href="../tag/tools.html" style="text-transform: capitalize"><span class="badge">8</span> Tools</a></li>
+              <li><a href="../tag/tools.html" style="text-transform: capitalize"><span class="badge">9</span> Tools</a></li>
               <li><a href="../tag/works.html" style="text-transform: capitalize"><span class="badge">10</span> Works</a></li>
               </ul>
             </li>
@@ -127,6 +127,34 @@
 
   <!-- body section -->
 <div class="container">
+  <div>
+    <p class="tags lead">
+    <a href="../tag/tools.html">Tools</a>,     <a href="../tag/softimage.html">Softimage</a>,     <a href="../tag/code.html">code</a>    </p>
+    <h1 class="article-title"><a href="../2013/06/quicklauncher.html">QuickLauncher</a></h1>
+    <ul class="list-inline">
+      <li class="text-muted"><span class="glyphicon glyphicon-time"></span> June 30, 2013</li>
+      <li class="text-muted"><span class="glyphicon glyphicon-user"></span> Cesar Saez</li>
+      <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2013/06/quicklauncher.html#disqus_thread">Comments</a></li>
+    </ul>
+  </div>
+  <hr>
+
+  <div class="article-content"><p><img src="../images/quicklauncher.gif" class="img-right" width="250">
+Hey folks,</p>
+<p>Today I want to share a tool I've been using for a while, it's a simple
+menu to search and launch softimage commnads and scripts (you can set
+the script directory on the preferences).</p>
+<p>In order to make it fast I'm caching the commands and script paths (just
+the paths, the script itself is loaded on runtime), so if you add a new
+script file or connect/disconnect workgroups please make sure that the
+cache is reloaded (there's a command just for that) and everything
+should be fine.</p>
+<p>The menu requires <a href="http://github.com/caron/PyQtForSoftimage">PyQtForSoftimage</a> and it's available <a href="http://github.com/csaez/quicklauncher">here</a>.</p>
+<p>Give it a try and let me know what you think :-)</p>
+<p>Cheers!</p></div>
+
+</div>
+<hr class="post-separator"><div class="container">
   <div>
     <p class="tags lead">
     <a href="../tag/riglab.html">riglab</a>,     <a href="../tag/tools.html">Tools</a>,     <a href="../tag/softimage.html">Softimage</a>,     <a href="../tag/code.html">code</a>    </p>
@@ -373,33 +401,6 @@ custom commands, nothing too exciting here.</p>
 see all the Addons/Developments and their plugins (including properties ...</p></div>
 
   <a href="../2012/10/devmanager.html">Read More &raquo;</a>
-</div>
-<hr class="post-separator"><div class="container">
-  <div>
-    <p class="tags lead">
-    <a href="../tag/tips.html">Tips</a>,     <a href="../tag/thoughts.html">Thoughts</a>    </p>
-    <h1 class="article-title"><a href="../2012/10/thoughts-on-editing.html">Thoughts on editing</a></h1>
-    <ul class="list-inline">
-      <li class="text-muted"><span class="glyphicon glyphicon-time"></span> October 05, 2012</li>
-      <li class="text-muted"><span class="glyphicon glyphicon-user"></span> Cesar Saez</li>
-      <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2012/10/thoughts-on-editing.html#disqus_thread">Comments</a></li>
-    </ul>
-  </div>
-  <hr>
-
-  <div class="article-content"><p>Just a quick tip...</p>
-<blockquote>
-<p>When you make a tool, don't think about it as a 1-time procedure,
-editing will take most of the time and you should provide support for
-it.</p>
-</blockquote>
-<p>I see this a lot!</p>
-<p>Almost every autorig out there do not offer any control over the setups
-already created and rebuild is the only provided solution (which is not
-realistic in many cases).</p>
-<p>So, think about it and make your next tool much more useful!</p>
-<p>Cheers.</p></div>
-
 </div>
 <div class="container"><hr>
 <ul class="pagination">
