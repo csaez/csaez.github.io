@@ -1,5 +1,5 @@
 Title: Rigging Reel 2013
-Description: Come and see my latest rigging demo reel!
+Description: Come and see my latest rigging reel!
 Cover: reel13_large.jpg
 Author: Cesar Saez
 Tags: Reel, Works, Showcase

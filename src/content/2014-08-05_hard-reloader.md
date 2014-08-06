@@ -4,7 +4,7 @@ Tags: Code, Tools, Maya
 
 Hi folks,
 
-Do you remember [that little trick to quickly reload a python package](http://cesarsaez.me/2013/10/hard_reload.html)?
+Do you remember [that handy trick to quickly reload a python package](http://cesarsaez.me/2013/10/hard_reload.html)?
 
 Well, _I use it all the time!_ so I made this little GUI helper. It's
 really simple, but makes my life much easier when it comes to test WIP

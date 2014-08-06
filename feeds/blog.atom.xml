@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds%5Cblog.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2014-08-05T00:00:00-04:00</updated><entry><title>Hard Reloader for Maya</title><link href="http://www.cesarsaez.me/2014/08/hard-reloader.html" rel="alternate"></link><updated>2014-08-05T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-08-05:2014/08/hard-reloader.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
-&lt;p&gt;Do you remember &lt;a href="http://cesarsaez.me/2013/10/hard_reload.html"&gt;that little trick to quickly reload a python package&lt;/a&gt;?&lt;/p&gt;
+&lt;p&gt;Do you remember &lt;a href="http://cesarsaez.me/2013/10/hard_reload.html"&gt;that handy trick to quickly reload a python package&lt;/a&gt;?&lt;/p&gt;
 &lt;p&gt;Well, &lt;em&gt;I use it all the time!&lt;/em&gt; so I made this little GUI helper. It's
 really simple, but makes my life much easier when it comes to test WIP
 code within Maya.&lt;/p&gt;
