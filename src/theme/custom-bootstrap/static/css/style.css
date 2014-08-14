@@ -261,25 +261,25 @@ color:#3e454c
 color:#d2d2d2
 }
 
-@media min-width 1200px {
+@media (min-width:1200px) {
 .container {
 max-width:970px
 }
 }
 
-@media screen and max-width 480px {
+@media screen and (max-width:480px) {
 .img-right,.img-left,.carousel {
 display:none!important
 }
 }
 
-@media only screen and max-device-width 800px,only screen and device-width 1024px and device-height 600px,only screen and width 1280px and orientation landscape,only screen and device-width 800px,only screen and max-width 767px {
+@media only screen and (max-device-width:800px),only screen and (device-width:1024px) and (device-height:600px),only screen and (width:1280px) and (orientation:landscape),only screen and (device-width:800px),only screen and (max-width:767px) {
 .flex-video {
 padding-top:0
 }
 }
 
-@media only screen and min-width 768px {
+@media only screen and (min-width:768px) {
 .carousel-caption p {
 font-size:21px;
 line-height:1.4;
