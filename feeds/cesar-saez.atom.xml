@@ -27,15 +27,15 @@ a huge penalty, breaking existing code is inevitable.&lt;/p&gt;
 &lt;p&gt;Most tools I write are meant to be executed within a DCC (maya, softimage,
 whatever) and there's a strong dependency on their APIs... So, how
 to test this stuff?&lt;/p&gt;
-&lt;p&gt;Encapsulate your dependencies, &lt;em&gt;write testable code is up to you&lt;/em&gt;!&lt;/p&gt;
+&lt;p&gt;Encapsulate your dependencies! &lt;em&gt;write testable code is up to you.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The first change I noticed on myself was the need to think about
 dependencies in order to test my code, I started to
 encapsulate stuff instead of call &lt;em&gt;expensive resources&lt;/em&gt; all over the
-place (i.e. write all the calls to the filesystem in a particular module,
-the DCC calls on other and so on).&lt;/p&gt;
+place (i.e. writing all calls to the filesystem in a particular module,
+DCC calls on other and so on).&lt;/p&gt;
 &lt;p&gt;I'm not saying you have to write a complex software-agnostic wrapper or
 anything like that, just do your best to keep things thight in order to know
-where your dependencies are, otherwise you won't be able to "replace"
+where your dependencies are, otherwise you won't be able to &lt;em&gt;replace&lt;/em&gt;
 them when testing your code.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Forcing yourself to be aware of dependencies seems to be a win/win situation
@@ -55,7 +55,7 @@ most IDEs set a base project for you.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3&gt;Testing frameworks:&lt;/h3&gt;
 &lt;p&gt;In order to rely on your tests to develop is extremely important have a
-mechanism to systematicaly run them (a testing framework), it sounds obvious
+mechanism to systematicaly run the test suite, it sounds obvious
 but it's not.&lt;/p&gt;
 &lt;p&gt;Python include several ways to write/run tests, for &lt;em&gt;really&lt;/em&gt; simple use cases
 you can go with &lt;a href="https://docs.python.org/2/library/doctest.html"&gt;doctest&lt;/a&gt;,
@@ -133,14 +133,14 @@ it down (wait a minute, we are also documenting!).&lt;/p&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pose_lib&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
-    &lt;span class="n"&gt;pose_lib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add_category&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;test&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;pose_lib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add_set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;test&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;tear_down&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
-    &lt;span class="n"&gt;pose_lib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;remove_category&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;test&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;pose_lib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;remove_set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;test&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="nd"&gt;@test_with&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;tear_down&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_list_poses&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-    &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;pose_lib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;list_poses&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;test&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="nb"&gt;isinstance&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pose_lib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;list_poses&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;test&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;tuple&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -152,13 +152,13 @@ function (the decorated function), other testing frameworks (this one is
 &lt;p&gt;2- ... which lead us to write this:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# file: pose_lib/pose_lib/__init__.py&lt;/span&gt;
 
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;add_category&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;category_name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;add_set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;set_name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;pass&lt;/span&gt;
 
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;remove_category&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;category_name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;remove_set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;set_name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;pass&lt;/span&gt;
 
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;list_poses&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;category_name&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;list_poses&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;set_name&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="k"&gt;pass&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -173,7 +173,7 @@ function (the decorated function), other testing frameworks (this one is
 you, if you're using an editor like sublime text you can take advantage of
 the build system to run the tests.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;4- ... and refactor the code until all tests passes...&lt;/p&gt;
+&lt;p&gt;4- ... and refactor the code until all tests pass...&lt;/p&gt;
 &lt;p&gt;5- ... and write new tests...&lt;/p&gt;
 &lt;p&gt;6- ... and repeat until the project is completed.&lt;/p&gt;
 &lt;hr /&gt;

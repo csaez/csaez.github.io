@@ -118,15 +118,15 @@ a huge penalty, breaking existing code is inevitable.</p>
 <p>Most tools I write are meant to be executed within a DCC (maya, softimage,
 whatever) and there's a strong dependency on their APIs... So, how
 to test this stuff?</p>
-<p>Encapsulate your dependencies, <em>write testable code is up to you</em>!</p>
+<p>Encapsulate your dependencies! <em>write testable code is up to you.</em></p>
 <p>The first change I noticed on myself was the need to think about
 dependencies in order to test my code, I started to
 encapsulate stuff instead of call <em>expensive resources</em> all over the
-place (i.e. write all the calls to the filesystem in a particular module,
-the DCC calls on other and so on).</p>
+place (i.e. writing all calls to the filesystem in a particular module,
+DCC calls on other and so on).</p>
 <p>I'm not saying you have to write a complex software-agnostic wrapper or
 anything like that, just do your best to keep things thight in order to know
-where your dependencies are, otherwise you won't be able to "replace"
+where your dependencies are, otherwise you won't be able to <em>replace</em>
 them when testing your code.</p>
 <blockquote>
 <p>Forcing yourself to be aware of dependencies seems to be a win/win situation
@@ -146,7 +146,7 @@ most IDEs set a base project for you.</p>
 </blockquote>
 <h3>Testing frameworks:</h3>
 <p>In order to rely on your tests to develop is extremely important have a
-mechanism to systematicaly run them (a testing framework), it sounds obvious
+mechanism to systematicaly run the test suite, it sounds obvious
 but it's not.</p>
 <p>Python include several ways to write/run tests, for <em>really</em> simple use cases
 you can go with <a href="https://docs.python.org/2/library/doctest.html">doctest</a>,
@@ -224,14 +224,14 @@ it down (wait a minute, we are also documenting!).</p>
 <span class="kn">import</span> <span class="nn">pose_lib</span>
 
 <span class="k">def</span> <span class="nf">setup</span><span class="p">():</span>
-    <span class="n">pose_lib</span><span class="o">.</span><span class="n">add_category</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span>
+    <span class="n">pose_lib</span><span class="o">.</span><span class="n">add_set</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">tear_down</span><span class="p">():</span>
-    <span class="n">pose_lib</span><span class="o">.</span><span class="n">remove_category</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span>
+    <span class="n">pose_lib</span><span class="o">.</span><span class="n">remove_set</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span>
 
 <span class="nd">@test_with</span><span class="p">(</span><span class="n">setup</span><span class="p">,</span> <span class="n">tear_down</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">test_list_poses</span><span class="p">()</span>
-    <span class="k">assert</span> <span class="n">pose_lib</span><span class="o">.</span><span class="n">list_poses</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">()</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">pose_lib</span><span class="o">.</span><span class="n">list_poses</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">),</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">))</span>
 </pre></div>
 
 
@@ -243,13 +243,13 @@ function (the decorated function), other testing frameworks (this one is
 <p>2- ... which lead us to write this:</p>
 <div class="highlight"><pre><span class="c"># file: pose_lib/pose_lib/__init__.py</span>
 
-<span class="k">def</span> <span class="nf">add_category</span><span class="p">(</span><span class="n">category_name</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">add_set</span><span class="p">(</span><span class="n">set_name</span><span class="p">)</span>
     <span class="k">pass</span>
 
-<span class="k">def</span> <span class="nf">remove_category</span><span class="p">(</span><span class="n">category_name</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">remove_set</span><span class="p">(</span><span class="n">set_name</span><span class="p">)</span>
     <span class="k">pass</span>
 
-<span class="k">def</span> <span class="nf">list_poses</span><span class="p">(</span><span class="n">category_name</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">list_poses</span><span class="p">(</span><span class="n">set_name</span><span class="p">):</span>
     <span class="k">pass</span>
 </pre></div>
 
@@ -264,7 +264,7 @@ function (the decorated function), other testing frameworks (this one is
 you, if you're using an editor like sublime text you can take advantage of
 the build system to run the tests.</p>
 </blockquote>
-<p>4- ... and refactor the code until all tests passes...</p>
+<p>4- ... and refactor the code until all tests pass...</p>
 <p>5- ... and write new tests...</p>
 <p>6- ... and repeat until the project is completed.</p>
 <hr />
