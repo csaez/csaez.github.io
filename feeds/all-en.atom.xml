@@ -1,5 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds%5Call-en.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2014-08-05T00:00:00-04:00</updated><entry><title>Hard Reloader for Maya</title><link href="http://www.cesarsaez.me/2014/08/hard-reloader.html" rel="alternate"></link><updated>2014-08-05T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-08-05:2014/08/hard-reloader.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds%5Call-en.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2014-08-15T00:00:00-04:00</updated><entry><title>Going TDD: first steps...</title><link href="http://www.cesarsaez.me/2014/08/going-tdd.html" rel="alternate"></link><updated>2014-08-15T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-08-15:2014/08/going-tdd.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;I have a confession to make: I've always looked at test driven development
+with envy and admiration, but I had never really tried it due to the strong 
+dependencies of the code I usually write... but it's even worse, I had never
+put a fair amount of effort on testing due to the same reason (I know, shame 
+on me).&lt;/p&gt;
+&lt;p&gt;Until one day I finally swallowed my excuses and decided to go TDD on a
+proper project (&lt;code&gt;mauto&lt;/code&gt;, more on this in a future post)... and you know what?
+it worked great!&lt;/p&gt;
+&lt;p&gt;I'm taking my first steps on this and I have no authority to 'teach' TDD, but
+I'm sure there are many TDs/technical-artists with the same preconceptions on
+testing and hopefully some of my humble findings could be useful for them.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Why testing? I know it's a good practice but...&lt;/h2&gt;
+&lt;p&gt;That was exactly my thought for a long time: "this code is not a core
+library so it doesn't matter", "I have so many dependencies, I can't test this", "it would be nice but maybe later", "write tests sucks" 
+and so on.&lt;/p&gt;
+&lt;p&gt;The thruth is: writing tests leads you to &lt;em&gt;write better code&lt;/em&gt; and
+&lt;em&gt;enables you to refactor&lt;/em&gt; your stuff without breaking everything as
+you do it. Think of it as a tool to back you up as you progressively refine
+the project.&lt;/p&gt;
+&lt;p&gt;Whithout tests you can't really work this way, your first take has to be
+the good one (which is never the case) and any later modification comes with
+a huge penalty, breaking existing code is inevitable.&lt;/p&gt;
+&lt;h3&gt;What about dependencies?&lt;/h3&gt;
+&lt;p&gt;Most tools I write are meant to be executed within a DCC (maya, softimage,
+whatever) and there's a strong dependency on their APIs... So, how
+to test this stuff?&lt;/p&gt;
+&lt;p&gt;Encapsulate your dependencies, &lt;em&gt;write testable code is up to you&lt;/em&gt;!&lt;/p&gt;
+&lt;p&gt;The first change I noticed on myself was the need to think about
+dependencies in order to test my code, I started to
+encapsulate stuff instead of call &lt;em&gt;expensive resources&lt;/em&gt; all over the
+place (i.e. write all the calls to the filesystem in a particular module,
+the DCC calls on other and so on).&lt;/p&gt;
+&lt;p&gt;I'm not saying you have to write a complex software-agnostic wrapper or
+anything like that, just do your best to keep things thight in order to know
+where your dependencies are, otherwise you won't be able to "replace"
+them when testing your code.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Forcing yourself to be aware of dependencies seems to be a win/win situation
+as it enforces a clear separation of concerns on your code
+(even if you are not going to write any test).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Sounds good, where to start?&lt;/h2&gt;
+&lt;h3&gt;Structure:&lt;/h3&gt;
+&lt;p&gt;We need to define a structure for our project! &lt;em&gt;I highly recommend&lt;/em&gt; stick to
+the standard structure for python projects/packages, here's a
+&lt;a href="http://guide.python-distribute.org/quickstart.html"&gt;quickstart guide&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can also create your base structure using something like
+&lt;a href="https://github.com/audreyr/cookiecutter"&gt;coockiecutter&lt;/a&gt; or similar tools,
+most IDEs set a base project for you.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Testing frameworks:&lt;/h3&gt;
+&lt;p&gt;In order to rely on your tests to develop is extremely important have a
+mechanism to systematicaly run them (a testing framework), it sounds obvious
+but it's not.&lt;/p&gt;
+&lt;p&gt;Python include several ways to write/run tests, for &lt;em&gt;really&lt;/em&gt; simple use cases
+you can go with &lt;a href="https://docs.python.org/2/library/doctest.html"&gt;doctest&lt;/a&gt;,
+but most of the time you will be better of writing your test in a separate
+module using somthing like &lt;a href="https://docs.python.org/2/library/unittest.html"&gt;unittest&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;These modules works fine, but I personally feel more confortable using a
+boilerplate-free alternative as &lt;a href="https://nose.readthedocs.org"&gt;nose&lt;/a&gt; or
+&lt;a href="https://pytest.org"&gt;pytest&lt;/a&gt;. Just choose your weapon and stick with it!&lt;/p&gt;
+&lt;h3&gt;Mock:&lt;/h3&gt;
+&lt;p&gt;Other important aspect of testing has to do with replacing the
+&lt;em&gt;expensive resources&lt;/em&gt; during testing, this way you can run them faster and
+without affecting production assets in case something goes wrong (databases
+and what not).&lt;/p&gt;
+&lt;p&gt;For this situations there's a python library called
+&lt;a href="https://pypi.python.org/pypi/mock"&gt;mock&lt;/a&gt;. I won't cover how to use it, but it 
+provides a nice placeholder that you can use to monkeypatch your dependencies 
+during your tests. For further information refer to its
+&lt;a href="http://www.voidspace.org.uk/python/mock/"&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Everything is set, now what?&lt;/h2&gt;
+&lt;p&gt;Short answer: &lt;em&gt;start with the readme file!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is not TDD per-se, but write down a high level snippet about how to use
+your code is really useful and gives you a nice starting point.&lt;/p&gt;
+&lt;p&gt;Let's say we want to develop a pose library (this comes from the top of my
+head, please do not take this example too seriously):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pose_lib&lt;/span&gt;
+
+&lt;span class="c"&gt;# init rig from the scene&lt;/span&gt;
+&lt;span class="n"&gt;ROOT_NODE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;C_John_root_C_GRP&amp;quot;&lt;/span&gt; &lt;span class="c"&gt;# node name&lt;/span&gt;
+&lt;span class="n"&gt;rig&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pose_lib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Rig&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ROOT_NODE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c"&gt;# list john compatible poses&lt;/span&gt;
+&lt;span class="n"&gt;pose_lib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;list_poses&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;John&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c"&gt;# apply a pose to John&amp;#39;s rig&lt;/span&gt;
+&lt;span class="n"&gt;pose&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pose_lib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_pose&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;John&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;stand&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;rig&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_pose&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pose&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c"&gt;# add John&amp;#39;s current pose to the library&lt;/span&gt;
+&lt;span class="n"&gt;pose&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;rig&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;current_pose&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;pose_lib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add_pose&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;John&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;my_pose&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pose&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c"&gt;# and so on...&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Boom! We have decided to interface with maya nodes through a class called Rig
+and access the library through a couple of functions (there's probably another
+class managing json-files/sqllite/any-kind-of-storage under the hood).
+Just think about how you would like to interact with your project and write
+it down (wait a minute, we are also documenting!).&lt;/p&gt;
+&lt;h3&gt;Let's write some code!&lt;/h3&gt;
+&lt;p&gt;First, let's assume this structure for our project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pose_lib/&lt;ul&gt;
+&lt;li&gt;pose_lib/&lt;ul&gt;
+&lt;li&gt;tests/&lt;ul&gt;
+&lt;li&gt;__init__.py&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;__init__.py&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LICENSE.txt&lt;/li&gt;
+&lt;li&gt;README.txt&lt;/li&gt;
+&lt;li&gt;setup.py&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first test is the hardest! that's why the readme is so important.&lt;/p&gt;
+&lt;p&gt;1- Reading the readme snippet I would go writting a test as follow:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# file: pose_lib/pose_lib/tests/test_library.py&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;nose&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;test_with&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pose_lib&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;pose_lib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add_category&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;test&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;tear_down&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;pose_lib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;remove_category&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;test&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nd"&gt;@test_with&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;tear_down&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_list_poses&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;pose_lib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;list_poses&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;test&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;setup&lt;/code&gt; and &lt;code&gt;teardown&lt;/code&gt; functions are executed before and after the test
+function (the decorated function), other testing frameworks (this one is
+&lt;code&gt;nose&lt;/code&gt; specific) should provide a similar way to do this.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2- ... which lead us to write this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# file: pose_lib/pose_lib/__init__.py&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;add_category&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;category_name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;pass&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;remove_category&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;category_name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;pass&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;list_poses&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;category_name&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;pass&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;3- ... and run the tests (from the root directory in a terminal):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="n"&gt;nosetests&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Most IDEs and code editors have a built in function to run the test suite for
+you, if you're using an editor like sublime text you can take advantage of
+the build system to run the tests.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;4- ... and refactor the code until all tests passes...&lt;/p&gt;
+&lt;p&gt;5- ... and write new tests...&lt;/p&gt;
+&lt;p&gt;6- ... and repeat until the project is completed.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Do you see where we're going with this?&lt;/h2&gt;
+&lt;p&gt;Is that simple! of course there will be some work to do in modules with
+dependencies (take a look at mock's &lt;a href="http://www.voidspace.org.uk/python/mock/"&gt;docs&lt;/a&gt;,
+there's a way to patch objects and simulate return values and so on).
+With no-so-much effort you should be able to run your tests outside
+maya/softimage/whatever as any other python developer (that means you can go
+faster and lighter on early stages of the project and hopefully write better
+code).&lt;/p&gt;
+&lt;p&gt;There's much more to be said about testing and TDD, things like coverage
+and what not... but I think this is enough for a first contact.&lt;/p&gt;
+&lt;p&gt;What do you think? Is it doable on the projects you are working on?
+Do you have any experience working like this? Anything to share?&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="Code"></category><category term="Tips"></category><category term="Thoughts"></category></entry><entry><title>Hard Reloader for Maya</title><link href="http://www.cesarsaez.me/2014/08/hard-reloader.html" rel="alternate"></link><updated>2014-08-05T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-08-05:2014/08/hard-reloader.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;Do you remember &lt;a href="http://cesarsaez.me/2013/10/hard_reload.html"&gt;that handy trick to quickly reload a python package&lt;/a&gt;?&lt;/p&gt;
 &lt;p&gt;Well, &lt;em&gt;I use it all the time!&lt;/em&gt; so I made this little GUI helper. It's
 really simple, but makes my life much easier when it comes to test WIP

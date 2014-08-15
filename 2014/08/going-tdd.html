@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CESAR SAEZ - Going TDD: first steps...</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../favicon.ico?v=2">
+  <link href="http://www.cesarsaez.me/feeds\all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
+  <link href="http://www.cesarsaez.me/feeds\blog.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Categories Atom Feed" />
+  <!-- stylesheets -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../../theme/css/style.min.css" rel="stylesheet" media="screen">
+  <link href="../../theme/css/pygment.min.css" rel="stylesheet" media="screen">
+
+
+
+    <meta name="tags" contents="Code" />
+    <meta name="tags" contents="Tips" />
+    <meta name="tags" contents="Thoughts" />
+
+</head>
+
+<body>
+
+
+  <!-- nav section -->
+  <div class="nav-wrapper">
+    <nav class="navbar navbar-top navbar-inverse" role="navigation" id="nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <a class="navbar-brand" href="../..">CESAR SAEZ</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <div class="navbar-form navbar-left form-group">
+            <input type="text" class="form-control" placeholder="Search" id="search-msg"onkeypress="if(event.keyCode==13){window.open('http://www.duckduckgo.com/?q='+document.getElementById('search-msg').value+'+site%3Acesarsaez.me')}">
+            </div>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tags <b class="caret"></b></a>
+              <ul class="dropdown-menu">              <li><a href="../../tag/3dsmax.html" style="text-transform: capitalize"><span class="badge">1</span> 3dsmax</a></li>
+              <li><a href="../../tag/code.html" style="text-transform: capitalize"><span class="badge">17</span> code</a></li>
+              <li><a href="../../tag/interviews.html" style="text-transform: capitalize"><span class="badge">2</span> interviews</a></li>
+              <li><a href="../../tag/jkv.html" style="text-transform: capitalize"><span class="badge">3</span> J&KV</a></li>
+              <li><a href="../../tag/lectures.html" style="text-transform: capitalize"><span class="badge">3</span> Lectures</a></li>
+              <li><a href="../../tag/maya.html" style="text-transform: capitalize"><span class="badge">3</span> Maya</a></li>
+              <li><a href="../../tag/rd.html" style="text-transform: capitalize"><span class="badge">13</span> R&D</a></li>
+              <li><a href="../../tag/reel.html" style="text-transform: capitalize"><span class="badge">2</span> reel</a></li>
+              <li><a href="../../tag/riglab.html" style="text-transform: capitalize"><span class="badge">7</span> riglab</a></li>
+              <li><a href="../../tag/showcase.html" style="text-transform: capitalize"><span class="badge">4</span> Showcase</a></li>
+              <li><a href="../../tag/softimage.html" style="text-transform: capitalize"><span class="badge">17</span> Softimage</a></li>
+              <li><a href="../../tag/thoughts.html" style="text-transform: capitalize"><span class="badge">17</span> Thoughts</a></li>
+              <li><a href="../../tag/tips.html" style="text-transform: capitalize"><span class="badge">10</span> Tips</a></li>
+              <li><a href="../../tag/tools.html" style="text-transform: capitalize"><span class="badge">9</span> Tools</a></li>
+              <li><a href="../../tag/works.html" style="text-transform: capitalize"><span class="badge">10</span> Works</a></li>
+              </ul>
+            </li>
+              <li><a href="../../pages/reel.html">Reel</a></li>
+              <li><a href="mailto:cesarte@gmail.com">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- body section -->
+<div class="container">
+  <!-- tags -->
+  <p class="tags lead">
+  <a href="../../tag/code.html">Code</a>,   <a href="../../tag/tips.html">Tips</a>,   <a href="../../tag/thoughts.html">Thoughts</a>  </p>
+  <!-- title -->
+  <h1 class="article-title">Going TDD: first steps...</h1>
+  <!-- date and author -->
+  <ul class="list-inline">
+    <li class="text-muted"><span class="glyphicon glyphicon-time"></span> August 15, 2014</li>
+    <li class="text-muted"><span class="glyphicon glyphicon-user"></span> Cesar Saez</li>
+    <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="#disqus_thread">Comments</a></li>
+  </ul>
+  <!-- image -->
+  <hr>
+  <!-- article contents -->
+  <div class="article-content">
+    
+    <p>Hi folks,</p>
+<p>I have a confession to make: I've always looked at test driven development
+with envy and admiration, but I had never really tried it due to the strong 
+dependencies of the code I usually write... but it's even worse, I had never
+put a fair amount of effort on testing due to the same reason (I know, shame 
+on me).</p>
+<p>Until one day I finally swallowed my excuses and decided to go TDD on a
+proper project (<code>mauto</code>, more on this in a future post)... and you know what?
+it worked great!</p>
+<p>I'm taking my first steps on this and I have no authority to 'teach' TDD, but
+I'm sure there are many TDs/technical-artists with the same preconceptions on
+testing and hopefully some of my humble findings could be useful for them.</p>
+<hr />
+<h2>Why testing? I know it's a good practice but...</h2>
+<p>That was exactly my thought for a long time: "this code is not a core
+library so it doesn't matter", "I have so many dependencies, I can't test this", "it would be nice but maybe later", "write tests sucks" 
+and so on.</p>
+<p>The thruth is: writing tests leads you to <em>write better code</em> and
+<em>enables you to refactor</em> your stuff without breaking everything as
+you do it. Think of it as a tool to back you up as you progressively refine
+the project.</p>
+<p>Whithout tests you can't really work this way, your first take has to be
+the good one (which is never the case) and any later modification comes with
+a huge penalty, breaking existing code is inevitable.</p>
+<h3>What about dependencies?</h3>
+<p>Most tools I write are meant to be executed within a DCC (maya, softimage,
+whatever) and there's a strong dependency on their APIs... So, how
+to test this stuff?</p>
+<p>Encapsulate your dependencies, <em>write testable code is up to you</em>!</p>
+<p>The first change I noticed on myself was the need to think about
+dependencies in order to test my code, I started to
+encapsulate stuff instead of call <em>expensive resources</em> all over the
+place (i.e. write all the calls to the filesystem in a particular module,
+the DCC calls on other and so on).</p>
+<p>I'm not saying you have to write a complex software-agnostic wrapper or
+anything like that, just do your best to keep things thight in order to know
+where your dependencies are, otherwise you won't be able to "replace"
+them when testing your code.</p>
+<blockquote>
+<p>Forcing yourself to be aware of dependencies seems to be a win/win situation
+as it enforces a clear separation of concerns on your code
+(even if you are not going to write any test).</p>
+</blockquote>
+<hr />
+<h2>Sounds good, where to start?</h2>
+<h3>Structure:</h3>
+<p>We need to define a structure for our project! <em>I highly recommend</em> stick to
+the standard structure for python projects/packages, here's a
+<a href="http://guide.python-distribute.org/quickstart.html">quickstart guide</a>.</p>
+<blockquote>
+<p>You can also create your base structure using something like
+<a href="https://github.com/audreyr/cookiecutter">coockiecutter</a> or similar tools,
+most IDEs set a base project for you.</p>
+</blockquote>
+<h3>Testing frameworks:</h3>
+<p>In order to rely on your tests to develop is extremely important have a
+mechanism to systematicaly run them (a testing framework), it sounds obvious
+but it's not.</p>
+<p>Python include several ways to write/run tests, for <em>really</em> simple use cases
+you can go with <a href="https://docs.python.org/2/library/doctest.html">doctest</a>,
+but most of the time you will be better of writing your test in a separate
+module using somthing like <a href="https://docs.python.org/2/library/unittest.html">unittest</a>.</p>
+<p>These modules works fine, but I personally feel more confortable using a
+boilerplate-free alternative as <a href="https://nose.readthedocs.org">nose</a> or
+<a href="https://pytest.org">pytest</a>. Just choose your weapon and stick with it!</p>
+<h3>Mock:</h3>
+<p>Other important aspect of testing has to do with replacing the
+<em>expensive resources</em> during testing, this way you can run them faster and
+without affecting production assets in case something goes wrong (databases
+and what not).</p>
+<p>For this situations there's a python library called
+<a href="https://pypi.python.org/pypi/mock">mock</a>. I won't cover how to use it, but it 
+provides a nice placeholder that you can use to monkeypatch your dependencies 
+during your tests. For further information refer to its
+<a href="http://www.voidspace.org.uk/python/mock/">documentation</a>.</p>
+<hr />
+<h2>Everything is set, now what?</h2>
+<p>Short answer: <em>start with the readme file!</em></p>
+<p>This is not TDD per-se, but write down a high level snippet about how to use
+your code is really useful and gives you a nice starting point.</p>
+<p>Let's say we want to develop a pose library (this comes from the top of my
+head, please do not take this example too seriously):</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pose_lib</span>
+
+<span class="c"># init rig from the scene</span>
+<span class="n">ROOT_NODE</span> <span class="o">=</span> <span class="s">&quot;C_John_root_C_GRP&quot;</span> <span class="c"># node name</span>
+<span class="n">rig</span> <span class="o">=</span> <span class="n">pose_lib</span><span class="o">.</span><span class="n">Rig</span><span class="p">(</span><span class="n">ROOT_NODE</span><span class="p">)</span>
+
+<span class="c"># list john compatible poses</span>
+<span class="n">pose_lib</span><span class="o">.</span><span class="n">list_poses</span><span class="p">(</span><span class="s">&#39;John&#39;</span><span class="p">)</span>
+
+<span class="c"># apply a pose to John&#39;s rig</span>
+<span class="n">pose</span> <span class="o">=</span> <span class="n">pose_lib</span><span class="o">.</span><span class="n">get_pose</span><span class="p">(</span><span class="s">&#39;John&#39;</span><span class="p">,</span> <span class="s">&#39;stand&#39;</span><span class="p">)</span>
+<span class="n">rig</span><span class="o">.</span><span class="n">set_pose</span><span class="p">(</span><span class="n">pose</span><span class="p">)</span>
+
+<span class="c"># add John&#39;s current pose to the library</span>
+<span class="n">pose</span> <span class="o">=</span> <span class="n">rig</span><span class="o">.</span><span class="n">current_pose</span><span class="p">()</span>
+<span class="n">pose_lib</span><span class="o">.</span><span class="n">add_pose</span><span class="p">(</span><span class="s">&#39;John&#39;</span><span class="p">,</span> <span class="s">&#39;my_pose&#39;</span><span class="p">,</span> <span class="n">pose</span><span class="p">)</span>
+
+<span class="c"># and so on...</span>
+</pre></div>
+
+
+<p>Boom! We have decided to interface with maya nodes through a class called Rig
+and access the library through a couple of functions (there's probably another
+class managing json-files/sqllite/any-kind-of-storage under the hood).
+Just think about how you would like to interact with your project and write
+it down (wait a minute, we are also documenting!).</p>
+<h3>Let's write some code!</h3>
+<p>First, let's assume this structure for our project:</p>
+<ul>
+<li>pose_lib/<ul>
+<li>pose_lib/<ul>
+<li>tests/<ul>
+<li>__init__.py</li>
+</ul>
+</li>
+<li>__init__.py</li>
+</ul>
+</li>
+<li>LICENSE.txt</li>
+<li>README.txt</li>
+<li>setup.py</li>
+</ul>
+</li>
+</ul>
+<p>The first test is the hardest! that's why the readme is so important.</p>
+<p>1- Reading the readme snippet I would go writting a test as follow:</p>
+<div class="highlight"><pre><span class="c"># file: pose_lib/pose_lib/tests/test_library.py</span>
+<span class="kn">from</span> <span class="nn">nose</span> <span class="kn">import</span> <span class="n">test_with</span>
+<span class="kn">import</span> <span class="nn">pose_lib</span>
+
+<span class="k">def</span> <span class="nf">setup</span><span class="p">():</span>
+    <span class="n">pose_lib</span><span class="o">.</span><span class="n">add_category</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">tear_down</span><span class="p">():</span>
+    <span class="n">pose_lib</span><span class="o">.</span><span class="n">remove_category</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span>
+
+<span class="nd">@test_with</span><span class="p">(</span><span class="n">setup</span><span class="p">,</span> <span class="n">tear_down</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_list_poses</span><span class="p">()</span>
+    <span class="k">assert</span> <span class="n">pose_lib</span><span class="o">.</span><span class="n">list_poses</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">()</span>
+</pre></div>
+
+
+<blockquote>
+<p><code>setup</code> and <code>teardown</code> functions are executed before and after the test
+function (the decorated function), other testing frameworks (this one is
+<code>nose</code> specific) should provide a similar way to do this.</p>
+</blockquote>
+<p>2- ... which lead us to write this:</p>
+<div class="highlight"><pre><span class="c"># file: pose_lib/pose_lib/__init__.py</span>
+
+<span class="k">def</span> <span class="nf">add_category</span><span class="p">(</span><span class="n">category_name</span><span class="p">)</span>
+    <span class="k">pass</span>
+
+<span class="k">def</span> <span class="nf">remove_category</span><span class="p">(</span><span class="n">category_name</span><span class="p">)</span>
+    <span class="k">pass</span>
+
+<span class="k">def</span> <span class="nf">list_poses</span><span class="p">(</span><span class="n">category_name</span><span class="p">):</span>
+    <span class="k">pass</span>
+</pre></div>
+
+
+<p>3- ... and run the tests (from the root directory in a terminal):</p>
+<div class="highlight"><pre><span class="n">python</span> <span class="n">setup</span><span class="p">.</span><span class="n">py</span> <span class="n">nosetests</span>
+</pre></div>
+
+
+<blockquote>
+<p>Most IDEs and code editors have a built in function to run the test suite for
+you, if you're using an editor like sublime text you can take advantage of
+the build system to run the tests.</p>
+</blockquote>
+<p>4- ... and refactor the code until all tests passes...</p>
+<p>5- ... and write new tests...</p>
+<p>6- ... and repeat until the project is completed.</p>
+<hr />
+<h2>Do you see where we're going with this?</h2>
+<p>Is that simple! of course there will be some work to do in modules with
+dependencies (take a look at mock's <a href="http://www.voidspace.org.uk/python/mock/">docs</a>,
+there's a way to patch objects and simulate return values and so on).
+With no-so-much effort you should be able to run your tests outside
+maya/softimage/whatever as any other python developer (that means you can go
+faster and lighter on early stages of the project and hopefully write better
+code).</p>
+<p>There's much more to be said about testing and TDD, things like coverage
+and what not... but I think this is enough for a first contact.</p>
+<p>What do you think? Is it doable on the projects you are working on?
+Do you have any experience working like this? Anything to share?</p>
+<p>Cheers!</p>
+  </div>
+</div>
+<!-- comments -->
+<div class="comments">
+  <div class="container" id="disqus_thread">
+    <script type="text/javascript">
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + 'csaez' + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</div>
+
+
+  <!-- pre-footer section -->
+  <div class="pre-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+<h4>about me</h4>
+
+<p>Hello, my name is César and I love figure out how things work... yep, I was one of those kids who question everything. That passion led me to get a BESc, but at some point in my career I met computer graphics and I fell in love.</p>
+
+<p>Since then, I have had the opportunity to experience different cultures and meet amazing people while traveling around the world working as character technical director.</p>
+
+<p>If you have any comments, questions or some snide remarks; just <a href="mailto:cesarte@gmail.com">drop me a line</a>.</p>        </div>
+        <div class="col-md-2" id="social-links">
+          <h4>social</h4>
+          <ul class="list-unstyled">
+            <li><a href="http://www.google.com/+CesarSaez"><i class="fa fa-google-plus"></i> Google+</a></li>
+            <li><a href="http://twitter.com/csaezmargotta"><i class="fa fa-twitter"></i> Twitter</a></li>
+            <li><a href="http://www.linkedin.com/in/cesarsaez"><i class="fa fa-linkedin"></i> Linked in</a></li>
+            <li><a href="http://www.github.com/csaez"><i class="fa fa-github"></i> Github</a></li>
+            <li><a href="http://www.vimeo.com/csaez"><i class="fa fa-vimeo-square"></i> Vimeo</a></li>
+            <li><a href="http://feeds2.feedburner.com/csaez"><i class="fa fa-rss"></i> Feed</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <small>Copyright © 2013 CESAR SAEZ | Powered by <a href="http://getpelican.com/" target="blank">Pelican</a></small>
+    </div>
+   </div>
+</div>
+
+<!-- load scripts -->
+<script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script>
+  $(function() {
+    $('#nav-wrapper').height($("#nav").height());
+
+    $('#nav').affix({
+        offset: { top: $('#nav').offset().top }
+    });
+  });
+</script>
+
+<!-- GOOGLE_ANALYTICS -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45090469-1', 'cesarsaez.me');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
