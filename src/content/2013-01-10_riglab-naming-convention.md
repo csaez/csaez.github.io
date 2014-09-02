@@ -1,6 +1,6 @@
 Title: RigLab: Naming Convention
 Author: Cesar Saez
-Tags: Riglab, R&D, Code, Tips
+Tags: Riglab, R&D, Code
 
 {% img img-right {filename}images/riglab_namingconvention.jpg 300 %}
 Hey folks,

@@ -1,6 +1,6 @@
 Title: Working with scan files
 Author: Cesar Saez
-Tags: softimage, tips, code
+Tags: softimage, code
 
 {% img img-right {filename}images/stanford_bunny.jpg %}
 Nowadays it's not that unusual having to work with scanned files (point

@@ -1,0 +1,35 @@
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    {% for tag, articles in tags %}
+    {% if tag == "Showcase" %}
+    {% for a in articles %}
+    <li data-target="#myCarousel" data-slide-to={{ loop.index0 }} {% if loop.index0 == 0 %}class="active"{% endif %}></li>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+  </ol>
+
+  <div class="carousel-inner">
+    {% for tag, articles in tags %}
+    {% if tag == "Showcase" %}
+    {% for a in articles|sort(attribute='date', reverse=True) %}
+    <div class={% if loop.index0 == 0 %}"item active"{% else %}"item"{% endif %}>
+      <div class="fill" {% if a.cover %}style="background-image:url('{{ SITEURL }}/images/{{ a.cover }}');"{% endif %}>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>{{ a.title }}</h1>
+            <p>{{ a.description }}</p>
+            <p><a class="btn btn-lg btn-primary" href="{{ SITEURL }}/{{ a.url }}" role="button">Read More »</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>

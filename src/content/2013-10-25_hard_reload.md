@@ -1,6 +1,6 @@
 Title: Hard Reload
 Author: Cesar Saez
-Tags: code, tips
+Tags: code
 
 {% img img-right img-responsive {filename}images/python-logo.png %}
 Hi folks,

@@ -2,9 +2,11 @@
 
 {% block content %}
 <div class="container">
-    <h1>Tags for {{ SITENAME }}</h1>
+  <h1>Tags for {{ SITENAME }}</h1>
+  <ul>
     {%- for tag, articles in tags|sort %}
-        <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
+    <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
     {% endfor %}
+  </ul>
 </div>
 {% endblock %}

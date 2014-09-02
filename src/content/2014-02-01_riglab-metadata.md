@@ -2,7 +2,7 @@ Title: RigLab: Metadata
 Description: Article on metadata and python magic methods.
 Cover: metadata_large.jpg
 Author: Cesar Saez
-Tags: Riglab, R&D, Code, Tips, Showcase
+Tags: Riglab, R&D, Code, Showcase
 
 Hi folks,
 

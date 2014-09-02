@@ -1,6 +1,6 @@
 Title: Thoughts on editing
 Author: Cesar Saez
-Tags: Tips, Thoughts
+Tags: Thoughts
 
 Just a quick tip...
 

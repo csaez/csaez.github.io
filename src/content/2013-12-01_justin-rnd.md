@@ -1,6 +1,6 @@
 Title: Justin's R&D
 Author: Cesar Saez
-Tags: Works, Softimage, R&D, J&KV
+Tags: Works, Softimage, R&D
 
 <div class="flex-video widescreen"><iframe src="//player.vimeo.com/video/80699674?title=0&amp;byline=0&amp;portrait=0" width="900" height="675" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 Hi guys,

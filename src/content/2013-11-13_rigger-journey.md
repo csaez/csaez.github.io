@@ -1,6 +1,6 @@
 Title: A rigger's journey
 Author: Cesar Saez
-Tags: Thoughts, Tips
+Tags: Thoughts
 
 Today I was thinking about how I have shifted my focus as my career
 moves forward and I realized that I'm not that special, actually a bunch

@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./favicon.ico?v=2">
-  <link href="http://www.cesarsaez.me/feeds\all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
+  <link href="http://www.cesarsaez.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
   <!-- stylesheets -->
   <link href="http://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -19,11 +19,12 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to=0 class="active"></li>
-        <li data-target="#myCarousel" data-slide-to=1 ></li>
-        <li data-target="#myCarousel" data-slide-to=2 ></li>
-        <li data-target="#myCarousel" data-slide-to=3 ></li>
+    <li data-target="#myCarousel" data-slide-to=0 class="active"></li>
+    <li data-target="#myCarousel" data-slide-to=1 ></li>
+    <li data-target="#myCarousel" data-slide-to=2 ></li>
+    <li data-target="#myCarousel" data-slide-to=3 ></li>
   </ol>
+
   <div class="carousel-inner">
     <div class="item active">
       <div class="fill" style="background-image:url('./images/reel13_large.jpg');">
@@ -69,64 +70,69 @@
         </div>
       </div>
     </div>
-
   </div>
+
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
-
   <!-- nav section -->
-  <div class="nav-wrapper">
-    <nav class="navbar navbar-top navbar-inverse" role="navigation" id="nav">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-         <a class="navbar-brand" href=".">CESAR SAEZ</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <div class="navbar-form navbar-left form-group">
-            <input type="text" class="form-control" placeholder="Search" id="search-msg"onkeypress="if(event.keyCode==13){window.open('http://www.duckduckgo.com/?q='+document.getElementById('search-msg').value+'+site%3Acesarsaez.me')}">
-            </div>
-            <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tags <b class="caret"></b></a>
-              <ul class="dropdown-menu">              <li><a href="./tag/3dsmax.html" style="text-transform: capitalize"><span class="badge">1</span> 3dsmax</a></li>
-              <li><a href="./tag/code.html" style="text-transform: capitalize"><span class="badge">17</span> code</a></li>
-              <li><a href="./tag/interviews.html" style="text-transform: capitalize"><span class="badge">2</span> interviews</a></li>
-              <li><a href="./tag/jkv.html" style="text-transform: capitalize"><span class="badge">3</span> J&KV</a></li>
-              <li><a href="./tag/lectures.html" style="text-transform: capitalize"><span class="badge">3</span> Lectures</a></li>
-              <li><a href="./tag/maya.html" style="text-transform: capitalize"><span class="badge">3</span> Maya</a></li>
-              <li><a href="./tag/rd.html" style="text-transform: capitalize"><span class="badge">13</span> R&D</a></li>
-              <li><a href="./tag/reel.html" style="text-transform: capitalize"><span class="badge">2</span> reel</a></li>
-              <li><a href="./tag/riglab.html" style="text-transform: capitalize"><span class="badge">7</span> riglab</a></li>
-              <li><a href="./tag/showcase.html" style="text-transform: capitalize"><span class="badge">4</span> Showcase</a></li>
-              <li><a href="./tag/softimage.html" style="text-transform: capitalize"><span class="badge">17</span> Softimage</a></li>
-              <li><a href="./tag/thoughts.html" style="text-transform: capitalize"><span class="badge">17</span> Thoughts</a></li>
-              <li><a href="./tag/tips.html" style="text-transform: capitalize"><span class="badge">10</span> Tips</a></li>
-              <li><a href="./tag/tools.html" style="text-transform: capitalize"><span class="badge">9</span> Tools</a></li>
-              <li><a href="./tag/works.html" style="text-transform: capitalize"><span class="badge">10</span> Works</a></li>
-              </ul>
-            </li>
-              <li><a href="./pages/reel.html">Reel</a></li>
-              <li><a href="mailto:cesarte@gmail.com">Contact</a></li>
+<div class="nav-wrapper">
+  <nav class="navbar navbar-top navbar-inverse" role="navigation" id="nav">
+    <div class="container">
 
-          </ul>
-        </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+       <a class="navbar-brand" href=".">CESAR SAEZ</a>
       </div>
-    </nav>
-  </div>
 
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li>
+            <div class="navbar-form navbar-left form-group">
+              <input type="text" class="form-control" placeholder="Search" id="search-msg" onkeypress="if(event.keyCode==13){window.open('http://www.duckduckgo.com/?q='+document.getElementById('search-msg').value+'+site%3Acesarsaez.me')}">
+            </div>
+          </li>
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tags <b class="caret"></b></a>
+            <ul class="dropdown-menu">              <li> <a href="./tag/3dsmax.html" style="text-transform: capitalize"><span class="badge">1</span> 3dsmax</a></li>
+              <li> <a href="./tag/code.html" style="text-transform: capitalize"><span class="badge">17</span> code</a></li>
+              <li> <a href="./tag/interviews.html" style="text-transform: capitalize"><span class="badge">2</span> interviews</a></li>
+              <li> <a href="./tag/lectures.html" style="text-transform: capitalize"><span class="badge">3</span> Lectures</a></li>
+              <li> <a href="./tag/maya.html" style="text-transform: capitalize"><span class="badge">3</span> Maya</a></li>
+              <li> <a href="./tag/rd.html" style="text-transform: capitalize"><span class="badge">13</span> R&D</a></li>
+              <li> <a href="./tag/reel.html" style="text-transform: capitalize"><span class="badge">2</span> reel</a></li>
+              <li> <a href="./tag/riglab.html" style="text-transform: capitalize"><span class="badge">7</span> riglab</a></li>
+              <li> <a href="./tag/showcase.html" style="text-transform: capitalize"><span class="badge">4</span> Showcase</a></li>
+              <li> <a href="./tag/softimage.html" style="text-transform: capitalize"><span class="badge">17</span> Softimage</a></li>
+              <li> <a href="./tag/thoughts.html" style="text-transform: capitalize"><span class="badge">17</span> Thoughts</a></li>
+              <li> <a href="./tag/tools.html" style="text-transform: capitalize"><span class="badge">9</span> Tools</a></li>
+              <li> <a href="./tag/works.html" style="text-transform: capitalize"><span class="badge">10</span> Works</a></li>
+            </ul>
+          </li>
+
+          <li><a href="./pages/reel.html">Reel</a></li>
+
+          <li><a href="mailto:cesarte@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</div>
   <!-- body section -->
+
 <div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/tools.html">Tools</a>,     <a href="./tag/rd.html">R&D</a>,     <a href="./tag/softimage.html">Softimage</a>,     <a href="./tag/code.html">code</a>    </p>
+      <a href="./tag/tools.html">Tools</a>,       <a href="./tag/rd.html">R&D</a>,       <a href="./tag/softimage.html">Softimage</a>,       <a href="./tag/code.html">code</a>    </p>
     <h1 class="article-title"><a href="./2012/10/devmanager.html">DevManager: yet another plugin manager</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> October 29, 2012</li>
@@ -134,9 +140,10 @@
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2012/10/devmanager.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
-  <div class="article-content"><p><img src="./images/csDevManager.jpg" class="img-right" width="250">
+  <div class="article-content"><p><img width="250" class="img-right" src="./images/csDevManager.jpg">
 Hi folks,</p>
 <p>I've been working on a manager for my developments, something like
 softimage's plugin manager but better suited for my workflow (python
@@ -150,13 +157,15 @@ long run.</p>
 custom commands, nothing too exciting here.</p>
 <p>The developer mode is where it gets interesting, in this mode you can
 see all the Addons/Developments and their plugins (including properties ...</p></div>
-
   <a href="./2012/10/devmanager.html">Read More &raquo;</a>
 </div>
-<hr class="post-separator"><div class="container">
+
+<hr class="post-separator">
+
+<div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/tips.html">Tips</a>,     <a href="./tag/thoughts.html">Thoughts</a>    </p>
+      <a href="./tag/thoughts.html">Thoughts</a>    </p>
     <h1 class="article-title"><a href="./2012/10/thoughts-on-editing.html">Thoughts on editing</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> October 05, 2012</li>
@@ -164,6 +173,7 @@ see all the Addons/Developments and their plugins (including properties ...</p><
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2012/10/thoughts-on-editing.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
   <div class="article-content"><p>Just a quick tip...</p>
@@ -178,12 +188,14 @@ already created and rebuild is the only provided solution (which is not
 realistic in many cases).</p>
 <p>So, think about it and make your next tool much more useful!</p>
 <p>Cheers.</p></div>
-
 </div>
-<hr class="post-separator"><div class="container">
+
+<hr class="post-separator">
+
+<div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/rd.html">R&D</a>    </p>
+      <a href="./tag/rd.html">R&D</a>    </p>
     <h1 class="article-title"><a href="./2012/09/convex-approximation.html">Convex Approximation</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> September 24, 2012</li>
@@ -191,6 +203,7 @@ realistic in many cases).</p>
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2012/09/convex-approximation.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
   <div class="article-content"><div class="flex-video widescreen">
@@ -205,12 +218,14 @@ proof of concept.</p>
 environment but seems to work!</p>
 <p>More to come...</p>
 <p>Cheers!</p></div>
-
 </div>
-<hr class="post-separator"><div class="container">
+
+<hr class="post-separator">
+
+<div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/works.html">Works</a>    </p>
+      <a href="./tag/works.html">Works</a>    </p>
     <h1 class="article-title"><a href="./2012/09/holymonks-face-rig.html">Holymonks' face rig</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> September 18, 2012</li>
@@ -218,6 +233,7 @@ environment but seems to work!</p>
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2012/09/holymonks-face-rig.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
   <div class="article-content"><p>Hey guys,</p>
@@ -228,12 +244,14 @@ series</a>.</p>
 needs/schedule constraints, so everyone happy :-)</p>
 <div class="flex-video widescreen">
 <iframe src="//player.vimeo.com/video/10910710?title=0&amp;byline=0&amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>
-
 </div>
-<hr class="post-separator"><div class="container">
+
+<hr class="post-separator">
+
+<div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/tips.html">Tips</a>,     <a href="./tag/softimage.html">Softimage</a>    </p>
+      <a href="./tag/softimage.html">Softimage</a>    </p>
     <h1 class="article-title"><a href="./2012/09/fstretch.html">fStretch-like deformations</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> September 17, 2012</li>
@@ -241,9 +259,10 @@ needs/schedule constraints, so everyone happy :-)</p>
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2012/09/fstretch.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
-  <div class="article-content"><p><img src="./images/fstretch_movie.gif" class="img-right" width="200">
+  <div class="article-content"><p><img width="200" class="img-right" src="./images/fstretch_movie.gif">
 Some time ago <a href="http://www.si-community.com/community/viewtopic.php?f=15&amp;t=2549&amp;p=20551#p20551">someone asked in si-community.com</a> about how to
 replicate some deformations seen in <a href="https://vimeo.com/45473465">a nice demo from Clovis Gay</a> (who
 is also inspired by the <a href="http://www.cgaddict.com/product-overview.html">fStretch plugin for Maya</a>) so I decided give
@@ -256,13 +275,15 @@ a push operator (sort of).</p>
 <p><img src="./images/fstretch_ICETree.jpg" class="img-responsive"></p>
 <p>As a side note, I'm working on some personal projects mostly for
 Softimage but I'm also giving a closer look at pyMel ...</p></div>
-
   <a href="./2012/09/fstretch.html">Read More &raquo;</a>
 </div>
-<hr class="post-separator"><div class="container">
+
+<hr class="post-separator">
+
+<div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/thoughts.html">Thoughts</a>    </p>
+      <a href="./tag/thoughts.html">Thoughts</a>    </p>
     <h1 class="article-title"><a href="./2012/08/back-to-work.html">Back to work</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> August 26, 2012</li>
@@ -270,6 +291,7 @@ Softimage but I'm also giving a closer look at pyMel ...</p></div>
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2012/08/back-to-work.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
   <div class="article-content"><p>I think I have enough sun and beach this summer and it's time to get
@@ -282,13 +304,15 @@ ideas and tools I have in mind since long time ago, when you're in
 production it's really difficult try new things and now I really wanna
 take that oportunity. I have a good feeling about this :)</p>
 <p>So I hope start posting again ...</p></div>
-
   <a href="./2012/08/back-to-work.html">Read More &raquo;</a>
 </div>
-<hr class="post-separator"><div class="container">
+
+<hr class="post-separator">
+
+<div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/works.html">Works</a>    </p>
+      <a href="./tag/works.html">Works</a>    </p>
     <h1 class="article-title"><a href="./2012/08/honda-oddysey.html">Honda Oddysey</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> August 16, 2012</li>
@@ -296,6 +320,7 @@ take that oportunity. I have a good feeling about this :)</p>
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2012/08/honda-oddysey.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
   <div class="article-content"><div class="flex-video vimeo">
@@ -305,12 +330,14 @@ take that oportunity. I have a good feeling about this :)</p>
 <p>I just found a TV commercial in which I've worked long time ago, I did
 the generic character rig and the jellyfishes.</p>
 <p>It was a remote work for <a href="http://www.gizmosite.tv/">Gizmo</a>, good job guys!</p></div>
-
 </div>
-<hr class="post-separator"><div class="container">
+
+<hr class="post-separator">
+
+<div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/thoughts.html">Thoughts</a>    </p>
+      <a href="./tag/thoughts.html">Thoughts</a>    </p>
     <h1 class="article-title"><a href="./2012/06/closing-cycles.html">Closing cycles</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> June 20, 2012</li>
@@ -318,6 +345,7 @@ the generic character rig and the jellyfishes.</p>
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2012/06/closing-cycles.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
   <div class="article-content"><p>Hi folks,</p>
@@ -331,13 +359,15 @@ manage crisis on a production environment... the downside is I'm not
 sure if be 'a manager' is what makes me happy. I really miss the old
 days being the 'smart guy', looking for clever solutions to some rigging
 related thing or whatever ...</p></div>
-
   <a href="./2012/06/closing-cycles.html">Read More &raquo;</a>
 </div>
-<hr class="post-separator"><div class="container">
+
+<hr class="post-separator">
+
+<div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/thoughts.html">Thoughts</a>,     <a href="./tag/softimage.html">Softimage</a>    </p>
+      <a href="./tag/thoughts.html">Thoughts</a>,       <a href="./tag/softimage.html">Softimage</a>    </p>
     <h1 class="article-title"><a href="./2012/02/rollup-prototype.html">RollUp Prototype</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> February 13, 2012</li>
@@ -345,21 +375,24 @@ related thing or whatever ...</p></div>
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2012/02/rollup-prototype.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
-  <div class="article-content"><p><img src="./images/rollup_ICE.png" class="img-responsive" width="930"></p>
+  <div class="article-content"><p><img width="930" class="img-responsive" src="./images/rollup_ICE.png"></p>
 <p>I love ICE!</p>
 <p>It's so fast/easy make a prototype for a custom deformer (or whatever)
 on it, it's so powerfull... I think just for that Softimage is one of
 the best 3D softwares in the market... a true life saver.</p>
 <p>I can't wait to start working on the rigging framework/pipeline for our
 next project, ICE Kinematics will be our rock star for sure! :)</p></div>
-
 </div>
-<hr class="post-separator"><div class="container">
+
+<hr class="post-separator">
+
+<div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/thoughts.html">Thoughts</a>    </p>
+      <a href="./tag/thoughts.html">Thoughts</a>    </p>
     <h1 class="article-title"><a href="./2012/02/when-was-the-last-time.html">When was the last time...</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> February 06, 2012</li>
@@ -367,6 +400,7 @@ next project, ICE Kinematics will be our rock star for sure! :)</p></div>
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2012/02/when-was-the-last-time.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
   <div class="article-content"><p>Last week we had a very interesting talk on this issue. Seems like when
@@ -380,16 +414,19 @@ the forest, you only see the trees that comprise it; but you can't see
 the forest as a whole.</p>
 <p>Yes, I know what are you thinking... really basic, right?</p>
 <p>And I agree with you ...</p></div>
-
   <a href="./2012/02/when-was-the-last-time.html">Read More &raquo;</a>
 </div>
-<div class="container"><hr>
+
+
+<div class="container">
+<hr>
 <ul class="pagination">
   <li><a href="./index3.html">&laquo;</a></li>
-  <li><span>Page 4 of 5<span class="sr-only">&nbsp</span></span></li>
+  <li><span>Page 4 of 5<span class="sr-only">&nbsp;</span></span></li>
   <li><a href="./index5.html">&raquo;</a></li>
 </ul>
 </div>
+
 
   <!-- pre-footer section -->
   <div class="pre-footer">
@@ -398,7 +435,7 @@ the forest as a whole.</p>
         <div class="col-md-10">
 <h4>about me</h4>
 
-<p>Hello, my name is César and I love figure out how things work... yep, I was one of those kids who question everything. That passion led me to get a BESc, but at some point in my career I met computer graphics and I fell in love.</p>
+<p>Hi there, my name is César and I love figure out how things work... yep, I was one of those kids who question everything. That passion led me to get a BESc, but at some point in my career I met computer graphics and I fell in love.</p>
 
 <p>Since then, I have had the opportunity to experience different cultures and meet amazing people while traveling around the world working as character technical director.</p>
 
@@ -417,13 +454,13 @@ the forest as a whole.</p>
       </div>
     </div>
   </div>
+
   <!-- footer -->
   <div class="footer">
     <div class="container">
       <small>Copyright © 2013 CESAR SAEZ | Powered by <a href="http://getpelican.com/" target="blank">Pelican</a></small>
     </div>
    </div>
-</div>
 
 <!-- load scripts -->
 <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>

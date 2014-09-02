@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./favicon.ico?v=2">
-  <link href="http://www.cesarsaez.me/feeds\all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
+  <link href="http://www.cesarsaez.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
   <!-- stylesheets -->
   <link href="http://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -19,11 +19,12 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to=0 class="active"></li>
-        <li data-target="#myCarousel" data-slide-to=1 ></li>
-        <li data-target="#myCarousel" data-slide-to=2 ></li>
-        <li data-target="#myCarousel" data-slide-to=3 ></li>
+    <li data-target="#myCarousel" data-slide-to=0 class="active"></li>
+    <li data-target="#myCarousel" data-slide-to=1 ></li>
+    <li data-target="#myCarousel" data-slide-to=2 ></li>
+    <li data-target="#myCarousel" data-slide-to=3 ></li>
   </ol>
+
   <div class="carousel-inner">
     <div class="item active">
       <div class="fill" style="background-image:url('./images/reel13_large.jpg');">
@@ -69,64 +70,69 @@
         </div>
       </div>
     </div>
-
   </div>
+
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
-
   <!-- nav section -->
-  <div class="nav-wrapper">
-    <nav class="navbar navbar-top navbar-inverse" role="navigation" id="nav">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-         <a class="navbar-brand" href=".">CESAR SAEZ</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <div class="navbar-form navbar-left form-group">
-            <input type="text" class="form-control" placeholder="Search" id="search-msg"onkeypress="if(event.keyCode==13){window.open('http://www.duckduckgo.com/?q='+document.getElementById('search-msg').value+'+site%3Acesarsaez.me')}">
-            </div>
-            <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tags <b class="caret"></b></a>
-              <ul class="dropdown-menu">              <li><a href="./tag/3dsmax.html" style="text-transform: capitalize"><span class="badge">1</span> 3dsmax</a></li>
-              <li><a href="./tag/code.html" style="text-transform: capitalize"><span class="badge">17</span> code</a></li>
-              <li><a href="./tag/interviews.html" style="text-transform: capitalize"><span class="badge">2</span> interviews</a></li>
-              <li><a href="./tag/jkv.html" style="text-transform: capitalize"><span class="badge">3</span> J&KV</a></li>
-              <li><a href="./tag/lectures.html" style="text-transform: capitalize"><span class="badge">3</span> Lectures</a></li>
-              <li><a href="./tag/maya.html" style="text-transform: capitalize"><span class="badge">3</span> Maya</a></li>
-              <li><a href="./tag/rd.html" style="text-transform: capitalize"><span class="badge">13</span> R&D</a></li>
-              <li><a href="./tag/reel.html" style="text-transform: capitalize"><span class="badge">2</span> reel</a></li>
-              <li><a href="./tag/riglab.html" style="text-transform: capitalize"><span class="badge">7</span> riglab</a></li>
-              <li><a href="./tag/showcase.html" style="text-transform: capitalize"><span class="badge">4</span> Showcase</a></li>
-              <li><a href="./tag/softimage.html" style="text-transform: capitalize"><span class="badge">17</span> Softimage</a></li>
-              <li><a href="./tag/thoughts.html" style="text-transform: capitalize"><span class="badge">17</span> Thoughts</a></li>
-              <li><a href="./tag/tips.html" style="text-transform: capitalize"><span class="badge">10</span> Tips</a></li>
-              <li><a href="./tag/tools.html" style="text-transform: capitalize"><span class="badge">9</span> Tools</a></li>
-              <li><a href="./tag/works.html" style="text-transform: capitalize"><span class="badge">10</span> Works</a></li>
-              </ul>
-            </li>
-              <li><a href="./pages/reel.html">Reel</a></li>
-              <li><a href="mailto:cesarte@gmail.com">Contact</a></li>
+<div class="nav-wrapper">
+  <nav class="navbar navbar-top navbar-inverse" role="navigation" id="nav">
+    <div class="container">
 
-          </ul>
-        </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+       <a class="navbar-brand" href=".">CESAR SAEZ</a>
       </div>
-    </nav>
-  </div>
 
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li>
+            <div class="navbar-form navbar-left form-group">
+              <input type="text" class="form-control" placeholder="Search" id="search-msg" onkeypress="if(event.keyCode==13){window.open('http://www.duckduckgo.com/?q='+document.getElementById('search-msg').value+'+site%3Acesarsaez.me')}">
+            </div>
+          </li>
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tags <b class="caret"></b></a>
+            <ul class="dropdown-menu">              <li> <a href="./tag/3dsmax.html" style="text-transform: capitalize"><span class="badge">1</span> 3dsmax</a></li>
+              <li> <a href="./tag/code.html" style="text-transform: capitalize"><span class="badge">17</span> code</a></li>
+              <li> <a href="./tag/interviews.html" style="text-transform: capitalize"><span class="badge">2</span> interviews</a></li>
+              <li> <a href="./tag/lectures.html" style="text-transform: capitalize"><span class="badge">3</span> Lectures</a></li>
+              <li> <a href="./tag/maya.html" style="text-transform: capitalize"><span class="badge">3</span> Maya</a></li>
+              <li> <a href="./tag/rd.html" style="text-transform: capitalize"><span class="badge">13</span> R&D</a></li>
+              <li> <a href="./tag/reel.html" style="text-transform: capitalize"><span class="badge">2</span> reel</a></li>
+              <li> <a href="./tag/riglab.html" style="text-transform: capitalize"><span class="badge">7</span> riglab</a></li>
+              <li> <a href="./tag/showcase.html" style="text-transform: capitalize"><span class="badge">4</span> Showcase</a></li>
+              <li> <a href="./tag/softimage.html" style="text-transform: capitalize"><span class="badge">17</span> Softimage</a></li>
+              <li> <a href="./tag/thoughts.html" style="text-transform: capitalize"><span class="badge">17</span> Thoughts</a></li>
+              <li> <a href="./tag/tools.html" style="text-transform: capitalize"><span class="badge">9</span> Tools</a></li>
+              <li> <a href="./tag/works.html" style="text-transform: capitalize"><span class="badge">10</span> Works</a></li>
+            </ul>
+          </li>
+
+          <li><a href="./pages/reel.html">Reel</a></li>
+
+          <li><a href="mailto:cesarte@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</div>
   <!-- body section -->
+
 <div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/thoughts.html">Thoughts</a>,     <a href="./tag/lectures.html">Lectures</a>    </p>
+      <a href="./tag/thoughts.html">Thoughts</a>,       <a href="./tag/lectures.html">Lectures</a>    </p>
     <h1 class="article-title"><a href="./2012/01/rigging-lecture-ugr.html">Rigging lecture at UGR</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> January 29, 2012</li>
@@ -134,6 +140,7 @@
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2012/01/rigging-lecture-ugr.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
   <div class="article-content"><p>Hey folks,</p>
@@ -147,12 +154,14 @@ trying and maybe this week I finally finish/release a little tool for
 Softimage.</p>
 <p>Nobody said this was going to be easy, right? ;-)</p>
 <p>Regards</p></div>
-
 </div>
-<hr class="post-separator"><div class="container">
+
+<hr class="post-separator">
+
+<div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/code.html">Code</a>,     <a href="./tag/tips.html">tips</a>,     <a href="./tag/softimage.html">Softimage</a>    </p>
+      <a href="./tag/code.html">Code</a>,       <a href="./tag/softimage.html">Softimage</a>    </p>
     <h1 class="article-title"><a href="./2011/11/oneundo-decorator.html">OneUndo decorator</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> November 03, 2011</li>
@@ -160,6 +169,7 @@ Softimage.</p>
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2011/11/oneundo-decorator.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
   <div class="article-content"><p>Hi folks,</p>
@@ -183,22 +193,24 @@ unique undo.</p>
 
 
 <p>And a basic example...</p>
-<div class="highlight"><pre><span class="p">@</span><span class="n">OneUndo</span>
-<span class="n">def</span> <span class="n">CreateNulls</span><span class="p">(</span><span class="nb">size</span><span class="p">=</span>100<span class="p">):</span>
+<div class="highlight"><pre><span class="err">@</span><span class="n">OneUndo</span>
+<span class="n">def</span> <span class="n">CreateNulls</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span><span class="o">:</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">Application</span><span class="p">.</span><span class="n">ActiveSceneRoot</span><span class="p">.</span><span class="n">AddNull</span><span class="p">()</span>
-            <span class="k">for</span> <span class="nb">i</span> <span class="n">in</span> <span class="n">range</span><span class="p">(</span><span class="nb">size</span><span class="p">)]</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="n">in</span> <span class="n">range</span><span class="p">(</span><span class="n">size</span><span class="p">)]</span>
 
 <span class="n">CreateNulls</span><span class="p">()</span>
 </pre></div>
 
 
 <p>Have Fun!</p></div>
-
 </div>
-<hr class="post-separator"><div class="container">
+
+<hr class="post-separator">
+
+<div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/reel.html">reel</a>,     <a href="./tag/works.html">works</a>    </p>
+      <a href="./tag/reel.html">reel</a>,       <a href="./tag/works.html">works</a>    </p>
     <h1 class="article-title"><a href="./2011/10/reel-2008.html">Demo Reel 2008</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> October 01, 2011</li>
@@ -206,6 +218,7 @@ unique undo.</p>
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2011/10/reel-2008.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
   <div class="article-content"><div class="flex-video widescreen">
@@ -213,12 +226,14 @@ unique undo.</p>
 </div>
 
 <p>My old demo reel ... there are some things I would do differently but this comes from the me of 2008 ;-)</p></div>
-
 </div>
-<hr class="post-separator"><div class="container">
+
+<hr class="post-separator">
+
+<div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/thoughts.html">thoughts</a>,     <a href="./tag/interviews.html">interviews</a>    </p>
+      <a href="./tag/thoughts.html">thoughts</a>,       <a href="./tag/interviews.html">interviews</a>    </p>
     <h1 class="article-title"><a href="./2011/09/me-and-myself.html">Me and myself</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> September 30, 2011</li>
@@ -226,18 +241,21 @@ unique undo.</p>
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2011/09/me-and-myself.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
   <div class="article-content"><p>Me me me... and myself.</p>
 <p>Just kidding.... I'm rescuing old posts (you know, restarting the site once again) and I found this interview from the guys at <a href="http://www.eje-zeta.com">eje-zeta</a> in which I talked about my experience as self-taught CG artist.</p>
 <p>By the way, spanish only...</p>
 <p><a href="http://www.eje-zeta.com/2010/03/17/entrevista-con-cesar-saez-de-kandorgraphics">LINK</a></p></div>
-
 </div>
-<hr class="post-separator"><div class="container">
+
+<hr class="post-separator">
+
+<div class="container">
   <div>
     <p class="tags lead">
-    <a href="./tag/thoughts.html">Thoughts</a>    </p>
+      <a href="./tag/thoughts.html">Thoughts</a>    </p>
     <h1 class="article-title"><a href="./2010/09/blog-hacked.html">Blog hacked, again...</a></h1>
     <ul class="list-inline">
       <li class="text-muted"><span class="glyphicon glyphicon-time"></span> September 29, 2010</li>
@@ -245,20 +263,24 @@ unique undo.</p>
       <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="2010/09/blog-hacked.html#disqus_thread">Comments</a></li>
     </ul>
   </div>
+
   <hr>
 
   <div class="article-content"><p>Yes, it happened again and I still don't get it :(</p>
 <p>It doesn't matter... all I can say is that I'm going back to Blogger for the safety of my post, right now I'm not so motivated to write my thoughts anywhere but who knows, maybe things will change...</p>
 <p>Cheers!</p></div>
-
 </div>
-<div class="container"><hr>
+
+
+<div class="container">
+<hr>
 <ul class="pagination">
   <li><a href="./index4.html">&laquo;</a></li>
-  <li><span>Page 5 of 5<span class="sr-only">&nbsp</span></span></li>
+  <li><span>Page 5 of 5<span class="sr-only">&nbsp;</span></span></li>
   <li><span>&raquo;</span></li>
 </ul>
 </div>
+
 
   <!-- pre-footer section -->
   <div class="pre-footer">
@@ -267,7 +289,7 @@ unique undo.</p>
         <div class="col-md-10">
 <h4>about me</h4>
 
-<p>Hello, my name is César and I love figure out how things work... yep, I was one of those kids who question everything. That passion led me to get a BESc, but at some point in my career I met computer graphics and I fell in love.</p>
+<p>Hi there, my name is César and I love figure out how things work... yep, I was one of those kids who question everything. That passion led me to get a BESc, but at some point in my career I met computer graphics and I fell in love.</p>
 
 <p>Since then, I have had the opportunity to experience different cultures and meet amazing people while traveling around the world working as character technical director.</p>
 
@@ -286,13 +308,13 @@ unique undo.</p>
       </div>
     </div>
   </div>
+
   <!-- footer -->
   <div class="footer">
     <div class="container">
       <small>Copyright © 2013 CESAR SAEZ | Powered by <a href="http://getpelican.com/" target="blank">Pelican</a></small>
     </div>
    </div>
-</div>
 
 <!-- load scripts -->
 <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>

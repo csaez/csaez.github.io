@@ -1,6 +1,6 @@
 Title: Justin - Official Teaser Trailer
 Author: Cesar Saez
-Tags: J&KV, Works
+Tags: Works
 
 <div class="flex-video widescreen">
 <iframe width="853" height="480" src="//www.youtube.com/embed/7v1owpEEdwA?rel=0" frameborder="0" allowfullscreen></iframe>
