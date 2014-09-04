@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CESAR SAEZ</title><link>http://www.cesarsaez.me/</link><description>Character Technical Director</description><atom:link href="http://www.cesarsaez.me/feeds/cesar-saez.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 15 Aug 2014 00:00:00 -0400</lastBuildDate><item><title>Going TDD: first steps...</title><link>http://www.cesarsaez.me/2014/08/going-tdd.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CESAR SAEZ</title><link>http://www.cesarsaez.me/</link><description>Character Technical Director</description><atom:link href="http://www.cesarsaez.me/feeds/cesar-saez.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 04 Sep 2014 00:00:00 -0400</lastBuildDate><item><title>QuickLauncher v2.0</title><link>http://www.cesarsaez.me/2014/09/quicklauncher-v2.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;I just wanted to let you know that I've updated &lt;a href="https://github.com/csaez/quicklauncher/releases/tag/v2.0"&gt;quicklauncher to v2.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A brief summary of the changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This version is maya-only, you can still download the previous version from &lt;a href="https://github.com/csaez/quicklauncher/releases/tag/v1.0"&gt;here&lt;/a&gt; though.&lt;/li&gt;
+&lt;li&gt;There are no dependencies for general use (requires PySide but it's included with Maya &amp;gt;= 2014).&lt;/li&gt;
+&lt;li&gt;The menu behaves like maya tab menu (node editor) but lists commands and user scripts instead of nodes.&lt;/li&gt;
+&lt;li&gt;The auto-complete is based on QCompleter instead of me filtering QAction as in previous versions (cleaner, more stable, better).&lt;/li&gt;
+&lt;li&gt;Settings are managed through QSettings instead of custom json files.&lt;/li&gt;
+&lt;li&gt;There's a testsuite (92% coverage at the moment), so I will not break everything in each update.&lt;/li&gt;
+&lt;li&gt;MIT license.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can get &lt;code&gt;quicklauncher&lt;/code&gt; from the &lt;a href="https://github.com/csaez/quicklauncher"&gt;github repo&lt;/a&gt; as usual. Please be sure to read the readme, I did my best to explain everything you need to know before use it or contribute to the project.&lt;/p&gt;
+&lt;p&gt;Hope you like it,&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cesar Saez</dc:creator><pubDate>Thu, 04 Sep 2014 00:00:00 -0400</pubDate><guid>tag:www.cesarsaez.me,2014-09-04:2014/09/quicklauncher-v2.html</guid><category>Maya</category><category>Tools</category></item><item><title>Going TDD: first steps...</title><link>http://www.cesarsaez.me/2014/08/going-tdd.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;I have a confession to make: I've always looked at test driven development
 with envy and admiration, but I had never really tried it due to the strong 
 dependencies of the code I usually write... but it's even worse, I had never

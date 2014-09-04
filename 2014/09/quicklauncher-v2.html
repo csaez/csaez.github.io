@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CESAR SAEZ - Animation is organization</title>
+    <title>CESAR SAEZ - QuickLauncher v2.0</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../../favicon.ico?v=2">
@@ -15,9 +15,9 @@
   <link href="../../theme/css/pygment.min.css" rel="stylesheet" media="screen">
 
 
-  <meta name="description" contents="Talk on SCRUM and pipeline for CG productions." />
 
-  <meta name="tags" contents="Lectures" />
+  <meta name="tags" contents="Maya" />
+  <meta name="tags" contents="Tools" />
 </head>
 
 <body>
@@ -79,12 +79,12 @@
 <div class="container">
 
   <p class="tags lead">
-  <a href="../../tag/lectures.html">Lectures</a>  </p>
+  <a href="../../tag/maya.html">Maya</a>,   <a href="../../tag/tools.html">Tools</a>  </p>
 
-  <h1 class="article-title">Animation is organization</h1>
+  <h1 class="article-title">QuickLauncher v2.0</h1>
 
   <ul class="list-inline">
-    <li class="text-muted"><span class="glyphicon glyphicon-time"></span> September 10, 2013</li>
+    <li class="text-muted"><span class="glyphicon glyphicon-time"></span> September 04, 2014</li>
     <li class="text-muted"><span class="glyphicon glyphicon-user"></span> Cesar Saez</li>
     <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="#disqus_thread">Comments</a></li>
   </ul>
@@ -94,22 +94,21 @@
 
   <div class="article-content">
     
-    <p>Hi guys,</p>
-<p>I'll be giving a lecture this weekend at San Luis Digital (San Luis,
-Argentina). I'll talk about how we use agile software development
-methodology on the rigging department during my adventures at <a href="http://www.kandorgraphics.com/en">Kandor
-Graphics</a> and some basics of pipeline in animated films.</p>
-<p>Here is a link to the slide deck (spanish only), there're plenty of
-animated gifs, memes and graphics so I don't think that language is such
-a big deal on this one.</p>
+    <p>Hi folks,</p>
+<p>I just wanted to let you know that I've updated <a href="https://github.com/csaez/quicklauncher/releases/tag/v2.0">quicklauncher to v2.0</a>.</p>
+<p>A brief summary of the changes:</p>
 <ul>
-<li><a href="http://csaez.github.io/slides_anim">LIVE (heavy on images, might take a while)</a></li>
-<li><a href="http://www.github.com/csaez/slides_anim">Repo</a></li>
+<li>This version is maya-only, you can still download the previous version from <a href="https://github.com/csaez/quicklauncher/releases/tag/v1.0">here</a> though.</li>
+<li>There are no dependencies for general use (requires PySide but it's included with Maya &gt;= 2014).</li>
+<li>The menu behaves like maya tab menu (node editor) but lists commands and user scripts instead of nodes.</li>
+<li>The auto-complete is based on QCompleter instead of me filtering QAction as in previous versions (cleaner, more stable, better).</li>
+<li>Settings are managed through QSettings instead of custom json files.</li>
+<li>There's a testsuite (92% coverage at the moment), so I will not break everything in each update.</li>
+<li>MIT license.</li>
 </ul>
-<p>So, if you're going to be in San Luis this weekend please join us at
-SLD, it'll be fun :-)</p>
-<p>Cheers!</p>
-<p>By the way, reveal.js rocks!</p>
+<p>You can get <code>quicklauncher</code> from the <a href="https://github.com/csaez/quicklauncher">github repo</a> as usual. Please be sure to read the readme, I did my best to explain everything you need to know before use it or contribute to the project.</p>
+<p>Hope you like it,</p>
+<p>Enjoy!</p>
   </div>
 
 </div>
