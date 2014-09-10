@@ -103,16 +103,16 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tags <b class="caret"></b></a>
             <ul class="dropdown-menu">              <li> <a href="../tag/3dsmax.html" style="text-transform: capitalize"><span class="badge">1</span> 3dsmax</a></li>
-              <li> <a href="../tag/code.html" style="text-transform: capitalize"><span class="badge">17</span> code</a></li>
+              <li> <a href="../tag/code.html" style="text-transform: capitalize"><span class="badge">18</span> code</a></li>
               <li> <a href="../tag/interviews.html" style="text-transform: capitalize"><span class="badge">2</span> interviews</a></li>
               <li> <a href="../tag/lectures.html" style="text-transform: capitalize"><span class="badge">3</span> Lectures</a></li>
-              <li> <a href="../tag/maya.html" style="text-transform: capitalize"><span class="badge">4</span> Maya</a></li>
+              <li> <a href="../tag/maya.html" style="text-transform: capitalize"><span class="badge">5</span> Maya</a></li>
               <li> <a href="../tag/rd.html" style="text-transform: capitalize"><span class="badge">13</span> R&D</a></li>
               <li> <a href="../tag/reel.html" style="text-transform: capitalize"><span class="badge">2</span> reel</a></li>
               <li> <a href="../tag/riglab.html" style="text-transform: capitalize"><span class="badge">7</span> riglab</a></li>
               <li> <a href="../tag/showcase.html" style="text-transform: capitalize"><span class="badge">4</span> Showcase</a></li>
               <li> <a href="../tag/softimage.html" style="text-transform: capitalize"><span class="badge">17</span> Softimage</a></li>
-              <li> <a href="../tag/thoughts.html" style="text-transform: capitalize"><span class="badge">17</span> Thoughts</a></li>
+              <li> <a href="../tag/thoughts.html" style="text-transform: capitalize"><span class="badge">18</span> Thoughts</a></li>
               <li> <a href="../tag/tools.html" style="text-transform: capitalize"><span class="badge">10</span> Tools</a></li>
               <li> <a href="../tag/works.html" style="text-transform: capitalize"><span class="badge">10</span> Works</a></li>
             </ul>
@@ -128,6 +128,40 @@
   </nav>
 </div>
   <!-- body section -->
+
+<div class="container">
+  <div>
+    <p class="tags lead">
+      <a href="../tag/code.html">Code</a>,       <a href="../tag/thoughts.html">Thoughts</a>,       <a href="../tag/maya.html">Maya</a>    </p>
+    <h1 class="article-title"><a href="../2014/09/python-testing.html">Notes on python testing</a></h1>
+    <ul class="list-inline">
+      <li class="text-muted"><span class="glyphicon glyphicon-time"></span> September 10, 2014</li>
+      <li class="text-muted"><span class="glyphicon glyphicon-user"></span> Cesar Saez</li>
+      <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="../2014/09/python-testing.html#disqus_thread">Comments</a></li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <div class="article-content"><p><img src="../images/python-logo.png" class="img-right">
+Hi guys,</p>
+<p>I've been rediscovering unit testing in python lately and wanted to share some notes about this, I hope you find them useful.</p>
+<p>There we go!</p>
+<h2>Why use an unit testing framework?</h2>
+<p>One word: Convenience</p>
+<p>You can always run your tests manually, but the harder to run tests, the less
+likely you run them.</p>
+<p>A piece of advice: be lazy, automate all the things! or even better: pick an
+existing framework and stick with it.</p>
+<h2>Nose</h2>
+<p><a href="http://nose.readthedocs.org/en/latest/">Nose</a> is a testing framework for python, it's not included in the standard library but that's ok for me (otherwise look for <code>unittest</code>).</p>
+<h2>Why <code>nose</code> over <code>unittest</code>?</h2>
+<ul>
+<li>Autodiscovering: put test functions in a module called <code>something_tests.py</code> and nose will ...</li></ul></div>
+  <a href="../2014/09/python-testing.html">Read More &raquo;</a>
+</div>
+
+<hr class="post-separator">
 
 <div class="container">
   <div>
@@ -406,37 +440,6 @@ I mean, this kind of stuff could be done in any DCC, but things like operator
 overloading or grouping by parentheses really help to lower the
 barrier and keep things simple ...</p></div>
   <a href="../2013/10/speaking-maxscript.html">Read More &raquo;</a>
-</div>
-
-<hr class="post-separator">
-
-<div class="container">
-  <div>
-    <p class="tags lead">
-      <a href="../tag/code.html">code</a>    </p>
-    <h1 class="article-title"><a href="../2013/10/hard_reload.html">Hard Reload</a></h1>
-    <ul class="list-inline">
-      <li class="text-muted"><span class="glyphicon glyphicon-time"></span> October 25, 2013</li>
-      <li class="text-muted"><span class="glyphicon glyphicon-user"></span> Cesar Saez</li>
-      <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="../2013/10/hard_reload.html#disqus_thread">Comments</a></li>
-    </ul>
-  </div>
-
-  <hr>
-
-  <div class="article-content"><p><img src="../images/python-logo.png" class="img-right img-responsive">
-Hi folks,</p>
-<p>If you're a python developer this shouldn't be new for you, but I struggled
-a lot with this back in the day and thought it might be helpful share
-some of the lessons learned.</p>
-<p>Each time you import a python module in a session it get cached in a global
-dictionary called <code>sys.modules</code>, this helps to speedup things and allow a better
-memory management. If you really need to refresh that cache for a specific module
-(because of a code change or whatever) python provides a nice function
-called <code>reload()</code>.</p>
-<p>So far so good, it works great! The only 'problem' is that you must
-explicitly call it, I mean, you must call it after each ...</p></div>
-  <a href="../2013/10/hard_reload.html">Read More &raquo;</a>
 </div>
 
 

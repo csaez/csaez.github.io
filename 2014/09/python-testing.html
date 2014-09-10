@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CESAR SAEZ - Notes on python testing</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../favicon.ico?v=2">
+  <link href="http://www.cesarsaez.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
+  <link href="http://www.cesarsaez.me/feeds/blog.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Categories Atom Feed" />
+  <!-- stylesheets -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../../theme/css/style.min.css" rel="stylesheet" media="screen">
+  <link href="../../theme/css/pygment.min.css" rel="stylesheet" media="screen">
+
+
+
+  <meta name="tags" contents="Code" />
+  <meta name="tags" contents="Thoughts" />
+  <meta name="tags" contents="Maya" />
+</head>
+
+<body>
+
+
+  <!-- nav section -->
+<div class="nav-wrapper">
+  <nav class="navbar navbar-top navbar-inverse" role="navigation" id="nav">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+       <a class="navbar-brand" href="../..">CESAR SAEZ</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li>
+            <div class="navbar-form navbar-left form-group">
+              <input type="text" class="form-control" placeholder="Search" id="search-msg" onkeypress="if(event.keyCode==13){window.open('http://www.duckduckgo.com/?q='+document.getElementById('search-msg').value+'+site%3Acesarsaez.me')}">
+            </div>
+          </li>
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tags <b class="caret"></b></a>
+            <ul class="dropdown-menu">              <li> <a href="../../tag/3dsmax.html" style="text-transform: capitalize"><span class="badge">1</span> 3dsmax</a></li>
+              <li> <a href="../../tag/code.html" style="text-transform: capitalize"><span class="badge">18</span> code</a></li>
+              <li> <a href="../../tag/interviews.html" style="text-transform: capitalize"><span class="badge">2</span> interviews</a></li>
+              <li> <a href="../../tag/lectures.html" style="text-transform: capitalize"><span class="badge">3</span> Lectures</a></li>
+              <li> <a href="../../tag/maya.html" style="text-transform: capitalize"><span class="badge">5</span> Maya</a></li>
+              <li> <a href="../../tag/rd.html" style="text-transform: capitalize"><span class="badge">13</span> R&D</a></li>
+              <li> <a href="../../tag/reel.html" style="text-transform: capitalize"><span class="badge">2</span> reel</a></li>
+              <li> <a href="../../tag/riglab.html" style="text-transform: capitalize"><span class="badge">7</span> riglab</a></li>
+              <li> <a href="../../tag/showcase.html" style="text-transform: capitalize"><span class="badge">4</span> Showcase</a></li>
+              <li> <a href="../../tag/softimage.html" style="text-transform: capitalize"><span class="badge">17</span> Softimage</a></li>
+              <li> <a href="../../tag/thoughts.html" style="text-transform: capitalize"><span class="badge">18</span> Thoughts</a></li>
+              <li> <a href="../../tag/tools.html" style="text-transform: capitalize"><span class="badge">10</span> Tools</a></li>
+              <li> <a href="../../tag/works.html" style="text-transform: capitalize"><span class="badge">10</span> Works</a></li>
+            </ul>
+          </li>
+
+          <li><a href="../../pages/reel.html">Reel</a></li>
+
+          <li><a href="mailto:cesarte@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</div>
+  <!-- body section -->
+<div class="container">
+
+  <p class="tags lead">
+  <a href="../../tag/code.html">Code</a>,   <a href="../../tag/thoughts.html">Thoughts</a>,   <a href="../../tag/maya.html">Maya</a>  </p>
+
+  <h1 class="article-title">Notes on python testing</h1>
+
+  <ul class="list-inline">
+    <li class="text-muted"><span class="glyphicon glyphicon-time"></span> September 10, 2014</li>
+    <li class="text-muted"><span class="glyphicon glyphicon-user"></span> Cesar Saez</li>
+    <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="#disqus_thread">Comments</a></li>
+  </ul>
+
+
+  <hr>
+
+  <div class="article-content">
+    
+    <p><img src="../../images/python-logo.png" class="img-right">
+Hi guys,</p>
+<p>I've been rediscovering unit testing in python lately and wanted to share some notes about this, I hope you find them useful.</p>
+<p>There we go!</p>
+<h2>Why use an unit testing framework?</h2>
+<p>One word: Convenience</p>
+<p>You can always run your tests manually, but the harder to run tests, the less
+likely you run them.</p>
+<p>A piece of advice: be lazy, automate all the things! or even better: pick an
+existing framework and stick with it.</p>
+<h2>Nose</h2>
+<p><a href="http://nose.readthedocs.org/en/latest/">Nose</a> is a testing framework for python, it's not included in the standard library but that's ok for me (otherwise look for <code>unittest</code>).</p>
+<h2>Why <code>nose</code> over <code>unittest</code>?</h2>
+<ul>
+<li>Autodiscovering: put test functions in a module called <code>something_tests.py</code> and nose will find and run them for you.</li>
+<li>No boiler plate: write your test as a simple function and call it
+<code>test_ something</code>, there's no need of inheritance from base classes or
+decoration of your functions.</li>
+<li>Coverage: testing without coverage == no fun, more on this later.</li>
+<li>Plugins: nose provides a nice plugin architecture, as a consecuence there
+are many useful extensions out there (<code>nose-watch</code> seems specially handy, check
+out the project <a href="https://github.com/lukaszb/nose-watch">here</a>)... and of
+course you might be able to extend it creating your own plugins.</li>
+<li>Things to come...</li>
+</ul>
+<h3>Cool, how do I install <code>nose</code>?</h3>
+<div class="highlight"><pre><span class="n">pip</span> <span class="n">install</span> <span class="n">nose</span>
+</pre></div>
+
+
+<p>Once installed run <code>nosetests</code> in a terminal (from the root of your project) to run the tests.</p>
+<blockquote>
+<p>Do yourself a favor and install your dependencies in a <code>virtualenv</code>.</p>
+</blockquote>
+<h3>Wait... virtual-what?</h3>
+<p>Ok, <code>virtualenv</code> creates an isolated python environment for your project... think of it as a custom <code>site-packages</code> per project.</p>
+<p>You should check out the <a href="https://virtualenv.pypa.io/en/latest/index.html">documentation</a>, but in a nutshell:</p>
+<div class="highlight"><pre><span class="c"># Install virtualenv</span>
+pip install virtualenv
+
+<span class="c"># Create a clean virtual environment at my_env/</span>
+<span class="c"># there&#39;s no need of --no-site-packages as it&#39;s deprecated.</span>
+virtualenv my_env/
+
+<span class="c"># Activate my_env</span>
+<span class="nb">source </span>my_env/bin/activate
+
+<span class="c"># Deactivate current environment</span>
+deactivate
+</pre></div>
+
+
+<h4>Too much typing?</h4>
+<p>There's <code>virtualenvwrapper</code> to make things easier, or you can create a bunch
+of aliases and go with that... Just keep it simple and don't waste too much
+time on this.</p>
+<p>Here's what I'm using to activate an existing environment in my system (put
+this in your <code>~/.bashrc</code>):</p>
+<div class="highlight"><pre><span class="c"># activate a virtualenv</span>
+<span class="c"># usage: activate my_env/</span>
+<span class="k">function </span>activate<span class="o">()</span> <span class="o">{</span> <span class="nb">source</span> <span class="s2">&quot;$1&quot;</span>bin/activate ;<span class="o">}</span>
+</pre></div>
+
+
+<h2>Back to testing: What testing looks like?</h2>
+<p>Assuming a project structure like this:</p>
+<div class="highlight"><pre><span class="o">*</span> <span class="n">my_proj</span>
+    <span class="o">*</span> <span class="n">tests</span>
+        <span class="o">*</span> <span class="n">__init__</span><span class="p">.</span><span class="n">py</span>
+        <span class="o">*</span> <span class="n">rocket_science_tests</span><span class="p">.</span><span class="n">py</span>
+    <span class="o">*</span> <span class="n">__init__</span><span class="p">.</span><span class="n">py</span>
+    <span class="o">*</span> <span class="n">rocket_science</span><span class="p">.</span><span class="n">py</span>
+</pre></div>
+
+
+<p>... where <code>rocket_science.py</code>:</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">add_integers</span><span class="p">(</span><span class="o">*</span><span class="n">arg</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">all</span><span class="p">([</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arg</span><span class="p">]):</span>
+        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+    <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s">&quot;(</span><span class="si">%s</span><span class="s">) not an integer.&quot;</span> <span class="o">%</span> <span class="s">&quot;,&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arg</span><span class="p">))</span>
+</pre></div>
+
+
+<p>then <code>rocket_science_tests.py</code> should look something like this:</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">my_proj.rocket_science</span> <span class="kn">as</span> <span class="nn">rs</span>
+
+
+<span class="k">def</span> <span class="nf">test_add_integers</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">rs</span><span class="o">.</span><span class="n">add_integers</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span>
+    <span class="k">assert</span> <span class="n">rs</span><span class="o">.</span><span class="n">add_integers</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+    <span class="k">assert</span> <span class="n">rs</span><span class="o">.</span><span class="n">add_integers</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>
+    <span class="k">assert</span> <span class="n">rs</span><span class="o">.</span><span class="n">add_integers</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+    <span class="k">assert</span> <span class="n">rs</span><span class="o">.</span><span class="n">add_integers</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">3</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">rs</span><span class="o">.</span><span class="n">add_integers</span><span class="p">(</span><span class="mf">3.14159</span><span class="p">,</span> <span class="mf">1.61803</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+        <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">err</span><span class="p">)</span> <span class="o">==</span> <span class="ne">TypeError</span>  <span class="c"># too much awesomeness?!</span>
+</pre></div>
+
+
+<h2>What about coverage?</h2>
+<p>Coverage basically tells you how much of your code is covered by your tests, so 100% coverage means every line of code is tested at least once.</p>
+<p>But there's more, it not only tells you the percentage but also the lines of code not covered (per module), so you can check this information and write more tests until reach the 100%.</p>
+<h2>How can I check my coverage?</h2>
+<p>First...</p>
+<div class="highlight"><pre>pip install coverage
+</pre></div>
+
+
+<p>and then add a couple of flags to <code>nosetests</code>:</p>
+<div class="highlight"><pre>nosetests --with-coverage
+</pre></div>
+
+
+<p>... but it's taking into acount external modules! How to fix it?</p>
+<div class="highlight"><pre>nosetests --with-coverage --cover-package<span class="o">=</span>my_proj
+</pre></div>
+
+
+<h4>Too much typing?</h4>
+<p>Again, here's what I'm using at the moment (put this in your <code>~/.bashrc</code>):</p>
+<div class="highlight"><pre><span class="c"># run nosetest with coverage</span>
+<span class="c"># usage: testme (from the root of your project)</span>
+<span class="k">function </span>testme<span class="o">()</span> <span class="o">{</span> nosetests --with-coverage --cover-package<span class="o">=</span><span class="s2">&quot;${PWD##*/}&quot;</span> ;<span class="o">}</span>
+</pre></div>
+
+
+<h2>That's nice, but what about DCC code?</h2>
+<p>DCC code usually have strong dependencies on dynamic libraries initialized by
+the DCC at runtime, this means we can only run our code within the DCC.</p>
+<blockquote>
+<p>Autodesk Maya has the ability to run in standalone mode, allowing us to
+execute our code without the overhead of a fully fledged app, but this is a
+quite unique feature compared to other DCCs.</p>
+<p>There are interesting projects to automate testing for Maya-like apps
+(<a href="https://github.com/rgalanakis/dccautomation">dccautomation</a> by Rob
+Galanakis looks promising).</p>
+</blockquote>
+<h3><code>mock</code> to the rescue!</h3>
+<p><code>mock</code> is a library for testing in Python. It allows you to replace parts of
+your system under test with mock objects and make assertions about how they
+have been used.
+Check out the docs <a href="http://www.voidspace.org.uk/python/mock/index.html">here</a>.</p>
+<h3>How to intall mock?</h3>
+<div class="highlight"><pre><span class="n">pip</span> <span class="n">install</span> <span class="n">mock</span>
+</pre></div>
+
+
+<blockquote>
+<p><code>mock</code> is part of the standard library from python 3.3 onwards.</p>
+</blockquote>
+<h3>... and now what?</h3>
+<p>Let's say you want to test a snippet like this (standard Maya code):</p>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">maya</span> <span class="kn">import</span> <span class="n">cmds</span>
+
+
+<span class="k">def</span> <span class="nf">get_bbox</span><span class="p">(</span><span class="n">obj_list</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns the bounding box of a list of objects. The values returned</span>
+<span class="sd">    are in the following order: xmin ymin zmin xmax ymax zmax.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">bbs</span> <span class="o">=</span> <span class="p">[</span><span class="n">cmds</span><span class="o">.</span><span class="n">xform</span><span class="p">(</span><span class="n">o</span><span class="p">,</span> <span class="n">q</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">bb</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span> <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">obj_list</span><span class="p">]</span>
+    <span class="k">return</span> <span class="nb">tuple</span><span class="p">([(</span><span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">)[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">)](</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">bbs</span><span class="p">))])</span>
+
+
+<span class="c"># test function intended to be executed within Maya</span>
+<span class="k">def</span> <span class="nf">test_get_bbox</span><span class="p">():</span>
+    <span class="n">locs</span> <span class="o">=</span> <span class="n">cmds</span><span class="o">.</span><span class="n">spaceLocator</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
+    <span class="n">locs</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">cmds</span><span class="o">.</span><span class="n">spaceLocator</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">)))</span>
+    <span class="k">assert</span> <span class="n">get_bbox</span><span class="p">(</span><span class="n">locs</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span>
+    <span class="n">cmds</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">locs</span><span class="p">)</span>
+
+<span class="n">test_get_bbox</span><span class="p">()</span>
+</pre></div>
+
+
+<p>Ok, what do we really need to test here?</p>
+<p>In my opinion we must test the algorithm, make sure that we are considering all objects in the <code>obj_list</code> and making the right choices between bounding boxes... we can assume <code>cmds.xform</code> is working fine, there's no need to test Maya commands (they have their own testsuite, I guess).</p>
+<p>So, in order to run this test on system python the first thing to do is skip
+the <code>ImportError</code> and then refactor the test function patching <code>cmds.xform</code>
+through the <code>mock</code> library.</p>
+<p>The following code runs perfectly in system python. Note that, except for the
+test function, everything else is the same as before:</p>
+<div class="highlight"><pre><span class="k">try</span><span class="p">:</span> <span class="kn">from</span> <span class="nn">maya</span> <span class="kn">import</span> <span class="n">cmds</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span> <span class="k">pass</span>
+<span class="kn">import</span> <span class="nn">mock</span>
+
+
+<span class="k">def</span> <span class="nf">get_bbox</span><span class="p">(</span><span class="n">obj_list</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns the bounding box of a list of objects. The values returned</span>
+<span class="sd">    are in the following order: xmin ymin zmin xmax ymax zmax.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">bbs</span> <span class="o">=</span> <span class="p">[</span><span class="n">cmds</span><span class="o">.</span><span class="n">xform</span><span class="p">(</span><span class="n">o</span><span class="p">,</span> <span class="n">q</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">bb</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span> <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">obj_list</span><span class="p">]</span>
+    <span class="k">return</span> <span class="nb">tuple</span><span class="p">([(</span><span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">)[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">)](</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">bbs</span><span class="p">))])</span>
+
+
+<span class="nd">@mock.patch</span><span class="p">(</span><span class="s">&quot;__main__.cmds&quot;</span><span class="p">,</span> <span class="n">create</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_get_bbox</span><span class="p">(</span><span class="n">cmds</span><span class="p">):</span>
+    <span class="n">return_values</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;loc1&quot;</span><span class="p">:</span> <span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">),</span>
+                     <span class="s">&quot;loc2&quot;</span><span class="p">:</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)}</span>
+    <span class="n">cmds</span><span class="o">.</span><span class="n">xform</span><span class="o">.</span><span class="n">side_effect</span> <span class="o">=</span> <span class="k">lambda</span> <span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="o">**</span><span class="n">k</span><span class="p">:</span> <span class="n">return_values</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">assert</span> <span class="n">get_bbox</span><span class="p">([</span><span class="s">&quot;loc1&quot;</span><span class="p">,</span> <span class="s">&quot;loc2&quot;</span><span class="p">])</span> <span class="o">==</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span>
+
+<span class="n">test_get_bbox</span><span class="p">()</span>
+</pre></div>
+
+
+<h2>Cool! but what's the point?</h2>
+<p>Being able to test our code from system python instead of the DCC makes a
+<strong>HUGE</strong> difference during testing! Run a test like this takes milliseconds
+and we can automate the process through a testing framework like <code>nose</code>, so in
+practical terms we can run tests everytime a file is saved without think too
+much about it (take a look at <code>nose-watch</code>).</p>
+<p>In contrast, be forced to open the DCC to run the testsuite, restart the
+application to cleanup its global state and then repeat takes forever, making
+the process a much less enjoyable experience.</p>
+<p>At the end, testing is a powerful development tool, let's take advantage of it
+to develop amazing tools!</p>
+<p>Regards,
+Cesar.</p>
+  </div>
+
+</div>
+
+<!-- comments -->
+<div class="comments">
+  <div class="container" id="disqus_thread">
+    <script type="text/javascript">
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + 'csaez' + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</div>
+
+
+  <!-- pre-footer section -->
+  <div class="pre-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+<h4>about me</h4>
+
+<p>Hi there, my name is César and I love figure out how things work... yep, I was one of those kids who question everything. That passion led me to get a BESc, but at some point in my career I met computer graphics and I fell in love.</p>
+
+<p>Since then, I have had the opportunity to experience different cultures and meet amazing people while traveling around the world working as character technical director.</p>
+
+<p>If you have any comments, questions or some snide remarks; just <a href="mailto:cesarte@gmail.com">drop me a line</a>.</p>        </div>
+        <div class="col-md-2" id="social-links">
+          <h4>social</h4>
+          <ul class="list-unstyled">
+            <li><a href="http://www.google.com/+CesarSaez"><i class="fa fa-google-plus"></i> Google+</a></li>
+            <li><a href="http://twitter.com/csaezmargotta"><i class="fa fa-twitter"></i> Twitter</a></li>
+            <li><a href="http://www.linkedin.com/in/cesarsaez"><i class="fa fa-linkedin"></i> Linked in</a></li>
+            <li><a href="http://www.github.com/csaez"><i class="fa fa-github"></i> Github</a></li>
+            <li><a href="http://www.vimeo.com/csaez"><i class="fa fa-vimeo-square"></i> Vimeo</a></li>
+            <li><a href="http://feeds2.feedburner.com/csaez"><i class="fa fa-rss"></i> Feed</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <small>Copyright © 2013 CESAR SAEZ | Powered by <a href="http://getpelican.com/" target="blank">Pelican</a></small>
+    </div>
+   </div>
+
+<!-- load scripts -->
+<script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script>
+  $(function() {
+    $('#nav-wrapper').height($("#nav").height());
+
+    $('#nav').affix({
+        offset: { top: $('#nav').offset().top }
+    });
+  });
+</script>
+
+<!-- GOOGLE_ANALYTICS -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45090469-1', 'cesarsaez.me');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>

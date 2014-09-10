@@ -1,5 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/cesar-saez.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2014-09-04T00:00:00-04:00</updated><entry><title>QuickLauncher v2.0</title><link href="http://www.cesarsaez.me/2014/09/quicklauncher-v2.html" rel="alternate"></link><updated>2014-09-04T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-09-04:2014/09/quicklauncher-v2.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/cesar-saez.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2014-09-10T00:00:00-03:00</updated><entry><title>Notes on python testing</title><link href="http://www.cesarsaez.me/2014/09/python-testing.html" rel="alternate"></link><updated>2014-09-10T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-09-10:2014/09/python-testing.html</id><summary type="html">&lt;p&gt;&lt;img src="http://www.cesarsaez.me/images/python-logo.png" class="img-right"&gt;
+Hi guys,&lt;/p&gt;
+&lt;p&gt;I've been rediscovering unit testing in python lately and wanted to share some notes about this, I hope you find them useful.&lt;/p&gt;
+&lt;p&gt;There we go!&lt;/p&gt;
+&lt;h2&gt;Why use an unit testing framework?&lt;/h2&gt;
+&lt;p&gt;One word: Convenience&lt;/p&gt;
+&lt;p&gt;You can always run your tests manually, but the harder to run tests, the less
+likely you run them.&lt;/p&gt;
+&lt;p&gt;A piece of advice: be lazy, automate all the things! or even better: pick an
+existing framework and stick with it.&lt;/p&gt;
+&lt;h2&gt;Nose&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://nose.readthedocs.org/en/latest/"&gt;Nose&lt;/a&gt; is a testing framework for python, it's not included in the standard library but that's ok for me (otherwise look for &lt;code&gt;unittest&lt;/code&gt;).&lt;/p&gt;
+&lt;h2&gt;Why &lt;code&gt;nose&lt;/code&gt; over &lt;code&gt;unittest&lt;/code&gt;?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Autodiscovering: put test functions in a module called &lt;code&gt;something_tests.py&lt;/code&gt; and nose will find and run them for you.&lt;/li&gt;
+&lt;li&gt;No boiler plate: write your test as a simple function and call it
+&lt;code&gt;test_ something&lt;/code&gt;, there's no need of inheritance from base classes or
+decoration of your functions.&lt;/li&gt;
+&lt;li&gt;Coverage: testing without coverage == no fun, more on this later.&lt;/li&gt;
+&lt;li&gt;Plugins: nose provides a nice plugin architecture, as a consecuence there
+are many useful extensions out there (&lt;code&gt;nose-watch&lt;/code&gt; seems specially handy, check
+out the project &lt;a href="https://github.com/lukaszb/nose-watch"&gt;here&lt;/a&gt;)... and of
+course you might be able to extend it creating your own plugins.&lt;/li&gt;
+&lt;li&gt;Things to come...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Cool, how do I install &lt;code&gt;nose&lt;/code&gt;?&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;nose&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Once installed run &lt;code&gt;nosetests&lt;/code&gt; in a terminal (from the root of your project) to run the tests.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Do yourself a favor and install your dependencies in a &lt;code&gt;virtualenv&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Wait... virtual-what?&lt;/h3&gt;
+&lt;p&gt;Ok, &lt;code&gt;virtualenv&lt;/code&gt; creates an isolated python environment for your project... think of it as a custom &lt;code&gt;site-packages&lt;/code&gt; per project.&lt;/p&gt;
+&lt;p&gt;You should check out the &lt;a href="https://virtualenv.pypa.io/en/latest/index.html"&gt;documentation&lt;/a&gt;, but in a nutshell:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Install virtualenv&lt;/span&gt;
+pip install virtualenv
+
+&lt;span class="c"&gt;# Create a clean virtual environment at my_env/&lt;/span&gt;
+&lt;span class="c"&gt;# there&amp;#39;s no need of --no-site-packages as it&amp;#39;s deprecated.&lt;/span&gt;
+virtualenv my_env/
+
+&lt;span class="c"&gt;# Activate my_env&lt;/span&gt;
+&lt;span class="nb"&gt;source &lt;/span&gt;my_env/bin/activate
+
+&lt;span class="c"&gt;# Deactivate current environment&lt;/span&gt;
+deactivate
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Too much typing?&lt;/h4&gt;
+&lt;p&gt;There's &lt;code&gt;virtualenvwrapper&lt;/code&gt; to make things easier, or you can create a bunch
+of aliases and go with that... Just keep it simple and don't waste too much
+time on this.&lt;/p&gt;
+&lt;p&gt;Here's what I'm using to activate an existing environment in my system (put
+this in your &lt;code&gt;~/.bashrc&lt;/code&gt;):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# activate a virtualenv&lt;/span&gt;
+&lt;span class="c"&gt;# usage: activate my_env/&lt;/span&gt;
+&lt;span class="k"&gt;function &lt;/span&gt;activate&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt; &lt;span class="nb"&gt;source&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;$1&amp;quot;&lt;/span&gt;bin/activate ;&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Back to testing: What testing looks like?&lt;/h2&gt;
+&lt;p&gt;Assuming a project structure like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;my_proj&lt;/span&gt;
+    &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;tests&lt;/span&gt;
+        &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+        &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;rocket_science_tests&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+    &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+    &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;rocket_science&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;... where &lt;code&gt;rocket_science.py&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;add_integers&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;arg&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;all&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="nb"&gt;isinstance&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;arg&lt;/span&gt;&lt;span class="p"&gt;]):&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;arg&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;TypeError&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;(&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s"&gt;) not an integer.&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;,&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;arg&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then &lt;code&gt;rocket_science_tests.py&lt;/code&gt; should look something like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;my_proj.rocket_science&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;rs&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_add_integers&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;rs&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add_integers&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+    &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;rs&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add_integers&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;rs&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add_integers&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
+    &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;rs&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add_integers&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;
+    &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;rs&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add_integers&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;
+
+    &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;rs&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add_integers&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;3.14159&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.61803&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="ne"&gt;Exception&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;err&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="nb"&gt;type&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;err&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="ne"&gt;TypeError&lt;/span&gt;  &lt;span class="c"&gt;# too much awesomeness?!&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;What about coverage?&lt;/h2&gt;
+&lt;p&gt;Coverage basically tells you how much of your code is covered by your tests, so 100% coverage means every line of code is tested at least once.&lt;/p&gt;
+&lt;p&gt;But there's more, it not only tells you the percentage but also the lines of code not covered (per module), so you can check this information and write more tests until reach the 100%.&lt;/p&gt;
+&lt;h2&gt;How can I check my coverage?&lt;/h2&gt;
+&lt;p&gt;First...&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;pip install coverage
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and then add a couple of flags to &lt;code&gt;nosetests&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;nosetests --with-coverage
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;... but it's taking into acount external modules! How to fix it?&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;nosetests --with-coverage --cover-package&lt;span class="o"&gt;=&lt;/span&gt;my_proj
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Too much typing?&lt;/h4&gt;
+&lt;p&gt;Again, here's what I'm using at the moment (put this in your &lt;code&gt;~/.bashrc&lt;/code&gt;):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# run nosetest with coverage&lt;/span&gt;
+&lt;span class="c"&gt;# usage: testme (from the root of your project)&lt;/span&gt;
+&lt;span class="k"&gt;function &lt;/span&gt;testme&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt; nosetests --with-coverage --cover-package&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;${PWD##*/}&amp;quot;&lt;/span&gt; ;&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;That's nice, but what about DCC code?&lt;/h2&gt;
+&lt;p&gt;DCC code usually have strong dependencies on dynamic libraries initialized by
+the DCC at runtime, this means we can only run our code within the DCC.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Autodesk Maya has the ability to run in standalone mode, allowing us to
+execute our code without the overhead of a fully fledged app, but this is a
+quite unique feature compared to other DCCs.&lt;/p&gt;
+&lt;p&gt;There are interesting projects to automate testing for Maya-like apps
+(&lt;a href="https://github.com/rgalanakis/dccautomation"&gt;dccautomation&lt;/a&gt; by Rob
+Galanakis looks promising).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;code&gt;mock&lt;/code&gt; to the rescue!&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;mock&lt;/code&gt; is a library for testing in Python. It allows you to replace parts of
+your system under test with mock objects and make assertions about how they
+have been used.
+Check out the docs &lt;a href="http://www.voidspace.org.uk/python/mock/index.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;How to intall mock?&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;mock&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;mock&lt;/code&gt; is part of the standard library from python 3.3 onwards.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;... and now what?&lt;/h3&gt;
+&lt;p&gt;Let's say you want to test a snippet like this (standard Maya code):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;maya&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;cmds&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;get_bbox&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;obj_list&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="sd"&gt;    Returns the bounding box of a list of objects. The values returned&lt;/span&gt;
+&lt;span class="sd"&gt;    are in the following order: xmin ymin zmin xmax ymax zmax.&lt;/span&gt;
+&lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;bbs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;cmds&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xform&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;q&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;bb&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;obj_list&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;tuple&lt;/span&gt;&lt;span class="p"&gt;([(&lt;/span&gt;&lt;span class="nb"&gt;min&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;max&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)](&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;enumerate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;bbs&lt;/span&gt;&lt;span class="p"&gt;))])&lt;/span&gt;
+
+
+&lt;span class="c"&gt;# test function intended to be executed within Maya&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_get_bbox&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;locs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;cmds&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;spaceLocator&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+    &lt;span class="n"&gt;locs&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;extend&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;cmds&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;spaceLocator&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+    &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;get_bbox&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;locs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;cmds&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;delete&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;locs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;test_get_bbox&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ok, what do we really need to test here?&lt;/p&gt;
+&lt;p&gt;In my opinion we must test the algorithm, make sure that we are considering all objects in the &lt;code&gt;obj_list&lt;/code&gt; and making the right choices between bounding boxes... we can assume &lt;code&gt;cmds.xform&lt;/code&gt; is working fine, there's no need to test Maya commands (they have their own testsuite, I guess).&lt;/p&gt;
+&lt;p&gt;So, in order to run this test on system python the first thing to do is skip
+the &lt;code&gt;ImportError&lt;/code&gt; and then refactor the test function patching &lt;code&gt;cmds.xform&lt;/code&gt;
+through the &lt;code&gt;mock&lt;/code&gt; library.&lt;/p&gt;
+&lt;p&gt;The following code runs perfectly in system python. Note that, except for the
+test function, everything else is the same as before:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;maya&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;cmds&lt;/span&gt;
+&lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="ne"&gt;ImportError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="k"&gt;pass&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;mock&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;get_bbox&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;obj_list&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="sd"&gt;    Returns the bounding box of a list of objects. The values returned&lt;/span&gt;
+&lt;span class="sd"&gt;    are in the following order: xmin ymin zmin xmax ymax zmax.&lt;/span&gt;
+&lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;bbs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;cmds&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xform&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;q&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;bb&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;obj_list&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;tuple&lt;/span&gt;&lt;span class="p"&gt;([(&lt;/span&gt;&lt;span class="nb"&gt;min&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;max&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)](&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;enumerate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;bbs&lt;/span&gt;&lt;span class="p"&gt;))])&lt;/span&gt;
+
+
+&lt;span class="nd"&gt;@mock.patch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;__main__.cmds&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_get_bbox&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;cmds&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;return_values&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;loc1&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+                     &lt;span class="s"&gt;&amp;quot;loc2&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;)}&lt;/span&gt;
+    &lt;span class="n"&gt;cmds&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xform&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;side_effect&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;return_values&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+    &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;get_bbox&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;loc1&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;loc2&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;test_get_bbox&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Cool! but what's the point?&lt;/h2&gt;
+&lt;p&gt;Being able to test our code from system python instead of the DCC makes a
+&lt;strong&gt;HUGE&lt;/strong&gt; difference during testing! Run a test like this takes milliseconds
+and we can automate the process through a testing framework like &lt;code&gt;nose&lt;/code&gt;, so in
+practical terms we can run tests everytime a file is saved without think too
+much about it (take a look at &lt;code&gt;nose-watch&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;In contrast, be forced to open the DCC to run the testsuite, restart the
+application to cleanup its global state and then repeat takes forever, making
+the process a much less enjoyable experience.&lt;/p&gt;
+&lt;p&gt;At the end, testing is a powerful development tool, let's take advantage of it
+to develop amazing tools!&lt;/p&gt;
+&lt;p&gt;Regards,
+Cesar.&lt;/p&gt;</summary><category term="Code"></category><category term="Thoughts"></category><category term="Maya"></category></entry><entry><title>QuickLauncher v2.0</title><link href="http://www.cesarsaez.me/2014/09/quicklauncher-v2.html" rel="alternate"></link><updated>2014-09-04T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-09-04:2014/09/quicklauncher-v2.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;I just wanted to let you know that I've updated &lt;a href="https://github.com/csaez/quicklauncher/releases/tag/v2.0"&gt;quicklauncher to v2.0&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A brief summary of the changes:&lt;/p&gt;
 &lt;ul&gt;
