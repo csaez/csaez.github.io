@@ -242,7 +242,7 @@ test function, everything else is the same as before:
 Being able to test our code from system python instead of the DCC makes a
 __HUGE__ difference during testing! Run a test like this takes milliseconds
 and we can automate the process through a testing framework like `nose`, so in
-practical terms we can run tests everytime a file is saved without think too
+practical terms we can run tests everytime a file is saved without thinking too
 much about it (take a look at `nose-watch`).
 
 In contrast, be forced to open the DCC to run the testsuite, restart the
