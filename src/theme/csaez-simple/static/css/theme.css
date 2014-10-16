@@ -15,15 +15,6 @@ p{ margin-bottom: 1.5em;}
 
 li {line-height: 1.8;}
 
-.showcase-list, .latest-list{
-    list-style-type: none;
-    padding: 0;
-}
-
-.latest-list h3{
-    font-size: 1.5em;
-}
-
 a {
     text-decoration: none;
     color: #DE3728;
@@ -47,7 +38,7 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 0;
 }
 
-h1{font-size: 4em;}
+h1{font-size: 3.5em;}
 h2{font-size: 3em;}
 h3{font-size: 2.5em;}
 h4{font-size: 2em;}
@@ -151,8 +142,6 @@ pre{
     padding-top: 1em;
 }
 
-.entry-title{margin: 0;}
-
 .post-info {
     color: #999;
     font-style: italic;
@@ -161,20 +150,6 @@ pre{
 
 abbr[title]{
     border-bottom-style: none;
-}
-
-.showcase-list .hentry{
-    padding: 1em 0;
-    border-top: 1px solid #DDD;
-}
-
-.latest-list .hentry {
-    padding: 0.75em 0;
-    border-top: 1px solid #DDD;
-}
-
-.showcase-list li.hentry:nth-child(1), .latest-list li.hentry:nth-child(1){
-    border: 0;
 }
 
 /*sidebar*/
@@ -395,8 +370,9 @@ a:hover .badge-right{
     margin-top: 0;
 }
 
-@media only screen and (max-widt: 420px), only screen and (max-device-width: 420px) {
-    .post-info > .tags{display: none;}
+@media only screen and (max-widt: 480px), only screen and (max-device-width: 480px) {
+    .tags{display: none;}
+    .thumbs{display: none !important;}
 }
 
 @media only screen and (max-height: 690px), only screen and (max-device-height: 690px) {
@@ -506,6 +482,59 @@ width:100%
     font-size: 0.8em;
     color: #aaa;
     margin-top: 80px;
-    padding: 1em 0 0 2em;
+    padding: 0.5em 0 0 2em;
     border-top: 1px solid #ddd;
+    font-style: italic;
+}
+
+.latest-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.latest-list > ul{
+    border-top: 1px solid #DDD;
+    margin: 0;
+    padding: 0;
+}
+
+.latest-list > ul:nth-child(1) {
+    border-top: none;
+}
+
+.latest-list p{
+    padding: 0;
+    margin: 0;
+}
+
+.latest-list > ul > li {
+    list-style-type: none;
+    display: table-cell;
+    vertical-align: top;
+    padding: 0.75em 0.75em 0.75em 0;
+}
+
+.latest-list > ul > li:nth-child(1) {
+    width: 150px;
+    vertical-align: middle;
+}
+
+.latest-list h1{
+    margin: 0;
+    font-size: 2.5em;
+
+}.latest-list h2{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.thumbs img{
+    width: 150px;
+    height: 84px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-color: #e9e9e9;
+    border-radius: 0.2em;
+    border: 1px dashed #ccc;
 }

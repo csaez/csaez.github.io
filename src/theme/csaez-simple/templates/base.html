@@ -54,12 +54,12 @@
 
 <body>
 <aside id="sidebar" class="closed">
-  <input type="button" id="menu-toggle"></input>
+  <input type="button" id="menu-toggle"/>
   <section class="banner">
     <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
     <h2>{{ SITESUBTITLE }}</h2>
     <a href="{{ SITEURL }}/">{{ ICONS.get("home") }}</a>
-    <input type="text" placeholder="Search" id="search">
+    <input type="text" placeholder="Search" id="search"/>
   </section><!-- /#banner -->
   <ul class="menu">
     {% for title, link in MENUITEMS %}
@@ -81,13 +81,13 @@
     {% endfor %}
   </ul><!-- /#menu -->
   <section class="contact">
-    <p>Questions? comments?<br/>Please feel free to contact me!</p>
+    <p>Questions? comments?<br/>Please feel free to get in touch!</p>
     {% if EMAIL %}
-    <a href="mailto://{{ EMAIL }}">{{ EMAIL }}</a>
+    <a href="mailto://{{ EMAIL }}" title="Say hi!">{{ EMAIL }}</a>
     {% endif %}
     <ul class="social">
       {% for name, url in SOCIAL %}
-      <li><a href="{{ url }}" alt="{{ name }} profile">{{ ICONS.get(name) }}</a> </li>
+      <li><a href="{{ url }}" title="Link to my {{ name }} profile">{{ ICONS.get(name) }}</a> </li>
       {% endfor %}
     </ul>
   </section>
@@ -98,7 +98,7 @@
 {% block content %}
 {% endblock %}
 <section id="footer">
-  <p>Copyright © 2014 {{ SITENAME }} | Powered by <a href="http://getpelican.com">Pelican</a></p>
+  <p>Powered by <a href="http://getpelican.com">Pelican</a></p>
 </section>
 
 </section>

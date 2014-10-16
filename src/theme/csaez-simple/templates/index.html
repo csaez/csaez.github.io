@@ -5,42 +5,48 @@
   {% endblock %}
   {% if page_name == "index" %}
   <h1 class="section-title">Most Recommended</h1>
-  <ul class="showcase-list">
+  <ul class="latest-list">
     {% for tag, articles in tags %}
     {% if tag == "recommended" %}
-    {% for a in articles|sort(attribute='date', reverse=True) %}
-    {% if loop.index0 < 3 %}
-    <li class="hentry">
-        <header>
-          <h3 class="entry-title"><a href="{{ SITEURL }}/{{ a.url }}" rel="bookmark" title="Permalink to {{ a.title|striptags }}">{{ a.title }}</a></h3>
-        </header>
-        <footer class="post-info">
-          {{ a.description }}
-        </footer>
-    </li>
+    {% for article in articles|sort(attribute='date', reverse=True) %}
+    {% if loop.index0 < 2 %}
+    <ul>
+      <li class="thumbs">
+        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+          <img style="background-image:url({{ SITEURL }}/{% if article.image %}{{ article.image }}{% else %}images/placeholder.png{% endif %});"/>
+        </a>
+      </li>
+      <li>
+        <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
+        <p class="post-info">{{article.description}}</p>
+      </li>
+    </ul>
     {% endif %}
     {% endfor %}
     {% endif %}
     {% endfor %}
   </ul>
-  <p><a href="{{ SITEURL }}/tag/recommended/" class="button">More »</a></p>
+  <a href="{{ SITEURL }}/tag/recommended/" class="button">More »</a>
   <h1 class="section-title">Latest</h1>
   <ul class="latest-list">
-    {% for a in articles|sort(attribute='date', reverse=True) %}
+    {% for article in articles|sort(attribute='date', reverse=True) %}
     {% if loop.index0 < 5 %}
-    <li class="hentry">
-        <header>
-          <h3 class="entry-title"><a href="{{ SITEURL }}/{{ a.url }}" rel="bookmark" title="Permalink to {{ a.title|striptags }}">{{ a.title }}</a></h3>
-        </header>
-        <footer class="post-info">
-          Published on <abbr class="published" title="{{ a.date.isoformat() }}">{{ a.locale_date }}</abbr>
-          <span class="tags">in
-          {% for tag in a.tags %}
+    <ul>
+      <li class="thumbs">
+        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+          <img style="background-image:url({{ SITEURL }}/{% if article.image %}{{ article.image }}{% else %}images/placeholder.png{% endif %});"/>
+        </a>
+      </li>
+      <li>
+        <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+        <p class="post-info">Published on <abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr></p>
+        <p class="tags">
+          {% for tag in article.tags|sort %}
           <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if loop.last == False %},{% endif %}
           {% endfor %}
-          </span>
-        </footer>
-    </li>
+        </p>
+      </li>
+    </ul>
     {% endif %}
     {% endfor %}
   </ul>
@@ -48,23 +54,26 @@
   <h1 class="section-title">{{ page_name }}</h1>
   <ul class="latest-list">
     {% for article in articles_page.object_list %}
-    <li class="hentry">
-        <header>
-          <h3 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3>
-        </header>
-        <footer class="post-info">
-          Published on <abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr>
-          <span class="tags">in
-          {% for tag in article.tags %}
+    <ul>
+      <li class="thumbs">
+        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+          <img style="background-image:url({{ SITEURL }}/{% if article.image %}{{ article.image }}{% else %}images/placeholder.png{% endif %});"/>
+        </a>
+      </li>
+      <li>
+        <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+        <p class="post-info">Published on <abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr></p>
+        <p class="tags">
+          {% for tag in article.tags|sort %}
           <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if loop.last == False %},{% endif %}
           {% endfor %}
-          </span>
-        </footer>
-    </li>
+        </p>
+      </li>
+    </ul>
     {% endfor %}
   </ul>
 {% endif %}
-  <p><a href="{{ SITEURL }}/archives.html" class="button">More »</a></p>
+  <a href="{{ SITEURL }}/archives.html" class="button">More »</a>
 </section><!-- /#content -->
 {% include 'pagination.html' %}
 {% endblock content %}

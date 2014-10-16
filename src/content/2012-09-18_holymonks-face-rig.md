@@ -1,6 +1,7 @@
 Title: Holymonks' face rig
 Author: Cesar Saez
 Tags: works
+Image: images/hmonks_th.jpg
 
 Hey guys,
 

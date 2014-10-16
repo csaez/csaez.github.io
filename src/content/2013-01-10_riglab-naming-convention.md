@@ -1,6 +1,7 @@
 Title: RigLab: Naming Convention
 Author: Cesar Saez
 Tags: riglab, rnd, code
+Image: images/nc_th.jpg
 
 Hey folks,
 

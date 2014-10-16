@@ -1,6 +1,5 @@
 Title: Animation is organization
 Description: Talk on SCRUM and pipeline for CG productions.
-Cover: anim-talk_large.jpg
 Author: Cesar Saez
 Tags: lectures
 

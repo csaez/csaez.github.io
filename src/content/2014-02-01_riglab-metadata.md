@@ -1,6 +1,5 @@
 Title: RigLab: Metadata
 Description: Article on metadata and python magic methods.
-Cover: metadata_large.jpg
 Author: Cesar Saez
 Tags: riglab, rnd, code, recommended
 

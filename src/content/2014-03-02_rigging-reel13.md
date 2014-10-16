@@ -1,8 +1,8 @@
 Title: Rigging Reel 2013
 Description: Come and see my latest demo reel!
-Cover: reel13_large.jpg
 Author: Cesar Saez
 Tags: reel, works, recommended
+Image: images/reel13_th.jpg
 
 <div class="flex-video widescreen">
     <iframe src="//player.vimeo.com/video/88004455" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

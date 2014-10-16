@@ -1,6 +1,7 @@
 Title: DNA buildup test
 Author: Cesar Saez
 Tags: softimage, rnd
+Image: images/dna00_th.jpg
 
 Hi guys,
 I just wanted to share some quick excercises I did for an activity at

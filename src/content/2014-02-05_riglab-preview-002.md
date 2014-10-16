@@ -1,8 +1,8 @@
 Title: RigLab: Preview #002
 Description: Second video preview of my upcoming rigging framework.
-Cover: riglab_large.jpg
 Author: Cesar Saez
 Tags: riglab, rnd, works, softimage, recommended
+Image: images/riglab02_th.jpg
 
 <div class="flex-video widescreen">
     <iframe src="//player.vimeo.com/video/85901976" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

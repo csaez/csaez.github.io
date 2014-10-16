@@ -4,19 +4,22 @@
   <h1 class="section-title">Archives</h1>
   <ul class="latest-list">
     {% for article in dates %}
-    <li class="hentry">
-        <header>
-          <h3 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3>
-        </header>
-        <footer class="post-info">
-          Published on <abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr>
-          <span class="tags">in
-          {% for tag in article.tags %}
+    <ul>
+      <li class="thumbs">
+        <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+          <img style="background-image:url({{ SITEURL }}/{% if article.image %}{{ article.image }}{% else %}images/placeholder.png{% endif %});"/>
+        </a>
+      </li>
+      <li>
+        <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+        <p class="post-info">Published on <abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr></p>
+        <p class="tags">
+          {% for tag in article.tags|sort %}
           <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if loop.last == False %},{% endif %}
           {% endfor %}
-          </span>
-        </footer>
-    </li>
+        </p>
+      </li>
+    </ul>
     {% endfor %}
   </ul>
 </section><!-- /#content -->
