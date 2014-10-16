@@ -1,6 +1,6 @@
 Title: Convex Approximation
 Author: Cesar Saez
-Tags: rnd
+Tags: rnd, recommended
 
 <div class="flex-video widescreen">
 <iframe src="//player.vimeo.com/video/50052145?title=0&amp;byline=0&amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
