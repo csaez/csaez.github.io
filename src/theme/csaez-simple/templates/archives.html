@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content">
+  <h1 class="section-title">Archives</h1>
+  <ul class="latest-list">
+    {% for article in dates %}
+    <li class="hentry">
+        <header>
+          <h3 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3>
+        </header>
+        <footer class="post-info">
+          Published on <abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr>
+          <span class="tags">in
+          {% for tag in article.tags %}
+          <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if loop.last == False %},{% endif %}
+          {% endfor %}
+          </span>
+        </footer>
+    </li>
+    {% endfor %}
+  </ul>
+</section><!-- /#content -->
+{% endblock %}
+
+
+

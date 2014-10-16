@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content">
+  {% block content_title %}
+  {% endblock %}
+  {% if page_name == "index" %}
+  <h1 class="section-title">Most Recommended</h1>
+  <ul class="showcase-list">
+    {% for tag, articles in tags %}
+    {% if tag == "recommended" %}
+    {% for a in articles|sort(attribute='date', reverse=True) %}
+    {% if loop.index0 < 3 %}
+    <li class="hentry">
+        <header>
+          <h3 class="entry-title"><a href="{{ SITEURL }}/{{ a.url }}" rel="bookmark" title="Permalink to {{ a.title|striptags }}">{{ a.title }}</a></h3>
+        </header>
+        <footer class="post-info">
+          {{ a.description }}
+        </footer>
+    </li>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+  </ul>
+  <p><a href="{{ SITEURL }}/tag/recommended/" class="button">More »</a></p>
+  <h1 class="section-title">Latest</h1>
+  <ul class="latest-list">
+    {% for a in articles|sort(attribute='date', reverse=True) %}
+    {% if loop.index0 < 5 %}
+    <li class="hentry">
+        <header>
+          <h3 class="entry-title"><a href="{{ SITEURL }}/{{ a.url }}" rel="bookmark" title="Permalink to {{ a.title|striptags }}">{{ a.title }}</a></h3>
+        </header>
+        <footer class="post-info">
+          Published on <abbr class="published" title="{{ a.date.isoformat() }}">{{ a.locale_date }}</abbr>
+          <span class="tags">in
+          {% for tag in a.tags %}
+          <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if loop.last == False %},{% endif %}
+          {% endfor %}
+          </span>
+        </footer>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+{% else %}
+  <h1 class="section-title">{{ page_name }}</h1>
+  <ul class="latest-list">
+    {% for article in articles_page.object_list %}
+    <li class="hentry">
+        <header>
+          <h3 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3>
+        </header>
+        <footer class="post-info">
+          Published on <abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr>
+          <span class="tags">in
+          {% for tag in article.tags %}
+          <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if loop.last == False %},{% endif %}
+          {% endfor %}
+          </span>
+        </footer>
+    </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+  <p><a href="{{ SITEURL }}/archives.html" class="button">More »</a></p>
+</section><!-- /#content -->
+{% include 'pagination.html' %}
+{% endblock content %}
