@@ -626,7 +626,7 @@ to existing code.&lt;/p&gt;
 your extended &lt;code&gt;__setattr__&lt;/code&gt; method will never be called unless you explicitly
 update the entire thing.&lt;/p&gt;
 &lt;p&gt;I would love to know how you guys solve this kind of stuff :)&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="rnd"></category><category term="code"></category></entry><entry><title>QuickLauncher v0.1.3</title><link href="http://cesarsaez.me/2013/12/quicklauncher-v013.html" rel="alternate"></link><updated>2013-12-18T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-12-18:2013/12/quicklauncher-v013.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="rnd"></category><category term="code"></category><category term="recommended"></category></entry><entry><title>QuickLauncher v0.1.3</title><link href="http://cesarsaez.me/2013/12/quicklauncher-v013.html" rel="alternate"></link><updated>2013-12-18T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-12-18:2013/12/quicklauncher-v013.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
 &lt;p&gt;Just wanted to let you know that &lt;a href="https://github.com/csaez/quicklauncher"&gt;QuickLauncher&lt;/a&gt; has been updated adding
 support for script packages, I uploaded &lt;a href="https://github.com/csaez/quicklauncher_packages"&gt;my own scripts to github&lt;/a&gt; in case
 anyone needs some samples to get started.&lt;/p&gt;
@@ -1242,7 +1242,7 @@ proof of concept.&lt;/p&gt;
 &lt;p&gt;There's a lot to do in order to make it usable in a production
 environment but seems to work!&lt;/p&gt;
 &lt;p&gt;More to come...&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="rnd"></category></entry><entry><title>Holymonks' face rig</title><link href="http://cesarsaez.me/2012/09/holymonks-face-rig.html" rel="alternate"></link><updated>2012-09-18T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-09-18:2012/09/holymonks-face-rig.html</id><summary type="html">&lt;p&gt;Hey guys,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="rnd"></category><category term="recommended"></category></entry><entry><title>Holymonks' face rig</title><link href="http://cesarsaez.me/2012/09/holymonks-face-rig.html" rel="alternate"></link><updated>2012-09-18T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-09-18:2012/09/holymonks-face-rig.html</id><summary type="html">&lt;p&gt;Hey guys,&lt;/p&gt;
 &lt;p&gt;I did this one &lt;strong&gt;a while ago&lt;/strong&gt; but I never share it here, it's a custom
 tool designed to quickly wire up facial rig for an &lt;a href="http://www.holymonks.com/"&gt;animated tv
 series&lt;/a&gt;.&lt;/p&gt;

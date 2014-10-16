@@ -626,7 +626,7 @@ to existing code.&lt;/p&gt;
 your extended &lt;code&gt;__setattr__&lt;/code&gt; method will never be called unless you explicitly
 update the entire thing.&lt;/p&gt;
 &lt;p&gt;I would love to know how you guys solve this kind of stuff :)&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cesar Saez</dc:creator><pubDate>Sat, 01 Feb 2014 00:00:00 -0300</pubDate><guid>tag:cesarsaez.me,2014-02-01:2014/02/riglab-metadata.html</guid><category>riglab</category><category>rnd</category><category>code</category></item><item><title>QuickLauncher v0.1.3</title><link>http://cesarsaez.me/2013/12/quicklauncher-v013.html</link><description>&lt;p&gt;Hi guys,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cesar Saez</dc:creator><pubDate>Sat, 01 Feb 2014 00:00:00 -0300</pubDate><guid>tag:cesarsaez.me,2014-02-01:2014/02/riglab-metadata.html</guid><category>riglab</category><category>rnd</category><category>code</category><category>recommended</category></item><item><title>QuickLauncher v0.1.3</title><link>http://cesarsaez.me/2013/12/quicklauncher-v013.html</link><description>&lt;p&gt;Hi guys,&lt;/p&gt;
 &lt;p&gt;Just wanted to let you know that &lt;a href="https://github.com/csaez/quicklauncher"&gt;QuickLauncher&lt;/a&gt; has been updated adding
 support for script packages, I uploaded &lt;a href="https://github.com/csaez/quicklauncher_packages"&gt;my own scripts to github&lt;/a&gt; in case
 anyone needs some samples to get started.&lt;/p&gt;
@@ -1242,7 +1242,7 @@ proof of concept.&lt;/p&gt;
 &lt;p&gt;There's a lot to do in order to make it usable in a production
 environment but seems to work!&lt;/p&gt;
 &lt;p&gt;More to come...&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cesar Saez</dc:creator><pubDate>Mon, 24 Sep 2012 00:00:00 -0300</pubDate><guid>tag:cesarsaez.me,2012-09-24:2012/09/convex-approximation.html</guid><category>rnd</category></item><item><title>Holymonks' face rig</title><link>http://cesarsaez.me/2012/09/holymonks-face-rig.html</link><description>&lt;p&gt;Hey guys,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cesar Saez</dc:creator><pubDate>Mon, 24 Sep 2012 00:00:00 -0300</pubDate><guid>tag:cesarsaez.me,2012-09-24:2012/09/convex-approximation.html</guid><category>rnd</category><category>recommended</category></item><item><title>Holymonks' face rig</title><link>http://cesarsaez.me/2012/09/holymonks-face-rig.html</link><description>&lt;p&gt;Hey guys,&lt;/p&gt;
 &lt;p&gt;I did this one &lt;strong&gt;a while ago&lt;/strong&gt; but I never share it here, it's a custom
 tool designed to quickly wire up facial rig for an &lt;a href="http://www.holymonks.com/"&gt;animated tv
 series&lt;/a&gt;.&lt;/p&gt;
