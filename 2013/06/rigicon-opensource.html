@@ -1,104 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CESAR SAEZ - RigIcon goes open source</title>
+    <title>CESAR SAEZ - RigIcon goes open source</title> <!-- override title -->
+    <title>CESAR SAEZ</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../../favicon.ico?v=2">
-  <link href="http://www.cesarsaez.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
-  <link href="http://www.cesarsaez.me/feeds/blog.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Categories Atom Feed" />
-  <!-- stylesheets -->
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="../../theme/css/style.min.css" rel="stylesheet" media="screen">
-  <link href="../../theme/css/pygment.min.css" rel="stylesheet" media="screen">
+  <link href="http://cesarsaez.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
+  <link href="http://cesarsaez.me/feeds/misc.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Categories Atom Feed" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- favicon setup -->
+  <link rel="apple-touch-icon" sizes="57x57" href="http://cesarsaez.me/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://cesarsaez.me/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://cesarsaez.me/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://cesarsaez.me/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://cesarsaez.me/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://cesarsaez.me/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://cesarsaez.me/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://cesarsaez.me/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://cesarsaez.me/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="http://cesarsaez.me/favicon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="http://cesarsaez.me/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="http://cesarsaez.me/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://cesarsaez.me/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="http://cesarsaez.me/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f2f2f">
+  <meta name="msapplication-TileImage" content="http://cesarsaez.me/mstile-144x144.png">
+  <!-- end favicon setup -->
+  <link rel="stylesheet" href="http://cesarsaez.me/theme/css/style.min.css">
 
-
-
-  <meta name="tags" contents="riglab" />
-  <meta name="tags" contents="Tools" />
-  <meta name="tags" contents="Softimage" />
-  <meta name="tags" contents="code" />
+    <meta name="tags" contents="riglab" />
+    <meta name="tags" contents="tools" />
+    <meta name="tags" contents="softimage" />
+    <meta name="tags" contents="code" />
+    <meta name="tags" contents="recommended" />
 </head>
 
 <body>
-
-
-  <!-- nav section -->
-<div class="nav-wrapper">
-  <nav class="navbar navbar-top navbar-inverse" role="navigation" id="nav">
-    <div class="container">
-
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-       <a class="navbar-brand" href="../..">CESAR SAEZ</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-right">
-        <ul class="nav navbar-nav">
-          <li>
-            <div class="navbar-form navbar-left form-group">
-              <input type="text" class="form-control" placeholder="Search" id="search-msg" onkeypress="if(event.keyCode==13){window.open('http://www.duckduckgo.com/?q='+document.getElementById('search-msg').value+'+site%3Acesarsaez.me')}">
-            </div>
-          </li>
-
-
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tags <b class="caret"></b></a>
-            <ul class="dropdown-menu">              <li> <a href="../../tag/3dsmax.html" style="text-transform: capitalize"><span class="badge">1</span> 3dsmax</a></li>
-              <li> <a href="../../tag/code.html" style="text-transform: capitalize"><span class="badge">18</span> code</a></li>
-              <li> <a href="../../tag/interviews.html" style="text-transform: capitalize"><span class="badge">2</span> interviews</a></li>
-              <li> <a href="../../tag/lectures.html" style="text-transform: capitalize"><span class="badge">3</span> Lectures</a></li>
-              <li> <a href="../../tag/maya.html" style="text-transform: capitalize"><span class="badge">5</span> Maya</a></li>
-              <li> <a href="../../tag/rd.html" style="text-transform: capitalize"><span class="badge">13</span> R&D</a></li>
-              <li> <a href="../../tag/reel.html" style="text-transform: capitalize"><span class="badge">2</span> reel</a></li>
-              <li> <a href="../../tag/riglab.html" style="text-transform: capitalize"><span class="badge">7</span> riglab</a></li>
-              <li> <a href="../../tag/showcase.html" style="text-transform: capitalize"><span class="badge">4</span> Showcase</a></li>
-              <li> <a href="../../tag/softimage.html" style="text-transform: capitalize"><span class="badge">17</span> Softimage</a></li>
-              <li> <a href="../../tag/thoughts.html" style="text-transform: capitalize"><span class="badge">18</span> Thoughts</a></li>
-              <li> <a href="../../tag/tools.html" style="text-transform: capitalize"><span class="badge">10</span> Tools</a></li>
-              <li> <a href="../../tag/works.html" style="text-transform: capitalize"><span class="badge">10</span> Works</a></li>
-            </ul>
-          </li>
-
-          <li><a href="../../pages/reel.html">Reel</a></li>
-
-          <li><a href="mailto:cesarte@gmail.com">Contact</a></li>
-        </ul>
-      </div>
-
-    </div>
-  </nav>
-</div>
-  <!-- body section -->
-<div class="container">
-
-  <p class="tags lead">
-  <a href="../../tag/riglab.html">riglab</a>,   <a href="../../tag/tools.html">Tools</a>,   <a href="../../tag/softimage.html">Softimage</a>,   <a href="../../tag/code.html">code</a>  </p>
-
-  <h1 class="article-title">RigIcon goes open source</h1>
-
-  <ul class="list-inline">
-    <li class="text-muted"><span class="glyphicon glyphicon-time"></span> June 25, 2013</li>
-    <li class="text-muted"><span class="glyphicon glyphicon-user"></span> Cesar Saez</li>
-    <li class="text-muted"><span class="glyphicon glyphicon-comment"></span> <a href="#disqus_thread">Comments</a></li>
-  </ul>
-
-
+<aside id="sidebar" class="closed">
+  <input type="button" id="menu-toggle"></input>
+  <section class="banner">
+    <h1><a href="http://cesarsaez.me/">CESAR SAEZ</a></h1>
+    <h2>Character TD</h2>
+    <a href="http://cesarsaez.me/"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="512" height="512" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path d="M419.5 275.8v166.2H300.7v-90.3h-89.5v90.3H92.5V275.8H50L256 70l206 205.8H419.5zM394.1 88.5h-47.9v38.3l47.9 48V88.5z"/></svg></a>
+    <input type="text" placeholder="Search" id="search">
+  </section><!-- /#banner -->
+  <ul class="menu">
+    <li> <a href="http://cesarsaez.me/tag/3dsmax.html">3dsmax<span class="badge-right">1</span></a></li>
+    <li> <a href="http://cesarsaez.me/tag/code/">code<span class="badge-right">18</span></a></li>
+    <li> <a href="http://cesarsaez.me/tag/interviews.html">interviews<span class="badge-right">2</span></a></li>
+    <li> <a href="http://cesarsaez.me/tag/lectures/">lectures<span class="badge-right">3</span></a></li>
+    <li> <a href="http://cesarsaez.me/tag/maya/">maya<span class="badge-right">5</span></a></li>
+    <li> <a href="http://cesarsaez.me/tag/recommended/">recommended<span class="badge-right">7</span></a></li>
+    <li> <a href="http://cesarsaez.me/tag/reel.html">reel<span class="badge-right">2</span></a></li>
+    <li> <a href="http://cesarsaez.me/tag/riglab/">riglab<span class="badge-right">7</span></a></li>
+    <li> <a href="http://cesarsaez.me/tag/rnd/">rnd<span class="badge-right">13</span></a></li>
+    <li> <a href="http://cesarsaez.me/tag/softimage/">softimage<span class="badge-right">17</span></a></li>
+    <li> <a href="http://cesarsaez.me/tag/thoughts/">thoughts<span class="badge-right">18</span></a></li>
+    <li> <a href="http://cesarsaez.me/tag/tools/">tools<span class="badge-right">10</span></a></li>
+    <li> <a href="http://cesarsaez.me/tag/works/">works<span class="badge-right">10</span></a></li>
+  </ul><!-- /#menu -->
+  <section class="contact">
+    <p>Questions? comments?<br/>Please feel free to contact me!</p>
+    <a href="mailto://hi@cesarsaez.me">hi@cesarsaez.me</a>
+    <ul class="social">
+      <li><a href="http://www.github.com/csaez" alt="github profile"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="512" height="512" viewBox="0 0 512 512" xml:space="preserve" enable-background="new 0 0 512 512"><path d="M412 50H100c-27.6 0-50 22.4-50 50v312c0 27.6 22.4 50 50 50h312c27.6 0 50-22.4 50-50V100C462 72.4 439.6 50 412 50zM301.7 396.4c-7.3 1.4-9.6-3.1-9.6-6.9 0-4.7 0-20.3 0-39.6 0-13.4-4.7-22.2-9.9-26.7 32.1-3.6 65.8-15.8 65.8-71.1 0-15.7-5.6-28.6-14.8-38.7 1.5-3.6 6.4-18.3-1.4-38.2 0 0-12.1-3.9-39.6 14.8 -11.5-3.2-23.9-4.8-36.1-4.9 -12.3 0.1-24.6 1.7-36.1 4.9 -27.6-18.7-39.7-14.8-39.7-14.8 -7.8 19.9-2.9 34.5-1.4 38.2 -9.2 10.1-14.9 23-14.9 38.7 0 55.3 33.7 67.6 65.7 71.3 -4.1 3.6-7.9 10-9.2 19.3 -8.2 3.7-29.1 10.1-42-12 0 0-7.6-13.8-22.1-14.9 0 0-14.1-0.2-1 8.8 0 0 9.5 4.4 16 21.1 0 0 8.4 25.7 48.5 17v26.9c0 3.8-2.3 8.3-9.5 6.9 -57.3-19.1-98.6-73.1-98.6-136.8 0-79.6 64.6-144.2 144.2-144.2 79.6 0 144.2 64.6 144.2 144.2C400.2 323.3 358.9 377.3 301.7 396.4z"/></svg></a> </li>
+      <li><a href="http://plus.google.com/+CesarSaez" alt="google profile"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="512" height="512" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path d="M209 235.7c-22.3-0.7-43.6-21.2-47.4-50.5 -3.9-29.3 11.1-51.8 33.5-51.1 22.3 0.7 41.4 24.7 45.3 54.1C244.2 217.5 231.4 236.3 209 235.7zM204.5 295.7c-33.3-0.4-61.5 21-61.5 45.8 0 25.3 24 46.4 57.3 46.4 42.5 0 63.1-19.8 63.1-45.1C263.4 318.7 241.4 295.7 204.5 295.7zM461.9 101v312c0 27.6-22.4 50-50 50h-312c-27.6 0-50-22.4-50-50V101c0-27.6 22.4-50 50-50h312C439.6 51 461.9 73.4 461.9 101zM292.1 339.9c0-23.4-8.7-38.6-35.1-58.4 -26.8-19.5-33.3-30.6-7.8-50.3 14.4-11.1 24.5-26 24.5-44.3 0-20-8.2-38.1-23.5-46.9h21.8l18.5-19.4c0 0-69.8 0-82.9 0 -51.7 0-77.1 31-77.1 65.1 0 34.9 23.9 62.3 70.6 62.3 -7.2 14.6-4.3 28.1 7.5 37.8 -79.8 0-96.8 35-96.8 62 0 34.9 40.2 55.7 88.3 55.7C265.9 403.4 292.1 368.5 292.1 339.9zM400.1 162.6H361.9v-38.2h-19.1v38.2h-38.2v19.1h38.2v38.2h19.1v-38.2h38.2V162.6z"/></svg></a> </li>
+      <li><a href="http://www.linkedin.com/in/cesarsaez" alt="linkedin profile"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="512" height="512" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path d="M411.9 50h-312c-27.6 0-50 22.4-50 50v312c0 27.6 22.4 50 50 50h312c27.6 0 50-22.4 50-50V100C461.9 72.4 439.6 50 411.9 50zM181 393h-56.5V210.3h56.5V393zM152.5 186.4c-18.5 0-33.4-15.1-33.4-33.7 0-18.6 15-33.7 33.4-33.7 18.5 0 33.4 15.1 33.4 33.7C185.9 171.3 170.9 186.4 152.5 186.4zM392.9 393h-56.3c0 0 0-69.6 0-95.9 0-26.3-10-41-30.8-41 -22.6 0-34.5 15.3-34.5 41 0 28.1 0 95.9 0 95.9h-54.2V210.3h54.2v24.6c0 0 16.3-30.2 55-30.2s66.5 23.6 66.5 72.6C392.9 326.3 392.9 393 392.9 393z"/></svg></a> </li>
+      <li><a href="http://twitter.com/csaezmargotta" alt="twitter profile"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="512" height="512" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path d="M412 50H100c-27.6 0-50 22.4-50 50v312c0 27.6 22.4 50 50 50h312c27.6 0 50-22.4 50-50V100C462 72.4 439.6 50 412 50zM371.9 207.1c3.6 79.1-55.4 167.2-159.8 167.2 -31.7 0-61.3-9.3-86.2-25.3 29.8 3.5 59.6-4.8 83.2-23.3 -24.6-0.5-45.4-16.7-52.5-39 8.8 1.7 17.5 1.2 25.4-1 -27-5.4-45.7-29.8-45.1-55.8 7.6 4.2 16.2 6.7 25.5 7 -25-16.7-32.1-49.8-17.4-75 27.7 34 69.1 56.4 115.9 58.7 -8.2-35.2 18.5-69 54.8-69 16.2 0 30.8 6.8 41 17.8 12.8-2.5 24.8-7.2 35.7-13.6 -4.2 13.1-13.1 24.1-24.7 31.1 11.4-1.4 22.2-4.4 32.3-8.9C392.5 189.3 382.9 199.2 371.9 207.1z"/></svg></a> </li>
+      <li><a href="http://www.vimeo.com/csaez" alt="vimeo profile"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="512" height="512" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path d="M412 50H100c-27.6 0-50 22.4-50 50v312c0 27.6 22.4 50 50 50h312c27.6 0 50-22.4 50-50V100C462 72.4 439.6 50 412 50zM399.1 192c-1.3 28.1-20.9 66.5-58.8 115.3 -39.2 51-72.4 76.5-99.5 76.5 -16.8 0-31-15.5-42.7-46.6 -7.8-28.5-15.5-56.9-23.3-85.4 -8.6-31-17.9-46.6-27.8-46.6 -2.2 0-9.7 4.5-22.6 13.6l-13.6-17.5c14.2-12.5 28.3-25 42.1-37.5 19-16.4 33.2-25 42.7-25.9 22.4-2.2 36.3 13.2 41.4 46 5.6 35.4 9.5 57.5 11.7 66.1 6.5 29.4 13.6 44.1 21.4 44.1 6 0 15.1-9.5 27.2-28.6 12.1-19.1 18.5-33.6 19.4-43.6 1.7-16.5-4.8-24.7-19.4-24.7 -6.9 0-14 1.6-21.3 4.7 14.2-46.4 41.3-69 81.2-67.7C386.8 135.1 400.8 154.4 399.1 192z"/></svg></a> </li>
+    </ul>
+  </section>
   <hr>
+</aside>
 
-  <div class="article-content">
-    
-    <p><img width="300" class="img-right" src="../../images/rigicon.png">
-Hi folks,</p>
+<section id="container" class="wide">
+<section id="content" class="body">
+  <footer class="post-info">
+    Published on <abbr class="published" title="2013-06-25T00:00:00">25 Jun 2013</abbr> in
+    <a href="http://cesarsaez.me/tag/riglab/">riglab</a>,    <a href="http://cesarsaez.me/tag/tools/">tools</a>,    <a href="http://cesarsaez.me/tag/softimage/">softimage</a>,    <a href="http://cesarsaez.me/tag/code/">code</a>,    <a href="http://cesarsaez.me/tag/recommended/">recommended</a>  </footer><!-- /.post-info -->
+  <header>
+    <h2 class="entry-title">RigIcon goes open source</h2>
+ 
+  </header>
+  <div class="entry-content">
+    <p>Hi folks,</p>
 <p>Do you remember <a href="http://csaez.blogspot.com/2013/01/wip-csrigicon.html">rigicon</a>? well, now you can get it from <a href="https://github.com/csaez/rigicon">github</a>!</p>
+<p><img alt="RigIcon" src="http://cesarsaez.me/images/rigicon.png" title="RigIcon" /></p>
 <p>There's also a brief <a href="https://github.com/csaez/rigicon/wiki">documentation</a> and a <a href="http://goo.gl/XRtKA">pre-packed xsiaddon</a> in
 case you don't want to mess with the source code, dependencies and so
 on... if you have no idea what I'm talking about take a look at the <a href="https://vimeo.com/56682095">old
@@ -106,13 +93,8 @@ preview</a>.</p>
 <p>You will need <a href="https://github.com/caron/PyQtForSoftimage">PyQtForSoftimage</a> installed in your system, other than
 that everything should work fine OOTB.</p>
 <p>Cheers!</p>
-  </div>
-
-</div>
-
-<!-- comments -->
-<div class="comments">
-  <div class="container" id="disqus_thread">
+  </div><!-- /.entry-content -->
+  <div id="disqus_thread"><!-- comments -->
     <script type="text/javascript">
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -122,67 +104,58 @@ that everything should work fine OOTB.</p>
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
-</div>
+</section>
+<section id="footer">
+  <p>Copyright © 2014 CESAR SAEZ | Powered by <a href="http://getpelican.com">Pelican</a></p>
+</section>
+
+</section>
 
 
-  <!-- pre-footer section -->
-  <div class="pre-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10">
-<h4>about me</h4>
+<script type="text/javascript">
+(function(){
+  function search(event){
+    // var engine = "http://www.google.com/search";
+    var engine = "http://www.duckduckgo.com/";
+    if(event.keyCode==13) window.open(engine +'?q='+ this.value +'+site%3Acesarsaez.me')
+  };
+  document.getElementById("search").onkeypress = search;
 
-<p>Hi there, my name is César and I love figure out how things work... yep, I was one of those kids who question everything. That passion led me to get a BESc, but at some point in my career I met computer graphics and I fell in love.</p>
+  function setMenuState(state){ // -1: toggle, 0: closed, 1: opened
+    var elem = document.getElementById("sidebar");
+    var container = document.getElementById("container");
+    var clientWidth = document.documentElement.clientWidth;
+    function openMenu(){
+      elem.className = "opened";
+      container.className = "narrow";
+      if (clientWidth <= 540 && clientWidth > 384) container.className += " blur";
+      if (clientWidth <= 384) container.className = "hide";
+    };
+    function closeMenu(){
+      elem.className = "closed";
+      container.className = "wide";
+    };
+    function toggleMenu(){
+      (elem.className == "opened")?closeMenu():openMenu()
+    };
+    if (state == -1) toggleMenu();
+    if (state == 0) closeMenu();
+    if (state == 1) openMenu();
+  };
+  document.getElementById("menu-toggle").onclick = function(){setMenuState(-1)};
 
-<p>Since then, I have had the opportunity to experience different cultures and meet amazing people while traveling around the world working as character technical director.</p>
-
-<p>If you have any comments, questions or some snide remarks; just <a href="mailto:cesarte@gmail.com">drop me a line</a>.</p>        </div>
-        <div class="col-md-2" id="social-links">
-          <h4>social</h4>
-          <ul class="list-unstyled">
-            <li><a href="http://www.google.com/+CesarSaez"><i class="fa fa-google-plus"></i> Google+</a></li>
-            <li><a href="http://twitter.com/csaezmargotta"><i class="fa fa-twitter"></i> Twitter</a></li>
-            <li><a href="http://www.linkedin.com/in/cesarsaez"><i class="fa fa-linkedin"></i> Linked in</a></li>
-            <li><a href="http://www.github.com/csaez"><i class="fa fa-github"></i> Github</a></li>
-            <li><a href="http://www.vimeo.com/csaez"><i class="fa fa-vimeo-square"></i> Vimeo</a></li>
-            <li><a href="http://feeds2.feedburner.com/csaez"><i class="fa fa-rss"></i> Feed</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- footer -->
-  <div class="footer">
-    <div class="container">
-      <small>Copyright © 2013 CESAR SAEZ | Powered by <a href="http://getpelican.com/" target="blank">Pelican</a></small>
-    </div>
-   </div>
-
-<!-- load scripts -->
-<script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-<script>
-  $(function() {
-    $('#nav-wrapper').height($("#nav").height());
-
-    $('#nav').affix({
-        offset: { top: $('#nav').offset().top }
-    });
-  });
+  function computeMenuVis(event){
+    var menuToggle = document.getElementById("menu-toggle");
+    if (document.documentElement.clientWidth >= 1024){
+      setMenuState(1);
+    }
+    else{
+      setMenuState(0)
+    };
+  };
+  window.onresize = computeMenuVis;
+  computeMenuVis();
+})();
 </script>
-
-<!-- GOOGLE_ANALYTICS -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-45090469-1', 'cesarsaez.me');
-  ga('send', 'pageview');
-</script>
-
 </body>
 </html>

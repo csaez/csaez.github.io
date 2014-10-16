@@ -1,9 +1,0 @@
-# Pelican
-# ===================
-
-# ignore source files
-cache/
-*.pyc
-
-# virtual environment
-env/
