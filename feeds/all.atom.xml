@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://cesarsaez.me/" rel="alternate"></link><link href="http://cesarsaez.me/feeds/all.atom.xml" rel="self"></link><id>http://cesarsaez.me/</id><updated>2014-09-10T00:00:00-03:00</updated><entry><title>Notes on python testing</title><link href="http://cesarsaez.me/2014/09/python-testing.html" rel="alternate"></link><updated>2014-09-10T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2014-09-10:2014/09/python-testing.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/all.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2014-09-10T00:00:00-03:00</updated><entry><title>Notes on python testing</title><link href="http://www.cesarsaez.me/2014/09/python-testing.html" rel="alternate"></link><updated>2014-09-10T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-09-10:2014/09/python-testing.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
 &lt;p&gt;I've been rediscovering unit testing in python lately and wanted to share some notes about this, I hope you find them useful.&lt;/p&gt;
 &lt;p&gt;There we go!&lt;/p&gt;
 &lt;h2&gt;Why use an unit testing framework?&lt;/h2&gt;
@@ -219,7 +219,7 @@ the process a much less enjoyable experience.&lt;/p&gt;
 &lt;p&gt;At the end, testing is a powerful development tool, let's take advantage of it
 to develop amazing tools!&lt;/p&gt;
 &lt;p&gt;Regards,
-Cesar.&lt;/p&gt;</summary><category term="code"></category><category term="thoughts"></category><category term="maya"></category></entry><entry><title>QuickLauncher v2.0</title><link href="http://cesarsaez.me/2014/09/quicklauncher-v2.html" rel="alternate"></link><updated>2014-09-04T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2014-09-04:2014/09/quicklauncher-v2.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+Cesar.&lt;/p&gt;</summary><category term="code"></category><category term="thoughts"></category><category term="maya"></category></entry><entry><title>QuickLauncher v2.0</title><link href="http://www.cesarsaez.me/2014/09/quicklauncher-v2.html" rel="alternate"></link><updated>2014-09-04T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-09-04:2014/09/quicklauncher-v2.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;I just wanted to let you know that I've updated &lt;a href="https://github.com/csaez/quicklauncher/releases/tag/v2.0"&gt;quicklauncher to v2.0&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A brief summary of the changes:&lt;/p&gt;
 &lt;ul&gt;
@@ -233,7 +233,7 @@ Cesar.&lt;/p&gt;</summary><category term="code"></category><category term="thoug
 &lt;/ul&gt;
 &lt;p&gt;You can get &lt;code&gt;quicklauncher&lt;/code&gt; from the &lt;a href="https://github.com/csaez/quicklauncher"&gt;github repo&lt;/a&gt; as usual. Please be sure to read the readme, I did my best to explain everything you need to know before use it or contribute to the project.&lt;/p&gt;
 &lt;p&gt;Hope you like it,&lt;/p&gt;
-&lt;p&gt;Enjoy!&lt;/p&gt;</summary><category term="maya"></category><category term="tools"></category></entry><entry><title>Going TDD: first steps...</title><link href="http://cesarsaez.me/2014/08/going-tdd.html" rel="alternate"></link><updated>2014-08-15T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2014-08-15:2014/08/going-tdd.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;</summary><category term="maya"></category><category term="tools"></category></entry><entry><title>Going TDD: first steps...</title><link href="http://www.cesarsaez.me/2014/08/going-tdd.html" rel="alternate"></link><updated>2014-08-15T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-08-15:2014/08/going-tdd.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;I have a confession to make: I've always looked at test driven development
 with envy and admiration, but I had never really tried it due to the strong 
 dependencies of the code I usually write... but it's even worse, I had never
@@ -426,12 +426,12 @@ Do you have any experience working like this?
 Anything to share?&lt;/p&gt;
 &lt;p&gt;Would love to hear what you think about this, please leave me your
 comments below.&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="code"></category><category term="thoughts"></category></entry><entry><title>Hard Reloader for Maya</title><link href="http://cesarsaez.me/2014/08/hard-reloader.html" rel="alternate"></link><updated>2014-08-05T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2014-08-05:2014/08/hard-reloader.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="code"></category><category term="thoughts"></category></entry><entry><title>Hard Reloader for Maya</title><link href="http://www.cesarsaez.me/2014/08/hard-reloader.html" rel="alternate"></link><updated>2014-08-05T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-08-05:2014/08/hard-reloader.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;Do you remember &lt;a href="http://cesarsaez.me/2013/10/hard_reload.html"&gt;this handy trick to quickly reload a python package&lt;/a&gt;?&lt;/p&gt;
 &lt;p&gt;Well, &lt;strong&gt;I use it all the time!&lt;/strong&gt; so I made this little GUI helper. It's
 really simple, but makes my life much easier when it comes to test WIP
 code within Maya.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="HardReloader for Maya" src="http://cesarsaez.me/images/hard_reloader.gif" title="HardReloader for Maya" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="HardReloader for Maya" src="http://www.cesarsaez.me/images/hard_reloader.gif" title="HardReloader for Maya" /&gt;&lt;/p&gt;
 &lt;h3&gt;Installation:&lt;/h3&gt;
 &lt;p&gt;Save the code below as &lt;code&gt;hard_reloader.py&lt;/code&gt; into your Maya script directory
 (or somewhere else in your PYTHONPATH).&lt;/p&gt;
@@ -492,13 +492,13 @@ imports to PyQt (&lt;code&gt;PySide&lt;/code&gt;-&amp;gt;&lt;code&gt;PyQt4&lt;/c
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;That's it, happy coding! ;-)&lt;/p&gt;</summary><category term="code"></category><category term="tools"></category><category term="maya"></category></entry><entry><title>Developing a Character Picker for Maya</title><link href="http://cesarsaez.me/2014/07/picker-talk.html" rel="alternate"></link><updated>2014-07-05T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2014-07-05:2014/07/picker-talk.html</id><summary type="html">&lt;p&gt;&lt;img alt="Picker Talk" src="http://cesarsaez.me/images/picker_talk.png" title="Picker Talk" /&gt;&lt;/p&gt;
+&lt;p&gt;That's it, happy coding! ;-)&lt;/p&gt;</summary><category term="code"></category><category term="tools"></category><category term="maya"></category></entry><entry><title>Developing a Character Picker for Maya</title><link href="http://www.cesarsaez.me/2014/07/picker-talk.html" rel="alternate"></link><updated>2014-07-05T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-07-05:2014/07/picker-talk.html</id><summary type="html">&lt;p&gt;&lt;img alt="Picker Talk" src="http://www.cesarsaez.me/images/picker_talk.png" title="Picker Talk" /&gt;&lt;/p&gt;
 &lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;I just wanted to post a link to the slide deck and sample code from my talk: &lt;a href="http://www.animum3d.com/paginas/ez-cesar-saez-general"&gt;"How to create a character picker for Autodesk Maya"&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In the talk we explored the technology behind different kinds of character pickers, there is working code of a picker built using maya commands, a qt version and a proposal for a canvas based one (using the qt graphic scene framework).&lt;/p&gt;
 &lt;p&gt;I don't know if &lt;a href="http://www.animum3d.com"&gt;Animum&lt;/a&gt; will publish a recording of the talk (or when they are going to do it), but here is a link to the slide deck and sample code (spanish only, sorry).&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://csaez.github.io/slides_picker"&gt;SLIDES&lt;/a&gt; / &lt;a href="http://github.com/csaez/slides_picker/tree/master/picker"&gt;REPO&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="lectures"></category><category term="code"></category><category term="maya"></category></entry><entry><title>Softimage EOL</title><link href="http://cesarsaez.me/2014/03/softimage-eol.html" rel="alternate"></link><updated>2014-03-25T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2014-03-25:2014/03/softimage-eol.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="lectures"></category><category term="code"></category><category term="maya"></category></entry><entry><title>Softimage EOL</title><link href="http://www.cesarsaez.me/2014/03/softimage-eol.html" rel="alternate"></link><updated>2014-03-25T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-03-25:2014/03/softimage-eol.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;As you might know Autodesk &lt;a href="http://www.autodesk.com/products/autodesk-softimage/overview"&gt;announced&lt;/a&gt; Softimage's EOL (end of life) a couple of weeks ago, since then forums/mailing-lists have gone crazy and that's why I've been waiting a bit to write about this.&lt;/p&gt;
 &lt;p&gt;I understand that for some people Softimage may look like legacy software and the whole EOL thing seems reasonable, but it is not! and perhaps the only reason to perceive it that way is because of the lack of active marketing from Autodesk. I think the decision has nothing to do with the software itself, it is about Autodesk's planning and it's sad that they don't consider Softimage as part of their future.&lt;/p&gt;
 &lt;p&gt;I know, Maya is a great software and we should just move on, but Maya lack on some areas where Softimage shines, like those depending on non-linear workflow or the entire ICE framework. I have no doubts that Autodesk is working hard to address those rough corners, but they will need some time and that's exactly why I don't fully understand why they are killing Softimage now.&lt;/p&gt;
@@ -506,7 +506,7 @@ imports to PyQt (&lt;code&gt;PySide&lt;/code&gt;-&amp;gt;&lt;code&gt;PyQt4&lt;/c
 &lt;p&gt;What's next? Well, move on.&lt;/p&gt;
 &lt;p&gt;I've been trying to refresh my maya-fu over the past couple of weeks, and I'll probably take another look at Houdini once I feel comfortable working with Maya again. Unfortunately it is not about the software I like but the one which allows me to be employable again.&lt;/p&gt;
 &lt;p&gt;That's it, no more Softimage rants from me.&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="thoughts"></category><category term="softimage"></category><category term="interviews"></category></entry><entry><title>Rigging Reel 2013</title><link href="http://cesarsaez.me/2014/03/rigging-reel13.html" rel="alternate"></link><updated>2014-03-02T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2014-03-02:2014/03/rigging-reel13.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="thoughts"></category><category term="softimage"></category><category term="interviews"></category></entry><entry><title>Rigging Reel 2013</title><link href="http://www.cesarsaez.me/2014/03/rigging-reel13.html" rel="alternate"></link><updated>2014-03-02T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-03-02:2014/03/rigging-reel13.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
     &lt;iframe src="//player.vimeo.com/video/88004455" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
@@ -516,24 +516,24 @@ I'm now actively looking for a job opportunity as Character TD/Technical
 Artist (preferably full-time, I'm ok with relocation). I'd really appreciate
 if you could pass this around.&lt;/p&gt;
 &lt;p&gt;Here's also a &lt;a href="http://cesarsaez.me/pages/resume.html"&gt;link to my resume&lt;/a&gt;, just in case ;-)&lt;/p&gt;
-&lt;p&gt;Thank you!&lt;/p&gt;</summary><category term="reel"></category><category term="works"></category><category term="recommended"></category></entry><entry><title>QuickLauncher met Maya</title><link href="http://cesarsaez.me/2014/03/quicklauncher-met-maya.html" rel="alternate"></link><updated>2014-03-01T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2014-03-01:2014/03/quicklauncher-met-maya.html</id><summary type="html">&lt;p&gt;Hey folks,&lt;/p&gt;
+&lt;p&gt;Thank you!&lt;/p&gt;</summary><category term="reel"></category><category term="works"></category><category term="recommended"></category></entry><entry><title>QuickLauncher met Maya</title><link href="http://www.cesarsaez.me/2014/03/quicklauncher-met-maya.html" rel="alternate"></link><updated>2014-03-01T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-03-01:2014/03/quicklauncher-met-maya.html</id><summary type="html">&lt;p&gt;Hey folks,&lt;/p&gt;
 &lt;p&gt;I'm coming out of the Softimage bubble and trying to port some of my open
 source projects to maya.&lt;/p&gt;
 &lt;p&gt;It's funny, of all of them QuickLauncher is the simplest but one of the
 most useful at the same time (I cannot live without it) , so I decided to
 give it a try and there's a maya version in the &lt;a href="https://github.com/csaez/quicklauncher"&gt;repo&lt;/a&gt;
 now :D&lt;/p&gt;
-&lt;p&gt;&lt;img alt="QuickLauncher for Maya" src="http://cesarsaez.me/images/quicklauncher_maya.gif" title="QuickLauncher for Maya" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="QuickLauncher for Maya" src="http://www.cesarsaez.me/images/quicklauncher_maya.gif" title="QuickLauncher for Maya" /&gt;&lt;/p&gt;
 &lt;p&gt;I'm still struggling with the maya plugin system, so the installation process
 is not as straight forward as in softimage, but I'll get there.&lt;/p&gt;
 &lt;p&gt;Thanks to &lt;em&gt;David Martinez&lt;/em&gt; and &lt;em&gt;David Moulder&lt;/em&gt; for their support.&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="code"></category><category term="maya"></category><category term="rnd"></category><category term="tools"></category></entry><entry><title>flASCII bird</title><link href="http://cesarsaez.me/2014/02/flASCII-bird.html" rel="alternate"></link><updated>2014-02-10T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2014-02-10:2014/02/flASCII-bird.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="code"></category><category term="maya"></category><category term="rnd"></category><category term="tools"></category></entry><entry><title>flASCII bird</title><link href="http://www.cesarsaez.me/2014/02/flASCII-bird.html" rel="alternate"></link><updated>2014-02-10T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-02-10:2014/02/flASCII-bird.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;In the past few days has been a lot of buzz around &lt;a href="https://en.wikipedia.org/wiki/Flappy_Bird"&gt;Flappy Bird&lt;/a&gt;.
 I'm not a gamer, but I couldn't resist the temptation and did this terminal-based
 tribute... and I won't take it down ;D&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.github.com/csaez/flascii_bird"&gt;Repository&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://cesarsaez.me/images/flascii_bird.png" style="width:100%; height:auto;"/&gt;&lt;/p&gt;
-&lt;p&gt;Have fun!&lt;/p&gt;</summary><category term="code"></category><category term="rnd"></category><category term="tools"></category></entry><entry><title>RigLab: Preview #002</title><link href="http://cesarsaez.me/2014/02/riglab-preview-002.html" rel="alternate"></link><updated>2014-02-05T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2014-02-05:2014/02/riglab-preview-002.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
+&lt;p&gt;&lt;img src="http://www.cesarsaez.me/images/flascii_bird.png" style="width:100%; height:auto;"/&gt;&lt;/p&gt;
+&lt;p&gt;Have fun!&lt;/p&gt;</summary><category term="code"></category><category term="rnd"></category><category term="tools"></category></entry><entry><title>RigLab: Preview #002</title><link href="http://www.cesarsaez.me/2014/02/riglab-preview-002.html" rel="alternate"></link><updated>2014-02-05T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-02-05:2014/02/riglab-preview-002.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
     &lt;iframe src="//player.vimeo.com/video/85901976" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
@@ -557,7 +557,7 @@ rigging tools out there.&lt;/p&gt;
 &lt;li&gt;33:50 - Closing&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Let me know what you think :)&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="rnd"></category><category term="works"></category><category term="softimage"></category><category term="recommended"></category></entry><entry><title>RigLab: Metadata</title><link href="http://cesarsaez.me/2014/02/riglab-metadata.html" rel="alternate"></link><updated>2014-02-01T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2014-02-01:2014/02/riglab-metadata.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="rnd"></category><category term="works"></category><category term="softimage"></category><category term="recommended"></category></entry><entry><title>RigLab: Metadata</title><link href="http://www.cesarsaez.me/2014/02/riglab-metadata.html" rel="alternate"></link><updated>2014-02-01T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-02-01:2014/02/riglab-metadata.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;This entry will be a bit techy, but not too much... stay with me! :)&lt;/p&gt;
 &lt;h2&gt;First, what is metadata?&lt;/h2&gt;
 &lt;p&gt;Metadata is "data about data", it describes information about the contents of the
@@ -626,14 +626,14 @@ to existing code.&lt;/p&gt;
 your extended &lt;code&gt;__setattr__&lt;/code&gt; method will never be called unless you explicitly
 update the entire thing.&lt;/p&gt;
 &lt;p&gt;I would love to know how you guys solve this kind of stuff :)&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="rnd"></category><category term="code"></category><category term="recommended"></category></entry><entry><title>QuickLauncher v0.1.3</title><link href="http://cesarsaez.me/2013/12/quicklauncher-v013.html" rel="alternate"></link><updated>2013-12-18T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-12-18:2013/12/quicklauncher-v013.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="rnd"></category><category term="code"></category><category term="recommended"></category></entry><entry><title>QuickLauncher v0.1.3</title><link href="http://www.cesarsaez.me/2013/12/quicklauncher-v013.html" rel="alternate"></link><updated>2013-12-18T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-12-18:2013/12/quicklauncher-v013.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
 &lt;p&gt;Just wanted to let you know that &lt;a href="https://github.com/csaez/quicklauncher"&gt;QuickLauncher&lt;/a&gt; has been updated adding
 support for script packages, I uploaded &lt;a href="https://github.com/csaez/quicklauncher_packages"&gt;my own scripts to github&lt;/a&gt; in case
 anyone needs some samples to get started.&lt;/p&gt;
 &lt;p&gt;There is also a quick demo on vimeo... I know, my english is not very
 good, but I'm doing my best :)&lt;/p&gt;
 &lt;p&gt;Cheers!&lt;/p&gt;
-&lt;div class="flex-video widescreen"&gt;&lt;iframe src="//player.vimeo.com/video/82227469?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</summary><category term="softimage"></category><category term="rnd"></category><category term="works"></category><category term="tools"></category><category term="code"></category></entry><entry><title>DNA buildup test</title><link href="http://cesarsaez.me/2013/12/dna-buildup.html" rel="alternate"></link><updated>2013-12-03T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-12-03:2013/12/dna-buildup.html</id><summary type="html">&lt;p&gt;Hi guys,
+&lt;div class="flex-video widescreen"&gt;&lt;iframe src="//player.vimeo.com/video/82227469?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</summary><category term="softimage"></category><category term="rnd"></category><category term="works"></category><category term="tools"></category><category term="code"></category></entry><entry><title>DNA buildup test</title><link href="http://www.cesarsaez.me/2013/12/dna-buildup.html" rel="alternate"></link><updated>2013-12-03T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-12-03:2013/12/dna-buildup.html</id><summary type="html">&lt;p&gt;Hi guys,
 I just wanted to share some quick excercises I did for an activity at
 &lt;a href="http://www.xsiforum.com/forum/index.php/topic,9386.msg93307.html"&gt;xsiforum&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;First attemp: Particles&lt;/h2&gt;
@@ -643,7 +643,7 @@ Scene file and timelapse &lt;a href="https://www.dropbox.com/sh/3v3xra2rssm3d9s/
 &lt;p&gt;&lt;div class="flex-video widescreen"&gt;&lt;iframe src="//player.vimeo.com/video/81076013?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 ICETrees &lt;a href="https://www.dropbox.com/sh/3v3xra2rssm3d9s/PG5x3nXPDP/strands_version"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Back to rigging...&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="softimage"></category><category term="rnd"></category></entry><entry><title>Justin's R&amp;D</title><link href="http://cesarsaez.me/2013/12/justin-rnd.html" rel="alternate"></link><updated>2013-12-01T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-12-01:2013/12/justin-rnd.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;&lt;iframe src="//player.vimeo.com/video/80699674?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="900" height="675" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="softimage"></category><category term="rnd"></category></entry><entry><title>Justin's R&amp;D</title><link href="http://www.cesarsaez.me/2013/12/justin-rnd.html" rel="alternate"></link><updated>2013-12-01T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-12-01:2013/12/justin-rnd.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;&lt;iframe src="//player.vimeo.com/video/80699674?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="900" height="675" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;p&gt;Hi guys,&lt;/p&gt;
 &lt;p&gt;Yesterday I found some early R&amp;amp;D work I did for
@@ -656,7 +656,7 @@ without thinking too much in terms of a system (unified guide? really?)...
 good old days :)&lt;/p&gt;
 &lt;p&gt;More videos &lt;a href="http://vimeo.com/album/2630777"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Hope you enjoy,
-Cheers!&lt;/p&gt;</summary><category term="works"></category><category term="softimage"></category><category term="rnd"></category></entry><entry><title>A rigger's journey</title><link href="http://cesarsaez.me/2013/11/rigger-journey.html" rel="alternate"></link><updated>2013-11-13T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-11-13:2013/11/rigger-journey.html</id><summary type="html">&lt;p&gt;Today I was thinking about how I have shifted my focus as my career
+Cheers!&lt;/p&gt;</summary><category term="works"></category><category term="softimage"></category><category term="rnd"></category></entry><entry><title>A rigger's journey</title><link href="http://www.cesarsaez.me/2013/11/rigger-journey.html" rel="alternate"></link><updated>2013-11-13T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-11-13:2013/11/rigger-journey.html</id><summary type="html">&lt;p&gt;Today I was thinking about how I have shifted my focus as my career
 moves forward and I realized that I'm not that special, actually a bunch
 of friends have been following the same pattern on their careers.&lt;/p&gt;
 &lt;p&gt;So, why not write about it?&lt;/p&gt;
@@ -718,7 +718,7 @@ on the first try, nobody does.&lt;/p&gt;
 &lt;p&gt;Was it too different for you?
 What stage are you in now?
 What's next?&lt;/p&gt;
-&lt;p&gt;Tell me what you think, cheers! :)&lt;/p&gt;</summary><category term="thoughts"></category><category term="recommended"></category></entry><entry><title>Working with pointcloud datasets</title><link href="http://cesarsaez.me/2013/11/scan-files.html" rel="alternate"></link><updated>2013-11-07T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-11-07:2013/11/scan-files.html</id><summary type="html">&lt;p&gt;Nowadays it's not that unusual having to work with scanned files (point
+&lt;p&gt;Tell me what you think, cheers! :)&lt;/p&gt;</summary><category term="thoughts"></category><category term="recommended"></category></entry><entry><title>Working with pointcloud datasets</title><link href="http://www.cesarsaez.me/2013/11/scan-files.html" rel="alternate"></link><updated>2013-11-07T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-11-07:2013/11/scan-files.html</id><summary type="html">&lt;p&gt;Nowadays it's not that unusual having to work with scanned files (point
 clouds), but most DCCs don't provide native support for those file formats
 and we ended up whether using external converters or parsing ASCII files.&lt;/p&gt;
 &lt;p&gt;This entry is about the latter.&lt;/p&gt;
@@ -732,7 +732,7 @@ low-level and write such code kinda sucks!&lt;/p&gt;
 &lt;p&gt;Fortunatelly there's a not-so-known &lt;a href="http://softimage.wiki.softimage.com/support/icecache.rar"&gt;python module&lt;/a&gt; by Bradley Gabe
 that provides a higher level API and free us from dealing with bytes,
 data blocks, gzip and other boring stuff.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Standford Bunny" src="http://cesarsaez.me/images/stanford_bunny.jpg" title="Standford Bunny" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Standford Bunny" src="http://www.cesarsaez.me/images/stanford_bunny.jpg" title="Standford Bunny" /&gt;&lt;/p&gt;
 &lt;p&gt;So, parsing a xyz file (like &lt;a href="http://coindesigner.sourceforge.net/data/bunny.991.xyz"&gt;this&lt;/a&gt; stanford bunny) and write an
 icecache file to disk should look like this:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/usr/bin/env python&lt;/span&gt;
@@ -762,7 +762,7 @@ icecache file to disk should look like this:&lt;/p&gt;
 
 &lt;p&gt;Now, how cool is that? a simple regex plus 3 calls to Brad's API and
 we're done.&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="softimage"></category><category term="code"></category><category term="recommended"></category></entry><entry><title>Speaking Maxscript</title><link href="http://cesarsaez.me/2013/10/speaking-maxscript.html" rel="alternate"></link><updated>2013-10-31T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-10-31:2013/10/speaking-maxscript.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="softimage"></category><category term="code"></category><category term="recommended"></category></entry><entry><title>Speaking Maxscript</title><link href="http://www.cesarsaez.me/2013/10/speaking-maxscript.html" rel="alternate"></link><updated>2013-10-31T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-10-31:2013/10/speaking-maxscript.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
 &lt;p&gt;Today a friend asked for a quick way to create independent copies/instances
 of an object at each vertex position of another mesh in 3dsmax.&lt;/p&gt;
 &lt;p&gt;I haven't worked with 3dsmax for a long time, but it seemed to be a job
@@ -778,7 +778,7 @@ overloading or grouping by parentheses really help to lower the
 barrier and keep things simple.&lt;/p&gt;
 &lt;p&gt;Maxscript has some annoying parts for sure, but I have to admit it's a
 lot simpler/easy-to-use than I remembered.&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="3dsmax"></category><category term="code"></category><category term="thoughts"></category></entry><entry><title>Hard Reload</title><link href="http://cesarsaez.me/2013/10/hard_reload.html" rel="alternate"></link><updated>2013-10-25T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-10-25:2013/10/hard_reload.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="3dsmax"></category><category term="code"></category><category term="thoughts"></category></entry><entry><title>Hard Reload</title><link href="http://www.cesarsaez.me/2013/10/hard_reload.html" rel="alternate"></link><updated>2013-10-25T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-10-25:2013/10/hard_reload.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;If you're a python developer this shouldn't be new for you, but I struggled
 a lot with this back in the day and thought it might be helpful share
 some of the lessons learned.&lt;/p&gt;
@@ -812,7 +812,7 @@ ass a couple of times.&lt;/p&gt;
 
 
 &lt;p&gt;By the way, kudos to &lt;a href="http://agedito.com"&gt;Ángel Pavón&lt;/a&gt; for the tip!&lt;/p&gt;
-&lt;p&gt;Cheers&lt;/p&gt;</summary><category term="code"></category></entry><entry><title>Moving to pelican</title><link href="http://cesarsaez.me/2013/10/moving_to_pelican.html" rel="alternate"></link><updated>2013-10-22T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-10-22:2013/10/moving_to_pelican.html</id><summary type="html">&lt;p&gt;I did it! I finally switched to a 'static' site :)&lt;/p&gt;
+&lt;p&gt;Cheers&lt;/p&gt;</summary><category term="code"></category></entry><entry><title>Moving to pelican</title><link href="http://www.cesarsaez.me/2013/10/moving_to_pelican.html" rel="alternate"></link><updated>2013-10-22T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-10-22:2013/10/moving_to_pelican.html</id><summary type="html">&lt;p&gt;I did it! I finally switched to a 'static' site :)&lt;/p&gt;
 &lt;h2&gt;Why?&lt;/h2&gt;
 &lt;p&gt;To be honest I was bored of the 'blogging platforms' overhead.&lt;/p&gt;
 &lt;p&gt;For simple use cases there's the good ol' &lt;a href="http://www.blogger.com"&gt;blogger&lt;/a&gt;, it works fine
@@ -880,7 +880,7 @@ last time I built a website was using macromedia dreamweaver 10 years ago
 &lt;p&gt;I finally migrated to a static site that can be customized, it is secure,
 open source and that I understand (no black boxes here).&lt;/p&gt;
 &lt;p&gt;I honestly don't think this is the right move for everyone, but if you are
-somewhat technical it's well worth it.&lt;/p&gt;</summary><category term="thoughts"></category></entry><entry><title>Why python?</title><link href="http://cesarsaez.me/2013/09/why-python.html" rel="alternate"></link><updated>2013-09-26T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-09-26:2013/09/why-python.html</id><summary type="html">&lt;p&gt;Hey guys,&lt;/p&gt;
+somewhat technical it's well worth it.&lt;/p&gt;</summary><category term="thoughts"></category></entry><entry><title>Why python?</title><link href="http://www.cesarsaez.me/2013/09/why-python.html" rel="alternate"></link><updated>2013-09-26T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-09-26:2013/09/why-python.html</id><summary type="html">&lt;p&gt;Hey guys,&lt;/p&gt;
 &lt;p&gt;Yesterday night my brother (who is a 'real programmer') asked me 'why
 someone would use python?' and I didn't know how to answer.&lt;/p&gt;
 &lt;p&gt;I think python is awesome, an object-oriented programming language with
@@ -912,7 +912,7 @@ it all together.&lt;/p&gt;
 &lt;li&gt;NameSpaces are one honking great idea — let’s do more of those!&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;What do you think? What makes python so awesome?&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="code"></category><category term="thoughts"></category></entry><entry><title>Animation is organization</title><link href="http://cesarsaez.me/2013/09/anim-concentration-slides.html" rel="alternate"></link><updated>2013-09-10T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-09-10:2013/09/anim-concentration-slides.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="code"></category><category term="thoughts"></category></entry><entry><title>Animation is organization</title><link href="http://www.cesarsaez.me/2013/09/anim-concentration-slides.html" rel="alternate"></link><updated>2013-09-10T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-09-10:2013/09/anim-concentration-slides.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
 &lt;p&gt;I'll be giving a lecture this weekend at San Luis Digital (San Luis,
 Argentina). I'll talk about how we use agile software development
 methodology on the rigging department during my adventures at &lt;a href="http://www.kandorgraphics.com/en"&gt;Kandor
@@ -927,7 +927,7 @@ a big deal on this one.&lt;/p&gt;
 &lt;p&gt;So, if you're going to be in San Luis this weekend please join us at
 SLD, it'll be fun :-)&lt;/p&gt;
 &lt;p&gt;Cheers!&lt;/p&gt;
-&lt;p&gt;By the way, reveal.js rocks!&lt;/p&gt;</summary><category term="lectures"></category></entry><entry><title>Softimage.tv</title><link href="http://cesarsaez.me/2013/09/softimagetv.html" rel="alternate"></link><updated>2013-09-09T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-09-09:2013/09/softimagetv.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;By the way, reveal.js rocks!&lt;/p&gt;</summary><category term="lectures"></category></entry><entry><title>Softimage.tv</title><link href="http://www.cesarsaez.me/2013/09/softimagetv.html" rel="alternate"></link><updated>2013-09-09T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-09-09:2013/09/softimagetv.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;Some time ago &lt;a href="http://www.linkedin.com/in/cgcris"&gt;Cristobal&lt;/a&gt; told me about his idea of a website
 showcasing the best work created with Softimage, I liked it and we
 started working on it until last week when we launched &lt;a href="http://softimage.tv/"&gt;softimage.tv&lt;/a&gt;&lt;/p&gt;
@@ -944,12 +944,12 @@ amazing tool, have a showreel to show off, finished a good looking job,
 please help us by submitting it.&lt;/p&gt;
 &lt;p&gt;We would love to know what you guys think about it, and how we can move
 things forward.&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="thoughts"></category><category term="softimage"></category></entry><entry><title>Git For Softimage</title><link href="http://cesarsaez.me/2013/07/git-for-softimage.html" rel="alternate"></link><updated>2013-07-19T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-07-19:2013/07/git-for-softimage.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="thoughts"></category><category term="softimage"></category></entry><entry><title>Git For Softimage</title><link href="http://www.cesarsaez.me/2013/07/git-for-softimage.html" rel="alternate"></link><updated>2013-07-19T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-07-19:2013/07/git-for-softimage.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;I've been using &lt;a href="http://www.git-scm.com"&gt;Git&lt;/a&gt; as version control system on my
 developments for a while and thought it might be useful add some version
 control abilities to my softimage projects too.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/csaez/gitforsoftimage"&gt;https://github.com/csaez/gitforsoftimage&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Git for Softimage" src="http://cesarsaez.me/images/git-softimage.png" title="Git for Softimage" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Git for Softimage" src="http://www.cesarsaez.me/images/git-softimage.png" title="Git for Softimage" /&gt;&lt;/p&gt;
 &lt;p&gt;It implements:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Commit history&lt;/li&gt;
@@ -963,11 +963,11 @@ projects, give it a try, it's free and open!&lt;/p&gt;
 &lt;p&gt;Cheers.&lt;/p&gt;
 &lt;p&gt;By the way, if you're not familiar with distributed version control
 systems there are a few key concepts that must be considered, don't
-forget to check the &lt;a href="http://github.com/csaez/gitforsoftimage/wiki"&gt;documentation&lt;/a&gt;.&lt;/p&gt;</summary><category term="tools"></category><category term="softimage"></category><category term="code"></category><category term="recommended"></category></entry><entry><title>QuickLauncher</title><link href="http://cesarsaez.me/2013/06/quicklauncher.html" rel="alternate"></link><updated>2013-06-30T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-06-30:2013/06/quicklauncher.html</id><summary type="html">&lt;p&gt;Hey folks,&lt;/p&gt;
+forget to check the &lt;a href="http://github.com/csaez/gitforsoftimage/wiki"&gt;documentation&lt;/a&gt;.&lt;/p&gt;</summary><category term="tools"></category><category term="softimage"></category><category term="code"></category><category term="recommended"></category></entry><entry><title>QuickLauncher</title><link href="http://www.cesarsaez.me/2013/06/quicklauncher.html" rel="alternate"></link><updated>2013-06-30T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-06-30:2013/06/quicklauncher.html</id><summary type="html">&lt;p&gt;Hey folks,&lt;/p&gt;
 &lt;p&gt;Today I want to share a tool I've been using for a while, it's a simple
 menu to search and launch softimage commnads and scripts (you can set
 the script directory on the preferences).&lt;/p&gt;
-&lt;p&gt;&lt;img alt="QuickLauncher Demo" src="http://cesarsaez.me/images/quicklauncher.gif" title="QuickLauncher Demo" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="QuickLauncher Demo" src="http://www.cesarsaez.me/images/quicklauncher.gif" title="QuickLauncher Demo" /&gt;&lt;/p&gt;
 &lt;p&gt;In order to make it fast I'm caching the commands and script paths (just
 the paths, the script itself is loaded on runtime), so if you add a new
 script file or connect/disconnect workgroups please make sure that the
@@ -975,16 +975,16 @@ cache is reloaded (there's a command just for that) and everything
 should be fine.&lt;/p&gt;
 &lt;p&gt;The menu requires &lt;a href="http://github.com/caron/PyQtForSoftimage"&gt;PyQtForSoftimage&lt;/a&gt; and it's available &lt;a href="http://github.com/csaez/quicklauncher"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Give it a try and let me know what you think :-)&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="tools"></category><category term="softimage"></category><category term="code"></category></entry><entry><title>RigIcon goes open source</title><link href="http://cesarsaez.me/2013/06/rigicon-opensource.html" rel="alternate"></link><updated>2013-06-25T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-06-25:2013/06/rigicon-opensource.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="tools"></category><category term="softimage"></category><category term="code"></category></entry><entry><title>RigIcon goes open source</title><link href="http://www.cesarsaez.me/2013/06/rigicon-opensource.html" rel="alternate"></link><updated>2013-06-25T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-06-25:2013/06/rigicon-opensource.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;Do you remember &lt;a href="http://csaez.blogspot.com/2013/01/wip-csrigicon.html"&gt;rigicon&lt;/a&gt;? well, now you can get it from &lt;a href="https://github.com/csaez/rigicon"&gt;github&lt;/a&gt;!&lt;/p&gt;
-&lt;p&gt;&lt;img alt="RigIcon" src="http://cesarsaez.me/images/rigicon.png" title="RigIcon" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="RigIcon" src="http://www.cesarsaez.me/images/rigicon.png" title="RigIcon" /&gt;&lt;/p&gt;
 &lt;p&gt;There's also a brief &lt;a href="https://github.com/csaez/rigicon/wiki"&gt;documentation&lt;/a&gt; and a &lt;a href="http://goo.gl/XRtKA"&gt;pre-packed xsiaddon&lt;/a&gt; in
 case you don't want to mess with the source code, dependencies and so
 on... if you have no idea what I'm talking about take a look at the &lt;a href="https://vimeo.com/56682095"&gt;old
 preview&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You will need &lt;a href="https://github.com/caron/PyQtForSoftimage"&gt;PyQtForSoftimage&lt;/a&gt; installed in your system, other than
 that everything should work fine OOTB.&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="tools"></category><category term="softimage"></category><category term="code"></category><category term="recommended"></category></entry><entry><title>Justin - Theatrical Trailer</title><link href="http://cesarsaez.me/2013/05/justin-trailer.html" rel="alternate"></link><updated>2013-05-23T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-05-23:2013/05/justin-trailer.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="tools"></category><category term="softimage"></category><category term="code"></category><category term="recommended"></category></entry><entry><title>Justin - Theatrical Trailer</title><link href="http://www.cesarsaez.me/2013/05/justin-trailer.html" rel="alternate"></link><updated>2013-05-23T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-05-23:2013/05/justin-trailer.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
     &lt;iframe width="853" height="480" src="//www.youtube.com/embed/nJPlEoXdfVw?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
@@ -999,7 +999,7 @@ and work with some of the most talented/clever guys I've ever met (well
 done guys, you rock!).&lt;/p&gt;
 &lt;p&gt;I can't wait to see it in theaters... and don't forget to watch the
 trailer in HD ;)&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="works"></category></entry><entry><title>Time to move on</title><link href="http://cesarsaez.me/2013/05/time-to-move-on.html" rel="alternate"></link><updated>2013-05-07T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-05-07:2013/05/time-to-move-on.html</id><summary type="html">&lt;p&gt;Hey folks,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="works"></category></entry><entry><title>Time to move on</title><link href="http://www.cesarsaez.me/2013/05/time-to-move-on.html" rel="alternate"></link><updated>2013-05-07T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-05-07:2013/05/time-to-move-on.html</id><summary type="html">&lt;p&gt;Hey folks,&lt;/p&gt;
 &lt;p&gt;Just wanted to say hello, been a long time without news here :(&lt;/p&gt;
 &lt;p&gt;Well... where to start... I came back to my hometown (Santiago, Chile) a
 month ago or so, my time living in Spain was AWESOME but &lt;a href="http://www.justinandtheknightsofvalour.com/"&gt;the project&lt;/a&gt;
@@ -1011,7 +1011,7 @@ wanna talk too much about it here, but it was a hard news to swallow.&lt;/p&gt;
 motivation and a demo reel to make in order to start a job hunting. &lt;/p&gt;
 &lt;p&gt;Let me press the reset button and I'll get back to you with better news
 soon.&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="thoughts"></category></entry><entry><title>RigLab: Preview #001</title><link href="http://cesarsaez.me/2013/02/riglab-preview-001.html" rel="alternate"></link><updated>2013-02-11T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-02-11:2013/02/riglab-preview-001.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="thoughts"></category></entry><entry><title>RigLab: Preview #001</title><link href="http://www.cesarsaez.me/2013/02/riglab-preview-001.html" rel="alternate"></link><updated>2013-02-11T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-02-11:2013/02/riglab-preview-001.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
     &lt;iframe src="//player.vimeo.com/video/59434478?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
@@ -1020,7 +1020,7 @@ soon.&lt;/p&gt;
 working on, there's still a lot of work to do but I think the core
 concepts are there.&lt;/p&gt;
 &lt;p&gt;Let me know what you think about it :)&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="rnd"></category><category term="works"></category><category term="softimage"></category></entry><entry><title>RigLab: Naming Convention</title><link href="http://cesarsaez.me/2013/01/riglab-naming-convention.html" rel="alternate"></link><updated>2013-01-10T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-01-10:2013/01/riglab-naming-convention.html</id><summary type="html">&lt;p&gt;Hey folks,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="rnd"></category><category term="works"></category><category term="softimage"></category></entry><entry><title>RigLab: Naming Convention</title><link href="http://www.cesarsaez.me/2013/01/riglab-naming-convention.html" rel="alternate"></link><updated>2013-01-10T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-01-10:2013/01/riglab-naming-convention.html</id><summary type="html">&lt;p&gt;Hey folks,&lt;/p&gt;
 &lt;p&gt;I've been working on the naming convention side of the rigging framework
 and I wanna share my take on this problem.&lt;/p&gt;
 &lt;p&gt;I know, this isn't the hotest subject to talk about, but as it's a so
@@ -1033,7 +1033,7 @@ them mine.&lt;/p&gt;
 &lt;p&gt;Thanks to all who shared their thoughts on pipeline/coding with me along
 the years. Lots of inspiration comes from those talks!&lt;/p&gt;
 &lt;h2&gt;What's a naming convention?&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="naming Convention" src="http://cesarsaez.me/images/riglab_namingconvention.jpg" title="Naming Convention" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="naming Convention" src="http://www.cesarsaez.me/images/riglab_namingconvention.jpg" title="Naming Convention" /&gt;&lt;/p&gt;
 &lt;p&gt;As you may know, a naming convention is just an agreement about the
 information and the format we will be using to define a name.&lt;/p&gt;
 &lt;h3&gt;So, what's the big deal?&lt;/h3&gt;
@@ -1109,7 +1109,7 @@ arguments.&lt;/em&gt;&lt;/p&gt;
 becomes really handy when you're working on the same context and don't
 want to be explicit about every token on every name.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I hope this make sense,&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="rnd"></category><category term="code"></category></entry><entry><title>RigLab: RigIcon</title><link href="http://cesarsaez.me/2013/01/riglab-rigicon.html" rel="alternate"></link><updated>2013-01-03T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2013-01-03:2013/01/riglab-rigicon.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="rnd"></category><category term="code"></category></entry><entry><title>RigLab: RigIcon</title><link href="http://www.cesarsaez.me/2013/01/riglab-rigicon.html" rel="alternate"></link><updated>2013-01-03T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2013-01-03:2013/01/riglab-rigicon.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
     &lt;iframe src="//player.vimeo.com/video/56682095?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
@@ -1124,13 +1124,13 @@ sincronization with the selection by ourselves. At the end was a lot of
 fun and I learned a couple of new tricks :)&lt;/p&gt;
 &lt;p&gt;I will be sharing this and all my tools with the first public version of
 the &lt;a href="http://csaez.blogspot.com.es/2012/11/csriglab-overview.html"&gt;rigging framework&lt;/a&gt;, so they should be available soon.&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="rnd"></category><category term="tools"></category><category term="softimage"></category></entry><entry><title>Justin - Official Teaser Trailer</title><link href="http://cesarsaez.me/2012/11/justin-teaser.html" rel="alternate"></link><updated>2012-11-23T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-11-23:2012/11/justin-teaser.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="rnd"></category><category term="tools"></category><category term="softimage"></category></entry><entry><title>Justin - Official Teaser Trailer</title><link href="http://www.cesarsaez.me/2012/11/justin-teaser.html" rel="alternate"></link><updated>2012-11-23T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2012-11-23:2012/11/justin-teaser.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
 &lt;iframe width="853" height="480" src="//www.youtube.com/embed/7v1owpEEdwA?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Here it is... check out the first teaser trailer for the film in which
 I've been working on, has been a blast! :)&lt;/p&gt;
-&lt;p&gt;More at &lt;a href="http://justinandtheknightsofvalour.com/"&gt;http://justinandtheknightsofvalour.com&lt;/a&gt;&lt;/p&gt;</summary><category term="works"></category></entry><entry><title>RigLab: overview</title><link href="http://cesarsaez.me/2012/11/riglab-overview.html" rel="alternate"></link><updated>2012-11-13T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-11-13:2012/11/riglab-overview.html</id><summary type="html">&lt;p&gt;I'm finally working on my rigging framework, I've been thinking about it
+&lt;p&gt;More at &lt;a href="http://justinandtheknightsofvalour.com/"&gt;http://justinandtheknightsofvalour.com&lt;/a&gt;&lt;/p&gt;</summary><category term="works"></category></entry><entry><title>RigLab: overview</title><link href="http://www.cesarsaez.me/2012/11/riglab-overview.html" rel="alternate"></link><updated>2012-11-13T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2012-11-13:2012/11/riglab-overview.html</id><summary type="html">&lt;p&gt;I'm finally working on my rigging framework, I've been thinking about it
 for a long time and I finally have a clear picture of what I want as end
 result... and even more important, why I want it that way!&lt;/p&gt;
 &lt;p&gt;There will be plenty of new problems to be sorted out as I go with the
@@ -1190,7 +1190,7 @@ will be working actively in the coming months to complete the project as
 soon as possible.&lt;/p&gt;
 &lt;p&gt;Hope to have something interesting to show in the next post, we'll see
 ;-)&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="rnd"></category><category term="thoughts"></category><category term="softimage"></category></entry><entry><title>DevManager: yet another plugin manager</title><link href="http://cesarsaez.me/2012/10/devmanager.html" rel="alternate"></link><updated>2012-10-29T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-10-29:2012/10/devmanager.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="riglab"></category><category term="rnd"></category><category term="thoughts"></category><category term="softimage"></category></entry><entry><title>DevManager: yet another plugin manager</title><link href="http://www.cesarsaez.me/2012/10/devmanager.html" rel="alternate"></link><updated>2012-10-29T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2012-10-29:2012/10/devmanager.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;I've been working on a manager for my developments, something like
 softimage's plugin manager but better suited for my workflow (python
 modules for the logic and pyQT for GUIs).&lt;/p&gt;
@@ -1201,7 +1201,7 @@ long run.&lt;/p&gt;
 &lt;h3&gt;Let's see some features...&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;csDevManager&lt;/code&gt; has 2 modes, the basic one works like a launcher for all my
 custom commands, nothing too exciting here.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="csDevManager" src="http://cesarsaez.me/images/csDevManager.jpg" title="csDevManager" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="csDevManager" src="http://www.cesarsaez.me/images/csDevManager.jpg" title="csDevManager" /&gt;&lt;/p&gt;
 &lt;p&gt;The developer mode is where it gets interesting, in this mode you can
 see all the Addons/Developments and their plugins (including properties,
 events and almost everything you can register on softimage).&lt;/p&gt;
@@ -1220,7 +1220,7 @@ make a github repository with all my tools and share them as open source
 ASAP.&lt;/p&gt;
 &lt;p&gt;Next step: work on my rigging framework using all I've learned in the
 past years :)&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="tools"></category><category term="rnd"></category><category term="softimage"></category><category term="code"></category></entry><entry><title>Thoughts on editing</title><link href="http://cesarsaez.me/2012/10/thoughts-on-editing.html" rel="alternate"></link><updated>2012-10-05T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-10-05:2012/10/thoughts-on-editing.html</id><summary type="html">&lt;p&gt;Just a quick tip...&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="tools"></category><category term="rnd"></category><category term="softimage"></category><category term="code"></category></entry><entry><title>Thoughts on editing</title><link href="http://www.cesarsaez.me/2012/10/thoughts-on-editing.html" rel="alternate"></link><updated>2012-10-05T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2012-10-05:2012/10/thoughts-on-editing.html</id><summary type="html">&lt;p&gt;Just a quick tip...&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;When you make a tool, don't think about it as a 1-time procedure,
 editing will take most of the time and you should provide support for
@@ -1231,7 +1231,7 @@ it.&lt;/p&gt;
 already created and rebuild is the only provided solution (which is not
 realistic in many cases).&lt;/p&gt;
 &lt;p&gt;So, think about it and make your next tool much more useful!&lt;/p&gt;
-&lt;p&gt;Cheers.&lt;/p&gt;</summary><category term="thoughts"></category></entry><entry><title>Convex Approximation</title><link href="http://cesarsaez.me/2012/09/convex-approximation.html" rel="alternate"></link><updated>2012-09-24T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-09-24:2012/09/convex-approximation.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
+&lt;p&gt;Cheers.&lt;/p&gt;</summary><category term="thoughts"></category></entry><entry><title>Convex Approximation</title><link href="http://www.cesarsaez.me/2012/09/convex-approximation.html" rel="alternate"></link><updated>2012-09-24T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2012-09-24:2012/09/convex-approximation.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
 &lt;iframe src="//player.vimeo.com/video/50052145?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
@@ -1242,31 +1242,31 @@ proof of concept.&lt;/p&gt;
 &lt;p&gt;There's a lot to do in order to make it usable in a production
 environment but seems to work!&lt;/p&gt;
 &lt;p&gt;More to come...&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="rnd"></category><category term="recommended"></category></entry><entry><title>Holymonks' face rig</title><link href="http://cesarsaez.me/2012/09/holymonks-face-rig.html" rel="alternate"></link><updated>2012-09-18T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-09-18:2012/09/holymonks-face-rig.html</id><summary type="html">&lt;p&gt;Hey guys,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="rnd"></category><category term="recommended"></category></entry><entry><title>Holymonks' face rig</title><link href="http://www.cesarsaez.me/2012/09/holymonks-face-rig.html" rel="alternate"></link><updated>2012-09-18T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2012-09-18:2012/09/holymonks-face-rig.html</id><summary type="html">&lt;p&gt;Hey guys,&lt;/p&gt;
 &lt;p&gt;I did this one &lt;strong&gt;a while ago&lt;/strong&gt; but I never share it here, it's a custom
 tool designed to quickly wire up facial rig for an &lt;a href="http://www.holymonks.com/"&gt;animated tv
 series&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The rig itself has nothing special but it worked fine for their
 needs/schedule constraints, so everyone happy :-)&lt;/p&gt;
 &lt;div class="flex-video widescreen"&gt;
-&lt;iframe src="//player.vimeo.com/video/10910710?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</summary><category term="works"></category></entry><entry><title>fStretch-like deformations</title><link href="http://cesarsaez.me/2012/09/fstretch.html" rel="alternate"></link><updated>2012-09-17T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-09-17:2012/09/fstretch.html</id><summary type="html">&lt;p&gt;Some time ago &lt;a href="http://www.si-community.com/community/viewtopic.php?f=15&amp;amp;t=2549&amp;amp;p=20551#p20551"&gt;someone asked in si-community.com&lt;/a&gt; about how to
+&lt;iframe src="//player.vimeo.com/video/10910710?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</summary><category term="works"></category></entry><entry><title>fStretch-like deformations</title><link href="http://www.cesarsaez.me/2012/09/fstretch.html" rel="alternate"></link><updated>2012-09-17T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2012-09-17:2012/09/fstretch.html</id><summary type="html">&lt;p&gt;Some time ago &lt;a href="http://www.si-community.com/community/viewtopic.php?f=15&amp;amp;t=2549&amp;amp;p=20551#p20551"&gt;someone asked in si-community.com&lt;/a&gt; about how to
 replicate some deformations seen in &lt;a href="https://vimeo.com/45473465"&gt;a nice demo from Clovis Gay&lt;/a&gt; (who
 is also inspired by the &lt;a href="http://www.cgaddict.com/product-overview.html"&gt;fStretch plugin for Maya&lt;/a&gt;) so I decided give
 it a shot.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="fStretch demo" src="http://cesarsaez.me/images/fstretch_movie.gif" title="fStretch Demo" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="fStretch demo" src="http://www.cesarsaez.me/images/fstretch_movie.gif" title="fStretch Demo" /&gt;&lt;/p&gt;
 &lt;p&gt;I'm solving it in 2 steps; the first ICETree stores a tension/stress map
 &lt;em&gt;before&lt;/em&gt; any deformation, the second does the same &lt;em&gt;after&lt;/em&gt; the deformations
 and compares the results. The delta between both states is used to drive
 a push operator (sort of).&lt;/p&gt;
 &lt;p&gt;There's nothing faster than ICE for this kind of prototypes, love it! :)&lt;/p&gt;
-&lt;p&gt;&lt;img alt="fStretch ICETree" src="http://cesarsaez.me/images/fstretch_ICETree.jpg" title="fStretch ICETree" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="fStretch ICETree" src="http://www.cesarsaez.me/images/fstretch_ICETree.jpg" title="fStretch ICETree" /&gt;&lt;/p&gt;
 &lt;p&gt;As a side note, I'm working on some personal projects mostly for
 Softimage but I'm also giving a closer look at pyMel (not as bad as I
 remembered). Still early but seems possible make them cross-platform,
 imply some extra work but seems like a nice oportunity to learn a lot
 about Maya, we'll see...&lt;/p&gt;
 &lt;p&gt;More updates soon, stay tunned&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="softimage"></category><category term="recommended"></category></entry><entry><title>Back to work</title><link href="http://cesarsaez.me/2012/08/back-to-work.html" rel="alternate"></link><updated>2012-08-26T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-08-26:2012/08/back-to-work.html</id><summary type="html">&lt;p&gt;I think I have enough sun and beach this summer and it's time to get
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="softimage"></category><category term="recommended"></category></entry><entry><title>Back to work</title><link href="http://www.cesarsaez.me/2012/08/back-to-work.html" rel="alternate"></link><updated>2012-08-26T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2012-08-26:2012/08/back-to-work.html</id><summary type="html">&lt;p&gt;I think I have enough sun and beach this summer and it's time to get
 back to work!&lt;/p&gt;
 &lt;p&gt;Unfortunatelly I can't show anything from &lt;a href="http://www.kandorgraphics.com/en/"&gt;kandor graphics&lt;/a&gt; (my last 4
 years of work are "production locked" until next year), so the plan is
@@ -1277,13 +1277,13 @@ production it's really difficult try new things and now I really wanna
 take that oportunity. I have a good feeling about this :)&lt;/p&gt;
 &lt;p&gt;So I hope start posting again here and on my vimeo channel like in the
 good old days.&lt;/p&gt;
-&lt;p&gt;RnD, there I go!&lt;/p&gt;</summary><category term="thoughts"></category></entry><entry><title>Honda Oddysey</title><link href="http://cesarsaez.me/2012/08/honda-oddysey.html" rel="alternate"></link><updated>2012-08-16T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-08-16:2012/08/honda-oddysey.html</id><summary type="html">&lt;div class="flex-video vimeo"&gt;
+&lt;p&gt;RnD, there I go!&lt;/p&gt;</summary><category term="thoughts"></category></entry><entry><title>Honda Oddysey</title><link href="http://www.cesarsaez.me/2012/08/honda-oddysey.html" rel="alternate"></link><updated>2012-08-16T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2012-08-16:2012/08/honda-oddysey.html</id><summary type="html">&lt;div class="flex-video vimeo"&gt;
     &lt;iframe src="//player.vimeo.com/video/18025830?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="900" height="608" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;I just found a TV commercial in which I've worked long time ago, I did
 the generic character rig and the jellyfishes.&lt;/p&gt;
-&lt;p&gt;It was a remote work for &lt;a href="http://www.gizmosite.tv/"&gt;Gizmo&lt;/a&gt;, good job guys!&lt;/p&gt;</summary><category term="works"></category></entry><entry><title>Closing cycles</title><link href="http://cesarsaez.me/2012/06/closing-cycles.html" rel="alternate"></link><updated>2012-06-20T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-06-20:2012/06/closing-cycles.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;It was a remote work for &lt;a href="http://www.gizmosite.tv/"&gt;Gizmo&lt;/a&gt;, good job guys!&lt;/p&gt;</summary><category term="works"></category></entry><entry><title>Closing cycles</title><link href="http://www.cesarsaez.me/2012/06/closing-cycles.html" rel="alternate"></link><updated>2012-06-20T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2012-06-20:2012/06/closing-cycles.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;Long time without any update, sorry about that :-(&lt;/p&gt;
 &lt;p&gt;As you may know i was working on &lt;a href="http://www.kandorgraphics.com/en/justin-and-knights-of-valour/"&gt;Kandor's next feature film&lt;/a&gt;... and
 yes, 'I was working' because I decided to take a break on my carrer, at
@@ -1302,13 +1302,13 @@ thankful to everyone for that!&lt;/p&gt;
 &lt;p&gt;Plans for the future?&lt;/p&gt;
 &lt;p&gt;I don't know, right now I just wanna rest and take some time to think
 about all this... maybe in the next entry.&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="thoughts"></category></entry><entry><title>RollUp Prototype</title><link href="http://cesarsaez.me/2012/02/rollup-prototype.html" rel="alternate"></link><updated>2012-02-13T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-02-13:2012/02/rollup-prototype.html</id><summary type="html">&lt;p&gt;&lt;img alt="rollup prototype" src="http://cesarsaez.me/images/rollup_ICE.png" title="Rollup prototype" /&gt;&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="thoughts"></category></entry><entry><title>RollUp Prototype</title><link href="http://www.cesarsaez.me/2012/02/rollup-prototype.html" rel="alternate"></link><updated>2012-02-13T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2012-02-13:2012/02/rollup-prototype.html</id><summary type="html">&lt;p&gt;&lt;img alt="rollup prototype" src="http://www.cesarsaez.me/images/rollup_ICE.png" title="Rollup prototype" /&gt;&lt;/p&gt;
 &lt;p&gt;Gotta love ICE!&lt;/p&gt;
 &lt;p&gt;It's so fast/easy prototype a custom deformer (or whatever)
 in it, it's so powerfull... I think just because of that Softimage is one of
 the best 3D softwares in the market... a true life saver.&lt;/p&gt;
 &lt;p&gt;I can't wait to start working on the rigging framework/pipeline for our
-next project at Kandor Graphics, ICE Kinematics will be our rock star for sure! :)&lt;/p&gt;</summary><category term="thoughts"></category><category term="softimage"></category></entry><entry><title>When was the last time...</title><link href="http://cesarsaez.me/2012/02/when-was-the-last-time.html" rel="alternate"></link><updated>2012-02-06T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-02-06:2012/02/when-was-the-last-time.html</id><summary type="html">&lt;p&gt;Last week we had a very interesting talk on this issue. Seems like when
+next project at Kandor Graphics, ICE Kinematics will be our rock star for sure! :)&lt;/p&gt;</summary><category term="thoughts"></category><category term="softimage"></category></entry><entry><title>When was the last time...</title><link href="http://www.cesarsaez.me/2012/02/when-was-the-last-time.html" rel="alternate"></link><updated>2012-02-06T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2012-02-06:2012/02/when-was-the-last-time.html</id><summary type="html">&lt;p&gt;Last week we had a very interesting talk on this issue. Seems like when
 you're working on a project for so long, sometimes it's easy to feel
 lost and this question comes to the surface quite often...&lt;/p&gt;
 &lt;h3&gt;So, when was the last time you felt proud of your work?&lt;/h3&gt;
@@ -1321,7 +1321,7 @@ the forest as a whole.&lt;/p&gt;
 &lt;p&gt;And I agree with you, but sometimes is good to know we're not alone and
 if we continue doing our best, tomorrow we'll be proud of today's work
 :-)&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="thoughts"></category></entry><entry><title>Rigging lecture at UGR</title><link href="http://cesarsaez.me/2012/01/rigging-lecture-ugr.html" rel="alternate"></link><updated>2012-01-29T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2012-01-29:2012/01/rigging-lecture-ugr.html</id><summary type="html">&lt;p&gt;Hey folks,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="thoughts"></category></entry><entry><title>Rigging lecture at UGR</title><link href="http://www.cesarsaez.me/2012/01/rigging-lecture-ugr.html" rel="alternate"></link><updated>2012-01-29T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2012-01-29:2012/01/rigging-lecture-ugr.html</id><summary type="html">&lt;p&gt;Hey folks,&lt;/p&gt;
 &lt;p&gt;The last weekend I gave a &lt;a href="http://www.masterkandor.com/"&gt;lecture on rigging at UGR (Granada
 University)&lt;/a&gt;, was a nice experience even though prepare the program
 and the class material was not as easy as I thought, but in the end
@@ -1331,7 +1331,7 @@ to do CG related things at my spare time is harder than ever... but I'm
 trying and maybe this week I finally finish/release a little tool for
 Softimage.&lt;/p&gt;
 &lt;p&gt;Nobody said this was going to be easy, right? ;-)&lt;/p&gt;
-&lt;p&gt;Regards&lt;/p&gt;</summary><category term="thoughts"></category><category term="lectures"></category></entry><entry><title>OneUndo decorator</title><link href="http://cesarsaez.me/2011/11/oneundo-decorator.html" rel="alternate"></link><updated>2011-11-03T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2011-11-03:2011/11/oneundo-decorator.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Regards&lt;/p&gt;</summary><category term="thoughts"></category><category term="lectures"></category></entry><entry><title>OneUndo decorator</title><link href="http://www.cesarsaez.me/2011/11/oneundo-decorator.html" rel="alternate"></link><updated>2011-11-03T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2011-11-03:2011/11/oneundo-decorator.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;I'm posting another entry from my old blog, this time it's a decorator
 for Softimage that help us to wrap all the calls inside a function in an
 unique undo.&lt;/p&gt;
@@ -1361,13 +1361,13 @@ unique undo.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Have Fun!&lt;/p&gt;</summary><category term="code"></category><category term="softimage"></category></entry><entry><title>Demo Reel 2008</title><link href="http://cesarsaez.me/2011/10/reel-2008.html" rel="alternate"></link><updated>2011-10-01T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2011-10-01:2011/10/reel-2008.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
+&lt;p&gt;Have Fun!&lt;/p&gt;</summary><category term="code"></category><category term="softimage"></category></entry><entry><title>Demo Reel 2008</title><link href="http://www.cesarsaez.me/2011/10/reel-2008.html" rel="alternate"></link><updated>2011-10-01T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2011-10-01:2011/10/reel-2008.html</id><summary type="html">&lt;div class="flex-video widescreen"&gt;
 &lt;iframe src="//player.vimeo.com/video/2288568?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;My old demo reel ... there are some things I would do differently but this comes from the me of 2008 ;-)&lt;/p&gt;</summary><category term="reel"></category><category term="works"></category></entry><entry><title>Me and myself</title><link href="http://cesarsaez.me/2011/09/me-and-myself.html" rel="alternate"></link><updated>2011-09-30T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2011-09-30:2011/09/me-and-myself.html</id><summary type="html">&lt;p&gt;Me me me... and myself.&lt;/p&gt;
+&lt;p&gt;My old demo reel ... there are some things I would do differently but this comes from the me of 2008 ;-)&lt;/p&gt;</summary><category term="reel"></category><category term="works"></category></entry><entry><title>Me and myself</title><link href="http://www.cesarsaez.me/2011/09/me-and-myself.html" rel="alternate"></link><updated>2011-09-30T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2011-09-30:2011/09/me-and-myself.html</id><summary type="html">&lt;p&gt;Me me me... and myself.&lt;/p&gt;
 &lt;p&gt;Just kidding.... I'm rescuing old posts (you know, restarting the site once again) and I found this interview from the guys at &lt;a href="http://www.eje-zeta.com"&gt;eje-zeta&lt;/a&gt; in which I talked about my experience as self-taught CG artist.&lt;/p&gt;
 &lt;p&gt;By the way, spanish only...&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.eje-zeta.com/2010/03/17/entrevista-con-cesar-saez-de-kandorgraphics"&gt;LINK&lt;/a&gt;&lt;/p&gt;</summary><category term="thoughts"></category><category term="interviews"></category></entry><entry><title>Blog hacked again...</title><link href="http://cesarsaez.me/2010/09/blog-hacked.html" rel="alternate"></link><updated>2010-09-29T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:cesarsaez.me,2010-09-29:2010/09/blog-hacked.html</id><summary type="html">&lt;p&gt;Yes, it happened again and I still don't get it :(&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.eje-zeta.com/2010/03/17/entrevista-con-cesar-saez-de-kandorgraphics"&gt;LINK&lt;/a&gt;&lt;/p&gt;</summary><category term="thoughts"></category><category term="interviews"></category></entry><entry><title>Blog hacked again...</title><link href="http://www.cesarsaez.me/2010/09/blog-hacked.html" rel="alternate"></link><updated>2010-09-29T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2010-09-29:2010/09/blog-hacked.html</id><summary type="html">&lt;p&gt;Yes, it happened again and I still don't get it :(&lt;/p&gt;
 &lt;p&gt;It doesn't matter... all I can say is that I'm going back to Blogger for the safety of my post, right now I'm not so motivated to write my thoughts anywhere but who knows, maybe things will change...&lt;/p&gt;
 &lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="thoughts"></category></entry></feed>
