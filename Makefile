@@ -107,15 +107,4 @@ github: publish
 	ghp-import -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
-gh: publish
-	read -p "Please type in a commit message: " MSG
-	cd $(OUTPUTDIR)
-	git add -A
-	git commit -m $MSG
-	cd ..
-	git add -A
-	git commit -m $MSG
-	git push --recurse-submodules=check
-
-
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github

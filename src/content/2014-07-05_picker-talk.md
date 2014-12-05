@@ -2,8 +2,7 @@ Title: Developing a Character Picker for Maya
 Description: Talk on strategies to develop a custom Character Picker for Autodesk Maya.
 Author: Cesar Saez
 Tags: lectures, code, maya
-
-![Picker Talk]({filename}images/picker_talk.png "Picker Talk")
+Image: images/picker-talk_th.jpg
 
 Hi folks,
 
