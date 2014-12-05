@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/misc.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2014-09-10T00:00:00-03:00</updated><entry><title>Notes on python testing</title><link href="http://www.cesarsaez.me/2014/09/python-testing.html" rel="alternate"></link><updated>2014-09-10T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-09-10:2014/09/python-testing.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/misc.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2014-12-05T00:00:00-03:00</updated><entry><title>Hello Houdini</title><link href="http://www.cesarsaez.me/2014/12/hello-houdini.html" rel="alternate"></link><updated>2014-12-05T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-12-05:2014/12/hello-houdini.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
+&lt;p&gt;I've been giving Houdini another try and I have to say: it's a lot of fun!&lt;/p&gt;
+&lt;p&gt;I've always enjoyed building small procedural systems using ICE and felt like I might enjoy Houdini, but I've had never the need for it as it's not widelly used for rigging purposes. But you know what, who cares! I'm having a great time playing with it.&lt;/p&gt;
+&lt;p&gt;So, how to get started? well, my strategy here was jump ahead doing some quick exercises on my own (I did the same thing with ICE back in the day), it might not be the canonical approach but it motivates me much more than following long tutorials while learning to press buttons.&lt;/p&gt;
+&lt;h2&gt;Pin Table&lt;/h2&gt;
+&lt;p&gt;The first excercise that came into my mind was a pin-table, I think of it as the "Hello world!" excersice for Houdini and was actually pretty easy to solve.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pin Table" src="http://www.cesarsaez.me/images/hello-houdini.jpg" title="Pin table" /&gt;&lt;/p&gt;
+&lt;p&gt;I haven't done a breakdown video yet but there's not much to say, I just copied a pin on a displaced grid of points (using the luminance of a video as displacement map) and that's it, done!&lt;/p&gt;
+&lt;h2&gt;DNA Buildup&lt;/h2&gt;
+&lt;p&gt;This second exercise was a bit more involved, I wanted to recreate a
+&lt;a href="http://www.cesarsaez.me/2013/12/dna-buildup.html"&gt;similar effect&lt;/a&gt; I did some
+time ago using Softimge ICE.&lt;/p&gt;
+&lt;p&gt;You can watch a breakdown of my approach in the following video:&lt;/p&gt;
+&lt;div class="flex-video widescreen"&gt;
+    &lt;iframe src="//player.vimeo.com/video/111258575" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;What's next?&lt;/h2&gt;
+&lt;p&gt;I would like to try something involving attribute transfer between objects in different contexts (ie interaction between particles and geometry), I have no idea how to tackle this at the moment but I'm pretty sure I will figure it out :)&lt;/p&gt;
+&lt;h2&gt;tl;dr&lt;/h2&gt;
+&lt;p&gt;I'm trying Houdini just for fun and so far so good, if you love the procedural nature of ICE you should totally give it a try!&lt;/p&gt;</summary><category term="rnd"></category><category term="thoughts"></category></entry><entry><title>Notes on python testing</title><link href="http://www.cesarsaez.me/2014/09/python-testing.html" rel="alternate"></link><updated>2014-09-10T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-09-10:2014/09/python-testing.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
 &lt;p&gt;I've been rediscovering unit testing in python lately and wanted to share some notes about this, I hope you find them useful.&lt;/p&gt;
 &lt;p&gt;There we go!&lt;/p&gt;
 &lt;h2&gt;Why use an unit testing framework?&lt;/h2&gt;
@@ -492,8 +512,7 @@ imports to PyQt (&lt;code&gt;PySide&lt;/code&gt;-&amp;gt;&lt;code&gt;PyQt4&lt;/c
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;That's it, happy coding! ;-)&lt;/p&gt;</summary><category term="code"></category><category term="tools"></category><category term="maya"></category></entry><entry><title>Developing a Character Picker for Maya</title><link href="http://www.cesarsaez.me/2014/07/picker-talk.html" rel="alternate"></link><updated>2014-07-05T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-07-05:2014/07/picker-talk.html</id><summary type="html">&lt;p&gt;&lt;img alt="Picker Talk" src="http://www.cesarsaez.me/images/picker_talk.png" title="Picker Talk" /&gt;&lt;/p&gt;
-&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;That's it, happy coding! ;-)&lt;/p&gt;</summary><category term="code"></category><category term="tools"></category><category term="maya"></category></entry><entry><title>Developing a Character Picker for Maya</title><link href="http://www.cesarsaez.me/2014/07/picker-talk.html" rel="alternate"></link><updated>2014-07-05T00:00:00-04:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-07-05:2014/07/picker-talk.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;I just wanted to post a link to the slide deck and sample code from my talk: &lt;a href="http://www.animum3d.com/paginas/ez-cesar-saez-general"&gt;"How to create a character picker for Autodesk Maya"&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In the talk we explored the technology behind different kinds of character pickers, there is working code of a picker built using maya commands, a qt version and a proposal for a canvas based one (using the qt graphic scene framework).&lt;/p&gt;
 &lt;p&gt;I don't know if &lt;a href="http://www.animum3d.com"&gt;Animum&lt;/a&gt; will publish a recording of the talk (or when they are going to do it), but here is a link to the slide deck and sample code (spanish only, sorry).&lt;/p&gt;
