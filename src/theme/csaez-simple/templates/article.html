@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% block head %}
-    <title>{{ SITENAME }} - {{ article.title }}</title> <!-- override title -->
+  <title>{{ SITENAME }} - {{ article.title }}</title> <!-- override title -->
+  {% if article.image %}
+  <meta property="og:image" content="{{ article.image }}"/>
+  {% endif %}
   {{ super() }}
   {% for keyword in article.keywords %}
     <meta name="keywords" contents="{{keyword}}" />
