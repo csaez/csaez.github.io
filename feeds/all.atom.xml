@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/all.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2014-12-05T00:00:00-03:00</updated><entry><title>Hello Houdini</title><link href="http://www.cesarsaez.me/2014/12/hello-houdini.html" rel="alternate"></link><updated>2014-12-05T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-12-05:2014/12/hello-houdini.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/all.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2015-01-30T00:00:00-03:00</updated><entry><title>Amaranth v1.0 is out!</title><link href="http://www.cesarsaez.me/2015/01/amaranth_v1_out.html" rel="alternate"></link><updated>2015-01-30T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2015-01-30:2015/01/amaranth_v1_out.html</id><summary type="html">&lt;p&gt;Hi folks!&lt;/p&gt;
+&lt;p&gt;Last year was all about open source for me, I finally removed my Windows
+partition and went full Linux (btw, gotta love &lt;a href="https://www.archlinux.org/"&gt;arch linux&lt;/a&gt;), also
+decided to develop and share my projects under open source licenses (check out
+my &lt;a href="https://github.com/csaez"&gt;github profile&lt;/a&gt;) and have been contributing to open source projects in
+hopes of giving back to the community. This post is about the latter.&lt;/p&gt;
+&lt;p&gt;I just wanted to share that there's a new release of &lt;a href="http://pablovazquez.org/amaranth/"&gt;Amaranth&lt;/a&gt;: a
+productivity addon for &lt;a href="http://www.blender.org"&gt;Blender&lt;/a&gt; by &lt;a href="http://pablovazquez.org"&gt;Pablo Vazquez&lt;/a&gt; (a.k.a. venomgfx).&lt;/p&gt;
+&lt;p&gt;I had always wanted to dive a bit deeper into &lt;a href="http://www.blender.org"&gt;Blender&lt;/a&gt; and this project
+seemed the perfect excuse to do it, so I gave it a try and decided to
+&lt;a href="https://github.com/venomgfx/amaranth/pull/5"&gt;contribute&lt;/a&gt; by doing a much needed refactoring of the code base.&lt;/p&gt;
+&lt;p&gt;That's it... if you're interested in &lt;a href="http://www.blender.org"&gt;Blender&lt;/a&gt; please visit &lt;a href="http://pablovazquez.org/amaranth/"&gt;Amaranth&lt;/a&gt;'s
+website and give it a chance. I honestly think it's worth it :)&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="works"></category><category term="tools"></category></entry><entry><title>Hello Houdini</title><link href="http://www.cesarsaez.me/2014/12/hello-houdini.html" rel="alternate"></link><updated>2014-12-05T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2014-12-05:2014/12/hello-houdini.html</id><summary type="html">&lt;p&gt;Hi guys,&lt;/p&gt;
 &lt;p&gt;I've been giving Houdini another try and I have to say: it's a lot of fun!&lt;/p&gt;
 &lt;p&gt;I've always enjoyed building small procedural systems using ICE and felt like I might enjoy Houdini, but I've had never the need for it as it's not widelly used for rigging purposes. But you know what, who cares! I'm having a great time playing with it.&lt;/p&gt;
 &lt;p&gt;So, how to get started? well, my strategy here was jump ahead doing some quick exercises on my own (I did the same thing with ICE back in the day), it might not be the canonical approach but it motivates me much more than following long tutorials while learning to press buttons.&lt;/p&gt;
