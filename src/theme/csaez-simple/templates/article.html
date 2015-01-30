@@ -2,7 +2,7 @@
 {% block head %}
   <title>{{ SITENAME }} - {{ article.title }}</title> <!-- override title -->
   {% if article.image %}
-  <meta property="og:image" content="{{ article.image }}"/>
+  <meta property="og:image" content="{{ SITEURL }}/{{article.image}}"/>
   {% endif %}
   {{ super() }}
   {% for keyword in article.keywords %}
