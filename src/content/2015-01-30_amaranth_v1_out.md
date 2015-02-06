@@ -15,11 +15,15 @@ I just wanted to share that there's a new release of [Amaranth][a]: a
 productivity addon for [Blender][bl] by [Pablo Vazquez][pb] (a.k.a. venomgfx).
 
 I had always wanted to dive a bit deeper into [Blender][bl] and this project
-seemed the perfect excuse to do it, so I gave it a try and decided to
+seemed to be the perfect excuse to do it, so I gave it a try and decided to
 [contribute][pr] by doing a much needed refactoring of the code base.
 
-That's it... if you're interested in [Blender][bl] please visit [Amaranth][a]'s
-website and give it a chance. I honestly think it's worth it :)
+The project is now completely modular, so it is much easier to maintain and add
+new features, each module registers/unregisters itself as long as it's imported
+into the main file and everything just works.
+
+So, that's it... if you're interested in [Blender][bl] please visit
+[Amaranth][a]'s website and give it a try. I honestly think it's worth it :)
 
 Cheers!
 
