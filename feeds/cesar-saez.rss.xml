@@ -8,10 +8,13 @@ hopes of giving back to the community. This post is about the latter.&lt;/p&gt;
 &lt;p&gt;I just wanted to share that there's a new release of &lt;a href="http://pablovazquez.org/amaranth/"&gt;Amaranth&lt;/a&gt;: a
 productivity addon for &lt;a href="http://www.blender.org"&gt;Blender&lt;/a&gt; by &lt;a href="http://pablovazquez.org"&gt;Pablo Vazquez&lt;/a&gt; (a.k.a. venomgfx).&lt;/p&gt;
 &lt;p&gt;I had always wanted to dive a bit deeper into &lt;a href="http://www.blender.org"&gt;Blender&lt;/a&gt; and this project
-seemed the perfect excuse to do it, so I gave it a try and decided to
+seemed to be the perfect excuse to do it, so I gave it a try and decided to
 &lt;a href="https://github.com/venomgfx/amaranth/pull/5"&gt;contribute&lt;/a&gt; by doing a much needed refactoring of the code base.&lt;/p&gt;
-&lt;p&gt;That's it... if you're interested in &lt;a href="http://www.blender.org"&gt;Blender&lt;/a&gt; please visit &lt;a href="http://pablovazquez.org/amaranth/"&gt;Amaranth&lt;/a&gt;'s
-website and give it a chance. I honestly think it's worth it :)&lt;/p&gt;
+&lt;p&gt;The project is now completely modular, so it is much easier to maintain and add
+new features, each module registers/unregisters itself as long as it's imported
+into the main file and everything just works.&lt;/p&gt;
+&lt;p&gt;So, that's it... if you're interested in &lt;a href="http://www.blender.org"&gt;Blender&lt;/a&gt; please visit
+&lt;a href="http://pablovazquez.org/amaranth/"&gt;Amaranth&lt;/a&gt;'s website and give it a try. I honestly think it's worth it :)&lt;/p&gt;
 &lt;p&gt;Cheers!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cesar Saez</dc:creator><pubDate>Fri, 30 Jan 2015 00:00:00 -0300</pubDate><guid>tag:www.cesarsaez.me,2015-01-30:2015/01/amaranth_v1_out.html</guid><category>works</category><category>tools</category></item><item><title>Hello Houdini</title><link>http://www.cesarsaez.me/2014/12/hello-houdini.html</link><description>&lt;p&gt;Hi guys,&lt;/p&gt;
 &lt;p&gt;I've been giving Houdini another try and I have to say: it's a lot of fun!&lt;/p&gt;
 &lt;p&gt;I've always enjoyed building small procedural systems using ICE and felt like I might enjoy Houdini, but I've had never the need for it as it's not widelly used for rigging purposes. But you know what, who cares! I'm having a great time playing with it.&lt;/p&gt;
