@@ -29,20 +29,21 @@ That said, let's talk about [vim]...
 
 ### Why switching?
 
-All started by watching a [video on youtube][vyt], I never consider switching
-or anything, it was plain and simple curiosity about this old, clunkly and
-weird editor.
+All started by watching a [video on youtube][vyt], I never considered switching
+or anything, it was plain and simple curiosity about this old, clunky and weird
+editor.
 
-I learned that it shouldn't look as uggly as the default configuration, the
-modes actually make sense (no more keyboard/mouse switching, yey!), there's an
-an active community behind it writing plugins and, most importantly, it's free
-and open source.
+I learned that it shouldn't look as ugly as with the default settings, modes
+actually made sense (no more keyboard/mouse switching, yey!), there's an an
+active community writing plugins and, most importantly, it's free and open
+source.
 
-"Interesting! but I won't switch just because of that" I though... yeah, right.
+"Interesting! but I won't switch just because of that" I thought... yeah,
+right.
 
 Since that day on, every time I had to grab the mouse to select or move around
-some text, something inside me yells: _you are doing it wrong!_... and I don't
-know you, but I used to grab the mouse to move around _a lot!_
+some text, something inside me yells: _you are doing it wrong!_... and I
+don't know you, but I used to grab the mouse to move around a lot!
 
 So, a couple of weeks later I decided to give it a try.
 
@@ -51,8 +52,8 @@ So, a couple of weeks later I decided to give it a try.
 In two words: _NO WAY_
 
 There's _no way_ I could use this thing to develop anything on it. It's too
-old, weird and uggly for me (yeah, call me superficial, but the look is
-important when you stare at it all day long).
+old, weird and ugly for me (yep, call me superficial, but the look is important
+when you stare at it all day long).
 
 So, what you do when this happen?
 
@@ -83,9 +84,9 @@ nightmare" became a sort of continuous dialog with the editor (I'm not being
 poetic here, commands work like verbs and can be combined in interesting
 ways... you'll see).
 
-To summarize: indeed, _I was doing it wrong_.
+To summarize: _indeed, I was doing it wrong_.
 
-By the way, [this article](article) has helped me a lot.
+By the way, [this article][article] has helped me a lot.
 
 
 ### To this day...
