@@ -1,5 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/misc.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2015-01-30T00:00:00-03:00</updated><entry><title>Amaranth v1.0 is out!</title><link href="http://www.cesarsaez.me/2015/01/amaranth_v1_out.html" rel="alternate"></link><updated>2015-01-30T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2015-01-30:2015/01/amaranth_v1_out.html</id><summary type="html">&lt;p&gt;Hi folks!&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/misc.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2015-02-09T00:00:00-03:00</updated><entry><title>Switching to VIM</title><link href="http://www.cesarsaez.me/2015/02/switching-to-vim.html" rel="alternate"></link><updated>2015-02-09T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2015-02-09:2015/02/switching-to-vim.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;If you follow me on twitter you've probably noticed the tweets on my switch
+from &lt;a href="http://www.sublimetext.com"&gt;sublime&lt;/a&gt; to &lt;a href="http://www.vim.org"&gt;vim&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I would like to share my experiences during the switching, the reasons behind
+it and some of the advantages I see in my new daily workflow. &lt;/p&gt;
+&lt;h3&gt;First things first&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.sublimetext.com"&gt;Sublime Text&lt;/a&gt; is a great code editor! I used it for the past 3~4
+years without issues.  I love its &lt;code&gt;ctrl+shift+p&lt;/code&gt; where all options are
+accessible from the keyboard, I became addict to use multiple cursors and was
+an early adopter of &lt;a href="https://packagecontrol.io/"&gt;package control&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I also wrote my own snippets, build systems and all the things that you would
+expect from a power user.&lt;/p&gt;
+&lt;p&gt;So, before get into why I switched and all that jazz, I would like to say that
+&lt;a href="http://www.sublimetext.com"&gt;sublime&lt;/a&gt; is a great code editor and you should definitely give it a try.&lt;/p&gt;
+&lt;p&gt;That said, let's talk about &lt;a href="http://www.vim.org"&gt;vim&lt;/a&gt;...&lt;/p&gt;
+&lt;h3&gt;Why switching?&lt;/h3&gt;
+&lt;p&gt;All started by watching a &lt;a href="https://www.youtube.com/watch?v=YhqsjUUHj6g"&gt;video on youtube&lt;/a&gt;, I never consider switching
+or anything, it was plain and simple curiosity about this old, clunkly and
+weird editor.&lt;/p&gt;
+&lt;p&gt;I learned that it shouldn't look as uggly as the default configuration, the
+modes actually make sense (no more keyboard/mouse switching, yey!), there's an
+an active community behind it writing plugins and, most importantly, it's free
+and open source.&lt;/p&gt;
+&lt;p&gt;"Interesting! but I won't switch just because of that" I though... yeah, right.&lt;/p&gt;
+&lt;p&gt;Since that day on, every time I had to grab the mouse to select or move around
+some text, something inside me yells: &lt;em&gt;you are doing it wrong!&lt;/em&gt;... and I don't
+know you, but I used to grab the mouse to move around &lt;em&gt;a lot!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So, a couple of weeks later I decided to give it a try.&lt;/p&gt;
+&lt;h3&gt;First impresions&lt;/h3&gt;
+&lt;p&gt;In two words: &lt;em&gt;NO WAY&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;There's &lt;em&gt;no way&lt;/em&gt; I could use this thing to develop anything on it. It's too
+old, weird and uggly for me (yeah, call me superficial, but the look is
+important when you stare at it all day long).&lt;/p&gt;
+&lt;p&gt;So, what you do when this happen?&lt;/p&gt;
+&lt;h3&gt;Let's the tweaking begin!&lt;/h3&gt;
+&lt;p&gt;I started by tweaking my &lt;code&gt;.vimrc&lt;/code&gt; file adding syntax highlighting, a better
+color scheme and all sort of small enhacements I probably stealed from the
+internet.&lt;/p&gt;
+&lt;p&gt;Then I learned about plugins, so I installed &lt;a href="https://github.com/tpope/vim-pathogen"&gt;pathogen&lt;/a&gt; to manage them and then
+went to &lt;a href="https://github.com/kien/ctrlp.vim"&gt;ctrlp&lt;/a&gt;, &lt;a href="https://github.com/itchyny/lightline.vim"&gt;lightline&lt;/a&gt;, &lt;a href="https://github.com/klen/python-mode"&gt;python-mode&lt;/a&gt;, &lt;a href="https://github.com/garbas/vim-snipmate"&gt;snipmate&lt;/a&gt; and &lt;a href="https://github.com/tpope/vim-surround"&gt;vim-surround&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And that was it...&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can grab &lt;a href="https://github.com/csaez/dotfiles/blob/master/.vimrc"&gt;my &lt;code&gt;.vimrc&lt;/code&gt; from
+here&lt;/a&gt;, it's fully
+commented and targeted to python development.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Time to do some work&lt;/h3&gt;
+&lt;p&gt;First days were a pain... forget about cool features, just moving around using
+&lt;em&gt;hjkl&lt;/em&gt; keys instead of my beloved mouse/arrows-keys and switching between modes
+was a challenge, not to talk about registers and the whole copy/paste thing.&lt;/p&gt;
+&lt;p&gt;But hey, after the initial shock things began to settle, I learned that hjkl
+are not the most efficient moves to getting around text and the whole "command
+nightmare" became a sort of continuous dialog with the editor (I'm not being
+poetic here, commands work like verbs and can be combined in interesting
+ways... you'll see).&lt;/p&gt;
+&lt;p&gt;To summarize: indeed, &lt;em&gt;I was doing it wrong&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;By the way, &lt;a href="article"&gt;this article&lt;/a&gt; has helped me a lot.&lt;/p&gt;
+&lt;h3&gt;To this day...&lt;/h3&gt;
+&lt;p&gt;I'm not an expert by any means, but I'm enjoying of some &lt;a href="http://www.vim.org"&gt;vim&lt;/a&gt; "super powers"
+when coding... in fact, I would miss many features if I were forced to use
+another editor.&lt;/p&gt;
+&lt;p&gt;I love the ability to run my code directly from vim (or any &lt;code&gt;bash&lt;/code&gt; command),
+&lt;code&gt;virtualenv&lt;/code&gt; support is now essential to my workflow, I love not being forced
+to jump between the keyboard and mouse to getting around text efficiently,
+macros are great and I like the general approach to commands... even the look
+and feel is nice once you tweak it!&lt;/p&gt;
+&lt;p&gt;And, of course, I'm very happy to be using open and free software.&lt;/p&gt;
+&lt;h2&gt;tl;dr&lt;/h2&gt;
+&lt;p&gt;I switched to &lt;a href="http://www.vim.org"&gt;vim&lt;/a&gt; and I'm very happy with it (from a philosophical and
+functional point of view).&lt;/p&gt;
+&lt;p&gt;Why should you consider it?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It is free and open source software.&lt;/li&gt;
+&lt;li&gt;Cross-platform, it's everywhere!&lt;/li&gt;
+&lt;li&gt;Highly customizable.&lt;/li&gt;
+&lt;li&gt;Efficient workflow.&lt;/li&gt;
+&lt;li&gt;Config truly portable (1 file + plugins, no admin privileges needed).&lt;/li&gt;
+&lt;li&gt;It's fun, you'll learn something new every day!&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="thoughts"></category><category term="code"></category></entry><entry><title>Amaranth v1.0 is out!</title><link href="http://www.cesarsaez.me/2015/01/amaranth_v1_out.html" rel="alternate"></link><updated>2015-01-30T00:00:00-03:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2015-01-30:2015/01/amaranth_v1_out.html</id><summary type="html">&lt;p&gt;Hi folks!&lt;/p&gt;
 &lt;p&gt;Last year was all about open source for me, I finally removed my Windows
 partition and went full Linux (btw, gotta love &lt;a href="https://www.archlinux.org/"&gt;arch linux&lt;/a&gt;), also
 decided to develop and share my projects under open source licenses (check out

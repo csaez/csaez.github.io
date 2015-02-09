@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CESAR SAEZ - RigLab: overview</title> <!-- override title -->
+  <title>CESAR SAEZ - Switching to VIM</title> <!-- override title -->
+  <meta property="og:image" content="http://www.cesarsaez.me/images/vim.png"/>
     <title>CESAR SAEZ</title>
   <meta charset="utf-8" />
   <link href="http://www.cesarsaez.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
@@ -28,10 +29,9 @@
   <!-- end favicon setup -->
   <link rel="stylesheet" href="http://www.cesarsaez.me/theme/css/style.min.css">
 
-    <meta name="tags" contents="riglab" />
-    <meta name="tags" contents="rnd" />
+    <meta name="description" contents="My experiences switching to VIM text editor." />
     <meta name="tags" contents="thoughts" />
-    <meta name="tags" contents="softimage" />
+    <meta name="tags" contents="code" />
 </head>
 
 <body>
@@ -75,74 +75,92 @@
 <section id="container" class="wide">
 <section id="content" class="body">
   <footer class="post-info">
-    Published on <abbr class="published" title="2012-11-13T00:00:00">13 Nov 2012</abbr> in
-    <a href="http://www.cesarsaez.me/tag/riglab/">riglab</a>,    <a href="http://www.cesarsaez.me/tag/rnd/">rnd</a>,    <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts</a>,    <a href="http://www.cesarsaez.me/tag/softimage/">softimage</a>  </footer><!-- /.post-info -->
+    Published on <abbr class="published" title="2015-02-09T00:00:00">09 Feb 2015</abbr> in
+    <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts</a>,    <a href="http://www.cesarsaez.me/tag/code/">code</a>  </footer><!-- /.post-info -->
   <header>
-    <h2 class="entry-title">RigLab: overview</h2>
+    <h2 class="entry-title">Switching to VIM</h2>
  
   </header>
   <div class="entry-content">
-    <p>I'm finally working on my rigging framework, I've been thinking about it
-for a long time and I finally have a clear picture of what I want as end
-result... and even more important, why I want it that way!</p>
-<p>There will be plenty of new problems to be sorted out as I go with the
-development, but the overall design and workflows are clear on my mind
-now.</p>
-<h3>So, why a framework?</h3>
-<p>I've already written 3 autorigs for different productions, 2 of them for
-3dsmax (advertising projects and a TV series) and the latest one for
-softimage (feature film)... The "autorig philosophy" allow us to work
-faster and helps to standarize things, but at the end it's not enough.</p>
-<p>If you limit yourself to make a rig-builder/autorig, at some point it
-will be obvious that you're leaving a lot behind, the solution tend to
-be specific to the nature of the asset (bipeds, quadrupeds and so on)
-and sometimes it's difficult to update/expand it without refactoring the
-system. So we end up creating new autorigs to cover unexpected
-requirements (props, vehicles, environments, facial rigs, whatever)
-rather than unify and keep them under the same roof.</p>
-<p>A framework lives in a much more general level and represents that roof,
-describes the way you manage/work-with rigs. The autorigs (I call them
-solvers) are built on top, so you always have control over your rigs no
-matter how they were built (including by hand).</p>
-<h3>Goals</h3>
-<p>In order to get this done in a reasonable time frame I've to set some
-goals for the project, the following list represent the main ones (in
-arbitrary order).</p>
-<h4>Metadata:</h4>
-<p>The system will be based on metadata rather than any specific naming
-convention. The naming convention will be based on a config file in
-order to integrate the system on any pipeline (the same is true with
-colours, animation controls and all the standard rigging conventions).</p>
-<h4>Multipose support:</h4>
-<p>The framework should allow us to define a rigging pose (by default will
-be the same as the binding pose). This is important because the binding
-pose isn't always the best for rigging/animation purposes (nonorthogonal
-limbs and stuff like that).</p>
-<h4>Macro support for solvers' creation:</h4>
-<p>This is HUGE! When you're on production and there's a need for a new
-kind of rigging solution, code it and update the rigging system isn't
-the fastest solution (sometimes it's not even possible). Support a sort
-of macro to facilitate the solver's creation will help to keep the
-rigging system alive and updated.</p>
-<h4>Non-linear workflow:</h4>
-<p>The rigging process is an iterative one, the system should allow us go
-back to the creation state for editing/updating. A rig is never really
-finished and we need a bidirectional way to work with them.</p>
-<h4>Robust API (application programming interface):</h4>
-<p>From my point of view the system has 2 clients: the gui (graphic user
-interface) and another programs/tools, the system should be able to work
-with both (this include batch processing).</p>
-<h3>Current status</h3>
-<p>The overall design and the workflow are finished (I'm still documenting,
-but I have a clear picture of how everything should work). Right now I'm
-working on the metadata manager and starting the multipose part.</p>
-<p>There're a lot of work to do in order to get it up and running, but this
-time I really want to materialize these ideas into something useful, I
-will be working actively in the coming months to complete the project as
-soon as possible.</p>
-<p>Hope to have something interesting to show in the next post, we'll see
-;-)</p>
-<p>Cheers!</p>
+    <p>Hi folks,</p>
+<p>If you follow me on twitter you've probably noticed the tweets on my switch
+from <a href="http://www.sublimetext.com">sublime</a> to <a href="http://www.vim.org">vim</a>.</p>
+<p>I would like to share my experiences during the switching, the reasons behind
+it and some of the advantages I see in my new daily workflow. </p>
+<h3>First things first</h3>
+<p><a href="http://www.sublimetext.com">Sublime Text</a> is a great code editor! I used it for the past 3~4
+years without issues.  I love its <code>ctrl+shift+p</code> where all options are
+accessible from the keyboard, I became addict to use multiple cursors and was
+an early adopter of <a href="https://packagecontrol.io/">package control</a>.</p>
+<p>I also wrote my own snippets, build systems and all the things that you would
+expect from a power user.</p>
+<p>So, before get into why I switched and all that jazz, I would like to say that
+<a href="http://www.sublimetext.com">sublime</a> is a great code editor and you should definitely give it a try.</p>
+<p>That said, let's talk about <a href="http://www.vim.org">vim</a>...</p>
+<h3>Why switching?</h3>
+<p>All started by watching a <a href="https://www.youtube.com/watch?v=YhqsjUUHj6g">video on youtube</a>, I never consider switching
+or anything, it was plain and simple curiosity about this old, clunkly and
+weird editor.</p>
+<p>I learned that it shouldn't look as uggly as the default configuration, the
+modes actually make sense (no more keyboard/mouse switching, yey!), there's an
+an active community behind it writing plugins and, most importantly, it's free
+and open source.</p>
+<p>"Interesting! but I won't switch just because of that" I though... yeah, right.</p>
+<p>Since that day on, every time I had to grab the mouse to select or move around
+some text, something inside me yells: <em>you are doing it wrong!</em>... and I don't
+know you, but I used to grab the mouse to move around <em>a lot!</em></p>
+<p>So, a couple of weeks later I decided to give it a try.</p>
+<h3>First impresions</h3>
+<p>In two words: <em>NO WAY</em></p>
+<p>There's <em>no way</em> I could use this thing to develop anything on it. It's too
+old, weird and uggly for me (yeah, call me superficial, but the look is
+important when you stare at it all day long).</p>
+<p>So, what you do when this happen?</p>
+<h3>Let's the tweaking begin!</h3>
+<p>I started by tweaking my <code>.vimrc</code> file adding syntax highlighting, a better
+color scheme and all sort of small enhacements I probably stealed from the
+internet.</p>
+<p>Then I learned about plugins, so I installed <a href="https://github.com/tpope/vim-pathogen">pathogen</a> to manage them and then
+went to <a href="https://github.com/kien/ctrlp.vim">ctrlp</a>, <a href="https://github.com/itchyny/lightline.vim">lightline</a>, <a href="https://github.com/klen/python-mode">python-mode</a>, <a href="https://github.com/garbas/vim-snipmate">snipmate</a> and <a href="https://github.com/tpope/vim-surround">vim-surround</a>.</p>
+<p>And that was it...</p>
+<blockquote>
+<p>You can grab <a href="https://github.com/csaez/dotfiles/blob/master/.vimrc">my <code>.vimrc</code> from
+here</a>, it's fully
+commented and targeted to python development.</p>
+</blockquote>
+<h3>Time to do some work</h3>
+<p>First days were a pain... forget about cool features, just moving around using
+<em>hjkl</em> keys instead of my beloved mouse/arrows-keys and switching between modes
+was a challenge, not to talk about registers and the whole copy/paste thing.</p>
+<p>But hey, after the initial shock things began to settle, I learned that hjkl
+are not the most efficient moves to getting around text and the whole "command
+nightmare" became a sort of continuous dialog with the editor (I'm not being
+poetic here, commands work like verbs and can be combined in interesting
+ways... you'll see).</p>
+<p>To summarize: indeed, <em>I was doing it wrong</em>.</p>
+<p>By the way, <a href="article">this article</a> has helped me a lot.</p>
+<h3>To this day...</h3>
+<p>I'm not an expert by any means, but I'm enjoying of some <a href="http://www.vim.org">vim</a> "super powers"
+when coding... in fact, I would miss many features if I were forced to use
+another editor.</p>
+<p>I love the ability to run my code directly from vim (or any <code>bash</code> command),
+<code>virtualenv</code> support is now essential to my workflow, I love not being forced
+to jump between the keyboard and mouse to getting around text efficiently,
+macros are great and I like the general approach to commands... even the look
+and feel is nice once you tweak it!</p>
+<p>And, of course, I'm very happy to be using open and free software.</p>
+<h2>tl;dr</h2>
+<p>I switched to <a href="http://www.vim.org">vim</a> and I'm very happy with it (from a philosophical and
+functional point of view).</p>
+<p>Why should you consider it?</p>
+<ul>
+<li>It is free and open source software.</li>
+<li>Cross-platform, it's everywhere!</li>
+<li>Highly customizable.</li>
+<li>Efficient workflow.</li>
+<li>Config truly portable (1 file + plugins, no admin privileges needed).</li>
+<li>It's fun, you'll learn something new every day!</li>
+</ul>
   </div><!-- /.entry-content -->
   <div id="disqus_thread"><!-- comments -->
     <script type="text/javascript">
