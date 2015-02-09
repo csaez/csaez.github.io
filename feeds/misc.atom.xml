@@ -25,14 +25,14 @@ source.&lt;/p&gt;
 &lt;p&gt;"Interesting! but I won't switch just because of that" I thought... yeah,
 right.&lt;/p&gt;
 &lt;p&gt;Since that day on, every time I had to grab the mouse to select or move around
-some text, something inside me yells: &lt;strong&gt;you are doing it wrong!&lt;/strong&gt;... and I
+some text, something inside me yells: &lt;em&gt;you are doing it wrong!&lt;/em&gt;... and I
 don't know you, but I used to grab the mouse to move around a lot!&lt;/p&gt;
 &lt;p&gt;So, a couple of weeks later I decided to give it a try.&lt;/p&gt;
 &lt;h3&gt;First impresions&lt;/h3&gt;
 &lt;p&gt;In two words: &lt;em&gt;NO WAY&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;There's &lt;em&gt;no way&lt;/em&gt; I could use this thing to develop anything on it. It's too
-old, weird and uggly for me (yeah, call me superficial, but the look is
-important when you stare at it all day long).&lt;/p&gt;
+old, weird and ugly for me (yep, call me superficial, but the look is important
+when you stare at it all day long).&lt;/p&gt;
 &lt;p&gt;So, what you do when this happen?&lt;/p&gt;
 &lt;h3&gt;Let's the tweaking begin!&lt;/h3&gt;
 &lt;p&gt;I started by tweaking my &lt;code&gt;.vimrc&lt;/code&gt; file adding syntax highlighting, a better
@@ -55,8 +55,8 @@ are not the most efficient moves to getting around text and the whole "command
 nightmare" became a sort of continuous dialog with the editor (I'm not being
 poetic here, commands work like verbs and can be combined in interesting
 ways... you'll see).&lt;/p&gt;
-&lt;p&gt;To summarize: indeed, &lt;em&gt;I was doing it wrong&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;By the way, &lt;a href="article"&gt;this article&lt;/a&gt; has helped me a lot.&lt;/p&gt;
+&lt;p&gt;To summarize: &lt;em&gt;indeed, I was doing it wrong&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;By the way, &lt;a href="http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/"&gt;this article&lt;/a&gt; has helped me a lot.&lt;/p&gt;
 &lt;h3&gt;To this day...&lt;/h3&gt;
 &lt;p&gt;I'm not an expert by any means, but I'm enjoying of some &lt;a href="http://www.vim.org"&gt;vim&lt;/a&gt; "super powers"
 when coding... in fact, I would miss many features if I were forced to use
