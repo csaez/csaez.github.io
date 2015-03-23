@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CESAR SAEZ</title><link>http://www.cesarsaez.me/</link><description>Character TD</description><atom:link href="http://www.cesarsaez.me/feeds/cesar-saez.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 09 Feb 2015 00:00:00 -0300</lastBuildDate><item><title>Switching to VIM</title><link>http://www.cesarsaez.me/2015/02/switching-to-vim.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CESAR SAEZ</title><link>http://www.cesarsaez.me/</link><description>Character TD</description><atom:link href="http://www.cesarsaez.me/feeds/cesar-saez.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 24 Mar 2015 00:00:00 -0300</lastBuildDate><item><title>Yet another 'dorito' tutorial</title><link>http://www.cesarsaez.me/2015/03/doritos-maya.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Last night I captured this short video on how to recreate the &lt;a href="http://www.softimageblog.com/archives/209"&gt;famous
+'dorito' setup&lt;/a&gt; in Autodesk Maya.&lt;/p&gt;
+&lt;p&gt;In case you are not familiar with the term (it's mainly a Softimage lingo), it
+simply refers to a way of spliting the skinning deformation into different
+layers, where each layer rides on top of the previous one avoiding double
+transformations.&lt;/p&gt;
+&lt;p&gt;The technique itself is nothing new and there are
+&lt;a href="https://vimeo.com/91005555"&gt;several&lt;/a&gt; &lt;a href="https://vimeo.com/87722342"&gt;videos&lt;/a&gt;
+&lt;a href="https://vimeo.com/88615637"&gt;explaining&lt;/a&gt; how to do it in different softwares,
+but looks like the Maya approach is a bit convoluted and I wanted to share a
+straight forward way to do it without any rants on how good or bad Maya
+workflow is.&lt;/p&gt;
+&lt;div class="flex-video widescreen"&gt;
+&lt;iframe width="900" height="506" src="https://www.youtube.com/embed/ZM0SxO3D5H4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hope you like it,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cesar Saez</dc:creator><pubDate>Tue, 24 Mar 2015 00:00:00 -0300</pubDate><guid>tag:www.cesarsaez.me,2015-03-24:2015/03/doritos-maya.html</guid><category>maya</category></item><item><title>Switching to VIM</title><link>http://www.cesarsaez.me/2015/02/switching-to-vim.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;If you follow me on twitter you've probably noticed the tweets on my switch
 from &lt;a href="http://www.sublimetext.com"&gt;sublime&lt;/a&gt; to &lt;a href="http://www.vim.org"&gt;vim&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I would like to share my experiences during the switching, the reasons behind

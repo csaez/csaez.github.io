@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CESAR SAEZ - fStretch-like deformations</title> <!-- override title -->
+  <title>CESAR SAEZ - Yet another 'dorito' tutorial</title> <!-- override title -->
+  <meta property="og:image" content="http://www.cesarsaez.me/images/dorito_th.jpg"/>
     <title>CESAR SAEZ</title>
   <meta charset="utf-8" />
   <link href="http://www.cesarsaez.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
@@ -28,8 +29,8 @@
   <!-- end favicon setup -->
   <link rel="stylesheet" href="http://www.cesarsaez.me/theme/css/style.min.css">
 
-    <meta name="tags" contents="softimage" />
-    <meta name="tags" contents="recommended" />
+    <meta name="description" contents="A rigging tutorial on a 'dorito' setup for Autodesk Maya." />
+    <meta name="tags" contents="maya" />
 </head>
 
 <body>
@@ -73,30 +74,31 @@
 <section id="container" class="wide">
 <section id="content" class="body">
   <footer class="post-info">
-    Published on <abbr class="published" title="2012-09-17T00:00:00">17 Sep 2012</abbr> in
-    <a href="http://www.cesarsaez.me/tag/softimage/">softimage</a>,    <a href="http://www.cesarsaez.me/tag/recommended/">recommended</a>  </footer><!-- /.post-info -->
+    Published on <abbr class="published" title="2015-03-24T00:00:00">24 Mar 2015</abbr> in
+    <a href="http://www.cesarsaez.me/tag/maya/">maya</a>  </footer><!-- /.post-info -->
   <header>
-    <h2 class="entry-title">fStretch-like deformations</h2>
+    <h2 class="entry-title">Yet another 'dorito' tutorial</h2>
  
   </header>
   <div class="entry-content">
-    <p>Some time ago <a href="http://www.si-community.com/community/viewtopic.php?f=15&amp;t=2549&amp;p=20551#p20551">someone asked in si-community.com</a> about how to
-replicate some deformations seen in <a href="https://vimeo.com/45473465">a nice demo from Clovis Gay</a> (who
-is also inspired by the <a href="http://www.cgaddict.com/product-overview.html">fStretch plugin for Maya</a>) so I decided give
-it a shot.</p>
-<p><img alt="fStretch demo" src="http://www.cesarsaez.me/images/fstretch_movie.gif" title="fStretch Demo" /></p>
-<p>I'm solving it in 2 steps; the first ICETree stores a tension/stress map
-<em>before</em> any deformation, the second does the same <em>after</em> the deformations
-and compares the results. The delta between both states is used to drive
-a push operator (sort of).</p>
-<p>There's nothing faster than ICE for this kind of prototypes, love it! :)</p>
-<p><img alt="fStretch ICETree" src="http://www.cesarsaez.me/images/fstretch_ICETree.jpg" title="fStretch ICETree" /></p>
-<p>As a side note, I'm working on some personal projects mostly for
-Softimage but I'm also giving a closer look at pyMel (not as bad as I
-remembered). Still early but seems possible make them cross-platform,
-imply some extra work but seems like a nice oportunity to learn a lot
-about Maya, we'll see...</p>
-<p>More updates soon, stay tunned</p>
+    <p>Hi folks,</p>
+<p>Last night I captured this short video on how to recreate the <a href="http://www.softimageblog.com/archives/209">famous
+'dorito' setup</a> in Autodesk Maya.</p>
+<p>In case you are not familiar with the term (it's mainly a Softimage lingo), it
+simply refers to a way of spliting the skinning deformation into different
+layers, where each layer rides on top of the previous one avoiding double
+transformations.</p>
+<p>The technique itself is nothing new and there are
+<a href="https://vimeo.com/91005555">several</a> <a href="https://vimeo.com/87722342">videos</a>
+<a href="https://vimeo.com/88615637">explaining</a> how to do it in different softwares,
+but looks like the Maya approach is a bit convoluted and I wanted to share a
+straight forward way to do it without any rants on how good or bad Maya
+workflow is.</p>
+<div class="flex-video widescreen">
+<iframe width="900" height="506" src="https://www.youtube.com/embed/ZM0SxO3D5H4" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p>Hope you like it,</p>
 <p>Cheers!</p>
   </div><!-- /.entry-content -->
   <div id="disqus_thread"><!-- comments -->
