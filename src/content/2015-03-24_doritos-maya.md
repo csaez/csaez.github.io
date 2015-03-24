@@ -22,7 +22,7 @@ straight forward way to do it without any rants on how good or bad Maya
 workflow is.
 
 <div class="flex-video widescreen">
-<iframe width="900" height="506" src="https://www.youtube.com/embed/ZM0SxO3D5H4" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/123069799" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
 Hope you like it,
