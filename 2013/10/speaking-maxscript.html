@@ -53,7 +53,7 @@
     <li> <a href="http://www.cesarsaez.me/tag/riglab/">riglab<span class="badge-right">7</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/rnd/">rnd<span class="badge-right">14</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/softimage/">softimage<span class="badge-right">17</span></a></li>
-    <li> <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts<span class="badge-right">20</span></a></li>
+    <li> <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts<span class="badge-right">21</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/tools/">tools<span class="badge-right">11</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/works/">works<span class="badge-right">11</span></a></li>
   </ul><!-- /#menu -->
@@ -74,7 +74,7 @@
 <section id="container" class="wide">
 <section id="content" class="body">
   <footer class="post-info">
-    Published on <abbr class="published" title="2013-10-31T00:00:00">31 Oct 2013</abbr> in
+    Published on <abbr class="published" title="2013-10-31T00:00:00-03:00">31 Oct 2013</abbr> in
     <a href="http://www.cesarsaez.me/tag/3dsmax/">3dsmax</a>,    <a href="http://www.cesarsaez.me/tag/code/">code</a>,    <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts</a>  </footer><!-- /.post-info -->
   <header>
     <h2 class="entry-title">Speaking Maxscript</h2>
@@ -87,7 +87,7 @@ of an object at each vertex position of another mesh in 3dsmax.</p>
 <p>I haven't worked with 3dsmax for a long time, but it seemed to be a job
 for maxscript and she knows nothing about scripting, so I took a deep
 breath and gave it a shot.</p>
-<div class="highlight"><pre><span class="k">for</span> <span class="n">v</span> <span class="n">in</span> <span class="err">$</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">mesh</span><span class="p">.</span><span class="n">verts</span> <span class="k">do</span> <span class="p">(</span><span class="n">instance</span> <span class="err">$</span><span class="p">[</span><span class="mi">2</span><span class="p">]).</span><span class="n">pos</span> <span class="o">=</span> <span class="n">v</span><span class="p">.</span><span class="n">pos</span> <span class="o">*</span> <span class="err">$</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">transform</span>
+<div class="highlight"><pre>for v in $[1].mesh.verts do (instance $[2]).pos = v.pos * $[1].transform
 </pre></div>
 
 
