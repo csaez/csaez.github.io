@@ -11,6 +11,7 @@ SITEURL = ''
 PATH = 'src/content'
 THEME = 'src/theme/csaez-simple'
 STATIC_PATHS = ['images',
+                'extra/.htaccess',
                 'extra/CNAME',
                 'extra/browserconfig.xml',
                 'extra/apple-touch-icon.png',
@@ -36,6 +37,7 @@ STATIC_PATHS = ['images',
                 'extra/mstile-310x150.png',
                 'extra/mstile-310x310.png']
 EXTRA_PATH_METADATA = {
+    'extra/.htaccess': {'path': '.htaccess'},
     'extra/CNAME': {'path': 'CNAME'},
     'extra/browserconfig.xml': {'path': 'browserconfig.xml'},
     'extra/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
