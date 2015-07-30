@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CESAR SAEZ</title><link>http://www.cesarsaez.me/</link><description>Character TD</description><atom:link href="http://www.cesarsaez.me/feeds/cesar-saez.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 28 May 2015 00:00:00 -0300</lastBuildDate><item><title>I got a new job!</title><link>http://www.cesarsaez.me/2015/05/animal-logic.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CESAR SAEZ</title><link>http://www.cesarsaez.me/</link><description>Character TD</description><atom:link href="http://www.cesarsaez.me/feeds/cesar-saez.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 28 May 2015 00:00:00 -0400</lastBuildDate><item><title>I got a new job!</title><link>http://www.cesarsaez.me/2015/05/animal-logic.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;Most people I interact with (in real life and social media) might already know
 this, but I've moved to Sydney and have been working at &lt;a href="http://www.animallogic.com"&gt;Animal
 Logic&lt;/a&gt;  on the upcoming Batman and Ninjago LEGO
@@ -41,7 +41,7 @@ and again.&lt;/p&gt;
 &lt;p&gt;There's no easy path, people tend to not share publicly the stuff going on
 under the hood but it's going to be hard for you as it's for everybody else,
 just keep going, keep pushing, stay hungry, stay awesome.&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cesar Saez</dc:creator><pubDate>Thu, 28 May 2015 00:00:00 -0300</pubDate><guid>tag:www.cesarsaez.me,2015-05-28:2015/05/animal-logic.html</guid><category>thoughts</category></item><item><title>Yet another 'dorito' tutorial</title><link>http://www.cesarsaez.me/2015/03/doritos-maya.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cesar Saez</dc:creator><pubDate>Thu, 28 May 2015 00:00:00 -0400</pubDate><guid>tag:www.cesarsaez.me,2015-05-28:2015/05/animal-logic.html</guid><category>thoughts</category></item><item><title>Yet another 'dorito' tutorial</title><link>http://www.cesarsaez.me/2015/03/doritos-maya.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;Last night I captured this short video on how to recreate the &lt;a href="http://www.softimageblog.com/archives/209"&gt;famous
 'dorito' setup&lt;/a&gt; in Autodesk Maya.&lt;/p&gt;
 &lt;p&gt;In case you are not familiar with the term (it's mainly a Softimage lingo), it
@@ -199,7 +199,7 @@ course you might be able to extend it creating your own plugins.&lt;/li&gt;
 &lt;li&gt;Things to come...&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Cool, how do I install &lt;code&gt;nose&lt;/code&gt;?&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;pip install nose
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;nose&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -233,18 +233,18 @@ time on this.&lt;/p&gt;
 this in your &lt;code&gt;~/.bashrc&lt;/code&gt;):&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# activate a virtualenv&lt;/span&gt;
 &lt;span class="c"&gt;# usage: activate my_env/&lt;/span&gt;
-&lt;span class="k"&gt;function&lt;/span&gt; activate&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt; &lt;span class="nb"&gt;source&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;bin/activate &lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;function &lt;/span&gt;activate&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt; &lt;span class="nb"&gt;source&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;$1&amp;quot;&lt;/span&gt;bin/activate ;&lt;span class="o"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h2&gt;Back to testing: What testing looks like?&lt;/h2&gt;
 &lt;p&gt;Assuming a project structure like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;* my_proj
-    * tests
-        * __init__.py
-        * rocket_science_tests.py
-    * __init__.py
-    * rocket_science.py
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;my_proj&lt;/span&gt;
+    &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;tests&lt;/span&gt;
+        &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+        &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;rocket_science_tests&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+    &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+    &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;rocket_science&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -297,7 +297,7 @@ this in your &lt;code&gt;~/.bashrc&lt;/code&gt;):&lt;/p&gt;
 &lt;p&gt;Again, here's what I'm using at the moment (put this in your &lt;code&gt;~/.bashrc&lt;/code&gt;):&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# run nosetest with coverage&lt;/span&gt;
 &lt;span class="c"&gt;# usage: testme (from the root of your project)&lt;/span&gt;
-&lt;span class="k"&gt;function&lt;/span&gt; testme&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt; nosetests --with-coverage --cover-package&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;PWD&lt;/span&gt;&lt;span class="p"&gt;##*/&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;function &lt;/span&gt;testme&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt; nosetests --with-coverage --cover-package&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;${PWD##*/}&amp;quot;&lt;/span&gt; ;&lt;span class="o"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -318,7 +318,7 @@ your system under test with mock objects and make assertions about how they
 have been used.
 Check out the docs &lt;a href="http://www.voidspace.org.uk/python/mock/index.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;How to intall mock?&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;pip install mock
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;mock&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -573,7 +573,7 @@ function (the decorated function), other testing frameworks (this one is
 
 
 &lt;p&gt;3- ... and run the tests (from the root directory in a terminal):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;python setup.py nosetests
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="n"&gt;nosetests&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -942,7 +942,7 @@ of an object at each vertex position of another mesh in 3dsmax.&lt;/p&gt;
 &lt;p&gt;I haven't worked with 3dsmax for a long time, but it seemed to be a job
 for maxscript and she knows nothing about scripting, so I took a deep
 breath and gave it a shot.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;for v in $[1].mesh.verts do (instance $[2]).pos = v.pos * $[1].transform
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;v&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="n"&gt;mesh&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;verts&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;instance&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]).&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pos&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="n"&gt;transform&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1510,28 +1510,28 @@ Softimage.&lt;/p&gt;
 for Softimage that help us to wrap all the calls inside a function in an
 unique undo.&lt;/p&gt;
 &lt;p&gt;The decorator itself should look something like this...&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;functools&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;wraps&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nx"&gt;from&lt;/span&gt; &lt;span class="nx"&gt;functools&lt;/span&gt; &lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nx"&gt;wraps&lt;/span&gt;
 
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;OneUndo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;function&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="nd"&gt;@wraps&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;function&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_decorated&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-            &lt;span class="n"&gt;Application&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;BeginUndo&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-            &lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-        &lt;span class="k"&gt;finally&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-            &lt;span class="n"&gt;Application&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;EndUndo&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;_decorated&lt;/span&gt;
+&lt;span class="nx"&gt;def&lt;/span&gt; &lt;span class="nx"&gt;OneUndo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="nx"&gt;wraps&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nx"&gt;def&lt;/span&gt; &lt;span class="nx"&gt;_decorated&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nx"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="nx"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+            &lt;span class="nx"&gt;Application&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;BeginUndo&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+            &lt;span class="nx"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nx"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="nx"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;finally&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+            &lt;span class="nx"&gt;Application&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;EndUndo&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;f&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;_decorated&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;And a basic example...&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;@OneUndo
-def CreateNulls(size=100):
-    return [Application.ActiveSceneRoot.AddNull()
-            for i in range(size)]
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;OneUndo&lt;/span&gt;
+&lt;span class="n"&gt;def&lt;/span&gt; &lt;span class="n"&gt;CreateNulls&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Application&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ActiveSceneRoot&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;AddNull&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+            &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
 
-CreateNulls()
+&lt;span class="n"&gt;CreateNulls&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 

@@ -73,7 +73,7 @@
 <section id="container" class="wide">
 <section id="content" class="body">
   <footer class="post-info">
-    Published on <abbr class="published" title="2011-11-03T00:00:00-03:00">03 Nov 2011</abbr> in
+    Published on <abbr class="published" title="2011-11-03T00:00:00">03 Nov 2011</abbr> in
     <a href="http://www.cesarsaez.me/tag/code/">code</a>,    <a href="http://www.cesarsaez.me/tag/softimage/">softimage</a>  </footer><!-- /.post-info -->
   <header>
     <h2 class="entry-title">OneUndo decorator</h2>
@@ -85,28 +85,28 @@
 for Softimage that help us to wrap all the calls inside a function in an
 unique undo.</p>
 <p>The decorator itself should look something like this...</p>
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
+<div class="highlight"><pre><span class="nx">from</span> <span class="nx">functools</span> <span class="kr">import</span> <span class="nx">wraps</span>
 
-<span class="k">def</span> <span class="nf">OneUndo</span><span class="p">(</span><span class="n">function</span><span class="p">):</span>
-    <span class="nd">@wraps</span><span class="p">(</span><span class="n">function</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">_decorated</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="n">Application</span><span class="o">.</span><span class="n">BeginUndo</span><span class="p">()</span>
-            <span class="n">f</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">finally</span><span class="p">:</span>
-            <span class="n">Application</span><span class="o">.</span><span class="n">EndUndo</span><span class="p">()</span>
-            <span class="k">return</span> <span class="n">f</span>
-    <span class="k">return</span> <span class="n">_decorated</span>
+<span class="nx">def</span> <span class="nx">OneUndo</span><span class="p">(</span><span class="kd">function</span><span class="p">)</span><span class="o">:</span>
+    <span class="err">@</span><span class="nx">wraps</span><span class="p">(</span><span class="kd">function</span><span class="p">)</span>
+    <span class="nx">def</span> <span class="nx">_decorated</span><span class="p">(</span><span class="o">*</span><span class="nx">args</span><span class="p">,</span> <span class="o">**</span><span class="nx">kwargs</span><span class="p">)</span><span class="o">:</span>
+        <span class="k">try</span><span class="o">:</span>
+            <span class="nx">Application</span><span class="p">.</span><span class="nx">BeginUndo</span><span class="p">()</span>
+            <span class="nx">f</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="o">*</span><span class="nx">args</span><span class="p">,</span> <span class="o">**</span><span class="nx">kwargs</span><span class="p">)</span>
+        <span class="k">finally</span><span class="o">:</span>
+            <span class="nx">Application</span><span class="p">.</span><span class="nx">EndUndo</span><span class="p">()</span>
+            <span class="k">return</span> <span class="nx">f</span>
+    <span class="k">return</span> <span class="nx">_decorated</span>
 </pre></div>
 
 
 <p>And a basic example...</p>
-<div class="highlight"><pre>@OneUndo
-def CreateNulls(size=100):
-    return [Application.ActiveSceneRoot.AddNull()
-            for i in range(size)]
+<div class="highlight"><pre><span class="err">@</span><span class="n">OneUndo</span>
+<span class="n">def</span> <span class="n">CreateNulls</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span><span class="o">:</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">Application</span><span class="p">.</span><span class="n">ActiveSceneRoot</span><span class="p">.</span><span class="n">AddNull</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="n">in</span> <span class="n">range</span><span class="p">(</span><span class="n">size</span><span class="p">)]</span>
 
-CreateNulls()
+<span class="n">CreateNulls</span><span class="p">()</span>
 </pre></div>
 
 
