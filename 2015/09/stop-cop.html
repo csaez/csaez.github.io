@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CESAR SAEZ - Moving to pelican</title> <!-- override title -->
+  <title>CESAR SAEZ - Stop "class oriented programming"</title> <!-- override title -->
+  <meta property="og:image" content="http://www.cesarsaez.me/images/stop-cop.png"/>
     <title>CESAR SAEZ</title>
   <meta charset="utf-8" />
   <link href="http://www.cesarsaez.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
@@ -28,7 +29,9 @@
   <!-- end favicon setup -->
   <link rel="stylesheet" href="http://www.cesarsaez.me/theme/css/style.min.css">
 
+    <meta name="description" contents="Stop using classes as containers, data belong to the instance." />
     <meta name="tags" contents="thoughts" />
+    <meta name="tags" contents="code" />
 </head>
 
 <body>
@@ -72,82 +75,61 @@
 <section id="container" class="wide">
 <section id="content" class="body">
   <footer class="post-info">
-    Published on <abbr class="published" title="2013-10-22T00:00:00">22 Oct 2013</abbr> in
-    <a href="http://www.cesarsaez.me/tag/thoughts.html">thoughts</a>  </footer><!-- /.post-info -->
+    Published on <abbr class="published" title="2015-09-23T00:00:00">23 Sep 2015</abbr> in
+    <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts</a>,    <a href="http://www.cesarsaez.me/tag/code/">code</a>  </footer><!-- /.post-info -->
   <header>
-    <h2 class="entry-title">Moving to pelican</h2>
+    <h2 class="entry-title">Stop "class oriented programming"</h2>
  
   </header>
   <div class="entry-content">
-    <p>I did it! I finally switched to a 'static' site :)</p>
-<h2>Why?</h2>
-<p>To be honest I was bored of the 'blogging platforms' overhead.</p>
-<p>For simple use cases there's the good ol' <a href="http://www.blogger.com">blogger</a>, it works fine
-and it's quite secure but has some serious limitations on the customization
-side and its templates are extremely messy (all in one big xml file).</p>
-<p>So, if you want to go custom the obvious choice seems to be <a href="http://www.wordpress.org">wordpress</a>,
-I've used it for a while and it works well, but it requires a hell of
-maintenance in order to stay away of security problems... I thought 'nobody
-would like to hack a personal blog' and there you go, I was hacked twice.
-I think there are so many sites running on top of wordpress that it's not
-that improbable get randomly hacked because of a new vulnerability.</p>
-<p>At the end I just wanted a simple blogging platform (no need for e-commerce
-or any fancy feature, just blogging), secure and easy to use... it seems a
-perfect use case for a static site generator :)</p>
-<h3>How does it works?</h3>
-<p>You write your posts as text files using a simple markup lenguague
-(markdown, ReST, YAML) and the generator parse the content and rebuild
-the entire site for you.</p>
-<p>The output is static site but as you can rebuild the entire thing in no
-time it works perfectly on personal sites like this one.</p>
-<h3>What about comments?</h3>
-<p>Yep, comments are dynamic by nature so the only way to implement them on
-a static sites is via external services + some javascript.</p>
-<p>I was using google+ comments on <a href="http://www.blogger.com">blogger</a> and I could implement them
-here too, but they are too attached to google plus and I prefered use a
-less intrusive service like <a href="http://disqus.com/">disqus</a>.</p>
-<h3>What about publishing?</h3>
-<p>Upload the entire site each time I write or edit something could be
-annoying, but <em>there is the cloud!</em></p>
-<p>There are many cloud services that could be handy on this one, a quick
-search lead us to people hosting their sites via <a href="http://www.dropbox.com">dropbox</a>,
-<a href="http://www.github.com">github</a>, <a href="http://www.heroku.com">heroku</a> and many many others.</p>
-<p>Since I'm already using <a href="http://www.git-scm.com">git</a> and <a href="http://www.github.com">github</a> for my open source
-projects I decided to add this site too, perhaps it's not the
-best solution from a CEO point of view but I really don't care too much
-about that and <a href="http://pages.github.com/">github pages</a> makes it almost
-efortless, I just push the generated output to a specific branch and
-github serves the latest version.</p>
-<h3>Why pelican?</h3>
-<p>I was really tempted by <a href="http://www.jekyllrb.com">jekyll</a> but it's written in <a href="http://www.ruby-lang.org">ruby</a>
-and I'm not familiar with the language, so I ended up looking for a
-<a href="http://www.python.org">python</a> based one and <a href="http://pelican.readthedocs.org">pelican</a> seemed to be quite popular
-(<a href="http://www.getnikola.com">nikola</a> looked promising too).</p>
-<h2>Migrating</h2>
-<p>Migrate implied export the blog posts to markdown and tweak the templates,
-it tooks some time but wasn't that difficult.</p>
-<h4>Posts to markdown:</h4>
-<p>I love the idea of start using <a href="http://daringfireball.net/projects/markdown/">markdown</a> as writing formating for my
-posts, it's easy to the eyes and fits nicely with the 'separation of
-conserns' filosophy.</p>
-<p>Pelican offers some automatic migration tools, I tried converting the rss
-feed to markdown and it 'worked' but just as a base, I ended up tweaking
-all markdown files by hand. Fortunatelly (?) I didn't have much articles
-on blogger (remember those wordpress hack attacks? yep...) and wasn't that
-painfull.</p>
-<h4>Templates:</h4>
-<p>Pelican uses <a href="http://jinja.pocoo.org">jinja2</a> as template engine, the templates are a bit low
-level compared with Jekyll's ones but they are much more powerfull and, as
-jinja is python based, you can pass all kind of metadata between
-pages/articles/config files.</p>
-<p>I also wanted to redesign the site and somehow update my 'webdev skills',
-last time I built a website was using macromedia dreamweaver 10 years ago
-(you know, hardcoded tables everywhere and all kind of webdev atrocities).</p>
-<h3>tl;dr</h3>
-<p>I finally migrated to a static site that can be customized, it is secure,
-open source and that I understand (no black boxes here).</p>
-<p>I honestly don't think this is the right move for everyone, but if you are
-somewhat technical it's well worth it.</p>
+    <p>Hi folks,</p>
+<p>It has been a long time without writing anything here, so I thought it was
+about time say hi by sharing my view on something I've been "fighting with"
+lately.</p>
+<p>This article is about a common missunderstanding/pattern I've seen many many
+times, especially when it comes to code written by self-taughts developers
+(like myself), that's nothing but harmful for your future self and anyone using
+your code.</p>
+<p>I have found that, for some reason, people feel the need to write code
+contained in some scope/namespace, and classes come naturally on a language
+like python (why no functions? or even modules? I don't know, people love
+classes). So instead of using classes to define types, people start to
+implement the entire thing directly on an "unique" class, prefixing everything
+with <code>self</code> as a way to store its state, and instancing the class once as a way
+to call the code.</p>
+<p>Let me share something with you: <em>the state (a.k.a. data) belongs to the
+instance while the behaviour (a.k.a. methods) to the class</em>.</p>
+<p>That's object oriented programming in a nutshell, you define a type
+implementing certain behaviour and then create multiple instances storing
+different states. You rarelly save the state at a class level unless you really
+have a good reason to do it (yeah... there are plenty of valid reasons to do
+it, but you know what I mean).</p>
+<h4>But Cesar... everybody knows that!</h4>
+<p>Are you sure?</p>
+<p>Take an honest look at your GUI code (qt, anyone?)... if you are like the
+average TD out there, I bet you are subclassing a mainWindow/dialog to add
+widgets <em>AND set its state</em> inside the class instead of creating "templates" to
+be used outside your "container".</p>
+<p>What about your rigging system? anim tools? (or whatever you develop in your
+field).</p>
+<h4>Fair enough... but what's wrong about using classes as containers?</h4>
+<p>There's absolutely nothing wrong about it <em>as long as you know what you're
+doing</em>.</p>
+<p>If anything, I think it's not a good default as it leads to extremelly specific
+classes and a lack of a proper interfaces to consume your code.</p>
+<p>It also leads to tons of boiler plate, as the keyword <code>class</code> somehow loss its
+value and people stop thinking about defining types and being generic, at the
+end of the day you force everyone wanting to reuse your code to sublclass and
+overload/extend most of the methods.</p>
+<p>I'm not saying you shouldn't be using classes, classes are a powerful and
+needed tool if you're doing OOP, but be aware that each time you type <code>class</code>
+you're defining a new type, like <code>str</code> or <code>list</code> or any builtin, so use it
+wisely.</p>
+<h4>So, what about you?</h4>
+<p>Have you seen this pattern before? (unittest!?) What do you think about it? Am
+I the only one seeing it as a problem?</p>
+<p>I would love to read your thoughts on the comments below... don't be shy! :)</p>
+<p>Cesar</p>
   </div><!-- /.entry-content -->
   <div id="disqus_thread"><!-- comments -->
     <script type="text/javascript">
