@@ -64,7 +64,7 @@ EXTRA_PATH_METADATA = {
     'extra/mstile-310x310.png': {'path': 'mstile-310x310.png'},
     }
 
-TIMEZONE = 'America/Santiago'
+TIMEZONE = 'Australia/Sydney'
 DEFAULT_DATE_FORMAT = u"%d %b %Y"
 
 DEFAULT_LANG = u'en'
