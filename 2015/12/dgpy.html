@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CESAR SAEZ - Me and myself</title> <!-- override title -->
+  <title>CESAR SAEZ - dgpy</title> <!-- override title -->
+  <meta property="og:image" content="http://www.cesarsaez.me/images/dgpy.png"/>
     <title>CESAR SAEZ</title>
   <meta charset="utf-8" />
   <link href="http://www.cesarsaez.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
@@ -28,8 +29,10 @@
   <!-- end favicon setup -->
   <link rel="stylesheet" href="http://www.cesarsaez.me/theme/css/style.min.css">
 
-    <meta name="tags" contents="thoughts" />
-    <meta name="tags" contents="interviews" />
+    <meta name="description" contents="A naive dependancy graph python implementation coded live, 10 minutes at a time, in a test-driven development fashion." />
+    <meta name="tags" contents="code" />
+    <meta name="tags" contents="rnd" />
+    <meta name="tags" contents="recommended" />
 </head>
 
 <body>
@@ -73,17 +76,40 @@
 <section id="container" class="wide">
 <section id="content" class="body">
   <footer class="post-info">
-    Published on <abbr class="published" title="2011-09-30T00:00:00">30 Sep 2011</abbr> in
-    <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts</a>,    <a href="http://www.cesarsaez.me/tag/interviews/">interviews</a>  </footer><!-- /.post-info -->
+    Published on <abbr class="published" title="2015-12-20T00:00:00">20 Dec 2015</abbr> in
+    <a href="http://www.cesarsaez.me/tag/code/">code</a>,    <a href="http://www.cesarsaez.me/tag/rnd/">rnd</a>,    <a href="http://www.cesarsaez.me/tag/recommended/">recommended</a>  </footer><!-- /.post-info -->
   <header>
-    <h2 class="entry-title">Me and myself</h2>
+    <h2 class="entry-title">dgpy</h2>
  
   </header>
   <div class="entry-content">
-    <p>Me me me... and myself.</p>
-<p>Just kidding.... I'm rescuing old posts (you know, restarting the site once again) and I found this interview from the guys at <a href="http://www.eje-zeta.com">eje-zeta</a> in which I talked about my experience as self-taught CG artist.</p>
-<p>By the way, spanish only...</p>
-<p><a href="http://www.eje-zeta.com/2010/03/17/entrevista-con-cesar-saez-de-kandorgraphics">LINK</a></p>
+    <p>Hi folks,</p>
+<p>I've been recording this 10 minutes sessions implementing a very simple
+dependancy graph in python. It's a bit embarrasing to put yourself out there
+like this but what the heck: life is too short :)</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLYcUacEjhPL-nSolgfdIJ_GqBakUp790z" frameborder="0" allowfullscreen></iframe>
+
+<p>The motivation behind this has to do with developing a deeper understanding of
+how graphs work and how to use them to model problems we face everyday as
+TDs/TAs, and also to help to demythify testing as part of the development
+process.</p>
+<p>I've seen so many talented technical artists starting to implement this kind of
+projects without much focus/structure and the outcome always lead to not
+getting much done (I've been there too, working in the GUI side of things
+before give any thought to the backend and stuff like that). I hope this series
+help to spread a somehow different approach, where we solve one problem at a
+time, without going crazy in terms of complexity/overthinking, leaving tests of
+every feature as we go so the code can actually be refactored when needed.</p>
+<p>At the moment there's support for arbitrary nodes, persistent connections, and
+a push/pull evaluation model. I'm currently starting to work on the
+serialization of the graph and whatever comes next depends on you :)</p>
+<p>So, if any of this seems interesting to you, please feel free to follow along!
+Any feedback is much appreciated.</p>
+<p>Oh! I almost forgot, the code is <a href="https://github.com/csaez/dgpy">available at
+github</a>, but I honestly do not recommend to use
+it without following the videos as most of the value of this project comes from
+the process.</p>
+<p>Cheers!</p>
   </div><!-- /.entry-content -->
   <div id="disqus_thread"><!-- comments -->
     <script type="text/javascript">
