@@ -1,18 +1,21 @@
 {% extends "base.html" %}
 {% block head %}
+<meta property="og:title" content="{{ article.title }}"/>
+<meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"/>
   <title>{{ SITENAME }} - {{ article.title }}</title> <!-- override title -->
   {% if article.image %}
   <meta property="og:image" content="{{ SITEURL }}/{{article.image}}"/>
   {% endif %}
   {{ super() }}
   {% for keyword in article.keywords %}
-    <meta name="keywords" contents="{{keyword}}" />
+    <meta name="keywords" contents="{{keyword}}"/>
   {% endfor %}
   {% if article.description %}
-    <meta name="description" contents="{{article.description}}" />
+    <meta name="description" contents="{{article.description}}"/>
+    <meta property="og:description" content="{{ article.description }}"/>
   {% endif %}
   {% for tag in article.tags %}
-    <meta name="tags" contents="{{tag}}" />
+    <meta name="tags" contents="{{tag}}"/>
   {% endfor %}
 {% endblock %}
 {% block content %}
