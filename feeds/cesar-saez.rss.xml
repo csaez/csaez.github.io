@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CESAR SAEZ</title><link>http://www.cesarsaez.me/</link><description>Character TD</description><atom:link href="http://www.cesarsaez.me/feeds/cesar-saez.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 20 Dec 2015 00:00:00 +1100</lastBuildDate><item><title>dgpy</title><link>http://www.cesarsaez.me/2015/12/dgpy.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
-&lt;p&gt;I've been recording this 10 minutes sessions implementing a very simple
-dependancy graph in python. It's a bit embarrasing to put yourself out there
-like this but what the heck: life is too short :)&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLYcUacEjhPL-nSolgfdIJ_GqBakUp790z" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;The motivation behind this has to do with developing a deeper understanding of
-how graphs work and how to use them to model problems we face everyday as
-TDs/TAs, and also to help to demythify testing as part of the development
-process.&lt;/p&gt;
-&lt;p&gt;I've seen so many talented technical artists starting to implement this kind of
-projects without much focus/structure and the outcome always lead to not
-getting much done (I've been there too, working in the GUI side of things
-before give any thought to the backend and stuff like that). I hope this series
-help to spread a somehow different approach, where we solve one problem at a
-time, without going crazy in terms of complexity/overthinking, leaving tests of
-every feature as we go so the code can actually be refactored when needed.&lt;/p&gt;
-&lt;p&gt;At the moment there's support for arbitrary nodes, persistent connections, and
-a push/pull evaluation model. I'm currently starting to work on the
-serialization of the graph and whatever comes next depends on you :)&lt;/p&gt;
-&lt;p&gt;So, if any of this seems interesting to you, please feel free to follow along!
-Any feedback is much appreciated.&lt;/p&gt;
-&lt;p&gt;Oh! I almost forgot, the code is &lt;a href="https://github.com/csaez/dgpy"&gt;available at
-github&lt;/a&gt;, but I honestly do not recommend to use
-it without following the videos as most of the value of this project comes from
-the process.&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cesar Saez</dc:creator><pubDate>Sun, 20 Dec 2015 00:00:00 +1100</pubDate><guid>tag:www.cesarsaez.me,2015-12-20:2015/12/dgpy.html</guid><category>code</category><category>rnd</category><category>recommended</category></item><item><title>Stop "class oriented programming"</title><link>http://www.cesarsaez.me/2015/09/stop-cop.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CESAR SAEZ</title><link>http://www.cesarsaez.me/</link><description>Character TD</description><atom:link href="http://www.cesarsaez.me/feeds/cesar-saez.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 14 Jan 2016 00:00:00 +1100</lastBuildDate><item><title>Testing as a medium</title><link>http://www.cesarsaez.me/2016/01/testing-as-a-medium.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Today I gave my first "brain swap" presentation at Animal Logic... and guess
+what was the topic: testing, of course :)&lt;/p&gt;
+&lt;p&gt;Why testing? because I think there's a misunderstanding and lack of focus on
+testing between technical artists/technical directors in our industry, and
+every effort in terms of spread what testing is about helps.&lt;/p&gt;
+&lt;p&gt;Said that, it's tough to introduce an entire area of specialization in less
+than an hour, the more you know the more specialized everything gets and I
+didn't wanted to go there and confuse people. So I ended up focusing in
+fundamental concepts instead, drawing some parallels between the classic
+paradigm and the scientific method, and looking for ways to integrate testing
+in the development process in a way that it presents short-terms benefits to
+developers.&lt;/p&gt;
+&lt;p&gt;Unfortunately I can't share a recording of the presentation, and it's a shame
+because it was quite interactive! with people bringing very interesting
+questions/thoughts to the table.... but I can share the
+&lt;a href="http://cesarsaez.me/slides_testing"&gt;slides&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;There you go, that was my first "brain swap" as a presenter... I hope this
+helps to spread some testing love between TAs/TDs out there, give it a try on
+your next project ;)&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cesar Saez</dc:creator><pubDate>Thu, 14 Jan 2016 00:00:00 +1100</pubDate><guid>tag:www.cesarsaez.me,2016-01-14:2016/01/testing-as-a-medium.html</guid><category>lectures</category><category>code</category><category>thoughts</category></item><item><title>Stop "class oriented programming"</title><link>http://www.cesarsaez.me/2015/09/stop-cop.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;It has been a long time without writing anything here, so I thought it was
 about time say hi by sharing my view on something I've been "fighting with"
 lately.&lt;/p&gt;
