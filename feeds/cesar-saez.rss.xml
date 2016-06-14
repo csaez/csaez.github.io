@@ -1,71 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CESAR SAEZ</title><link>http://www.cesarsaez.me/</link><description>Character TD</description><atom:link href="http://www.cesarsaez.me/feeds/cesar-saez.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 14 Jun 2016 00:00:00 +1000</lastBuildDate><item><title>The future of rigging</title><link>http://www.cesarsaez.me/2016/06/future-rigging.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
-&lt;p&gt;It has been a while since the last entry, thinking about a interesting enough
-topic to share and start a discussion, I remembered a few chats I've had with
-some colleagues lately about the future of rigging and tought why not share here!&lt;/p&gt;
+&lt;p&gt;Looking for an interesting enough topic to share and start a discussion over
+here, after all it has been a while, I remembered a few chats I've had with
+some colleagues lately about the future of rigging and I'm curious about your
+thoughts on this, se here we go... the future of rigging!&lt;/p&gt;
 &lt;h3&gt;A revolution is coming... eventually&lt;/h3&gt;
-&lt;p&gt;If you know me or had ever chat with me about this stuff, you will know that I
-have been thinking about this for a long time, there's even an old
-entry about &lt;a href="http://www.cesarsaez.me/2013/11/rigger-journey.html"&gt;a rigger's journey&lt;/a&gt;
+&lt;p&gt;If you know me or have ever had a chat with me about this stuff, you will know
+that I have been thinking about this for a long time, there's even an old entry
+(&lt;a href="http://www.cesarsaez.me/2013/11/rigger-journey.html"&gt;a rigger's journey&lt;/a&gt;)
 touching a bit on this subject.&lt;/p&gt;
-&lt;p&gt;Actually, if you take a second to read my &lt;a href="http://www.linkedin.com/in/cesarsaez"&gt;Linkedin&lt;/a&gt;
-profile, you will se that one of the first paragraphs goes like this (this text
-has been like this since I created the profile many years ago).&lt;/p&gt;
+&lt;p&gt;Actually, if you take a second to read my
+&lt;a href="http://www.linkedin.com/in/cesarsaez"&gt;linkedin&lt;/a&gt; profile, you will see that one
+of the first paragraphs goes on me wanting to be part of upcoming changes to
+rigging (this text has been like this since I created the profile, many years
+ago).&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;I look forward to further develop my career as technical artist, I firmly
 believe that there is much room for improvement on our workflow &lt;strong&gt;and the
 current paradigm in my area of specialization&lt;/strong&gt;, I want to be part
 of the change. &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;And it's not about big words, I &lt;em&gt;really&lt;/em&gt; mean it! I'm certain that a
-revolution is coming, it has to happen, but I wasnt sure what the big changes
-will look like... until now :)&lt;/p&gt;
+&lt;p&gt;And it's not about big words, I &lt;em&gt;really&lt;/em&gt; mean it! I'm certain that a revolution
+is coming, it &lt;em&gt;has&lt;/em&gt; to happen, but I wasn't sure what the big changes will look
+like... until now.&lt;/p&gt;
 &lt;h3&gt;What's going on in rigging?&lt;/h3&gt;
-&lt;p&gt;So rigging tech hasn't changed much in the last 10 years or so, we
-have more complex assets to work with, less time, but the tech itself hasnt
-changed A LOT (other than OSD and some proprietary/patented tech). If
-anything it is more accessible thanks to the internet and some online academies
-specializing on the subject (not as many as animation or modeling, but you
-know, there's a few).&lt;/p&gt;
+&lt;p&gt;So rigging tech hasn't changed much in the last 10 years, we have more complex
+assets to work with now, less time, but the tech itself hasn't changed much
+(other than OSD and some proprietary/patented tech). If anything it is more
+accessible thanks to the internet and online courses on the subject (not as
+many as animation or modeling, but you know, there are a few).&lt;/p&gt;
 &lt;p&gt;So where's the revolution?&lt;/p&gt;
-&lt;p&gt;Well, ir order to look at the futurte we need to take the past into account...
+&lt;p&gt;Well, ir order to talk about the future we need to take a look at the past...
 10 years ago, if you were able to rig an ik/fk limb you were set for success,
 todays standards, &lt;em&gt;and expectations&lt;/em&gt;, are way higher than that.&lt;/p&gt;
 &lt;p&gt;Right now, riggers are a mix of things, you have to be a bit technical to at
 least automate things in order to deliver rigs on a reasonable time frame (the
 complexity of highend rigs demands automation, it's not optional anymore) and
-artistic enough to hack your way around and get belieable and appealing
-deformations.&lt;/p&gt;
-&lt;p&gt;Said that, riggers don't need to be engineers or sculpters, it's a weird middle
-ground, &lt;em&gt;and that's exactly what I think is going to change very soon&lt;/em&gt;.&lt;/p&gt;
+artistic enough to hack your way around in order to deliver belieable and
+appealing deformations.&lt;/p&gt;
+&lt;p&gt;Said that, riggers do not need to be engineers or sculpters, it's a weird
+middle ground, &lt;em&gt;and that's exactly what I think is going to change very soon&lt;/em&gt;.&lt;/p&gt;
 &lt;h3&gt;Learning from the past&lt;/h3&gt;
-&lt;p&gt;If we look at what happened to other areas of specialization, it's clear that
-after some time were artists hack they way around the tech of the time to get a
-decent-looking product out of the door, there's an inflection point where
-specialized developers have to come in allowing artists to be artists and
-engineers to be engineers, hacking stuff around is not enough anymore.&lt;/p&gt;
+&lt;p&gt;If we look at what happened to other areas, it's clear that after some time
+were artists hacked their way around the tech of the time to get a decent
+looking product out of the door, there's an inflection point where specialized
+developers have to step in allowing artists to be artists and engineers to be
+engineers, hacking stuff around is not enough anymore.&lt;/p&gt;
 &lt;p&gt;A perfect example of this is shading, some years ago shading artists use to
-program shaders in interpreted languages and somehow eyeball surface effects
-until get with the desired look. Nowadays the complexity and expected quality of
-shading has forced to move the tech to specialized developers/engineers, we
-moved from a hack a shader per lighting condition to photorealism and the only
-way to get there was thanks to the split.&lt;/p&gt;
+program shaders in interpreted languages and somehow eyeballed surface effects
+until get with the desired look. Nowadays the complexity and expected quality
+of shading has forced to move the tech to specialized developers/engineers, we
+moved from a hacking a shader per lighting condition to photorealism, and the
+only way to get there was thanks to the split up.&lt;/p&gt;
 &lt;p&gt;I firmly believe that &lt;em&gt;rigging has reached that inflection point&lt;/em&gt;.&lt;/p&gt;
 &lt;h3&gt;But I love rigging, is it going to dissapear?&lt;/h3&gt;
-&lt;p&gt;I've no idea, all this is pure expeculation, but I think rigging will stop being
-a mix of things and will get a bit more serious in order to advance the tech
-behind it... We can't move forward at the speed assets are moving by using
-constraints and linear skin, or having layered rigs running at 6 fps.&lt;/p&gt;
+&lt;p&gt;I've no idea, all this is pure expeculation, but I think rigging will stop
+being a mix of things and will get a bit more serious in order to advance the
+tech behind it... We can't move forward at the speed assets are moving by using
+constraints and linear skin, or having layered rigs running at 6 FPS.&lt;/p&gt;
 &lt;p&gt;If you look at rigging openings on big studios you have a clear split between
 studios looking for &lt;em&gt;artists with some technical skills&lt;/em&gt; (great sensibility to
 achieve appealing deformations, plus some scripting abilities to survive while
-using proprietary tools) and the ones looking for &lt;em&gt;technical minded people
-with some artistic sensibility&lt;/em&gt; (basically engineers able to create the tech
+using proprietary tools) and the ones looking for &lt;em&gt;technical minded people with
+some artistic sensibility&lt;/em&gt; (basically engineers able to create the tech
 enabling modelers and animators to articulate the puppets in a believable way).&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The split is happening and the gap will only increase&lt;/em&gt; until we reach the
-point where the artistic ainput can be done directly by modelers/animators
+point where the artistic input can be done directly by modelers/animators
 (there will be an intermediate time where riggers basically assemble rigs from
-libraries and deal with the tech annoyances, wait... that's now! :) )&lt;/p&gt;
+libraries and deal with tech annoyances, wait... that's now! :) )&lt;/p&gt;
 &lt;h3&gt;Where to go from here? how to survive?&lt;/h3&gt;
 &lt;p&gt;If you are all about deformations and appealing, I highly recommend to move
 towards modeling (specifically sculpting), that's really the area where those
@@ -74,12 +76,11 @@ rigging requirements in terms of topology is a big plus!&lt;/p&gt;
 &lt;p&gt;On the other hand, if you are into technology, I think rigging will become way
 more close to software dev and knowing 4 things about for loops and variables
 will not be enough anymore, after all coding is the new literacy and knowing
-the alphabet will be considered the baseline for most areas sooner than
-later.&lt;/p&gt;
+the alphabet will be considered the baseline for most areas sooner than later.&lt;/p&gt;
 &lt;p&gt;In order to really make this happen, we will need to step up big time and
 become a developer/engineer (I'm not talking about the degree, but the
 mindset), have a clear understanding of the main programming paradigms (opp,
-functional), being able to design reasonable apis, understand data, being able 
+functional), being able to design reasonable apis, understand data, being able
 to develop fast code by understanding the hardware (especially GPUs, parallel
 computing is already a big deal when it comes to deformations).&lt;/p&gt;
 &lt;p&gt;In short, not cut corners and do the work towards those topics (not dogmas, the
