@@ -56,18 +56,18 @@ can't 'live' outside your DCC.
 
 It's time to learn more about programming languages (the language itself),
 design patterns and realize that programming is not just about automation
-but resource management.
+but resource management and fata transformation.
 
-Modular auto-rigger? animation tools? perhaps some standalone utility?
+Modular auto-rigger? animation tools? perhaps some standalone application?
 Has anyone seen this before?
 
 ### Back to the basics
 I'm at this point now, I've coded alot and I love it, but I'm not sure I
 always remember why I'm doing it (e.g. I often find myself working on
-pipeline stuff).
+pipeline-ish stuff).
 
 Now, when I face a new character, I try to focus just on deformation, I don't
-care too much about rigging behaviour or fancy animation features, just joint
+care too much about rigging behavior or fancy animation features, just joint
 placement and references (a lot of them) until it looks ok and met the
 anim requirements (or time's up :P)... then I go and add the fancy stuff
 (which is probably automated at this point).
