@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta property="og:title" content="RigLab: Metadata"/>
-<meta property="og:url" content="http://www.cesarsaez.me/2014/02/riglab-metadata.html"/>
-  <title>CESAR SAEZ - RigLab: Metadata</title> <!-- override title -->
+<meta property="og:title" content="The future of rigging"/>
+<meta property="og:url" content="http://www.cesarsaez.me/2016/06/future-rigging.html"/>
+  <title>CESAR SAEZ - The future of rigging</title> <!-- override title -->
+  <meta property="og:image" content="http://www.cesarsaez.me/images/future-rigging.png"/>
     <title>CESAR SAEZ</title>
   <meta charset="utf-8" />
   <link href="http://www.cesarsaez.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
@@ -31,12 +32,9 @@
   <!-- end favicon setup -->
   <link rel="stylesheet" href="http://www.cesarsaez.me/theme/css/style.min.css">
 
-    <meta name="description" contents="Article on metadata and python magic methods."/>
-    <meta property="og:description" content="Article on metadata and python magic methods."/>
-    <meta name="tags" contents="riglab"/>
-    <meta name="tags" contents="rnd"/>
-    <meta name="tags" contents="code"/>
-    <meta name="tags" contents="recommended"/>
+    <meta name="description" contents="A revolution is coming, it's here, are you ready?"/>
+    <meta property="og:description" content="A revolution is coming, it's here, are you ready?"/>
+    <meta name="tags" contents="thoughts"/>
 </head>
 
 <body>
@@ -80,82 +78,106 @@
 <section id="container" class="wide">
 <section id="content" class="body">
   <footer class="post-info">
-    Published on <abbr class="published" title="2014-02-01T00:00:00">01 Feb 2014</abbr> in
-    <a href="http://www.cesarsaez.me/tag/riglab/">riglab</a>,    <a href="http://www.cesarsaez.me/tag/rnd/">rnd</a>,    <a href="http://www.cesarsaez.me/tag/code/">code</a>,    <a href="http://www.cesarsaez.me/tag/recommended/">recommended</a>  </footer><!-- /.post-info -->
+    Published on <abbr class="published" title="2016-06-14T00:00:00">14 Jun 2016</abbr> in
+    <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts</a>  </footer><!-- /.post-info -->
   <header>
-    <h2 class="entry-title">RigLab: Metadata</h2>
+    <h2 class="entry-title">The future of rigging</h2>
  
   </header>
   <div class="entry-content">
     <p>Hi folks,</p>
-<p>This entry will be a bit techy, but not too much... stay with me! :)</p>
-<h2>First, what is metadata?</h2>
-<p>Metadata is "data about data", it describes information about the contents of the
-item itself or its components... it's a note for our selves, so we don't
-have to figure out that information from scratch the next time.</p>
-<p><em>Metadata by example:</em>
-Let's say we have an asset composed by several meshes and
-we need to collect all of them by scripting on export.</p>
-<ul>
-<li>
-<p>We can ask the user for the meshes (via selection or something) and that's it,
-but that means we will need an user input on EVERY export... no batch processing,
-bummer!</p>
-</li>
-<li>
-<p>We can try to filter the meshes looping through the hierarchy + some logic
-(conditionals + naming convention stuff) until collect all of them, it might work,
-but there is a risk of the validation logic not always being true.</p>
-</li>
-</ul>
-<p>Or...</p>
-<ul>
-<li><strong>We can use metadata!</strong> saving a 'note' with the meshes' name each time the
-user export them, so we have an user defined fallback for batch processing!</li>
-</ul>
-<h2>Cool, but how?</h2>
-<p>Metadata can be stored anywhere, it could be embeded on an attribute/custom-parameter,
-written on an external file (so we can read it outside the DCC), stored
-in a database and so on...</p>
-<p>Whatever you choose, it is important to define an unified system to do it
-because your code will become quite messy with all those extra metadata calls.</p>
-<h2>Here comes the magic!</h2>
-<p>Are you familiar with <a href="http://www.rafekettler.com/magicmethods.html">python's magic methods</a>?
-Did you know they can be extended?</p>
-<p>I did just that and it works great!</p>
-<p>I created a base class for containers (I mean, things that group things together),
-its instances serialize whatever you pass as an attribute thanks to python's magic
-methods.</p>
-<p>So each time I write something like this:</p>
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">wishlib.si</span> <span class="kn">import</span> <span class="n">SIWrapper</span>  <span class="c"># the base class I was talking about</span>
-
-<span class="n">selected_obj</span> <span class="o">=</span> <span class="n">Application</span><span class="o">.</span><span class="n">Selection</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">foo</span> <span class="o">=</span> <span class="n">SIWrapper</span><span class="p">(</span><span class="n">selected_obj</span><span class="p">)</span>
-<span class="n">foo</span><span class="o">.</span><span class="n">bar</span> <span class="o">=</span> <span class="s">&#39;baz&#39;</span>
-</pre></div>
-
-
-<p>On <code>foo.bar = 'baz'</code>, <code>__setattr__</code> is called, <code>baz</code> is serialized
-and stored as string in a custom parameter (Softimage's version of maya attributes).</p>
-<p>Let's say I restart Softimage (fresh session) and type something like this:</p>
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">wishlib.si</span> <span class="kn">import</span> <span class="n">SIWrapper</span>
-
-<span class="n">selected_obj</span> <span class="o">=</span> <span class="n">Application</span><span class="o">.</span><span class="n">Selection</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c"># same selection</span>
-<span class="n">foo</span> <span class="o">=</span> <span class="n">SIWrapper</span><span class="p">(</span><span class="n">selected_obj</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">foo</span><span class="o">.</span><span class="n">bar</span>  <span class="c"># &#39;baz&#39;</span>
-</pre></div>
-
-
-<p>When <code>foo</code> is instanciated its <code>__init__</code> method is called, reading the metadata
-from the custom parameters and initializing its members, so when we call <code>foo.bar</code>
-it's a valid member and returns the expected data.</p>
-<p>I don't want to bother you with the <a href="https://github.com/csaez/wishlib/blob/master/wishlib/si/siwrapper.py">implementation details</a> (take it with a grain of salt),
-but I think it is a really cool way to serialize stuff without add too much overhead
-to existing code.</p>
-<p>There's a catch though, mutable data types mutates itself changing its own data, so
-your extended <code>__setattr__</code> method will never be called unless you explicitly
-update the entire thing.</p>
-<p>I would love to know how you guys solve this kind of stuff :)</p>
+<p>It has been a while since the last entry, thinking about a interesting enough
+topic to share and start a discussion, I remembered a few chats I've had with
+some colleagues lately about the future of rigging and tought why not share here!</p>
+<h3>A revolution is coming... eventually</h3>
+<p>If you know me or had ever chat with me about this stuff, you will know that I
+have been thinking about this for a long time, there's even an old
+entry about <a href="http://www.cesarsaez.me/2013/11/rigger-journey.html">a rigger's journey</a>
+touching a bit on this subject.</p>
+<p>Actually, if you take a second to read my <a href="http://www.linkedin.com/in/cesarsaez">Linkedin</a>
+profile, you will se that one of the first paragraphs goes like this (this text
+has been like this since I created the profile many years ago).</p>
+<blockquote>
+<p>I look forward to further develop my career as technical artist, I firmly
+believe that there is much room for improvement on our workflow <strong>and the
+current paradigm in my area of specialization</strong>, I want to be part
+of the change. </p>
+</blockquote>
+<p>And it's not about big words, I <em>really</em> mean it! I'm certain that a
+revolution is coming, it has to happen, but I wasnt sure what the big changes
+will look like... until now :)</p>
+<h3>What's going on in rigging?</h3>
+<p>So rigging tech hasn't changed much in the last 10 years or so, we
+have more complex assets to work with, less time, but the tech itself hasnt
+changed A LOT (other than OSD and some proprietary/patented tech). If
+anything it is more accessible thanks to the internet and some online academies
+specializing on the subject (not as many as animation or modeling, but you
+know, there's a few).</p>
+<p>So where's the revolution?</p>
+<p>Well, ir order to look at the futurte we need to take the past into account...
+10 years ago, if you were able to rig an ik/fk limb you were set for success,
+todays standards, <em>and expectations</em>, are way higher than that.</p>
+<p>Right now, riggers are a mix of things, you have to be a bit technical to at
+least automate things in order to deliver rigs on a reasonable time frame (the
+complexity of highend rigs demands automation, it's not optional anymore) and
+artistic enough to hack your way around and get belieable and appealing
+deformations.</p>
+<p>Said that, riggers don't need to be engineers or sculpters, it's a weird middle
+ground, <em>and that's exactly what I think is going to change very soon</em>.</p>
+<h3>Learning from the past</h3>
+<p>If we look at what happened to other areas of specialization, it's clear that
+after some time were artists hack they way around the tech of the time to get a
+decent-looking product out of the door, there's an inflection point where
+specialized developers have to come in allowing artists to be artists and
+engineers to be engineers, hacking stuff around is not enough anymore.</p>
+<p>A perfect example of this is shading, some years ago shading artists use to
+program shaders in interpreted languages and somehow eyeball surface effects
+until get with the desired look. Nowadays the complexity and expected quality of
+shading has forced to move the tech to specialized developers/engineers, we
+moved from a hack a shader per lighting condition to photorealism and the only
+way to get there was thanks to the split.</p>
+<p>I firmly believe that <em>rigging has reached that inflection point</em>.</p>
+<h3>But I love rigging, is it going to dissapear?</h3>
+<p>I've no idea, all this is pure expeculation, but I think rigging will stop being
+a mix of things and will get a bit more serious in order to advance the tech
+behind it... We can't move forward at the speed assets are moving by using
+constraints and linear skin, or having layered rigs running at 6 fps.</p>
+<p>If you look at rigging openings on big studios you have a clear split between
+studios looking for <em>artists with some technical skills</em> (great sensibility to
+achieve appealing deformations, plus some scripting abilities to survive while
+using proprietary tools) and the ones looking for <em>technical minded people
+with some artistic sensibility</em> (basically engineers able to create the tech
+enabling modelers and animators to articulate the puppets in a believable way).</p>
+<p><em>The split is happening and the gap will only increase</em> until we reach the
+point where the artistic ainput can be done directly by modelers/animators
+(there will be an intermediate time where riggers basically assemble rigs from
+libraries and deal with the tech annoyances, wait... that's now! :) )</p>
+<h3>Where to go from here? how to survive?</h3>
+<p>If you are all about deformations and appealing, I highly recommend to move
+towards modeling (specifically sculpting), that's really the area where those
+skills shine (and will keep shining for a while)... Also being familiar with
+rigging requirements in terms of topology is a big plus!</p>
+<p>On the other hand, if you are into technology, I think rigging will become way
+more close to software dev and knowing 4 things about for loops and variables
+will not be enough anymore, after all coding is the new literacy and knowing
+the alphabet will be considered the baseline for most areas sooner than
+later.</p>
+<p>In order to really make this happen, we will need to step up big time and
+become a developer/engineer (I'm not talking about the degree, but the
+mindset), have a clear understanding of the main programming paradigms (opp,
+functional), being able to design reasonable apis, understand data, being able 
+to develop fast code by understanding the hardware (especially GPUs, parallel
+computing is already a big deal when it comes to deformations).</p>
+<p>In short, not cut corners and do the work towards those topics (not dogmas, the
+real stuff), learn all the lessons we can from software development in order to
+not make the same mistakes.</p>
+<hr />
+<p>There you go, that's my armageddon right there... Of course it will not be
+black or white, there's a lot of room for all kind of skills on studios of all
+sizes, but if you really want to have an impact I think the changes are right
+there around the corner and now is the best time to start shaping your career
+towards what really moves you.</p>
+<p>What do you think? Am I crazy? Please let me know in the comments below :)</p>
 <p>Cheers!</p>
   </div><!-- /.entry-content -->
   <div id="disqus_thread"><!-- comments -->
