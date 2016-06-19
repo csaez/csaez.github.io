@@ -28,7 +28,7 @@ ago).
 >I look forward to further develop my career as technical artist, I firmly
 >believe that there is much room for improvement on our workflow __and the
 >current paradigm in my area of specialization__, I want to be part
->of the change. 
+>of the change.
 
 And it's not about big words, I _really_ mean it! I'm certain that a revolution
 is coming, it _has_ to happen, but I wasn't sure what the big changes will look
@@ -112,8 +112,8 @@ the alphabet will be considered the baseline for most areas sooner than later.
 
 In order to really make this happen, we will need to step up big time and
 become a developer/engineer (I'm not talking about the degree, but the
-mindset), have a clear understanding of the main programming paradigms (opp,
-functional), being able to design reasonable apis, understand data, being able
+mindset), have a clear understanding of the main programming paradigms (OOP,
+pure functional), being able to design reasonable apis, understand data, being able
 to develop fast code by understanding the hardware (especially GPUs, parallel
 computing is already a big deal when it comes to deformations).
 
