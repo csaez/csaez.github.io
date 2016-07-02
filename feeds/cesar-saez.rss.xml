@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CESAR SAEZ</title><link>http://www.cesarsaez.me/</link><description>Character TD</description><atom:link href="http://www.cesarsaez.me/feeds/cesar-saez.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 14 Jun 2016 00:00:00 +1000</lastBuildDate><item><title>The future of rigging</title><link>http://www.cesarsaez.me/2016/06/future-rigging.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CESAR SAEZ</title><link>http://www.cesarsaez.me/</link><description>Character TD</description><atom:link href="http://www.cesarsaez.me/feeds/cesar-saez.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 02 Jul 2016 00:00:00 +1000</lastBuildDate><item><title>mscreen</title><link>http://www.cesarsaez.me/2016/07/mscreen.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;I would like to introduce a little python library I've been working on my spare
+time to help TDs and TAs to draw OpenGL primitives in Maya viewport for
+debugging purposes and/or non-critical tools (adding graphics as hints on tools
+and what not).&lt;/p&gt;
+&lt;p&gt;Instead of me writing a wall of text I recorded a short video showing the main
+features in action.&lt;/p&gt;
+&lt;div class="flex-video widescreen"&gt;
+&lt;iframe src="//player.vimeo.com/video/172564385?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The &lt;a href="https://github.com/csaez/mscreen"&gt;source code of &lt;code&gt;mscreen&lt;/code&gt;&lt;/a&gt; is available
+on GitHub, and released under the MIT license. There's also some technical docs
+at &lt;a href="http://www.cesarsaez.me/mscreen"&gt;http://www.cesarsaez.me/mscreen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I hope you like it, enjoy :)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cesar Saez</dc:creator><pubDate>Sat, 02 Jul 2016 00:00:00 +1000</pubDate><guid>tag:www.cesarsaez.me,2016-07-02:2016/07/mscreen.html</guid><category>code</category><category>rnd</category></item><item><title>The future of rigging</title><link>http://www.cesarsaez.me/2016/06/future-rigging.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;Looking for an interesting enough topic to share and start a discussion over
 here, after all it has been a while, I remembered a few chats I've had with
 some colleagues lately about the future of rigging and I'm curious about your
