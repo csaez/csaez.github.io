@@ -1,6 +1,6 @@
 Title: Working with pointcloud datasets
 Author: Cesar Saez
-Tags: softimage, code, recommended
+Tags: softimage, code
 
 Nowadays it's not that unusual having to work with scanned files (point
 clouds), but most DCCs don't provide native support for those file formats

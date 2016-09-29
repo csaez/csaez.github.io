@@ -7,7 +7,7 @@
   <h1 class="section-title">Most Recommended</h1>
   <ul class="latest-list">
     {% for tag, articles in tags %}
-    {% if tag == "recommended" %}
+    {% if tag.name == "recommended" %}
     {% for article in articles|sort(attribute='date', reverse=True) %}
     {% if loop.index0 < 2 %}
     <ul>
@@ -42,7 +42,7 @@
         <p class="post-info">Published on <abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr></p>
         <p class="tags">
           {% for tag in article.tags|sort %}
-          <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if loop.last == False %},{% endif %}
+          <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a>{% if loop.last == False %},{% endif %}
           {% endfor %}
         </p>
       </li>
@@ -65,7 +65,7 @@
         <p class="post-info">Published on <abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr></p>
         <p class="tags">
           {% for tag in article.tags|sort %}
-          <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if loop.last == False %},{% endif %}
+          <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a>{% if loop.last == False %},{% endif %}
           {% endfor %}
         </p>
       </li>

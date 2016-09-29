@@ -1,6 +1,6 @@
 Title: RollUp Prototype
 Author: Cesar Saez
-Tags: thoughts, softimage
+Tags: thoughts, softimage, recommended
 
 ![rollup prototype]({filename}images/rollup_ICE.png "Rollup prototype")
 

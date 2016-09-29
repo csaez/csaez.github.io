@@ -1,6 +1,6 @@
 Title: flASCII bird
 Author: Cesar Saez
-Tags: code, rnd, tools
+Tags: code, rnd, recommended
 
 Hi folks,
 
