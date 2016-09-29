@@ -33,6 +33,7 @@
 
     <meta name="tags" contents="code"/>
     <meta name="tags" contents="thoughts"/>
+    <meta name="tags" contents="recommended"/>
 </head>
 
 <body>
@@ -50,13 +51,13 @@
     <li> <a href="http://www.cesarsaez.me/tag/interviews/">interviews<span class="badge-right">2</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/lectures/">lectures<span class="badge-right">4</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/maya/">maya<span class="badge-right">7</span></a></li>
-    <li> <a href="http://www.cesarsaez.me/tag/recommended/">recommended<span class="badge-right">10</span></a></li>
+    <li> <a href="http://www.cesarsaez.me/tag/recommended/">recommended<span class="badge-right">11</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/reel/">reel<span class="badge-right">2</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/riglab/">riglab<span class="badge-right">7</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/rnd/">rnd<span class="badge-right">16</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/softimage/">softimage<span class="badge-right">17</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts<span class="badge-right">24</span></a></li>
-    <li> <a href="http://www.cesarsaez.me/tag/tools/">tools<span class="badge-right">11</span></a></li>
+    <li> <a href="http://www.cesarsaez.me/tag/tools/">tools<span class="badge-right">10</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/works/">works<span class="badge-right">11</span></a></li>
   </ul><!-- /#menu -->
   <section class="contact">
@@ -76,8 +77,8 @@
 <section id="container" class="wide">
 <section id="content" class="body">
   <footer class="post-info">
-    Published on <abbr class="published" title="2014-08-15T00:00:00">15 Aug 2014</abbr> in
-    <a href="http://www.cesarsaez.me/tag/code/">code</a>,    <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts</a>  </footer><!-- /.post-info -->
+    Published on <abbr class="published" title="2014-08-15T00:00:00+10:00">15 Aug 2014</abbr> in
+    <a href="http://www.cesarsaez.me/tag/code/">code</a>,    <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts</a>,    <a href="http://www.cesarsaez.me/tag/recommended/">recommended</a>  </footer><!-- /.post-info -->
   <header>
     <h2 class="entry-title">Going TDD: first steps...</h2>
  
@@ -85,9 +86,9 @@
   <div class="entry-content">
     <p>Hi folks,</p>
 <p>I have a confession to make: I've always looked at test driven development
-with envy and admiration, but I had never really tried it due to the strong 
+with envy and admiration, but I had never really tried it due to the strong
 dependencies of the code I usually write... but it's even worse, I had never
-put a fair amount of effort on testing due to the same reason (I know, shame 
+put a fair amount of effort on testing due to the same reason (I know, shame
 on me).</p>
 <p>Until one day I finally swallowed my excuses and decided to go TDD on a
 proper project (<code>mauto</code>, more on this in a future post)... and you know what?
@@ -98,7 +99,7 @@ testing and hopefully some of my humble findings could be useful for them.</p>
 <hr />
 <h2>Why testing? I know it's a good practice but...</h2>
 <p>That was exactly my thought for a long time: "this code is not a core
-library so it doesn't matter", "I have so many dependencies, I can't test this", "it would be nice but maybe later", "write tests sucks" 
+library so it doesn't matter", "I have so many dependencies, I can't test this", "it would be nice but maybe later", "write tests sucks"
 and so on.</p>
 <p>The thruth is: writing tests leads you to <em>write better code</em> and
 <em>enables you to refactor</em> your stuff without breaking everything as
@@ -154,8 +155,8 @@ boilerplate-free alternative as <a href="https://nose.readthedocs.org">nose</a> 
 without affecting production assets in case something goes wrong (databases
 and what not).</p>
 <p>For this situations there's a python library called
-<a href="https://pypi.python.org/pypi/mock">mock</a>. I won't cover how to use it, but it 
-provides a nice placeholder that you can use to monkeypatch your dependencies 
+<a href="https://pypi.python.org/pypi/mock">mock</a>. I won't cover how to use it, but it
+provides a nice placeholder that you can use to monkeypatch your dependencies
 during your tests. For further information refer to its
 <a href="http://www.voidspace.org.uk/python/mock/">documentation</a>.</p>
 <hr />
@@ -165,24 +166,24 @@ during your tests. For further information refer to its
 your code is really useful and gives you a nice starting point.</p>
 <p>Let's say we want to develop a pose library (this comes from the top of my
 head, please do not take this example too seriously):</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pose_lib</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pose_lib</span>
 
-<span class="c"># init rig from the scene</span>
-<span class="n">ROOT_NODE</span> <span class="o">=</span> <span class="s">&quot;C_John_root_C_GRP&quot;</span> <span class="c"># node name</span>
+<span class="c1"># init rig from the scene</span>
+<span class="n">ROOT_NODE</span> <span class="o">=</span> <span class="s2">&quot;C_John_root_C_GRP&quot;</span> <span class="c1"># node name</span>
 <span class="n">rig</span> <span class="o">=</span> <span class="n">pose_lib</span><span class="o">.</span><span class="n">Rig</span><span class="p">(</span><span class="n">ROOT_NODE</span><span class="p">)</span>
 
-<span class="c"># list john compatible poses</span>
-<span class="n">pose_lib</span><span class="o">.</span><span class="n">list_poses</span><span class="p">(</span><span class="s">&#39;John&#39;</span><span class="p">)</span>
+<span class="c1"># list john compatible poses</span>
+<span class="n">pose_lib</span><span class="o">.</span><span class="n">list_poses</span><span class="p">(</span><span class="s1">&#39;John&#39;</span><span class="p">)</span>
 
-<span class="c"># apply a pose to John&#39;s rig</span>
-<span class="n">pose</span> <span class="o">=</span> <span class="n">pose_lib</span><span class="o">.</span><span class="n">get_pose</span><span class="p">(</span><span class="s">&#39;John&#39;</span><span class="p">,</span> <span class="s">&#39;stand&#39;</span><span class="p">)</span>
+<span class="c1"># apply a pose to John&#39;s rig</span>
+<span class="n">pose</span> <span class="o">=</span> <span class="n">pose_lib</span><span class="o">.</span><span class="n">get_pose</span><span class="p">(</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;stand&#39;</span><span class="p">)</span>
 <span class="n">rig</span><span class="o">.</span><span class="n">set_pose</span><span class="p">(</span><span class="n">pose</span><span class="p">)</span>
 
-<span class="c"># add John&#39;s current pose to the library</span>
+<span class="c1"># add John&#39;s current pose to the library</span>
 <span class="n">pose</span> <span class="o">=</span> <span class="n">rig</span><span class="o">.</span><span class="n">current_pose</span><span class="p">()</span>
-<span class="n">pose_lib</span><span class="o">.</span><span class="n">add_pose</span><span class="p">(</span><span class="s">&#39;John&#39;</span><span class="p">,</span> <span class="s">&#39;my_pose&#39;</span><span class="p">,</span> <span class="n">pose</span><span class="p">)</span>
+<span class="n">pose_lib</span><span class="o">.</span><span class="n">add_pose</span><span class="p">(</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;my_pose&#39;</span><span class="p">,</span> <span class="n">pose</span><span class="p">)</span>
 
-<span class="c"># and so on...</span>
+<span class="c1"># and so on...</span>
 </pre></div>
 
 
@@ -212,19 +213,19 @@ it down (wait a minute, we are also documenting!).</p>
 </ul>
 <p>The first test is the hardest! that's why the readme is so important.</p>
 <p>1- Reading the readme snippet I would go writting a test as follow:</p>
-<div class="highlight"><pre><span class="c"># file: pose_lib/pose_lib/tests/test_library.py</span>
+<div class="highlight"><pre><span></span><span class="c1"># file: pose_lib/pose_lib/tests/test_library.py</span>
 <span class="kn">from</span> <span class="nn">nose</span> <span class="kn">import</span> <span class="n">test_with</span>
 <span class="kn">import</span> <span class="nn">pose_lib</span>
 
 <span class="k">def</span> <span class="nf">setup</span><span class="p">():</span>
-    <span class="n">pose_lib</span><span class="o">.</span><span class="n">add_set</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span>
+    <span class="n">pose_lib</span><span class="o">.</span><span class="n">add_set</span><span class="p">(</span><span class="s1">&#39;test&#39;</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">tear_down</span><span class="p">():</span>
-    <span class="n">pose_lib</span><span class="o">.</span><span class="n">remove_set</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span>
+    <span class="n">pose_lib</span><span class="o">.</span><span class="n">remove_set</span><span class="p">(</span><span class="s1">&#39;test&#39;</span><span class="p">)</span>
 
 <span class="nd">@test_with</span><span class="p">(</span><span class="n">setup</span><span class="p">,</span> <span class="n">tear_down</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">test_list_poses</span><span class="p">()</span>
-    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">pose_lib</span><span class="o">.</span><span class="n">list_poses</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">),</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">))</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">pose_lib</span><span class="o">.</span><span class="n">list_poses</span><span class="p">(</span><span class="s1">&#39;test&#39;</span><span class="p">),</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">))</span>
 </pre></div>
 
 
@@ -234,7 +235,7 @@ function (the decorated function), other testing frameworks (this one is
 <code>nose</code> specific) should provide a similar way to do this.</p>
 </blockquote>
 <p>2- ... which lead us to write this:</p>
-<div class="highlight"><pre><span class="c"># file: pose_lib/pose_lib/__init__.py</span>
+<div class="highlight"><pre><span></span><span class="c1"># file: pose_lib/pose_lib/__init__.py</span>
 
 <span class="k">def</span> <span class="nf">add_set</span><span class="p">(</span><span class="n">set_name</span><span class="p">)</span>
     <span class="k">pass</span>
@@ -248,7 +249,7 @@ function (the decorated function), other testing frameworks (this one is
 
 
 <p>3- ... and run the tests (from the root directory in a terminal):</p>
-<div class="highlight"><pre><span class="n">python</span> <span class="n">setup</span><span class="p">.</span><span class="n">py</span> <span class="n">nosetests</span>
+<div class="highlight"><pre><span></span>python setup.py nosetests
 </pre></div>
 
 

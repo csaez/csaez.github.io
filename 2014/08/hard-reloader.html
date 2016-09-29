@@ -51,13 +51,13 @@
     <li> <a href="http://www.cesarsaez.me/tag/interviews/">interviews<span class="badge-right">2</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/lectures/">lectures<span class="badge-right">4</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/maya/">maya<span class="badge-right">7</span></a></li>
-    <li> <a href="http://www.cesarsaez.me/tag/recommended/">recommended<span class="badge-right">10</span></a></li>
+    <li> <a href="http://www.cesarsaez.me/tag/recommended/">recommended<span class="badge-right">11</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/reel/">reel<span class="badge-right">2</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/riglab/">riglab<span class="badge-right">7</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/rnd/">rnd<span class="badge-right">16</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/softimage/">softimage<span class="badge-right">17</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts<span class="badge-right">24</span></a></li>
-    <li> <a href="http://www.cesarsaez.me/tag/tools/">tools<span class="badge-right">11</span></a></li>
+    <li> <a href="http://www.cesarsaez.me/tag/tools/">tools<span class="badge-right">10</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/works/">works<span class="badge-right">11</span></a></li>
   </ul><!-- /#menu -->
   <section class="contact">
@@ -77,7 +77,7 @@
 <section id="container" class="wide">
 <section id="content" class="body">
   <footer class="post-info">
-    Published on <abbr class="published" title="2014-08-05T00:00:00">05 Aug 2014</abbr> in
+    Published on <abbr class="published" title="2014-08-05T00:00:00+10:00">05 Aug 2014</abbr> in
     <a href="http://www.cesarsaez.me/tag/code/">code</a>,    <a href="http://www.cesarsaez.me/tag/tools/">tools</a>,    <a href="http://www.cesarsaez.me/tag/maya/">maya</a>  </footer><!-- /.post-info -->
   <header>
     <h2 class="entry-title">Hard Reloader for Maya</h2>
@@ -93,7 +93,7 @@ code within Maya.</p>
 <h3>Installation:</h3>
 <p>Save the code below as <code>hard_reloader.py</code> into your Maya script directory
 (or somewhere else in your PYTHONPATH).</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">sys</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">from</span> <span class="nn">PySide</span> <span class="kn">import</span> <span class="n">QtGui</span><span class="p">,</span> <span class="n">QtCore</span>
 <span class="kn">from</span> <span class="nn">shiboken</span> <span class="kn">import</span> <span class="n">wrapInstance</span>
 <span class="kn">from</span> <span class="nn">maya</span> <span class="kn">import</span> <span class="n">OpenMayaUI</span>
@@ -110,7 +110,7 @@ code within Maya.</p>
     <span class="k">def</span> <span class="nf">initUI</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">ui_lineEdit</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QLineEdit</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="n">ui_completer</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QCompleter</span><span class="p">(</span>
-            <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="o">.</span><span class="n">keys</span><span class="p">()],</span> <span class="bp">self</span><span class="p">)</span>
+            <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="o">.</span><span class="n">keys</span><span class="p">()],</span> <span class="bp">self</span><span class="p">)</span>
         <span class="n">ui_completer</span><span class="o">.</span><span class="n">setCompletionMode</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QCompleter</span><span class="o">.</span><span class="n">InlineCompletion</span><span class="p">)</span>
         <span class="n">ui_completer</span><span class="o">.</span><span class="n">setCaseSensitivity</span><span class="p">(</span><span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">CaseInsensitive</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">ui_lineEdit</span><span class="o">.</span><span class="n">setCompleter</span><span class="p">(</span><span class="n">ui_completer</span><span class="p">)</span>
@@ -145,7 +145,7 @@ imports to PyQt (<code>PySide</code>-&gt;<code>PyQt4</code> and <code>shiboken</
 </blockquote>
 <h3>Ussage:</h3>
 <p>Just import it and call its <code>show</code> function (put this in a shelf or assign a hotkey).</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">hard_reloader</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">hard_reloader</span>
 <span class="n">hard_reloader</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 

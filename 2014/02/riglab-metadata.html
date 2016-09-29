@@ -36,7 +36,6 @@
     <meta name="tags" contents="riglab"/>
     <meta name="tags" contents="rnd"/>
     <meta name="tags" contents="code"/>
-    <meta name="tags" contents="recommended"/>
 </head>
 
 <body>
@@ -54,13 +53,13 @@
     <li> <a href="http://www.cesarsaez.me/tag/interviews/">interviews<span class="badge-right">2</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/lectures/">lectures<span class="badge-right">4</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/maya/">maya<span class="badge-right">7</span></a></li>
-    <li> <a href="http://www.cesarsaez.me/tag/recommended/">recommended<span class="badge-right">10</span></a></li>
+    <li> <a href="http://www.cesarsaez.me/tag/recommended/">recommended<span class="badge-right">11</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/reel/">reel<span class="badge-right">2</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/riglab/">riglab<span class="badge-right">7</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/rnd/">rnd<span class="badge-right">16</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/softimage/">softimage<span class="badge-right">17</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts<span class="badge-right">24</span></a></li>
-    <li> <a href="http://www.cesarsaez.me/tag/tools/">tools<span class="badge-right">11</span></a></li>
+    <li> <a href="http://www.cesarsaez.me/tag/tools/">tools<span class="badge-right">10</span></a></li>
     <li> <a href="http://www.cesarsaez.me/tag/works/">works<span class="badge-right">11</span></a></li>
   </ul><!-- /#menu -->
   <section class="contact">
@@ -80,8 +79,8 @@
 <section id="container" class="wide">
 <section id="content" class="body">
   <footer class="post-info">
-    Published on <abbr class="published" title="2014-02-01T00:00:00">01 Feb 2014</abbr> in
-    <a href="http://www.cesarsaez.me/tag/riglab/">riglab</a>,    <a href="http://www.cesarsaez.me/tag/rnd/">rnd</a>,    <a href="http://www.cesarsaez.me/tag/code/">code</a>,    <a href="http://www.cesarsaez.me/tag/recommended/">recommended</a>  </footer><!-- /.post-info -->
+    Published on <abbr class="published" title="2014-02-01T00:00:00+11:00">01 Feb 2014</abbr> in
+    <a href="http://www.cesarsaez.me/tag/riglab/">riglab</a>,    <a href="http://www.cesarsaez.me/tag/rnd/">rnd</a>,    <a href="http://www.cesarsaez.me/tag/code/">code</a>  </footer><!-- /.post-info -->
   <header>
     <h2 class="entry-title">RigLab: Metadata</h2>
  
@@ -127,22 +126,22 @@ Did you know they can be extended?</p>
 its instances serialize whatever you pass as an attribute thanks to python's magic
 methods.</p>
 <p>So each time I write something like this:</p>
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">wishlib.si</span> <span class="kn">import</span> <span class="n">SIWrapper</span>  <span class="c"># the base class I was talking about</span>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">wishlib.si</span> <span class="kn">import</span> <span class="n">SIWrapper</span>  <span class="c1"># the base class I was talking about</span>
 
 <span class="n">selected_obj</span> <span class="o">=</span> <span class="n">Application</span><span class="o">.</span><span class="n">Selection</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">foo</span> <span class="o">=</span> <span class="n">SIWrapper</span><span class="p">(</span><span class="n">selected_obj</span><span class="p">)</span>
-<span class="n">foo</span><span class="o">.</span><span class="n">bar</span> <span class="o">=</span> <span class="s">&#39;baz&#39;</span>
+<span class="n">foo</span><span class="o">.</span><span class="n">bar</span> <span class="o">=</span> <span class="s1">&#39;baz&#39;</span>
 </pre></div>
 
 
 <p>On <code>foo.bar = 'baz'</code>, <code>__setattr__</code> is called, <code>baz</code> is serialized
 and stored as string in a custom parameter (Softimage's version of maya attributes).</p>
 <p>Let's say I restart Softimage (fresh session) and type something like this:</p>
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">wishlib.si</span> <span class="kn">import</span> <span class="n">SIWrapper</span>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">wishlib.si</span> <span class="kn">import</span> <span class="n">SIWrapper</span>
 
-<span class="n">selected_obj</span> <span class="o">=</span> <span class="n">Application</span><span class="o">.</span><span class="n">Selection</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c"># same selection</span>
+<span class="n">selected_obj</span> <span class="o">=</span> <span class="n">Application</span><span class="o">.</span><span class="n">Selection</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># same selection</span>
 <span class="n">foo</span> <span class="o">=</span> <span class="n">SIWrapper</span><span class="p">(</span><span class="n">selected_obj</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">foo</span><span class="o">.</span><span class="n">bar</span>  <span class="c"># &#39;baz&#39;</span>
+<span class="k">print</span> <span class="n">foo</span><span class="o">.</span><span class="n">bar</span>  <span class="c1"># &#39;baz&#39;</span>
 </pre></div>
 
 
