@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta property="og:title" content="Stop "class oriented programming""/>
+<meta property="og:title" content="Stop class oriented programming"/>
 <meta property="og:url" content="http://www.cesarsaez.me/2015/09/stop-cop.html"/>
-  <title>CESAR SAEZ - Stop "class oriented programming"</title> <!-- override title -->
+  <title>CESAR SAEZ - Stop class oriented programming</title> <!-- override title -->
   <meta property="og:image" content="http://www.cesarsaez.me/images/stop-cop.png"/>
     <title>CESAR SAEZ</title>
   <meta charset="utf-8" />
@@ -32,8 +32,8 @@
   <!-- end favicon setup -->
   <link rel="stylesheet" href="http://www.cesarsaez.me/theme/css/style.min.css">
 
-    <meta name="description" contents="Stop using classes as containers, data belong to the instance."/>
-    <meta property="og:description" content="Stop using classes as containers, data belong to the instance."/>
+    <meta name="description" contents="Please stop using classes as containers, state belongs to instances."/>
+    <meta property="og:description" content="Please stop using classes as containers, state belongs to instances."/>
     <meta name="tags" contents="thoughts"/>
     <meta name="tags" contents="code"/>
 </head>
@@ -82,33 +82,29 @@
     Published on <abbr class="published" title="2015-09-23T00:00:00+10:00">23 Sep 2015</abbr> in
     <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts</a>,    <a href="http://www.cesarsaez.me/tag/code/">code</a>  </footer><!-- /.post-info -->
   <header>
-    <h2 class="entry-title">Stop "class oriented programming"</h2>
+    <h2 class="entry-title">Stop class oriented programming</h2>
  
   </header>
   <div class="entry-content">
     <p>Hi folks,</p>
 <p>It has been a long time without writing anything here, so I thought it was
-about time say hi by sharing my view on something I've been "fighting with"
+about time say hi by sharing my views on something I've been "fighting with"
 lately.</p>
-<p>This article is about a common missunderstanding/pattern I've seen many many
-times, especially when it comes to code written by self-taughts developers
-(like myself), that's nothing but harmful for your future self and anyone using
-your code.</p>
-<p>I have found that, for some reason, people feel the need to write code
-contained in some scope/namespace, and classes come naturally on a language
-like python (why no functions? or even modules? I don't know, people love
-classes). So instead of using classes to define types, people start to
-implement the entire thing directly on an "unique" class, prefixing everything
-with <code>self</code> as a way to store its state, and instancing the class once as a way
-to call the code.</p>
-<p>Let me share something with you: <em>the state (a.k.a. data) belongs to the
-instance while the behaviour (a.k.a. methods) to the class</em>.</p>
-<p>That's object oriented programming in a nutshell, you define a type
-implementing certain behaviour and then create multiple instances storing
-different states. You rarelly save the state at a class level unless you really
-have a good reason to do it (yeah... there are plenty of valid reasons to do
-it, but you know what I mean).</p>
-<h4>But Cesar... everybody knows that!</h4>
+<p>This article is about a very dangerous but common "pattern" I've seen many times
+around TAs/TDs using classes as containers/namespaces for the code at hand (why
+not functions? I have no idea). So instead of have handy classes defining
+behavior, you can see plenty of code implementing the entire thing directly on
+an uniquely instanced class, prefixing everything with <code>self</code> without even
+noticing what are we pushing to the next guy consuming our code.</p>
+<p>Let's be clear about this, the whole idea behind Object Oriented programming
+(like it or not) is based on <em>the state (a.k.a. data) belonging to the instance
+while the behaviour (a.k.a. methods) being defined in the class</em>.</p>
+<p>That's object oriented in a nutshell, you define a <em>type</em> implementing certain
+behaviour (like a builtin <code>str</code> or <code>list</code> does!) and then create <em>multiple</em>
+instances storing different states. You rarelly save the state at a class level
+unless you really have a good reason to do it (yeah... there are plenty of valid
+reasons to do it, but you know what I mean).</p>
+<h4>But Cesar, everybody knows that...</h4>
 <p>Are you sure?</p>
 <p>Take an honest look at your GUI code (qt, anyone?)... if you are like the
 average TD out there, I bet you are subclassing a mainWindow/dialog to add
@@ -117,21 +113,44 @@ be used outside your "container".</p>
 <p>What about your rigging system? anim tools? (or whatever you develop in your
 field).</p>
 <h4>Fair enough... but what's wrong about using classes as containers?</h4>
-<p>There's absolutely nothing wrong about it <em>as long as you know what you're
-doing</em>.</p>
-<p>If anything, I think it's not a good default as it leads to extremelly specific
-classes and a lack of a proper interfaces to consume your code.</p>
-<p>It also leads to tons of boiler plate, as the keyword <code>class</code> somehow loss its
-value and people stop thinking about defining types and being generic, at the
-end of the day you force everyone wanting to reuse your code to sublclass and
+<p>There's absolutely nothing wrong with it <em>as long as you know what you're
+doing</em>!</p>
+<p>Think about what happen to the next guy trying to reuse your code, are there
+ways to redefine simple things without subclassing?</p>
+<p>Do you imagine if the only way to create a <code>str</code> were via subclassing?</p>
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">HelloWorld</span><span class="p">(</span><span class="nb">str</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;Hello world!&quot;</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">HelloWorld</span><span class="p">())</span>
+
+
+<span class="c1"># oh, do you want to change it? sure!</span>
+<span class="k">class</span> <span class="nc">HelloCesar</span><span class="p">(</span><span class="n">HelloWorld</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;Hello Cesar!&quot;</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">HelloCesar</span><span class="p">())</span>
+
+<span class="c1"># I would rather prefer this version</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>That's exactly what happens when we create classes as containers without
+providing proper interfaces or thinking much about making it generic!</p>
+<p>If anything, I think it's fair to say it's not a good default as it leads to
+extremelly specific classes and lack of a proper interfaces to consume your
+code. It also leads to tons of boiler plate, as the keyword <code>class</code> somehow
+loss its value and people stop thinking about being generic, at the end of the
+day you force everyone wanting to reuse your code to sublclass and
 overload/extend most of the methods.</p>
-<p>I'm not saying you shouldn't be using classes, classes are a powerful and
-needed tool if you're doing OOP, but be aware that each time you type <code>class</code>
-you're defining a new type, like <code>str</code> or <code>list</code> or any builtin, so use it
-wisely.</p>
+<p>I'm not saying you shouldn't be using classes, classes are a powerful tool, but
+be aware that each time you type <code>class</code> you're defining a new <em>type</em>! it's a
+very powerful tool that need to be used wisely.</p>
 <h4>So, what about you?</h4>
-<p>Have you seen this pattern before? (unittest!?) What do you think about it? Am
-I the only one seeing it as a problem?</p>
+<p>Have you seen this kinda code before? (unittest!?) What do you think about it?
+Am I the only one seeing it as a problem?</p>
 <p>I would love to read your thoughts on the comments below... don't be shy! :)</p>
 <p>Cesar</p>
   </div><!-- /.entry-content -->
