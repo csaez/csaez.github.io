@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta property="og:title" content="Git For Softimage"/>
-<meta property="og:url" content="http://www.cesarsaez.me/2013/07/git-for-softimage.html"/>
-  <title>CESAR SAEZ - Git For Softimage</title> <!-- override title -->
+<meta property="og:title" content="Python mutability, side effects and memory management."/>
+<meta property="og:url" content="http://www.cesarsaez.me/2016/12/python-sideeffects.html"/>
+  <title>CESAR SAEZ - Python mutability, side effects and memory management.</title> <!-- override title -->
+  <meta property="og:image" content="http://www.cesarsaez.me/images/python-sideeffects.jpg"/>
     <title>CESAR SAEZ</title>
   <meta charset="utf-8" />
   <link href="http://www.cesarsaez.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
@@ -31,12 +32,10 @@
   <!-- end favicon setup -->
   <link rel="stylesheet" href="http://www.cesarsaez.me/theme/css/style.min.css">
 
-    <meta name="description" contents="Open source integration of Git as version control system for Softimage projects."/>
-    <meta property="og:description" content="Open source integration of Git as version control system for Softimage projects."/>
-    <meta name="tags" contents="tools"/>
-    <meta name="tags" contents="softimage"/>
+    <meta name="description" contents="A quick video on the trade offs of python memory management."/>
+    <meta property="og:description" content="A quick video on the trade offs of python memory management."/>
     <meta name="tags" contents="code"/>
-    <meta name="tags" contents="recommended"/>
+    <meta name="tags" contents="thoughts"/>
 </head>
 
 <body>
@@ -80,33 +79,25 @@
 <section id="container" class="wide">
 <section id="content" class="body">
   <footer class="post-info">
-    Published on <abbr class="published" title="2013-07-19T00:00:00+10:00">19 Jul 2013</abbr> in
-    <a href="http://www.cesarsaez.me/tag/tools/">tools</a>,    <a href="http://www.cesarsaez.me/tag/softimage/">softimage</a>,    <a href="http://www.cesarsaez.me/tag/code/">code</a>,    <a href="http://www.cesarsaez.me/tag/recommended/">recommended</a>  </footer><!-- /.post-info -->
+    Published on <abbr class="published" title="2016-12-20T00:00:00+11:00">20 Dec 2016</abbr> in
+    <a href="http://www.cesarsaez.me/tag/code/">code</a>,    <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts</a>  </footer><!-- /.post-info -->
   <header>
-    <h2 class="entry-title">Git For Softimage</h2>
+    <h2 class="entry-title">Python mutability, side effects and memory management.</h2>
  
   </header>
   <div class="entry-content">
     <p>Hi folks,</p>
-<p>I've been using <a href="http://www.git-scm.com">Git</a> as version control system on my
-developments for a while and thought it might be useful add some version
-control abilities to my softimage projects too.</p>
-<p><a href="https://github.com/csaez/gitforsoftimage">https://github.com/csaez/gitforsoftimage</a></p>
-<p><img alt="Git for Softimage" src="http://www.cesarsaez.me/images/git-softimage.png" title="Git for Softimage" /></p>
-<p>It implements:</p>
-<ul>
-<li>Commit history</li>
-<li>Branching</li>
-<li>Remotes</li>
-</ul>
-<p>If you don't want to continue the 'incremental save' madness, or if you
-are looking for an easy way to collaborate with others in small
-projects, give it a try, it's free and open!</p>
-<p>Let me know what you think,</p>
-<p>Cheers.</p>
-<p>By the way, if you're not familiar with distributed version control
-systems there are a few key concepts that must be considered, don't
-forget to check the <a href="http://github.com/csaez/gitforsoftimage/wiki">documentation</a>.</p>
+<p>I would like to plug a short video/rant I recorded recently on python's memory management,
+mutable types and side effects.</p>
+<p>I still think python have its place, this video is not about bashing python or anything like that (I
+actually enjoy coding on it), but there are many instances requiring us to understand what's going
+on under the hood in order to debug and workaround some flaky behaviour.</p>
+<div class="flex-video widescreen">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NB4EocagrTk" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p>Hope you enjoy and, hopefully, learn something new.</p>
+<p>Cheers!</p>
   </div><!-- /.entry-content -->
   <div id="disqus_thread"><!-- comments -->
     <script type="text/javascript">

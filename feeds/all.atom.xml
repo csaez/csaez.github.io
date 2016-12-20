@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/all.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2016-07-02T00:00:00+10:00</updated><entry><title>mscreen</title><link href="http://www.cesarsaez.me/2016/07/mscreen.html" rel="alternate"></link><published>2016-07-02T00:00:00+10:00</published><updated>2016-07-02T00:00:00+10:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2016-07-02:2016/07/mscreen.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/all.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2016-12-20T00:00:00+11:00</updated><entry><title>Python mutability, side effects and memory management.</title><link href="http://www.cesarsaez.me/2016/12/python-sideeffects.html" rel="alternate"></link><published>2016-12-20T00:00:00+11:00</published><updated>2016-12-20T00:00:00+11:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2016-12-20:2016/12/python-sideeffects.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;I would like to plug a short video/rant I recorded recently on python's memory management,
+mutable types and side effects.&lt;/p&gt;
+&lt;p&gt;I still think python have its place, this video is not about bashing python or anything like that (I
+actually enjoy coding on it), but there are many instances requiring us to understand what's going
+on under the hood in order to debug and workaround some flaky behaviour.&lt;/p&gt;
+&lt;div class="flex-video widescreen"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/NB4EocagrTk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hope you enjoy and, hopefully, learn something new.&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</summary><category term="code"></category><category term="thoughts"></category></entry><entry><title>mscreen</title><link href="http://www.cesarsaez.me/2016/07/mscreen.html" rel="alternate"></link><published>2016-07-02T00:00:00+10:00</published><updated>2016-07-02T00:00:00+10:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2016-07-02:2016/07/mscreen.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;I would like to introduce a little python library I've been working on my spare
 time to help TDs and TAs to draw OpenGL primitives in Maya viewport for
 debugging purposes and/or non-critical tools (adding graphics as hints on tools
