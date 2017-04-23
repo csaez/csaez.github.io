@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta property="og:title" content="RigLab: Metadata"/>
-<meta property="og:url" content="http://www.cesarsaez.me/2014/02/riglab-metadata.html"/>
-  <title>CESAR SAEZ - RigLab: Metadata</title> <!-- override title -->
+<meta property="og:title" content="Ditching comments"/>
+<meta property="og:url" content="http://www.cesarsaez.me/2017/04/ditching-comments.html"/>
+  <title>CESAR SAEZ - Ditching comments</title> <!-- override title -->
     <title>CESAR SAEZ</title>
   <meta charset="utf-8" />
   <link href="http://www.cesarsaez.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
@@ -31,11 +31,9 @@
   <!-- end favicon setup -->
   <link rel="stylesheet" href="http://www.cesarsaez.me/theme/css/style.min.css">
 
-    <meta name="description" contents="Article on metadata and python magic methods."/>
-    <meta property="og:description" content="Article on metadata and python magic methods."/>
-    <meta name="tags" contents="riglab"/>
-    <meta name="tags" contents="rnd"/>
-    <meta name="tags" contents="code"/>
+    <meta name="description" contents="I'm ditching disqus and going tracker free."/>
+    <meta property="og:description" content="I'm ditching disqus and going tracker free."/>
+    <meta name="tags" contents="thoughts"/>
 </head>
 
 <body>
@@ -79,82 +77,44 @@
 <section id="container" class="wide">
 <section id="content" class="body">
   <footer class="post-info">
-    Published on <abbr class="published" title="2014-02-01T00:00:00+11:00">01 Feb 2014</abbr> in
-    <a href="http://www.cesarsaez.me/tag/riglab/">riglab</a>,    <a href="http://www.cesarsaez.me/tag/rnd/">rnd</a>,    <a href="http://www.cesarsaez.me/tag/code/">code</a>  </footer><!-- /.post-info -->
+    Published on <abbr class="published" title="2017-04-23T00:00:00+10:00">23 Apr 2017</abbr> in
+    <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts</a>  </footer><!-- /.post-info -->
   <header>
-    <h2 class="entry-title">RigLab: Metadata</h2>
+    <h2 class="entry-title">Ditching comments</h2>
  
   </header>
   <div class="entry-content">
     <p>Hi folks,</p>
-<p>This entry will be a bit techy, but not too much... stay with me! :)</p>
-<h2>First, what is metadata?</h2>
-<p>Metadata is "data about data", it describes information about the contents of the
-item itself or its components... it's a note for our selves, so we don't
-have to figure out that information from scratch the next time.</p>
-<p><em>Metadata by example:</em>
-Let's say we have an asset composed by several meshes and
-we need to collect all of them by scripting on export.</p>
-<ul>
-<li>
-<p>We can ask the user for the meshes (via selection or something) and that's it,
-but that means we will need an user input on EVERY export... no batch processing,
-bummer!</p>
-</li>
-<li>
-<p>We can try to filter the meshes looping through the hierarchy + some logic
-(conditionals + naming convention stuff) until collect all of them, it might work,
-but there is a risk of the validation logic not always being true.</p>
-</li>
-</ul>
-<p>Or...</p>
-<ul>
-<li><strong>We can use metadata!</strong> saving a 'note' with the meshes' name each time the
-user export them, so we have an user defined fallback for batch processing!</li>
-</ul>
-<h2>Cool, but how?</h2>
-<p>Metadata can be stored anywhere, it could be embeded on an attribute/custom-parameter,
-written on an external file (so we can read it outside the DCC), stored
-in a database and so on...</p>
-<p>Whatever you choose, it is important to define an unified system to do it
-because your code will become quite messy with all those extra metadata calls.</p>
-<h2>Here comes the magic!</h2>
-<p>Are you familiar with <a href="http://www.rafekettler.com/magicmethods.html">python's magic methods</a>?
-Did you know they can be extended?</p>
-<p>I did just that and it works great!</p>
-<p>I created a base class for containers (I mean, things that group things together),
-its instances serialize whatever you pass as an attribute thanks to python's magic
-methods.</p>
-<p>So each time I write something like this:</p>
-<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">wishlib.si</span> <span class="kn">import</span> <span class="n">SIWrapper</span>  <span class="c1"># the base class I was talking about</span>
-
-<span class="n">selected_obj</span> <span class="o">=</span> <span class="n">Application</span><span class="o">.</span><span class="n">Selection</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">foo</span> <span class="o">=</span> <span class="n">SIWrapper</span><span class="p">(</span><span class="n">selected_obj</span><span class="p">)</span>
-<span class="n">foo</span><span class="o">.</span><span class="n">bar</span> <span class="o">=</span> <span class="s1">&#39;baz&#39;</span>
-</pre></div>
-
-
-<p>On <code>foo.bar = 'baz'</code>, <code>__setattr__</code> is called, <code>baz</code> is serialized
-and stored as string in a custom parameter (Softimage's version of maya attributes).</p>
-<p>Let's say I restart Softimage (fresh session) and type something like this:</p>
-<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">wishlib.si</span> <span class="kn">import</span> <span class="n">SIWrapper</span>
-
-<span class="n">selected_obj</span> <span class="o">=</span> <span class="n">Application</span><span class="o">.</span><span class="n">Selection</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># same selection</span>
-<span class="n">foo</span> <span class="o">=</span> <span class="n">SIWrapper</span><span class="p">(</span><span class="n">selected_obj</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">foo</span><span class="o">.</span><span class="n">bar</span>  <span class="c1"># &#39;baz&#39;</span>
-</pre></div>
-
-
-<p>When <code>foo</code> is instanciated its <code>__init__</code> method is called, reading the metadata
-from the custom parameters and initializing its members, so when we call <code>foo.bar</code>
-it's a valid member and returns the expected data.</p>
-<p>I don't want to bother you with the <a href="https://github.com/csaez/wishlib/blob/master/wishlib/si/siwrapper.py">implementation details</a> (take it with a grain of salt),
-but I think it is a really cool way to serialize stuff without add too much overhead
-to existing code.</p>
-<p>There's a catch though, mutable data types mutates itself changing its own data, so
-your extended <code>__setattr__</code> method will never be called unless you explicitly
-update the entire thing.</p>
-<p>I would love to know how you guys solve this kind of stuff :)</p>
+<p>I just wanted to let you know that I'm ditching Disqus (the service powering comments) from this
+website in an effort to eliminate trackers. I silently <a href="https://twitter.com/csaezmargotta/status/678459610932502528">removed google
+analytics</a> some time ago for the same
+reason, but this time hurts a bit more because comments are the way we have to interact with each
+other and I felt like it deserves an explanation.</p>
+<p>First things first: I love receiving your feedback, everytime I get a message/email from someone
+because of an article or some of my open source projects it totally makes my day, even "harsh"
+comments push me to do better by correcting some missconception or learning something new. As a
+sef-taught I owe a lot to the community and the whole purpose of having a website is to, in some
+way, pay back by sharing/helping newcomers and pushing myself by learning from all of you. Big
+thanks to all of you for your support through the years.</p>
+<p>Said that, I also have strong concerns about online privacy and the status of the web, I surely
+take measures to stay away from ads/trackers by using all sort of privacy oriented plugins,
+extensions, VPN and whatnot; but I feel like it is totally unfair from my part to push trackers to
+anyone in exchange for the ability to leave a comment on this website or to feed my ego by checking
+stats.</p>
+<p>There might be some of you thinking <em>what's wrong with ads/trackers? I have nothing to hide!</em></p>
+<p>Well, most cloud-based services like google analytics or social widgets (facebook likes and what
+not) require the inclusion of a little script to provide the service, said script is also used to
+track the visitor building an unique profile (which is a key piece to targeted ads... and who know
+what else, you have no say on what that data is used for). This alone is horrifying, but you have
+to consider that around 60% of the web uses google analytics and social widgets are rapidily
+becoming omnipresent, alowing these companies to literally follow you from website to website
+reconstructing your whole browser history without your knoledge/agreement.</p>
+<p>This is wrong, we are not just talking about some script slowing down the website by adding some
+extra network requests, it's about respecting your freedom! Websites are literally trading your
+digital persona without your knowledge.</p>
+<p>I know this website alone makes no difference to the googles and facebooks of the world, but it's
+about integrity and acting according to my believes... even if it means giving up on some convenient
+services along the way.</p>
 <p>Cheers!</p>
   </div><!-- /.entry-content -->
 </section>
