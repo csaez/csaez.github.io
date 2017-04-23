@@ -62,7 +62,7 @@ EXTRA_PATH_METADATA = {
     'extra/mstile-150x150.png': {'path': 'mstile-150x150.png'},
     'extra/mstile-310x150.png': {'path': 'mstile-310x150.png'},
     'extra/mstile-310x310.png': {'path': 'mstile-310x310.png'},
-    }
+}
 
 TIMEZONE = 'Australia/Sydney'
 DEFAULT_DATE_FORMAT = u"%d %b %Y"
@@ -97,11 +97,11 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 
 # Social widget
 SOCIAL = (
-  ("github", "http://www.github.com/csaez"),
-  ("google", "http://plus.google.com/+CesarSaez"),
-  ("linkedin", "http://www.linkedin.com/in/cesarsaez"),
-  ("twitter", "http://twitter.com/csaezmargotta"),
-  ("vimeo", "http://www.vimeo.com/csaez")
+    ("github", "http://www.github.com/csaez"),
+    ("google", "http://plus.google.com/+CesarSaez"),
+    ("linkedin", "http://www.linkedin.com/in/cesarsaez"),
+    ("twitter", "http://twitter.com/csaezmargotta"),
+    ("vimeo", "http://www.vimeo.com/csaez")
 )
 
 ICONS = {
@@ -125,4 +125,4 @@ DISPLAY_CATEGORIES_ON_MENU = False
 
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
