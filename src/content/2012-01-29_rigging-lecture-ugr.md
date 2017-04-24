@@ -1,21 +1,22 @@
 Title: Rigging lecture at UGR
 Author: Cesar Saez
-Tags: thoughts, lectures
+Tags: thoughts, presentations
 
 Hey folks,
 
-The last weekend I gave a [lecture on rigging at UGR (Granada
-University)][1], was a nice experience even though prepare the program
-and the class material was not as easy as I thought, but in the end
-everything worked fine and everyone learned something new :-)
+The last weekend I gave a [lecture on rigging at UGR (Granada University)][1], it was a nice
+experience although prepare the program and class material was not as easy as I thought, but in the
+end everything went fine and everyone learned something new :)
 
-Lately I'm really busy at Kandor (crunch time) and find some time/energy
-to do CG related things at my spare time is harder than ever... but I'm
-trying and maybe this week I finally finish/release a little tool for
-Softimage.
+You can grab the slides [here](https://speakerdeck.com/csaez/intro-rigging-1-spanish) and
+[here](https://speakerdeck.com/csaez/intro-rigging-2-spanish) (spanish only).
 
-Nobody said this was going to be easy, right? ;-)
+In other news, I've been really busy at Kandor lately (crunch time) and finding time/energy to do
+CG related projects on my spare time is getting harder than ever... but I'm trying and maybe this
+week I finally finish/release a little tool for Softimage I've been working on.
 
-Regards
+Nobody said this was going to be easy, right?
+
+Cheers!
 
 [1]: http://www.masterkandor.com/

@@ -1,6 +1,6 @@
 Title: Speaking Maxscript
 Author: Cesar Saez
-Tags: 3dsmax, code, thoughts
+Tags: code, thoughts
 
 Hi guys,
 

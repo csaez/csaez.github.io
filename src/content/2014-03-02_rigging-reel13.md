@@ -1,7 +1,7 @@
 Title: Rigging Reel 2013
 Description: Come and see my latest demo reel!
 Author: Cesar Saez
-Tags: reel, works, recommended
+Tags: works, recommended
 Image: images/reel13_th.jpg
 
 <div class="flex-video widescreen">

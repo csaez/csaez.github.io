@@ -1,6 +1,6 @@
 Title: Hard Reloader for Maya
 Author: Cesar Saez
-Tags: code, tools, maya
+Tags: code, tools
 
 Hi folks,
 

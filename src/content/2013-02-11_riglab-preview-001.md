@@ -1,6 +1,6 @@
 Title: RigLab: Preview #001
 Author: Cesar Saez
-Tags: riglab, rnd, works, softimage
+Tags: rnd, code, tools
 Image: images/riglab01_th.jpg
 
 <div class="flex-video widescreen">

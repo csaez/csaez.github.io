@@ -1,6 +1,6 @@
 Title: RigLab: RigIcon
 Author: Cesar Saez
-Tags: riglab, rnd, tools, softimage
+Tags: code, tools
 Image: images/rigicon_th.jpg
 
 <div class="flex-video widescreen">

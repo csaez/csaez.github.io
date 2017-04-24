@@ -1,6 +1,6 @@
 Title: RigLab: overview
 Author: Cesar Saez
-Tags: riglab, rnd, thoughts, softimage
+Tags: rnd, code, thoughts
 
 I'm finally working on my rigging framework, I've been thinking about it
 for a long time and I finally have a clear picture of what I want as end

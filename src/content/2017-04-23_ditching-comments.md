@@ -15,7 +15,7 @@ First things first: I love receiving your feedback, everytime I get a message/em
 because of an article or some of my open source projects it totally makes my day, even "harsh"
 comments push me to do better by correcting some missconception or learning something new. As a
 sef-taught I owe a lot to the community and the whole purpose of having a website is to, in some
-way, pay back by sharing/helping newcomers and pushing myself by learning from all of you. Big
+way, pay back by sharing/helping newcomers and pushing myself by learning from your feedback. Big
 thanks to all of you for your support through the years.
 
 Said that, I also have strong concerns about online privacy and the status of the web, I surely
@@ -26,12 +26,12 @@ stats.
 
 There might be some of you thinking *what's wrong with ads/trackers? I have nothing to hide!*
 
-Well, most cloud-based services like google analytics or social widgets (facebook likes and what
+Well, most cloud-based services like google analytics or social widgets (facebook's likes and what
 not) require the inclusion of a little script to provide the service, said script is also used to
 track the visitor building an unique profile (which is a key piece to targeted ads... and who know
 what else, you have no say on what that data is used for). This alone is horrifying, but you have
 to consider that around 60% of the web uses google analytics and social widgets are rapidily
-becoming omnipresent, alowing these companies to literally follow you from website to website
+becoming omnipresent, allowing these companies to literally follow you from website to website
 reconstructing your whole browser history without your knoledge/agreement.
 
 This is wrong, we are not just talking about some script slowing down the website by adding some

@@ -1,6 +1,6 @@
 Title: OneUndo decorator
 Author: Cesar Saez
-Tags: code, softimage
+Tags: code, tutorials
 
 Hi folks,
 

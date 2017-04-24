@@ -1,7 +1,7 @@
 Title: Testing as a medium
 Description: Introductory talk to software development testing
 Author: Cesar Saez
-Tags: lectures, code, thoughts
+Tags: presentations, code, thoughts
 
 Hi folks,
 

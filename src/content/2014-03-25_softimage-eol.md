@@ -1,6 +1,6 @@
 Title: Softimage EOL
 Author: Cesar Saez
-Tags: thoughts, softimage, interviews
+Tags: thoughts, interviews
 
 Hi folks,
 

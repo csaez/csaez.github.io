@@ -1,6 +1,6 @@
 Title: RigIcon goes open source
 Author: Cesar Saez
-Tags: riglab, tools, softimage, code
+Tags: code, tools
 
 Hi folks,
 

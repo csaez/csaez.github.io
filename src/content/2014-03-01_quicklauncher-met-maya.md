@@ -1,6 +1,6 @@
 Title: QuickLauncher met Maya
 Author: Cesar Saez
-Tags: code, maya, rnd, tools
+Tags: code, tools
 
 Hey folks,
 

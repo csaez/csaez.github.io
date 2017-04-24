@@ -1,6 +1,6 @@
 Title: QuickLauncher v2.0
 Author: Cesar Saez
-Tags: maya, tools
+Tags: code, tools
 
 Hi folks,
 

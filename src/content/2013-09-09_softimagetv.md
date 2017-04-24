@@ -1,6 +1,6 @@
 Title: Softimage.tv
 Author: Cesar Saez
-Tags: thoughts, softimage
+Tags: thoughts, tutorials
 
 Hi folks,
 

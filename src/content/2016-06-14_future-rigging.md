@@ -1,7 +1,7 @@
 Title: The future of rigging
-Description: A revolution is coming, it's here, are you ready?
+Description: A revolution is coming, are you ready?
 Author: Cesar Saez
-Tags: thoughts
+Tags: thoughts, recommended
 Image: images/future-rigging.png
 
 Hi folks,

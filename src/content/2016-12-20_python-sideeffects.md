@@ -1,7 +1,7 @@
 Title: Python mutability, side effects and memory management.
 Description: A quick video on the trade offs of python memory management.
 Author: Cesar Saez
-Tags: code, thoughts
+Tags: code, thoughts, tutorials
 Image: images/python-sideeffects.jpg
 
 Hi folks,

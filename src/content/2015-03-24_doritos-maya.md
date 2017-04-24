@@ -1,7 +1,7 @@
 Title: Yet another 'dorito' tutorial
 Description: A rigging tutorial on a 'dorito' setup for Autodesk Maya.
 Author: Cesar Saez
-Tags: maya
+Tags: tutorials, thoughts
 Image: images/dorito_th.jpg
 
 Hi folks,

@@ -1,6 +1,6 @@
 Title: DevManager: yet another plugin manager
 Author: Cesar Saez
-Tags: tools, rnd, softimage, code
+Tags: rnd, code
 
 Hi folks,
 

@@ -1,7 +1,7 @@
 Title: Git For Softimage
 Description: Open source integration of Git as version control system for Softimage projects.
 Author: Cesar Saez
-Tags: tools, softimage, code, recommended
+Tags: tools, code, recommended
 
 Hi folks,
 

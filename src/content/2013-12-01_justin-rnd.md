@@ -1,6 +1,6 @@
 Title: Justin's R&D
 Author: Cesar Saez
-Tags: works, softimage, rnd
+Tags: works, rnd
 Image: images/kgrnd_th.jpg
 
 <div class="flex-video widescreen"><iframe src="//player.vimeo.com/video/80699674?title=0&amp;byline=0&amp;portrait=0" width="900" height="675" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>

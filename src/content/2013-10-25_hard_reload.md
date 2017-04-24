@@ -1,6 +1,6 @@
 Title: Hard Reload
 Author: Cesar Saez
-Tags: code
+Tags: code, tutorials
 
 Hi folks,
 

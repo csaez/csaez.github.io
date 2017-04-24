@@ -1,6 +1,6 @@
 Title: QuickLauncher v0.1.3
 Author: Cesar Saez
-Tags: softimage, rnd, works, tools, code
+Tags: code, tools
 
 Hi guys,
 

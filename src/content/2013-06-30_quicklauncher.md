@@ -1,6 +1,6 @@
 Title: QuickLauncher
 Author: Cesar Saez
-Tags: tools, softimage, code
+Tags: tools, code
 
 Hey folks,
 

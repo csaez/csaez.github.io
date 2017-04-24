@@ -1,6 +1,6 @@
 Title: Notes on python testing
 Author: Cesar Saez
-Tags: code, thoughts, maya
+Tags: code, thoughts
 
 Hi guys,
 
@@ -156,7 +156,7 @@ the DCC at runtime, this means we can only run our code within the DCC.
 > Autodesk Maya has the ability to run in standalone mode, allowing us to
 > execute our code without the overhead of a fully fledged app, but this is a
 > quite unique feature compared to other DCCs.
-> 
+>
 > There are interesting projects to automate testing for Maya-like apps
 > ([dccautomation](https://github.com/rgalanakis/dccautomation) by Rob
 > Galanakis looks promising).
