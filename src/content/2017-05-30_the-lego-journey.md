@@ -6,8 +6,9 @@ Image: images/lego-batman.png
 
 Hi folks,
 
-It has been a while since I was involved on the making of this movie, but now that it's out I would
-like to share some sort of retrospective of my journey at Animal Logic so far.
+It has been a while since I was involved on the making of these films, but now that Lego Batman is
+out and Ninjago is on its way I would like to share some sort of retrospective of my journey around
+these projects.
 
 If you are not familiar with the LEGO movies here are the mandatory trailers.
 
@@ -25,7 +26,7 @@ of the lessons I've learned during my bumpy journey can help you too.
 ## Joining Animal Logic
 
 I still remember my first day very vividly, I was quite excited about the opportunity to work at
-AL, I've had the chance to work on animated tv series and actually supervise an animated movie
+AL, I've had the chance to work on animated tv series and actually supervised an animated movie
 before joining AL, but it was clearly a step up for me. On top of that there was the whole
 Australian experience and living in an English speaking country for the first time... There was a
 lot going on.
@@ -36,10 +37,10 @@ and looking around the wiki. Eventually we got a few sessions with our superviso
 things work, it was a lot to take in a few hours.
 
 Later I learned first hand that training new starters is not that easy, there's a lot built over
-the years and it's easier to give things for granted after being around for some time, more on this
+the years and it's easy to take things for granted after being around for some time, more on this
 later.
 
-Anyway, back to the training, I think being a group made the experience much easier as we all
+Anyway, back to training, I think being a group made the experience much easier as we all
 shared our notes and helped each other trying to figure out things without having to bother other
 people too often. It might sound silly, but the team spirit was there since day one making the
 experience a breeze.
