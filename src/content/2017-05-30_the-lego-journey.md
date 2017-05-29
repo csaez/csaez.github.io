@@ -90,12 +90,12 @@ unique experience).
 And this leads us to the second piece of advice:
 
 > Never underestimate the power of fresh eyes! A lot of times people start accepting whatever they
-> have as the way things works (tm), that opens a huge opportunity to bring blind spots to the
+> have as _the way things are (tm)_, that opens a huge opportunity to bring blind spots to the
 > table and help improving things. Your perspective is one of your best weapons!
 
 This is not to say that you will get there and change everything, you obviously need to learn the
 current system and understand why things are the way they are (pleae don't assume the previous guy
-wasn't as clever as you think you are, that's not as reality works)... But past certain point
+wasn't as clever as you think you are, that's not how reality works)... But past certain point
 there's the possibility that you might see some blind spot and depending on the team and production
 you might get a chance to get involved doing very interesting work.
 
