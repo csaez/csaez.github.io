@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>CESAR SAEZ - Cesar Saez</title><link>http://www.cesarsaez.me/</link><description>Software Developer</description><lastBuildDate>Sun, 23 Apr 2017 00:00:00 +1000</lastBuildDate><item><title>Ditching comments</title><link>http://www.cesarsaez.me/2017/04/ditching-comments.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
+<rss version="2.0"><channel><title>CESAR SAEZ - Cesar Saez</title><link>http://www.cesarsaez.me/</link><description>Software Developer</description><lastBuildDate>Tue, 30 May 2017 00:00:00 +1000</lastBuildDate><item><title>The Lego Journey</title><link>http://www.cesarsaez.me/2017/05/the-lego-journey.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;It has been a while since I was involved on the making of this movie, but now that it's out I would
+like to share some sort of retrospective of my journey at Animal Logic so far.&lt;/p&gt;
+&lt;p&gt;If you are not familiar with the LEGO movies here are …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cesar Saez</dc:creator><pubDate>Tue, 30 May 2017 00:00:00 +1000</pubDate><guid isPermaLink="false">tag:www.cesarsaez.me,2017-05-30:/2017/05/the-lego-journey.html</guid><category>works</category><category>thoughts</category><category>recommended</category></item><item><title>Ditching comments</title><link>http://www.cesarsaez.me/2017/04/ditching-comments.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;I just wanted to let you know that I'm ditching Disqus (the service powering comments) from this
 website in an effort to eliminate trackers. I silently &lt;a href="https://twitter.com/csaezmargotta/status/678459610932502528"&gt;removed google
 analytics&lt;/a&gt; some time ago for the same
