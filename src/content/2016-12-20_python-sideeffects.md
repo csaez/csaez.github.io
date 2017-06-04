@@ -14,7 +14,7 @@ actually enjoy coding on it), but there are many instances requiring us to under
 on under the hood in order to debug and workaround some flaky behaviour.
 
 <div class="flex-video widescreen">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NB4EocagrTk" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NB4EocagrTk" frameborder="0" allowfullscreen></iframe>
 </div>
 
 Hope you enjoy and, hopefully, learn something new.
