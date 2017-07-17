@@ -9,7 +9,7 @@
     {% for tag, articles in tags %}
     {% if tag.name == "recommended" %}
     {% for article in articles|sort(attribute='date', reverse=True) %}
-    {% if loop.index0 < 2 %}
+    {% if loop.index0 < 4 %}
     <ul>
       <li class="thumbs">
         <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
@@ -30,7 +30,7 @@
   <h1 class="section-title">Latest</h1>
   <ul class="latest-list">
     {% for article in articles|sort(attribute='date', reverse=True) %}
-    {% if loop.index0 < 5 %}
+    {% if loop.index0 < 10 %}
     <ul>
       <li class="thumbs">
         <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
