@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta property="og:title" content="Rigging lecture at UGR"/>
-<meta property="og:url" content="http://www.cesarsaez.me/2012/01/rigging-lecture-ugr.html"/>
-  <title>CESAR SAEZ - Rigging lecture at UGR</title> <!-- override title -->
+<meta property="og:title" content="Naming"/>
+<meta property="og:url" content="http://www.cesarsaez.me/2017/07/naming.html"/>
+  <title>CESAR SAEZ - Naming</title> <!-- override title -->
+  <meta property="og:image" content="http://www.cesarsaez.me/images/naming.png"/>
     <title>CESAR SAEZ</title>
   <meta charset="utf-8" />
   <link href="http://www.cesarsaez.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="CESAR SAEZ Full Atom Feed" />
@@ -31,8 +32,12 @@
   <!-- end favicon setup -->
   <link rel="stylesheet" href="http://www.cesarsaez.me/theme/css/style.min.css">
 
-    <meta name="tags" contents="thoughts"/>
-    <meta name="tags" contents="presentations"/>
+    <meta name="description" contents="Join me on this series of videos coding a naming convention manager step by step, 10 minutes at a time, in a pragmatic a straight forward fashion."/>
+    <meta property="og:description" content="Join me on this series of videos coding a naming convention manager step by step, 10 minutes at a time, in a pragmatic a straight forward fashion."/>
+    <meta name="tags" contents="code"/>
+    <meta name="tags" contents="rnd"/>
+    <meta name="tags" contents="recommended"/>
+    <meta name="tags" contents="tutorials"/>
 </head>
 
 <body>
@@ -71,30 +76,44 @@
 <section id="container" class="wide">
 <section id="content" class="body">
   <footer class="post-info">
-    Published on <abbr class="published" title="2012-01-29T00:00:00+11:00">29 Jan 2012</abbr> in
-    <a href="http://www.cesarsaez.me/tag/thoughts/">thoughts</a>,    <a href="http://www.cesarsaez.me/tag/presentations/">presentations</a>  </footer><!-- /.post-info -->
+    Published on <abbr class="published" title="2017-07-18T00:00:00+10:00">18 Jul 2017</abbr> in
+    <a href="http://www.cesarsaez.me/tag/code/">code</a>,    <a href="http://www.cesarsaez.me/tag/rnd/">rnd</a>,    <a href="http://www.cesarsaez.me/tag/recommended/">recommended</a>,    <a href="http://www.cesarsaez.me/tag/tutorials/">tutorials</a>  </footer><!-- /.post-info -->
   <header>
-    <h2 class="entry-title">Rigging lecture at UGR</h2>
+    <h2 class="entry-title">Naming</h2>
  
   </header>
   <div class="entry-content">
-    <p>Hey folks,</p>
-<p>The last weekend I gave a <a href="http://www.masterkandor.com/">lecture on rigging at UGR (Granada University)</a>, it was a nice
-experience although prepare the program and class material was not as easy as I thought, but in the
-end everything went fine and everyone learned something new :)</p>
-<p>You can grab the slides <a href="https://speakerdeck.com/csaez/intro-rigging-1-spanish">here</a> and
-<a href="https://speakerdeck.com/csaez/intro-rigging-2-spanish">here</a> (spanish only).</p>
-<p>In other news, I've been really busy at Kandor lately (crunch time) and finding time/energy to do
-CG related projects on my spare time is getting harder than ever... but I'm trying and maybe this
-week I finally finish/release a little tool for Softimage I've been working on.</p>
-<p>Nobody said this was going to be easy, right?</p>
+    <p>Hi folks,</p>
+<p>In a new attempt to do a live coding series, I've been recording these sessions implementing a very
+simple naming convention manager/thingy in python. Just like
+<a href="http://www.cesarsaez.me/2015/12/dgpy.html">dgpy</a>, the idea is to keep it short and straight
+forward (hopefully each series gets better, although I like to keep them kinda raw so we can share
+how things evolved and not an artifial session where everything works first try).</p>
+<h3>What are we trying to solve here?</h3>
+<p>This comes back from when I was developing
+<a href="http://www.cesarsaez.me/2014/02/riglab-preview-002.html">riglab</a> a few years ago, one of the
+things I wanted to do there was to make it "pipeline friendly", so people can integrate it
+seamlessly without introducing any innecessary friction into the pipeline. This meant that any
+tool using metadata stored on names cannot assume anything about it and a configuration layer is
+needed. This also applies to any sort of distribuitable tools.</p>
+<p>Anyway, there are 11 videos at the time of this writting and the project provides enough
+functionality to be useful in a real scenario.</p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/naaHzKvdTag"
+frameborder="0" allowfullscreen></iframe>
+
+<p>One thing I particullarly like about this series is how we moved from some not-so-great code (in
+order to keep things moving) to a more desirable end result with total confidence thanks to the
+development process, it wasn't planned that way but it kinda happened.</p>
+<p>The source code is on <a href="https://github.com/csaez/naming">github</a> (MIT license), but the value
+of the project is more on the educational side of things (imho).</p>
+<p>Let me know what you think :)</p>
 <p>Cheers!</p>
   </div><!-- /.entry-content -->
   <div class="entry-comments">
       <hr />
       <h5>Questions? Comments?</h5>
       <p>Please feel free to ping me on <a
-          href="http://twitter.com/home?status=@csaezmargotta%0Ahttp://www.cesarsaez.me/2012/01/rigging-lecture-ugr.html">twitter</a> or send me an
+          href="http://twitter.com/home?status=@csaezmargotta%0Ahttp://www.cesarsaez.me/2017/07/naming.html">twitter</a> or send me an
       <a href="mailto://hi@cesarsaez.me">email</a>, I would
       love to hear from you!</p>
   </div><!-- /.entry-content -->

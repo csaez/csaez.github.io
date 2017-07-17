@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ - misc</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/misc.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2017-05-30T00:00:00+10:00</updated><entry><title>The Lego Journey</title><link href="http://www.cesarsaez.me/2017/05/the-lego-journey.html" rel="alternate"></link><published>2017-05-30T00:00:00+10:00</published><updated>2017-05-30T00:00:00+10:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2017-05-30:/2017/05/the-lego-journey.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ - misc</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/misc.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2017-07-18T00:00:00+10:00</updated><entry><title>Naming</title><link href="http://www.cesarsaez.me/2017/07/naming.html" rel="alternate"></link><published>2017-07-18T00:00:00+10:00</published><updated>2017-07-18T00:00:00+10:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2017-07-18:/2017/07/naming.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;In a new attempt to do a live coding series, I've been recording these sessions implementing a very
+simple naming convention manager/thingy in python. Just like
+&lt;a href="http://www.cesarsaez.me/2015/12/dgpy.html"&gt;dgpy&lt;/a&gt;, the idea is to keep it short and straight
+forward (hopefully each series gets better, although I like to keep …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;In a new attempt to do a live coding series, I've been recording these sessions implementing a very
+simple naming convention manager/thingy in python. Just like
+&lt;a href="http://www.cesarsaez.me/2015/12/dgpy.html"&gt;dgpy&lt;/a&gt;, the idea is to keep it short and straight
+forward (hopefully each series gets better, although I like to keep them kinda raw so we can share
+how things evolved and not an artifial session where everything works first try).&lt;/p&gt;
+&lt;h3&gt;What are we trying to solve here?&lt;/h3&gt;
+&lt;p&gt;This comes back from when I was developing
+&lt;a href="http://www.cesarsaez.me/2014/02/riglab-preview-002.html"&gt;riglab&lt;/a&gt; a few years ago, one of the
+things I wanted to do there was to make it "pipeline friendly", so people can integrate it
+seamlessly without introducing any innecessary friction into the pipeline. This meant that any
+tool using metadata stored on names cannot assume anything about it and a configuration layer is
+needed. This also applies to any sort of distribuitable tools.&lt;/p&gt;
+&lt;p&gt;Anyway, there are 11 videos at the time of this writting and the project provides enough
+functionality to be useful in a real scenario.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/naaHzKvdTag"
+frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;One thing I particullarly like about this series is how we moved from some not-so-great code (in
+order to keep things moving) to a more desirable end result with total confidence thanks to the
+development process, it wasn't planned that way but it kinda happened.&lt;/p&gt;
+&lt;p&gt;The source code is on &lt;a href="https://github.com/csaez/naming"&gt;github&lt;/a&gt; (MIT license), but the value
+of the project is more on the educational side of things (imho).&lt;/p&gt;
+&lt;p&gt;Let me know what you think :)&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</content><category term="code"></category><category term="rnd"></category><category term="recommended"></category><category term="tutorials"></category></entry><entry><title>The Lego Journey</title><link href="http://www.cesarsaez.me/2017/05/the-lego-journey.html" rel="alternate"></link><published>2017-05-30T00:00:00+10:00</published><updated>2017-05-30T00:00:00+10:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2017-05-30:/2017/05/the-lego-journey.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;It has been a while since I was involved on the making of these films, but now that &lt;em&gt;Lego Batman&lt;/em&gt; is
 out and &lt;em&gt;Ninjago&lt;/em&gt; is on its way I would like to share some sort of retrospective of my journey around
 these projects.&lt;/p&gt;
@@ -278,7 +306,7 @@ a lot of room for all kind of skills on studios of all sizes, but if you really 
 impact I think the changes are right there around the corner and now is the best time to start
 shaping your career towards what really moves you.&lt;/p&gt;
 &lt;p&gt;What do you think? Am I crazy? Please let me know in the comments below :)&lt;/p&gt;
-&lt;p&gt;Cheers!&lt;/p&gt;</content><category term="thoughts"></category><category term="recommended"></category></entry><entry><title>Testing as a medium</title><link href="http://www.cesarsaez.me/2016/01/testing-as-a-medium.html" rel="alternate"></link><published>2016-01-14T00:00:00+11:00</published><updated>2016-01-14T00:00:00+11:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2016-01-14:/2016/01/testing-as-a-medium.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</content><category term="thoughts"></category></entry><entry><title>Testing as a medium</title><link href="http://www.cesarsaez.me/2016/01/testing-as-a-medium.html" rel="alternate"></link><published>2016-01-14T00:00:00+11:00</published><updated>2016-01-14T00:00:00+11:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2016-01-14:/2016/01/testing-as-a-medium.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;Today I gave my first "brain swap" presentation at Animal Logic... and guess
 what was the topic: testing, of course :)&lt;/p&gt;
 &lt;p&gt;Why testing? because I think there's a misunderstanding and lack of focus on
