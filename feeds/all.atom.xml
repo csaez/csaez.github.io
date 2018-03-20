@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/all.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2017-07-18T00:00:00+10:00</updated><entry><title>Naming</title><link href="http://www.cesarsaez.me/2017/07/naming.html" rel="alternate"></link><published>2017-07-18T00:00:00+10:00</published><updated>2017-07-18T00:00:00+10:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2017-07-18:/2017/07/naming.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/all.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2018-03-20T00:00:00+11:00</updated><entry><title>psystem</title><link href="http://www.cesarsaez.me/2018/03/psystem.html" rel="alternate"></link><published>2018-03-20T00:00:00+11:00</published><updated>2018-03-20T00:00:00+11:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2018-03-20:/2018/03/psystem.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Some time ago I recorded this little video developing a simple particle system,
+from scratch, as an exercise and I thought it would be cool to also share it in here.&lt;/p&gt;
+&lt;p&gt;The goal?&lt;/p&gt;
+&lt;p&gt;To share a straight forward approach? maybe to demythify the difficulty of getting
+something like …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+&lt;p&gt;Some time ago I recorded this little video developing a simple particle system,
+from scratch, as an exercise and I thought it would be cool to also share it in here.&lt;/p&gt;
+&lt;p&gt;The goal?&lt;/p&gt;
+&lt;p&gt;To share a straight forward approach? maybe to demythify the difficulty of getting
+something like this running? (at a prototype/toy level), to finally make something standalone
+and visual on some of my screencast? yet another "code kata"? who knows! :)&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0K0t0Mqa5wo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;As usual, code is licensed under MIT at &lt;a href="https://github.com/csaez/psystem"&gt;github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Let me know what you think.&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</content><category term="code"></category><category term="rnd"></category><category term="recommended"></category></entry><entry><title>Naming</title><link href="http://www.cesarsaez.me/2017/07/naming.html" rel="alternate"></link><published>2017-07-18T00:00:00+10:00</published><updated>2017-07-18T00:00:00+10:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2017-07-18:/2017/07/naming.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;In a new attempt to do a live coding series, I've been recording these sessions implementing a very
 simple naming convention manager/thingy in python. Just like
 &lt;a href="http://www.cesarsaez.me/2015/12/dgpy.html"&gt;dgpy&lt;/a&gt;, the idea is to keep it short and straight
