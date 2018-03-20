@@ -13,7 +13,8 @@ something like this running? (at a prototype/toy level), to finally make somethi
 and visual on some of my screencast? yet another "code kata"? who knows! :)&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0K0t0Mqa5wo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;Anyway, there's that, let me know what you think.&lt;/p&gt;
+&lt;p&gt;As usual, code is licensed under MIT at &lt;a href="https://github.com/csaez/psystem"&gt;github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Let me know what you think.&lt;/p&gt;
 &lt;p&gt;Cheers!&lt;/p&gt;</content><category term="code"></category><category term="rnd"></category><category term="recommended"></category></entry><entry><title>Naming</title><link href="/2017/07/naming.html" rel="alternate"></link><published>2017-07-18T00:00:00+10:00</published><updated>2017-07-18T00:00:00+10:00</updated><author><name>Cesar Saez</name></author><id>tag:None,2017-07-18:/2017/07/naming.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;In a new attempt to do a live coding series, I've been recording these sessions implementing a very
 simple naming convention manager/thingy in python. Just like
