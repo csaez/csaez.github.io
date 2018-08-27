@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>CESAR SAEZ - Cesar Saez</title><link>http://www.cesarsaez.me/</link><description>Software Developer</description><lastBuildDate>Tue, 20 Mar 2018 00:00:00 +1100</lastBuildDate><item><title>psystem</title><link>http://www.cesarsaez.me/2018/03/psystem.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
+<rss version="2.0"><channel><title>CESAR SAEZ - Cesar Saez</title><link>http://www.cesarsaez.me/</link><description>Software Developer</description><lastBuildDate>Mon, 27 Aug 2018 00:00:00 +1000</lastBuildDate><item><title>Hello shadertoy</title><link>http://www.cesarsaez.me/2018/08/hello-shadetoy.html</link><description>&lt;p&gt;I've been always amazed by the incredible work people share at &lt;a href="shadertoy.com"&gt;shadertoy&lt;/a&gt;, it's
+truly a privilege to be able to explore the gallery while taking a look at the source code right
+there in the browser, play around changing parameters and learning different approaches.&lt;/p&gt;
+&lt;p&gt;So, after years looking from the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Cesar Saez</dc:creator><pubDate>Mon, 27 Aug 2018 00:00:00 +1000</pubDate><guid isPermaLink="false">tag:www.cesarsaez.me,2018-08-27:/2018/08/hello-shadetoy.html</guid><category>code</category><category>rnd</category></item><item><title>psystem</title><link>http://www.cesarsaez.me/2018/03/psystem.html</link><description>&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;Some time ago I recorded this little video developing a simple particle system,
 from scratch, as an exercise and I thought it would be cool to also share it in here.&lt;/p&gt;
 &lt;p&gt;The goal?&lt;/p&gt;

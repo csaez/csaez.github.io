@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ - misc</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/misc.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2018-03-20T00:00:00+11:00</updated><entry><title>psystem</title><link href="http://www.cesarsaez.me/2018/03/psystem.html" rel="alternate"></link><published>2018-03-20T00:00:00+11:00</published><updated>2018-03-20T00:00:00+11:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2018-03-20:/2018/03/psystem.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CESAR SAEZ - misc</title><link href="http://www.cesarsaez.me/" rel="alternate"></link><link href="http://www.cesarsaez.me/feeds/misc.atom.xml" rel="self"></link><id>http://www.cesarsaez.me/</id><updated>2018-08-27T00:00:00+10:00</updated><entry><title>Hello shadertoy</title><link href="http://www.cesarsaez.me/2018/08/hello-shadetoy.html" rel="alternate"></link><published>2018-08-27T00:00:00+10:00</published><updated>2018-08-27T00:00:00+10:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2018-08-27:/2018/08/hello-shadetoy.html</id><summary type="html">&lt;p&gt;I've been always amazed by the incredible work people share at &lt;a href="shadertoy.com"&gt;shadertoy&lt;/a&gt;, it's
+truly a privilege to be able to explore the gallery while taking a look at the source code right
+there in the browser, play around changing parameters and learning different approaches.&lt;/p&gt;
+&lt;p&gt;So, after years looking from the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I've been always amazed by the incredible work people share at &lt;a href="shadertoy.com"&gt;shadertoy&lt;/a&gt;, it's
+truly a privilege to be able to explore the gallery while taking a look at the source code right
+there in the browser, play around changing parameters and learning different approaches.&lt;/p&gt;
+&lt;p&gt;So, after years looking from the distance I decided to give it a try... and guess what? It's a
+lot of fun!&lt;/p&gt;
+&lt;iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/Md3cW7?gui=true&amp;t=10&amp;paused=false&amp;muted=false" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;You can even interact with it by dragging the cursor over the canvas!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;My humble doodles are far from those impressive &lt;a href="https://www.shadertoy.com/playlist/week"&gt;shaders of the week&lt;/a&gt;,
+but the community have proved to be an amazing one giving very constructive feedback and I've learned
+a lot while bending my mind trying to figure out how to express a certain algorithm in a parallel
+friendly way.&lt;/p&gt;
+&lt;iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/MtXyWX?gui=true&amp;t=10&amp;paused=false&amp;muted=false" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Anyway, I just wanted to recommend &lt;a href="www.shadertoy.com"&gt;shadertoy&lt;/a&gt; to everyone: the barrier of entry
+has never been lower (you just need a browser), the community is truly amazing and the gallery is
+full of great shaders to learn from.&lt;/p&gt;
+&lt;iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/XtXyzM?gui=true&amp;t=10&amp;paused=false&amp;muted=false" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Don't be shy and give it a try, you can thank me later ;)&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;</content><category term="code"></category><category term="rnd"></category></entry><entry><title>psystem</title><link href="http://www.cesarsaez.me/2018/03/psystem.html" rel="alternate"></link><published>2018-03-20T00:00:00+11:00</published><updated>2018-03-20T00:00:00+11:00</updated><author><name>Cesar Saez</name></author><id>tag:www.cesarsaez.me,2018-03-20:/2018/03/psystem.html</id><summary type="html">&lt;p&gt;Hi folks,&lt;/p&gt;
 &lt;p&gt;Some time ago I recorded this little video developing a simple particle system,
 from scratch, as an exercise and I thought it would be cool to also share it in here.&lt;/p&gt;
 &lt;p&gt;The goal?&lt;/p&gt;
