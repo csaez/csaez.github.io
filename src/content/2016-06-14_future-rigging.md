@@ -17,7 +17,7 @@ thoughts on this, so here we go... the future of rigging!
 
 If you know me, or have had a chat with me about rigging in the past, you will know that I have
 been thinking about this for a long time, there's even an old entry ([a rigger's
-journey](http://www.cesarsaez.me/2013/11/rigger-journey.html)) touching on this.
+journey](https://www.cesarsaez.me/2013/11/rigger-journey.html)) touching on this.
 
 Actually, if you take a second to read my [linkedin](http://www.linkedin.com/in/cesarsaez) profile,
 you will see that one of the first paragraphs goes like this (this text has been like this since I

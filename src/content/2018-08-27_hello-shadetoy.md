@@ -11,7 +11,9 @@ there in the browser, play around changing parameters and learning different app
 So, after years looking from the distance I decided to give it a try... and guess what? It's a
 lot of fun!
 
+<div class="flex-video widescreen">
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/Md3cW7?gui=true&t=10&paused=false&muted=false" allowfullscreen></iframe>
+</div>
 
 > You can even interact with it by dragging the cursor over the canvas!
 
@@ -21,14 +23,18 @@ My humble [doodles](https://www.shadertoy.com/user/csaez) are far from those imp
 an amazing one by giving very constructive feedback and I've certainly learned a lot while bending
 my mind trying to figure out how to express a certain algorithm in a parallel friendly way.
 
+<div class="flex-video widescreen">
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/MtXyWX?gui=true&t=10&paused=false&muted=false" allowfullscreen></iframe>
+</div>
 
 
 Anyway, I just wanted to recommend [shadertoy](http://www.shadertoy.com) to everyone: the barrier of entry
 has never been lower (you just need a browser), the community is truly amazing and the gallery is
 full of great shaders to learn from.
 
+<div class="flex-video widescreen">
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/XtXyzM?gui=true&t=10&paused=false&muted=false" allowfullscreen></iframe>
+</div>
 
 
 Don't be shy and give it a try, you can thank me later ;)

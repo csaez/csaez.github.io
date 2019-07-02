@@ -22,7 +22,7 @@ I haven't done a breakdown video yet but there's not much to say, I just copied 
 ## DNA Buildup
 
 This second exercise was a bit more involved, I wanted to recreate a
-[similar effect](http://www.cesarsaez.me/2013/12/dna-buildup.html) I did some
+[similar effect](https://www.cesarsaez.me/2013/12/dna-buildup.html) I did some
 time ago using Softimge ICE.
 
 You can watch a breakdown of my approach in the following video:

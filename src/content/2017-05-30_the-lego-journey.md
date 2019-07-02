@@ -12,10 +12,13 @@ these projects.
 
 If you are not familiar with the LEGO movies here are the mandatory trailers.
 
+<div class="flex-video widescreen">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rGQUKzSDhrg?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sZSYYiATFTI?rel=0&amp;start=10" frameborder="0"
-allowfullscreen></iframe>
+<div class="flex-video widescreen">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sZSYYiATFTI?rel=0&amp;start=10" frameborder="0" allowfullscreen></iframe>
+</div>
 
 My hope after writing this is to hopefully bring some light to people starting their careers or
 maybe that haven't had the opportunity to work on these types of projects yet. I clearly remember
@@ -82,7 +85,7 @@ Surprisingly he was very open to my feedback and that leaded to getting involved
 significant changes to the way builders and components communicated with each other simplifying
 asset scripts and the overall design of the system a lot. We moved from what I call _"class
 oriented programming"_ (I've [written a bit about it in the
-past](http://www.cesarsaez.me/2015/09/stop-cop.html)) to more generic entities reducing the amount
+past](https://www.cesarsaez.me/2015/09/stop-cop.html)) to more generic entities reducing the amount
 and complexity of code dramatically. I also develop a few key components dealing with spline-ish
 elements and did a lot of work on the procedural face system (on top of in-house software, a very
 unique experience).
