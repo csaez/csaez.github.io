@@ -28,7 +28,7 @@ time ago using Softimge ICE.
 You can watch a breakdown of my approach in the following video:
 
 <div class="flex-video widescreen">
-    <iframe src="//player.vimeo.com/video/111258575" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <iframe src="//player.vimeo.com/video/111258575" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 </div>
 
 ## What's next?
