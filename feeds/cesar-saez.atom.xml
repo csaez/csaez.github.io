@@ -683,7 +683,7 @@ into the main file and everything just works.&lt;/p&gt;
 time ago using Softimge ICE.&lt;/p&gt;
 &lt;p&gt;You can watch a breakdown of my approach in the following video:&lt;/p&gt;
 &lt;div class="flex-video widescreen"&gt;
-    &lt;iframe src="//player.vimeo.com/video/111258575" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;iframe src="//player.vimeo.com/video/111258575" width="640" height="360" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h2&gt;What's next?&lt;/h2&gt;
