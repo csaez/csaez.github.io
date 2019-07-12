@@ -449,6 +449,7 @@ a:hover .badge-right{
 #container img{
     margin: 0 auto;
     display: block;
+    max-width: 100%;
 }
 
 #disqus_thread{margin: 3em 0; }
