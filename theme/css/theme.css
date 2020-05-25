@@ -516,7 +516,7 @@ width:100%
 }
 
 .latest-list > ul > li:nth-child(1) {
-    width: 150px;
+    width: 162px;
     vertical-align: middle;
 }
 
@@ -530,7 +530,7 @@ width:100%
 }
 
 .thumbs img{
-    width: 150px;
+    width: 162px;
     height: 84px;
     background-size: cover;
     background-repeat: no-repeat;
