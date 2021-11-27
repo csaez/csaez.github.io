@@ -1,0 +1,235 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
+<title>Handling naming conventions - Cesar Saez</title><meta name=Description content="Thoughts around naming conventions during the development of RigLab"><meta property="og:title" content="Handling naming conventions">
+<meta property="og:description" content="Thoughts around naming conventions during the development of RigLab">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cesarsaez.me/posts/2013-01-10_naming-convention/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2013-01-10T00:00:00+00:00">
+<meta property="article:modified_time" content="2013-01-10T00:00:00+00:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Handling naming conventions">
+<meta name=twitter:description content="Thoughts around naming conventions during the development of RigLab">
+<meta name=application-name content="Cesar Saez">
+<meta name=apple-mobile-web-app-title content="Cesar Saez"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://cesarsaez.me/posts/2013-01-10_naming-convention/><link rel=prev href=https://cesarsaez.me/posts/2013-01-03_rigicon/><link rel=next href=https://cesarsaez.me/posts/2013-02-11_riglab-preview-solvers/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Handling naming conventions","inLanguage":"en-us","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/cesarsaez.me\/posts\/2013-01-10_naming-convention\/"},"genre":"posts","keywords":"thoughts, pipeline","wordcount":801,"url":"https:\/\/cesarsaez.me\/posts\/2013-01-10_naming-convention\/","datePublished":"2013-01-10T00:00:00+00:00","dateModified":"2013-01-10T00:00:00+00:00","publisher":{"@type":"Organization","name":"Cesar Saez"},"author":{"@type":"Person","name":"Cesar Saez"},"description":"Thoughts around naming conventions during the development of RigLab"}</script></head>
+<body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Cesar Saez">Cesar Saez</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/> Posts </a><a class=menu-item href=/tags/> Tags </a><a class=menu-item href=/categories/> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder="Search titles or contents..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a>
+</div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Cesar Saez">Cesar Saez</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><div class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</div>
+<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
+Cancel
+</a>
+</div><a class=menu-item href=/posts/ title>Posts</a><a class=menu-item href=/tags/ title>Tags</a><a class=menu-item href=/categories/ title>Categories</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class="toc-content always-active" id=toc-content-auto></div>
+</div><article class="page single"><h1 class="single-title animated flipInX">Handling naming conventions</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Cesar Saez</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=10-01-2013>10-01-2013</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;801 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#first-of-all-a-disclaimer>First of all: a disclaimer&mldr;</a></li>
+<li><a href=#whats-a-naming-convention>What&rsquo;s a naming convention?</a>
+<ul>
+<li><a href=#so-whats-the-big-deal>So, what&rsquo;s the big deal?</a></li>
+<li><a href=#what-has-been-done-in-the-framework>What has been done in the framework?</a></li>
+</ul>
+</li>
+<li><a href=#api-design>API Design</a>
+<ul>
+<li><a href=#manager>Manager</a></li>
+<li><a href=#active-rule>Active Rule</a></li>
+<li><a href=#overrides>Overrides</a></li>
+</ul>
+</li>
+</ul>
+</nav></div>
+</div><div class=content id=content><p>Hey folks,</p>
+<p>I&rsquo;ve been working on the naming convention side of the rigging framework
+and I wanna share my take on this problem.</p>
+<p>I know, this isn&rsquo;t the hottest subject to talk about, but as it&rsquo;s a so
+general problem I thought could be interesting for you too.</p>
+<h2 id=first-of-all-a-disclaimer>First of all: a disclaimer&mldr;</h2>
+<p>A lot of things I&rsquo;m developing for this project are influenced by the
+way I&rsquo;m used to work. I&rsquo;m not trying to steal ideas from anyone, it&rsquo;s
+inevitable carry with me some concepts that I found interesting and make
+them mine.</p>
+<p>Thanks to all who shared their thoughts on pipeline/coding with me along
+the years. Lots of inspiration comes from those talks!</p>
+<h2 id=whats-a-naming-convention>What&rsquo;s a naming convention?</h2>
+<p>As you may know, a naming convention is just an agreement about the
+information and the format we will be using to define a name.</p>
+<h3 id=so-whats-the-big-deal>So, what&rsquo;s the big deal?</h3>
+<p>Well, let me break things up a little bit&mldr;</p>
+<p><em>On the user side</em> it&rsquo;s just a convention and we are clever
+enough to remember it, so it&rsquo;s completely up to the user assign names
+properly. Some studios provide sophisticated tools to help them on the
+task, but in my experience a simple renamer tool (string operations)
+with some batch capabilities is enough in most cases.</p>
+<p><em>On the code side</em> it&rsquo;s a completely different story,
+code/software is not smart enough to figure out a naming convention so
+we have to be very explicit about it.</p>
+<p>One way to tackle the problem is just hard-coding names, we all have been
+there at some point. It just works, but turns out to be a really bad
+idea in the long run.</p>
+<p>The conventions usually evolve/change between projects/clients, if you
+hard-code things then all your tools become useless unless you revisit
+the code and change everything name related.</p>
+<p>The other way is create a layer to solve the names using the conventions
+and work with those names on your code, this way you have a centralized
+place where set the new naming requirements and all your tools becomes
+name independent.</p>
+<p>I obviously recommend the second approach.</p>
+<h3 id=what-has-been-done-in-the-framework>What has been done in the framework?</h3>
+<p>If we go back to the <a href=http://csaez.blogspot.com/2012/11/csriglab-overview.html target=_blank rel="noopener noreffer">project goals</a>, there is a specific one about
+naming convention, let me quote it.</p>
+<blockquote>
+<p>The system will be based on metadata rather than any specific naming
+convention. The naming convention will be based on a configuration file in
+order to integrate the system on any pipeline (the same is true with
+colours, animation controls and all the standard rigging conventions).</p>
+</blockquote>
+<p>At first I worked in a metadata API to store everything, but as the
+project progresses, I realized that access metadata is not user-friendly
+at all and it would be very difficult to trust the data if it&rsquo;s not
+updated by the user&mldr; And the system must assign a name to new objects
+anyway!</p>
+<p>So in an unexpected turns of events, I still use metadata to store
+specific things but I also worked on a system that allows me use the
+data stored in the naming convention (which are much more likely to be
+updated by the user).</p>
+<p>A cool thing about the new manager is that ended up being software
+agnostic, so it can be used in mixed pipelines too.</p>
+<p>You can see how it works in the video below.</p>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://player.vimeo.com/video/57161770 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<h2 id=api-design>API Design</h2>
+<p>When it comes to naming convention is really difficult design an
+easy-to-use API, it&rsquo;s difficult because we have to specify every &lsquo;token&rsquo;
+value but at the same time we shouldn&rsquo;t be typing any longer than the
+name itself.</p>
+<p>In my experience if you&rsquo;re working with a too intricate API, the
+temptation to hard-code names tend to be too high (especially in
+scripting) and the whole system becomes meaningless.</p>
+<p>Here are a couple of simple concepts that helped me to create an easy to
+use design.</p>
+<h3 id=manager>Manager</h3>
+<p><em>If you don&rsquo;t want to be too explicit you are probably looking for a way
+to share &lsquo;global&rsquo; information, in my case I decided to work with a
+manager as a layer for the &lsquo;naming resolution&rsquo; stuff instead of just at
+a module level, this way I can work with some &lsquo;global&rsquo; values instead of
+specified them each time.</em></p>
+<h3 id=active-rule>Active Rule</h3>
+<p><em>The manager expect an active rule to work with, you can set/get the
+active rule at anytime. Using this way to deal with rules allow us be a
+lot less explicit on each name solving and let the manager do some
+clever stuff to figure out how to arrange the name using the incoming
+arguments.</em></p>
+<h3 id=overrides>Overrides</h3>
+<p><em>We can override default values at a manager level at any time, this
+becomes really handy when you&rsquo;re working on the same context and don&rsquo;t
+want to be explicit about every token on every name.</em></p>
+<p>I hope this make sense,</p>
+<p>Cheers!</p></div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>Updated on 10-01-2013</span>
+</div>
+<div class=post-info-license></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md></div>
+<div class=post-info-share>
+<span></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/thoughts/>thoughts</a>,&nbsp;<a href=/tags/pipeline/>pipeline</a></section>
+<section>
+<span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/posts/2013-01-03_rigicon/ class=prev rel=prev title=RigIcon><i class="fas fa-angle-left fa-fw"></i>RigIcon</a>
+<a href=/posts/2013-02-11_riglab-preview-solvers/ class=next rel=next title="RigLab Preview: Solvers">RigLab Preview: Solvers<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.89.4">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Cesar Saez</a></span></div>
+</div>
+</footer></div>
+<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top">
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments">
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/twemoji/twemoji.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{},search:{highlightTag:null,lunrIndexURL:"/index.json",maxResultLength:null,noResultsFound:"No results found",snippetLength:null,type:"lunr"},twemoji:!0}</script><script type=text/javascript src=/js/theme.min.js></script></body>
+</html>

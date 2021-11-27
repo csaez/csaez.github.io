@@ -1,0 +1,220 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
+<title>Switching to VIM - Cesar Saez</title><meta name=Description content="My experience switching to the VIM text editor."><meta property="og:title" content="Switching to VIM">
+<meta property="og:description" content="My experience switching to the VIM text editor.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cesarsaez.me/posts/2015-02-09_switching-to-vim/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2015-02-09T00:00:00+00:00">
+<meta property="article:modified_time" content="2015-02-09T00:00:00+00:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Switching to VIM">
+<meta name=twitter:description content="My experience switching to the VIM text editor.">
+<meta name=application-name content="Cesar Saez">
+<meta name=apple-mobile-web-app-title content="Cesar Saez"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://cesarsaez.me/posts/2015-02-09_switching-to-vim/><link rel=prev href=https://cesarsaez.me/posts/2015-01-30_amaranth_v1_out/><link rel=next href=https://cesarsaez.me/posts/2015-03-24_doritos-maya/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Switching to VIM","inLanguage":"en-us","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/cesarsaez.me\/posts\/2015-02-09_switching-to-vim\/"},"genre":"posts","keywords":"thoughts, vim","wordcount":692,"url":"https:\/\/cesarsaez.me\/posts\/2015-02-09_switching-to-vim\/","datePublished":"2015-02-09T00:00:00+00:00","dateModified":"2015-02-09T00:00:00+00:00","publisher":{"@type":"Organization","name":"Cesar Saez"},"author":{"@type":"Person","name":"Cesar Saez"},"description":"My experience switching to the VIM text editor."}</script></head>
+<body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Cesar Saez">Cesar Saez</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/> Posts </a><a class=menu-item href=/tags/> Tags </a><a class=menu-item href=/categories/> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder="Search titles or contents..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a>
+</div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Cesar Saez">Cesar Saez</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><div class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</div>
+<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
+Cancel
+</a>
+</div><a class=menu-item href=/posts/ title>Posts</a><a class=menu-item href=/tags/ title>Tags</a><a class=menu-item href=/categories/ title>Categories</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class="toc-content always-active" id=toc-content-auto></div>
+</div><article class="page single"><h1 class="single-title animated flipInX">Switching to VIM</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Cesar Saez</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=09-02-2015>09-02-2015</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;692 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#first-things-first>First things first</a></li>
+<li><a href=#why-switching>Why switching?</a></li>
+<li><a href=#first-impressions>First impressions</a></li>
+<li><a href=#lets-the-tweaking-begin>Let&rsquo;s the tweaking begin!</a></li>
+<li><a href=#time-to-do-some-work>Time to do some work</a></li>
+<li><a href=#to-this-day>To this day&mldr;</a></li>
+<li><a href=#tldr>tl;dr</a></li>
+</ul>
+</nav></div>
+</div><div class=content id=content><p>Hi folks,</p>
+<p>If you follow me on twitter you&rsquo;ve probably noticed the tweets on my switch
+from <a href=http://www.sublimetext.com target=_blank rel="noopener noreffer">sublime</a> to <a href=http://www.vim.org target=_blank rel="noopener noreffer">vim</a>.</p>
+<p>I would like to share my experiences during the switching, the reasons behind
+it and some of the advantages I see in my new daily workflow.</p>
+<h2 id=first-things-first>First things first</h2>
+<p><a href=http://www.sublimetext.com target=_blank rel="noopener noreffer">Sublime Text</a> is a great code editor! I used it for the past 3~4
+years without issues. I love its <code>ctrl+shift+p</code> where all options are
+accessible from the keyboard, I became addict to use multiple cursors and was
+an early adopter of <a href=https://packagecontrol.io/ target=_blank rel="noopener noreffer">package control</a>.</p>
+<p>I also wrote my own snippets, build systems and all the things that you would
+expect from a power user.</p>
+<p>So, before get into why I switched and all that jazz, I would like to say that
+<a href=http://www.sublimetext.com target=_blank rel="noopener noreffer">sublime</a> is a great code editor and you should definitely give it a try.</p>
+<p>That said, let&rsquo;s talk about <a href=http://www.vim.org target=_blank rel="noopener noreffer">vim</a>&mldr;</p>
+<h2 id=why-switching>Why switching?</h2>
+<p>All started by watching a <a href="https://www.youtube.com/watch?v=YhqsjUUHj6g" target=_blank rel="noopener noreffer">video on youtube</a>, I never considered switching
+or anything, it was plain and simple curiosity about this old, clunky and weird
+editor.</p>
+<p>I learned that it shouldn&rsquo;t look as ugly as with the default settings, modes
+actually made sense (no more keyboard/mouse switching, yay!), there&rsquo;s an
+active community writing plugins and, most importantly, it&rsquo;s free and open
+source.</p>
+<p>&ldquo;Interesting! But I won&rsquo;t switch just because of that&rdquo; I thought&mldr; Yeah,
+right.</p>
+<p>Since that day on, every time I had to grab the mouse to select or move around
+some text, something inside me yells: <em>you are doing it wrong!</em>&mldr; And I
+don&rsquo;t know you, but I used to grab the mouse to move around a lot!</p>
+<p>So, a couple of weeks later I decided to give it a try.</p>
+<h2 id=first-impressions>First impressions</h2>
+<p>In two words: <em>NO WAY</em></p>
+<p>There&rsquo;s <em>no way</em> I could use this thing to develop anything on it. It&rsquo;s too
+old, weird and ugly for me (yep, call me superficial, but the look is important
+when you stare at it all day long).</p>
+<p>So, what you do when this happen?</p>
+<h2 id=lets-the-tweaking-begin>Let&rsquo;s the tweaking begin!</h2>
+<p>I started by tweaking my <code>.vimrc</code> file adding syntax highlighting, a better
+color scheme and all sort of small enhancements I probably grabbed from the
+internet.</p>
+<p>Then I learned about plugins, so I installed <a href=https://github.com/tpope/vim-pathogen target=_blank rel="noopener noreffer">pathogen</a> to manage them and then
+went to <a href=https://github.com/kien/ctrlp.vim target=_blank rel="noopener noreffer">ctrlp</a>, <a href=https://github.com/itchyny/lightline.vim target=_blank rel="noopener noreffer">lightline</a>, <a href=https://github.com/klen/python-mode target=_blank rel="noopener noreffer">python-mode</a>, <a href=https://github.com/garbas/vim-snipmate target=_blank rel="noopener noreffer">snipmate</a> and <a href=https://github.com/tpope/vim-surround target=_blank rel="noopener noreffer">vim-surround</a>.</p>
+<p>And that was it&mldr;</p>
+<blockquote>
+<p>You can grab <a href=https://github.com/csaez/dotfiles/blob/master/.vimrc target=_blank rel="noopener noreffer">my <code>.vimrc</code> from
+here</a>, it&rsquo;s fully
+commented and targeted to python development.</p>
+</blockquote>
+<h2 id=time-to-do-some-work>Time to do some work</h2>
+<p>First days were a pain&mldr; Forget about cool features, just moving around using
+<em>hjkl</em> keys instead of my beloved mouse/arrows-keys and switching between modes
+was a challenge, not to talk about registers and the whole copy/paste thing.</p>
+<p>But hey, after the initial shock things began to settle, I learned that hjkl
+are not the most efficient moves to getting around text and the whole &ldquo;command
+nightmare&rdquo; became a sort of continuous dialog with the editor (I&rsquo;m not being
+poetic here, commands work like verbs and can be combined in interesting
+ways&mldr; You&rsquo;ll see).</p>
+<p>To summarize: <em>indeed, I was doing it wrong</em>.</p>
+<p>By the way, <a href=http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/ target=_blank rel="noopener noreffer">this article</a> has helped me a lot.</p>
+<h2 id=to-this-day>To this day&mldr;</h2>
+<p>I&rsquo;m not an expert by any means, but I&rsquo;m enjoying of some <a href=http://www.vim.org target=_blank rel="noopener noreffer">vim</a> &ldquo;super powers&rdquo;
+when coding&mldr; In fact, I would miss many features if I were forced to use
+another editor.</p>
+<p>I love the ability to run my code directly from vim (or any <code>bash</code> command),
+<code>virtualenv</code> support is now essential to my workflow, I love not being forced
+to jump between the keyboard and mouse to getting around text efficiently,
+macros are great and I like the general approach to commands&mldr; Even the look
+and feel is nice once you tweak it!</p>
+<p>And, of course, I&rsquo;m very happy to be using open and free software.</p>
+<h2 id=tldr>tl;dr</h2>
+<p>I switched to <a href=http://www.vim.org target=_blank rel="noopener noreffer">vim</a> and I&rsquo;m very happy with it (from a philosophical and
+functional point of view).</p>
+<p>Why should you consider it?</p>
+<ul>
+<li>It is free and open source software.</li>
+<li>Cross-platform, it&rsquo;s everywhere!</li>
+<li>Highly customizable.</li>
+<li>Efficient workflow.</li>
+<li>Config truly portable (1 file + plugins, no admin privileges needed).</li>
+<li>It&rsquo;s fun, you&rsquo;ll learn something new every day!</li>
+</ul></div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>Updated on 09-02-2015</span>
+</div>
+<div class=post-info-license></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md></div>
+<div class=post-info-share>
+<span></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/thoughts/>thoughts</a>,&nbsp;<a href=/tags/vim/>vim</a></section>
+<section>
+<span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/posts/2015-01-30_amaranth_v1_out/ class=prev rel=prev title="Amaranth v1.0"><i class="fas fa-angle-left fa-fw"></i>Amaranth v1.0</a>
+<a href=/posts/2015-03-24_doritos-maya/ class=next rel=next title="Yet another 'dorito' tutorial">Yet another 'dorito' tutorial<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.89.4">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Cesar Saez</a></span></div>
+</div>
+</footer></div>
+<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top">
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments">
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/twemoji/twemoji.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{},search:{highlightTag:null,lunrIndexURL:"/index.json",maxResultLength:null,noResultsFound:"No results found",snippetLength:null,type:"lunr"},twemoji:!0}</script><script type=text/javascript src=/js/theme.min.js></script></body>
+</html>
