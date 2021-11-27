@@ -2,6 +2,8 @@ baseURL = 'https://cesarsaez.me/'
 languageCode = 'en-us'
 title = 'Cesar Saez'
 theme = "LoveIt"
+defaultTheme = "dark"
+gitRepo = "https://github.com/csaez/csaez.github.io"
 enableEmoji = true
 
 [markup.goldmark.renderer]
