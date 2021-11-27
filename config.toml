@@ -1,0 +1,76 @@
+baseURL = 'https://cesarsaez.me/'
+languageCode = 'en-us'
+title = 'Cesar Saez'
+theme = "LoveIt"
+enableEmoji = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  version = "0.2.X"
+  dateFormat = "02-01-2006"
+
+[params.search]
+  enable = true
+  type = "lunr"
+
+[params.home]
+    rss = 10
+    [params.home.profile]
+      enable = true
+      avatarURL = "/images/avatar.jpg"
+      title = "Cesar Saez"
+      subtitle = "Hi there, I'm a software developer working on realtime tech for the VFX industry, currently based in the UK."
+      typeit = false
+      social = true
+
+ [params.page]
+    twemoji = true
+    [params.page.toc]
+      auto = false
+
+[params.section]
+    dateFormat = "02-01"
+
+[params.social]
+    Twitter = "@csaezmargotta"
+    GitHub = "csaez"
+    Linkedin = "cesarsaez"
+    Youtubechannel = "UCRjk6bi_1ZQ9sL69agz0xMg"
+    Email = "hi@cesarsaez.me"
+    RSS = true
+
+[author]
+  name = "Cesar Saez"
+  email = "hi@cesarsaez.me"
+  link = ""
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    pre = ""
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 3
