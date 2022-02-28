@@ -104,47 +104,47 @@ working on (yes, there might be many executables on a given cmake project).</p>
 current directory (usually the root of the project, I usually create a <code>build</code> folder within the project
 containing the generated project out of cmake where things get built, so this should cover that use case).</li>
 </ol>
-<p>i.e. <code>~/bin/fx</code></p>
+<p>i.e. <code>~/bin/fx</code>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#!/bin/env bash
-</span><span style=color:#75715e></span>find . -type f -executable -exec file <span style=color:#f92672>{}</span> <span style=color:#ae81ff>\;</span> | grep -wE executable | grep -Po <span style=color:#e6db74>&#34;.*(?=:)&#34;</span>
-</code></pre></div><ol start=2>
+</span><span style=color:#75715e></span>find . -type f -executable -exec file <span style=color:#f92672>{}</span> <span style=color:#ae81ff>\;</span> | grep -wE executable | grep -Po <span style=color:#e6db74>&#34;.*(?=:)&#34;</span></code></pre></div></p>
+<ol start=2>
 <li>Now we can simply pipe the results into <code>fzf</code> in order to filter the results and launch the executable
 in a particular way, in my case I change directory to the executable folder and run it from there
 (I do this because the projects I work on have to run in multiple platforms and we end up copying
 dynamic libraries into the binary folder and setting the rpath to <code>$ORIGIN</code> in order to emulate the way this
 works on Windows&mldr; aaaarg!? 🙈).</li>
 </ol>
-<p>i.e. <code>~/bin/xx</code></p>
+<p>i.e. <code>~/bin/xx</code>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#!/bin/env bash
 </span><span style=color:#75715e></span>result<span style=color:#f92672>=</span><span style=color:#66d9ef>$(</span> fx | fzf <span style=color:#66d9ef>)</span>
 <span style=color:#66d9ef>if</span> <span style=color:#f92672>[[</span> -z $result <span style=color:#f92672>]]</span>; <span style=color:#66d9ef>then</span>
   exit <span style=color:#ae81ff>0</span>
 <span style=color:#66d9ef>fi</span>
 pushd <span style=color:#66d9ef>$(</span>dirname $result<span style=color:#66d9ef>)</span> &gt; /dev/null
-./<span style=color:#66d9ef>$(</span>basename $result<span style=color:#66d9ef>)</span>
-</code></pre></div><ol start=3>
+./<span style=color:#66d9ef>$(</span>basename $result<span style=color:#66d9ef>)</span></code></pre></div></p>
+<ol start=3>
 <li>We are done! type <code>xx</code> on the terminal and enjoy your fancy selector to launch executables within your project!</li>
 </ol>
 <p>Wait, what about debugging?</p>
 <p>Right, you can do the same thing to launch your application under a debugger (in my case gdb).</p>
-<p>i.e. <code>~/bin/dd</code></p>
+<p>i.e. <code>~/bin/dd</code>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#!/bin/env bash
 </span><span style=color:#75715e></span>result<span style=color:#f92672>=</span><span style=color:#66d9ef>$(</span> fx | fzf <span style=color:#66d9ef>)</span>
 <span style=color:#66d9ef>if</span> <span style=color:#f92672>[[</span> -z $result <span style=color:#f92672>]]</span>; <span style=color:#66d9ef>then</span>
   exit <span style=color:#ae81ff>0</span>
 <span style=color:#66d9ef>fi</span>
 pushd <span style=color:#66d9ef>$(</span>dirname $result<span style=color:#66d9ef>)</span> &gt; /dev/null
-gdb ./<span style=color:#66d9ef>$(</span>basename $result<span style=color:#66d9ef>)</span>
-</code></pre></div><p>That&rsquo;s cool, but what about doing this from the IDE/code-editor?!</p>
-<p>i.e. Here my setup for neovim (written in lua, using the native <code>fzf</code> vim plugin)</p>
+gdb ./<span style=color:#66d9ef>$(</span>basename $result<span style=color:#66d9ef>)</span></code></pre></div></p>
+<p>That&rsquo;s cool, but what about doing this from the IDE/code-editor?!</p>
+<p>i.e. Here my setup for neovim (written in lua, using the native <code>fzf</code> vim plugin)
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=color:#75715e>-- launch executable in a new tab (terminal buffer, non-blocking)</span>
 vim.api.nvim_set_keymap(<span style=color:#e6db74>&#39;n&#39;</span>, <span style=color:#e6db74>&#39;&lt;Leader&gt;xx&#39;</span>, <span style=color:#e6db74>[[ :tabe | term xx&lt;CR&gt; ]]</span>, noremap)
 
 <span style=color:#75715e>-- launch executable on the debugger using the builtin debug capabilities (i.e. ability to set breakpoints in the editor)</span>
 vim.cmd <span style=color:#e6db74>[[:packadd termdebug]]</span>
 vim.g.termdebug_wide <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
-vim.api.nvim_set_keymap(<span style=color:#e6db74>&#39;n&#39;</span>, <span style=color:#e6db74>&#39;&lt;Leader&gt;dd&#39;</span>, <span style=color:#e6db74>[[ :call fzf#run(fzf#wrap({&#39;source&#39;: &#39;fx&#39;, &#39;sink&#39;: &#39;Termdebug&#39;}))&lt;CR&gt;]]</span>, noremap)
-</code></pre></div><p>Whaaaaat!? Exactly! 🤯</p>
+vim.api.nvim_set_keymap(<span style=color:#e6db74>&#39;n&#39;</span>, <span style=color:#e6db74>&#39;&lt;Leader&gt;dd&#39;</span>, <span style=color:#e6db74>[[ :call fzf#run(fzf#wrap({&#39;source&#39;: &#39;fx&#39;, &#39;sink&#39;: &#39;Termdebug&#39;}))&lt;CR&gt;]]</span>, noremap)</code></pre></div></p>
+<p>Whaaaaat!? Exactly! 🤯</p>
 <p>Regardless of this particular setup, I thing the beauty of it is on the simple interface, allowing to quickly
 create all sorts of throw away scripts adding a fancy selector to all sort of things (i.e. whant to pimpup yout
 git workflow? take a look at how <code>forgit</code> uses <code>fzf</code> for inspiration!).</p>
