@@ -105,8 +105,8 @@ vim.api.nvim_set_keymap('n', '<Leader>dd', [[ :call fzf#run(fzf#wrap({'source': 
 Whaaaaat!? Exactly! :exploding_head:
 
 Regardless of this particular setup, I think the beauty of it is on the simple interface, allowing to quickly
-create all sorts of throw away scripts adding a fancy selector to all sort of things (i.e. whant to pimp up yout
-git workflow? take a look at how `forgit` uses `fzf` for inspiration!).
+create all sorts of throw away scripts adding a fancy selector to all sort of things (i.e. want to pimp up your
+git workflow? take a look at how [forgit](https://github.com/wfxr/forgit) uses `fzf` for inspiration).
 
 
 Cheers!
