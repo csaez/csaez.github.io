@@ -4,26 +4,24 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
 <meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
-<title>FZF for the win! - Cesar Saez</title><meta name=Description content="If you spend any time in the terminal, then you probably will like fzf."><meta property="og:title" content="FZF for the win!">
-<meta property="og:description" content="If you spend any time in the terminal, then you probably will like fzf.">
+<title>FZF for the win! - Cesar Saez</title><meta name=Description content="If you spend time in the terminal, then you probably will like fzf."><meta property="og:title" content="FZF for the win!">
+<meta property="og:description" content="If you spend time in the terminal, then you probably will like fzf.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cesarsaez.me/posts/2022-02-28_fzf-for-the-win/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2022-02-28T00:00:00+00:00">
 <meta property="article:modified_time" content="2022-02-28T00:00:00+00:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="FZF for the win!">
-<meta name=twitter:description content="If you spend any time in the terminal, then you probably will like fzf.">
+<meta name=twitter:description content="If you spend time in the terminal, then you probably will like fzf.">
 <meta name=application-name content="Cesar Saez">
 <meta name=apple-mobile-web-app-title content="Cesar Saez"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://cesarsaez.me/posts/2022-02-28_fzf-for-the-win/><link rel=prev href=https://cesarsaez.me/posts/2019-07-01_thebigdayin/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"FZF for the win!","inLanguage":"en-us","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/cesarsaez.me\/posts\/2022-02-28_fzf-for-the-win\/"},"genre":"posts","keywords":"thoughts","wordcount":639,"url":"https:\/\/cesarsaez.me\/posts\/2022-02-28_fzf-for-the-win\/","datePublished":"2022-02-28T00:00:00+00:00","dateModified":"2022-02-28T00:00:00+00:00","publisher":{"@type":"Organization","name":"Cesar Saez"},"author":{"@type":"Person","name":"Cesar Saez"},"description":"If you spend any time in the terminal, then you probably will like fzf."}</script></head>
-<body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://cesarsaez.me/posts/2022-02-28_fzf-for-the-win/><link rel=prev href=https://cesarsaez.me/posts/2019-07-01_thebigdayin/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"FZF for the win!","inLanguage":"en-us","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/cesarsaez.me\/posts\/2022-02-28_fzf-for-the-win\/"},"genre":"posts","keywords":"thoughts","wordcount":650,"url":"https:\/\/cesarsaez.me\/posts\/2022-02-28_fzf-for-the-win\/","datePublished":"2022-02-28T00:00:00+00:00","dateModified":"2022-02-28T00:00:00+00:00","publisher":{"@type":"Organization","name":"Cesar Saez"},"author":{"@type":"Person","name":"Cesar Saez"},"description":"If you spend time in the terminal, then you probably will like fzf."}</script></head><body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":''==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:''==="dark")&&document.body.setAttribute("theme","dark")</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
 <div class=header-title>
 <a href=/ title="Cesar Saez">Cesar Saez</a>
-</div>
-<div class=menu>
+</div><div class=menu>
 <div class=menu-inner><a class=menu-item href=/posts/> Posts </a><a class=menu-item href=/tags/> Tags </a><a class=menu-item href=/categories/> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
 <input type=text placeholder="Search titles or contents..." id=search-input-desktop>
 <a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search>
@@ -38,20 +36,14 @@
 </span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
 <i class="fas fa-adjust fa-fw"></i>
 </a>
-</div>
-</div>
-</div>
-</header><header class=mobile id=header-mobile>
+</div></div></div></header><header class=mobile id=header-mobile>
 <div class=header-container>
 <div class=header-wrapper>
 <div class=header-title>
 <a href=/ title="Cesar Saez">Cesar Saez</a>
-</div>
-<div class=menu-toggle id=menu-toggle-mobile>
+</div><div class=menu-toggle id=menu-toggle-mobile>
 <span></span><span></span><span></span>
-</div>
-</div>
-<div class=menu id=menu-mobile><div class=search-wrapper>
+</div></div><div class=menu id=menu-mobile><div class=search-wrapper>
 <div class="search mobile" id=search-mobile>
 <input type=text placeholder="Search titles or contents..." id=search-input-mobile>
 <a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search>
@@ -63,65 +55,36 @@
 <span class="search-button search-loading" id=search-loading-mobile>
 <i class="fas fa-spinner fa-fw fa-spin"></i>
 </span>
-</div>
-<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
+</div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
 Cancel
 </a>
 </div><a class=menu-item href=/posts/ title>Posts</a><a class=menu-item href=/tags/ title>Tags</a><a class=menu-item href=/categories/ title>Categories</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
 <i class="fas fa-adjust fa-fw"></i>
-</a></div>
-</div>
-</header>
-<div class="search-dropdown desktop">
-<div id=search-dropdown-desktop></div>
-</div>
-<div class="search-dropdown mobile">
-<div id=search-dropdown-mobile></div>
-</div>
-<main class=main>
+</a></div></div></header><div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div></div><main class=main>
 <div class=container><article class="page single"><h1 class="single-title animated flipInX">FZF for the win!</h1><div class=post-meta>
-<div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Cesar Saez</a></span>&nbsp;<span class=post-category>included in <a href=/categories/tutorials/><i class="far fa-folder fa-fw"></i>Tutorials</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=28-02-2022>28-02-2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;639 words&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
-</div><div class=content id=content><p>Hi there!</p>
-<p>It has been a long time sinse the last time I posted something here.</p>
-<p>A lot has happened: for starters I moved to London, got married, worked at
-DNEG for a while and then switched to my current job in the research department (real time) at Foundry.
-My day to day job is also a bit different, nowadays I find myself working on c++ projects developing
-prototypes and/or experimental extensions to Foundry products.</p>
-<p>Now, back to the topic&mldr; What&rsquo;s that <code>fzf</code> thingy I wanted to share about?</p>
-<p>Well, I work a lot on the terminal (Linux) and during the years I have treassured quite a collection
-of useful little tools to make my workflow nicer, one of them is FZF!</p>
-<p><a href=https://github.com/junegunn/fzf target=_blank rel="noopener noreffer">https://github.com/junegunn/fzf</a></p>
-<p><code>FZF</code> is a command line fuzzy finder written in go, very handy to find files and what not.. but the coolest
-part is how easy it is to integrate it into all sort of workflows, just pipe the content to be filtered
-into it!</p>
-<p>A very useful thing I do a lot with <code>fzf</code> is to run a particular executable of the project I&rsquo;m
-working on (yes, there might be many executables on a given cmake project).</p>
-<p>Here a breakdown of how I have this setup:</p>
-<h3 id=finding-executables>Finding executables</h3>
-<p>First we need to find all executables in the project, for that I do a recursive find starting on the
-current directory (usually the root of the project) + a few greps further filtering things.</p>
-<p>I usually create a <code>build</code> folder within the project containing the generated project out of cmake
-where things get built, so this should cover that use case.</p>
-<p>i.e. <code>~/bin/fx</code></p>
-<div class=highlight><div class=chroma>
+<div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Cesar Saez</a></span>&nbsp;<span class=post-category>included in <a href=/categories/tutorials/><i class="far fa-folder fa-fw"></i>Tutorials</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=28-02-2022>28-02-2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;650 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div></div><div class=content id=content><p>Hi there!</p><p>It has been a long time since the last time I posted something here.</p><p>A lot has happened: for starters I moved to London, got married, worked at DNEG for a while and
+then switched to my current job in the research department (real time) at Foundry. My day to day
+job is also a bit different, nowadays I find myself working on c++ projects developing prototypes
+and/or experimental extensions to Foundry products.</p><p>Now, back to the topic&mldr; What&rsquo;s that <code>fzf</code> thingy I wanted to share about?</p><p>Well, I work a lot on the terminal (Linux) and during the years I have treasured quite a collection
+of useful little tools to make my workflow nicer, one of them is FZF!</p><p><a href=https://github.com/junegunn/fzf target=_blank rel="noopener noreffer">https://github.com/junegunn/fzf</a></p><p><code>FZF</code> is an interactive Unix filter for command-line written in go, very handy to find files and
+what not&mldr; The coolest part is how easy it is to integrate all sort of workflows into it, just
+pipe the content to be filtered into <code>fzf</code> and you are ready to go!</p><h2 id=executable-launcher>Executable launcher</h2><p>A very useful thing I do a lot with <code>fzf</code> is to run a particular executable of the project I&rsquo;m
+working on (yes, there might be many executables on a given <code>cmake</code> project).</p><p>Here&rsquo;s a breakdown of how I have this setup:</p><h3 id=finding-executables>Finding executables</h3><p>First we need to find all executables in the project, for that I do a recursive find starting on
+the current directory (usually the root of the project) + a few greps further filtering things.</p><p>I usually create a <code>build</code> folder within the project containing the generated project out of
+<code>cmake</code> where things get built, so this should cover that use case.</p><p>i.e. <code>~/bin/fx</code></p><div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/env bash
-</span><span class=cp></span>find . -type f -executable -exec file <span class=o>{}</span> <span class=se>\;</span> <span class=p>|</span> grep -wE executable <span class=p>|</span> grep -Po <span class=s2>&#34;.*(?=:)&#34;</span>
-</code></pre></td></tr></table>
-</div>
-</div><h3 id=selecting-the-executable-in-fzf>Selecting the executable in <code>fzf</code></h3>
-<p>Now we can simply pipe the results into <code>fzf</code> in order to filter the results and launch the executable!</p>
-<p>In my case I change directory to the executable directory and run it from there,
-I do this because I work on projects that need to run on multiple platforms and there&rsquo;s a bit of
-cross platform <code>rpath</code> &ldquo;fun&rdquo; involved leading to this decision 🙈.</p>
-<p>i.e. <code>~/bin/xx</code></p>
-<div class=highlight><div class=chroma>
+</span></code></pre></td><td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/env bash
+</span></span></span><span class=line><span class=cl><span class=cp></span>find . -type f -executable -exec file <span class=o>{}</span> <span class=se>\;</span> <span class=p>|</span> grep -wE executable <span class=p>|</span> grep -Po <span class=s2>&#34;.*(?=:)&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=selecting-the-executable-in-fzf>Selecting the executable in <code>fzf</code></h3><p>Now we can simply pipe the results into <code>fzf</code> in order to filter the results and launch the
+executable!</p><p>In my case I change directory to the executable directory and run it from there, I do this because
+I work on projects that need to run on multiple platforms and there&rsquo;s a bit of cross platform
+<code>rpath</code> &ldquo;fun&rdquo; involved leading to this decision 🙈.</p><p>i.e. <code>~/bin/xx</code></p><div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
@@ -130,22 +93,16 @@ cross platform <code>rpath</code> &ldquo;fun&rdquo; involved leading to this dec
 </span><span class=lnt>5
 </span><span class=lnt>6
 </span><span class=lnt>7
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/env bash
-</span><span class=cp></span><span class=nv>result</span><span class=o>=</span><span class=k>$(</span> fx <span class=p>|</span> fzf <span class=k>)</span>
-<span class=k>if</span> <span class=o>[[</span> -z <span class=nv>$result</span> <span class=o>]]</span><span class=p>;</span> <span class=k>then</span>
-  <span class=nb>exit</span> <span class=m>0</span>
-<span class=k>fi</span>
-<span class=nb>pushd</span> <span class=k>$(</span>dirname <span class=nv>$result</span><span class=k>)</span> &gt; /dev/null
-./<span class=k>$(</span>basename <span class=nv>$result</span><span class=k>)</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>We are done! type <code>xx</code> on the terminal and enjoy your fancy selector to launch executables within your project!</p>
-<h3 id=wait-what-about-debugging>Wait, what about debugging?</h3>
-<p>Right, you can do the same thing to launch your application under a debugger (<code>gdb</code> in this case).</p>
-<p>i.e. <code>~/bin/dd</code></p>
-<div class=highlight><div class=chroma>
+</span></code></pre></td><td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/env bash
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=nv>result</span><span class=o>=</span><span class=k>$(</span> fx <span class=p>|</span> fzf <span class=k>)</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[[</span> -z <span class=nv>$result</span> <span class=o>]]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>  <span class=nb>exit</span> <span class=m>0</span>
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span><span class=line><span class=cl><span class=nb>pushd</span> <span class=k>$(</span>dirname <span class=nv>$result</span><span class=k>)</span> &gt; /dev/null
+</span></span><span class=line><span class=cl>./<span class=k>$(</span>basename <span class=nv>$result</span><span class=k>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>We are done! Simply type <code>xx</code> on your terminal and enjoy your fancy selector to launch executables
+within your project!</p><h3 id=wait-what-about-debugging>Wait, what about debugging?</h3><p>Right, you can do the same thing to launch your application under a debugger (<code>gdb</code> in this case).</p><p>i.e. <code>~/bin/dd</code></p><div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
@@ -154,20 +111,17 @@ cross platform <code>rpath</code> &ldquo;fun&rdquo; involved leading to this dec
 </span><span class=lnt>5
 </span><span class=lnt>6
 </span><span class=lnt>7
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/env bash
-</span><span class=cp></span><span class=nv>result</span><span class=o>=</span><span class=k>$(</span> fx <span class=p>|</span> fzf <span class=k>)</span>
-<span class=k>if</span> <span class=o>[[</span> -z <span class=nv>$result</span> <span class=o>]]</span><span class=p>;</span> <span class=k>then</span>
-  <span class=nb>exit</span> <span class=m>0</span>
-<span class=k>fi</span>
-<span class=nb>pushd</span> <span class=k>$(</span>dirname <span class=nv>$result</span><span class=k>)</span> &gt; /dev/null
-gdb ./<span class=k>$(</span>basename <span class=nv>$result</span><span class=k>)</span>
-</code></pre></td></tr></table>
-</div>
-</div><h3 id=what-about-doing-this-from-the-idecode-editor>What about doing this from the IDE/code-editor?</h3>
-<p>I use neovim as my code editor, one of the cool things is the tight integration with the terminal allowing to reuse some of the little scripts we have been talking about. Here my setup (using the <code>fzf</code> plugin for the case of debugging)</p>
-<div class=highlight><div class=chroma>
+</span></code></pre></td><td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=cp>#!/bin/env bash
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=nv>result</span><span class=o>=</span><span class=k>$(</span> fx <span class=p>|</span> fzf <span class=k>)</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[[</span> -z <span class=nv>$result</span> <span class=o>]]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>  <span class=nb>exit</span> <span class=m>0</span>
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span><span class=line><span class=cl><span class=nb>pushd</span> <span class=k>$(</span>dirname <span class=nv>$result</span><span class=k>)</span> &gt; /dev/null
+</span></span><span class=line><span class=cl>gdb ./<span class=k>$(</span>basename <span class=nv>$result</span><span class=k>)</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=what-about-doing-this-from-the-idecode-editor>What about doing this from the IDE/code-editor?</h3><p>I use <code>neovim</code> as my code editor, one of the cool things is the tight integration with the terminal
+allowing to reuse some of the little scripts we have been talking about. Here&rsquo;s my setup (using the
+<code>fzf</code> plugin for the case of debugging).</p><div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
@@ -178,57 +132,36 @@ gdb ./<span class=k>$(</span>basename <span class=nv>$result</span><span class=k
 </span><span class=lnt>7
 </span><span class=lnt>8
 </span><span class=lnt>9
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=kd>local</span> <span class=n>noremap</span> <span class=o>=</span> <span class=p>{</span> <span class=n>noremap</span><span class=o>=</span><span class=kc>true</span><span class=p>,</span> <span class=n>silent</span><span class=o>=</span><span class=kc>true</span> <span class=p>}</span>
-
-<span class=c1>-- launch debugger using termdebug (i.e. set breakpoints in the editor)</span>
-<span class=n>vim.cmd</span> <span class=s>[[:packadd termdebug]]</span>
-<span class=n>vim.g</span><span class=p>.</span><span class=n>termdebug_wide</span> <span class=o>=</span> <span class=mi>1</span>
-<span class=n>vim.api</span><span class=p>.</span><span class=n>nvim_set_keymap</span><span class=p>(</span><span class=s1>&#39;n&#39;</span><span class=p>,</span> <span class=s1>&#39;&lt;Leader&gt;dd&#39;</span><span class=p>,</span> <span class=s>[[ :call fzf#run(fzf#wrap({&#39;source&#39;: &#39;fx&#39;, &#39;sink&#39;: &#39;Termdebug&#39;}))&lt;CR&gt;]]</span><span class=p>,</span> <span class=n>noremap</span><span class=p>)</span>
-
-<span class=c1>-- launch executable in new tab (terminal buffer, non-blocking)</span>
-<span class=n>vim.api</span><span class=p>.</span><span class=n>nvim_set_keymap</span><span class=p>(</span><span class=s1>&#39;n&#39;</span><span class=p>,</span> <span class=s1>&#39;&lt;Leader&gt;xx&#39;</span><span class=p>,</span> <span class=s>[[ :tabe | term xx&lt;CR&gt; ]]</span><span class=p>,</span> <span class=n>noremap</span><span class=p>)</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Whaaaaat!? Exactly! 🤯</p>
-<hr>
-<p>Regardless of this particular setup, I think the beauty of it is on the simple interface, allowing to quickly
-create all sorts of throw away scripts adding a fancy selector to all sort of things (i.e. want to pimp up your
-git workflow? take a look at how <a href=https://github.com/wfxr/forgit target=_blank rel="noopener noreffer">forgit</a> uses <code>fzf</code> for inspiration).</p>
-<p>Cheers!</p></div><div class=post-footer id=post-footer>
+</span></code></pre></td><td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=kd>local</span> <span class=n>noremap</span> <span class=o>=</span> <span class=p>{</span> <span class=n>noremap</span><span class=o>=</span><span class=kc>true</span><span class=p>,</span> <span class=n>silent</span><span class=o>=</span><span class=kc>true</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>-- launch debugger using termdebug (i.e. set breakpoints in the editor)</span>
+</span></span><span class=line><span class=cl><span class=n>vim.cmd</span> <span class=s>[[:packadd termdebug]]</span>
+</span></span><span class=line><span class=cl><span class=n>vim.g</span><span class=p>.</span><span class=n>termdebug_wide</span> <span class=o>=</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl><span class=n>vim.api</span><span class=p>.</span><span class=n>nvim_set_keymap</span><span class=p>(</span><span class=s1>&#39;n&#39;</span><span class=p>,</span> <span class=s1>&#39;&lt;Leader&gt;dd&#39;</span><span class=p>,</span> <span class=s>[[ :call fzf#run(fzf#wrap({&#39;source&#39;: &#39;fx&#39;, &#39;sink&#39;: &#39;Termdebug&#39;}))&lt;CR&gt;]]</span><span class=p>,</span> <span class=n>noremap</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>-- launch executable in new tab (terminal buffer, non-blocking)</span>
+</span></span><span class=line><span class=cl><span class=n>vim.api</span><span class=p>.</span><span class=n>nvim_set_keymap</span><span class=p>(</span><span class=s1>&#39;n&#39;</span><span class=p>,</span> <span class=s1>&#39;&lt;Leader&gt;xx&#39;</span><span class=p>,</span> <span class=s>[[ :tabe | term xx&lt;CR&gt; ]]</span><span class=p>,</span> <span class=n>noremap</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><p>Whaaaaat!? Exactly! 🤯</p><hr>
+<p>Regardless of this particular setup, I think the beauty of it is on the simple interface, allowing
+to quickly create all sorts of throw away scripts adding a fancy selector to all sort of things
+(i.e. Do you want to pimp up your git workflow? Take a look at how
+<a href=https://github.com/wfxr/forgit target=_blank rel="noopener noreffer">forgit</a> uses <code>fzf</code> for inspiration).</p><p>Cheers!</p></div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
 <span>Updated on 28-02-2022</span>
-</div>
-<div class=post-info-license></div>
-</div>
-<div class=post-info-line>
-<div class=post-info-md></div>
-<div class=post-info-share>
+</div><div class=post-info-license></div></div><div class=post-info-line>
+<div class=post-info-md></div><div class=post-info-share>
 <span></span>
-</div>
-</div>
-</div>
-<div class=post-info-more>
-<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/thoughts/>thoughts</a></section>
-<section>
+</div></div></div><div class=post-info-more>
+<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/thoughts/>thoughts</a></section><section>
 <span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span>
-</section>
-</div>
-<div class=post-nav><a href=/posts/2019-07-01_thebigdayin/ class=prev rel=prev title='Presenting at "The Big Day In"'><i class="fas fa-angle-left fa-fw"></i>Presenting at "The Big Day In"</a></div>
-</div>
-</article></div>
-</main><footer class=footer>
-<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.92.2">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Cesar Saez</a></span></div>
-</div>
-</footer></div>
-<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top">
+</section></div><div class=post-nav><a href=/posts/2019-07-01_thebigdayin/ class=prev rel=prev title='Presenting at "The Big Day In"'><i class="fas fa-angle-left fa-fw"></i>Presenting at "The Big Day In"</a></div></div></article></div></main><footer class=footer>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.93.0">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Cesar Saez</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top">
 <i class="fas fa-arrow-up fa-fw"></i>
 </a><a href=# id=view-comments class=fixed-button title="View Comments">
 <i class="fas fa-comment fa-fw"></i>
 </a>
-</div><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/twemoji/twemoji.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{},search:{highlightTag:null,lunrIndexURL:"/index.json",maxResultLength:null,noResultsFound:"No results found",snippetLength:null,type:"lunr"},twemoji:!0}</script><script type=text/javascript src=/js/theme.min.js></script></body>
-</html>
+</div><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/twemoji/twemoji.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{},search:{highlightTag:null,lunrIndexURL:"/index.json",maxResultLength:null,noResultsFound:"No results found",snippetLength:null,type:"lunr"},twemoji:!0}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
