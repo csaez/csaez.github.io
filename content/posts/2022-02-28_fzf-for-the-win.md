@@ -38,7 +38,9 @@ working on (yes, there might be many executables on a given cmake project).
 
 Here a breakdown of how I have this setup:
 
-1. First we need to find the executables in the project, for that I do a recursive find starting on the
+### Finding executables
+
+First we need to find the executables in the project, for that I do a recursive find starting on the
 current directory (usually the root of the project, I usually create a `build` folder within the project
 containing the generated project out of cmake where things get built, so this should cover that use case).
 
@@ -48,7 +50,9 @@ i.e. `~/bin/fx`
 find . -type f -executable -exec file {} \; | grep -wE executable | grep -Po ".*(?=:)"
 ```
 
-2. Now we can simply pipe the results into `fzf` in order to filter the results and launch the executable
+### Selecting the executable in `fzf`
+
+Now we can simply pipe the results into `fzf` in order to filter the results and launch the executable
 in a particular way, in my case I change directory to the executable folder and run it from there
 (I do this because the projects I work on have to run in multiple platforms and we end up copying
 dynamic libraries into the binary folder and setting the rpath to `$ORIGIN` in order to emulate the way this
@@ -65,9 +69,9 @@ pushd $(dirname $result) > /dev/null
 ./$(basename $result)
 ```
 
-3. We are done! type `xx` on the terminal and enjoy your fancy selector to launch executables within your project!
+We are done! type `xx` on the terminal and enjoy your fancy selector to launch executables within your project!
 
-Wait, what about debugging?
+### Wait, what about debugging?
 
 Right, you can do the same thing to launch your application under a debugger (in my case gdb).
 
@@ -82,7 +86,7 @@ pushd $(dirname $result) > /dev/null
 gdb ./$(basename $result)
 ```
 
-That's cool, but what about doing this from the IDE/code-editor?!
+### What about doing this from the IDE/code-editor?
 
 i.e. Here my setup for neovim (using the native `fzf` vim plugin)
 ```lua
