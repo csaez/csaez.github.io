@@ -16,7 +16,7 @@
 <meta name=application-name content="Cesar Saez">
 <meta name=apple-mobile-web-app-title content="Cesar Saez"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://cesarsaez.me/posts/2022-02-28_fzf-for-the-win/><link rel=prev href=https://cesarsaez.me/posts/2019-07-01_thebigdayin/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"FZF for the win!","inLanguage":"en-us","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/cesarsaez.me\/posts\/2022-02-28_fzf-for-the-win\/"},"genre":"posts","keywords":"thoughts","wordcount":617,"url":"https:\/\/cesarsaez.me\/posts\/2022-02-28_fzf-for-the-win\/","datePublished":"2022-02-28T00:00:00+00:00","dateModified":"2022-02-28T00:00:00+00:00","publisher":{"@type":"Organization","name":"Cesar Saez"},"author":{"@type":"Person","name":"Cesar Saez"},"description":"If you spend any time in the terminal, then you probably will like fzf."}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://cesarsaez.me/posts/2022-02-28_fzf-for-the-win/><link rel=prev href=https://cesarsaez.me/posts/2019-07-01_thebigdayin/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"FZF for the win!","inLanguage":"en-us","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/cesarsaez.me\/posts\/2022-02-28_fzf-for-the-win\/"},"genre":"posts","keywords":"thoughts","wordcount":605,"url":"https:\/\/cesarsaez.me\/posts\/2022-02-28_fzf-for-the-win\/","datePublished":"2022-02-28T00:00:00+00:00","dateModified":"2022-02-28T00:00:00+00:00","publisher":{"@type":"Organization","name":"Cesar Saez"},"author":{"@type":"Person","name":"Cesar Saez"},"description":"If you spend any time in the terminal, then you probably will like fzf."}</script></head>
 <body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -81,7 +81,7 @@ Cancel
 <main class=main>
 <div class=container><article class="page single"><h1 class="single-title animated flipInX">FZF for the win!</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Cesar Saez</a></span>&nbsp;<span class=post-category>included in <a href=/categories/tutorials/><i class="far fa-folder fa-fw"></i>Tutorials</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=28-02-2022>28-02-2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;617 words&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=28-02-2022>28-02-2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;605 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
 </div><div class=content id=content><p>Hi there!</p>
 <p>It has been a long time sinse the last time I posted something here.</p>
@@ -100,9 +100,10 @@ into it!</p>
 working on (yes, there might be many executables on a given cmake project).</p>
 <p>Here a breakdown of how I have this setup:</p>
 <h3 id=finding-executables>Finding executables</h3>
-<p>First we need to find the executables in the project, for that I do a recursive find starting on the
-current directory (usually the root of the project, I usually create a <code>build</code> folder within the project
-containing the generated project out of cmake where things get built, so this should cover that use case).</p>
+<p>First we need to find all executables in the project, for that I do a recursive find starting on the
+current directory (usually the root of the project) + a few greps further filtering things.</p>
+<p>I usually create a <code>build</code> folder within the project containing the generated project out of cmake
+where things get built, so this should cover that use case.</p>
 <p>i.e. <code>~/bin/fx</code></p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
@@ -115,11 +116,10 @@ containing the generated project out of cmake where things get built, so this sh
 </code></pre></td></tr></table>
 </div>
 </div><h3 id=selecting-the-executable-in-fzf>Selecting the executable in <code>fzf</code></h3>
-<p>Now we can simply pipe the results into <code>fzf</code> in order to filter the results and launch the executable
-in a particular way, in my case I change directory to the executable folder and run it from there
-(I do this because the projects I work on have to run in multiple platforms and we end up copying
-dynamic libraries into the binary folder and setting the rpath to <code>$ORIGIN</code> in order to emulate the way this
-works on Windows&mldr; aaaarg!? 🙈).</p>
+<p>Now we can simply pipe the results into <code>fzf</code> in order to filter the results and launch the executable!</p>
+<p>In my case I change directory to the executable directory and run it from there,
+I do this because I work on projects that need to run on multiple platforms and there&rsquo;s a bit of
+cross platform <code>rpath</code> &ldquo;fun&rdquo; involved leading to this decision 🙈.</p>
 <p>i.e. <code>~/bin/xx</code></p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
@@ -143,7 +143,7 @@ works on Windows&mldr; aaaarg!? 🙈).</p>
 </div>
 </div><p>We are done! type <code>xx</code> on the terminal and enjoy your fancy selector to launch executables within your project!</p>
 <h3 id=wait-what-about-debugging>Wait, what about debugging?</h3>
-<p>Right, you can do the same thing to launch your application under a debugger (in my case gdb).</p>
+<p>Right, you can do the same thing to launch your application under a debugger (<code>gdb</code> in this case).</p>
 <p>i.e. <code>~/bin/dd</code></p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
@@ -166,7 +166,7 @@ gdb ./<span class=k>$(</span>basename <span class=nv>$result</span><span class=k
 </code></pre></td></tr></table>
 </div>
 </div><h3 id=what-about-doing-this-from-the-idecode-editor>What about doing this from the IDE/code-editor?</h3>
-<p>i.e. Here my setup for neovim (using the native <code>fzf</code> vim plugin)</p>
+<p>Here my setup for neovim (using the <code>fzf</code> vim plugin)</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -188,8 +188,8 @@ gdb ./<span class=k>$(</span>basename <span class=nv>$result</span><span class=k
 </code></pre></td></tr></table>
 </div>
 </div><p>Whaaaaat!? Exactly! 🤯</p>
-<p>Regardless of this particular setup, I thing the beauty of it is on the simple interface, allowing to quickly
-create all sorts of throw away scripts adding a fancy selector to all sort of things (i.e. whant to pimpup yout
+<p>Regardless of this particular setup, I think the beauty of it is on the simple interface, allowing to quickly
+create all sorts of throw away scripts adding a fancy selector to all sort of things (i.e. whant to pimp up yout
 git workflow? take a look at how <code>forgit</code> uses <code>fzf</code> for inspiration!).</p>
 <p>Cheers!</p></div><div class=post-footer id=post-footer>
 <div class=post-info>
