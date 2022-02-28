@@ -40,9 +40,11 @@ Here a breakdown of how I have this setup:
 
 ### Finding executables
 
-First we need to find the executables in the project, for that I do a recursive find starting on the
-current directory (usually the root of the project, I usually create a `build` folder within the project
-containing the generated project out of cmake where things get built, so this should cover that use case).
+First we need to find all executables in the project, for that I do a recursive find starting on the
+current directory (usually the root of the project) + a few greps further filtering things.
+
+I usually create a `build` folder within the project containing the generated project out of cmake
+where things get built, so this should cover that use case.
 
 i.e. `~/bin/fx`
 ```bash
@@ -52,11 +54,11 @@ find . -type f -executable -exec file {} \; | grep -wE executable | grep -Po ".*
 
 ### Selecting the executable in `fzf`
 
-Now we can simply pipe the results into `fzf` in order to filter the results and launch the executable
-in a particular way, in my case I change directory to the executable folder and run it from there
-(I do this because the projects I work on have to run in multiple platforms and we end up copying
-dynamic libraries into the binary folder and setting the rpath to `$ORIGIN` in order to emulate the way this
-works on Windows... aaaarg!? :see_no_evil:).
+Now we can simply pipe the results into `fzf` in order to filter the results and launch the executable!
+
+In my case I change directory to the executable directory and run it from there,
+I do this because I work on projects that need to run on multiple platforms and there's a bit of
+cross platform `rpath` "fun" involved leading to this decision :see_no_evil:.
 
 i.e. `~/bin/xx`
 ```bash
@@ -73,7 +75,7 @@ We are done! type `xx` on the terminal and enjoy your fancy selector to launch e
 
 ### Wait, what about debugging?
 
-Right, you can do the same thing to launch your application under a debugger (in my case gdb).
+Right, you can do the same thing to launch your application under a debugger (`gdb` in this case).
 
 i.e. `~/bin/dd`
 ```bash
@@ -88,7 +90,8 @@ gdb ./$(basename $result)
 
 ### What about doing this from the IDE/code-editor?
 
-i.e. Here my setup for neovim (using the native `fzf` vim plugin)
+Here my setup for neovim (using the `fzf` vim plugin)
+
 ```lua
 -- launch executable in a new tab (terminal buffer, non-blocking)
 vim.api.nvim_set_keymap('n', '<Leader>xx', [[ :tabe | term xx<CR> ]], noremap)
@@ -101,8 +104,8 @@ vim.api.nvim_set_keymap('n', '<Leader>dd', [[ :call fzf#run(fzf#wrap({'source': 
 
 Whaaaaat!? Exactly! :exploding_head:
 
-Regardless of this particular setup, I thing the beauty of it is on the simple interface, allowing to quickly
-create all sorts of throw away scripts adding a fancy selector to all sort of things (i.e. whant to pimpup yout
+Regardless of this particular setup, I think the beauty of it is on the simple interface, allowing to quickly
+create all sorts of throw away scripts adding a fancy selector to all sort of things (i.e. whant to pimp up yout
 git workflow? take a look at how `forgit` uses `fzf` for inspiration!).
 
 
