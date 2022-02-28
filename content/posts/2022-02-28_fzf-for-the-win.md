@@ -90,19 +90,23 @@ gdb ./$(basename $result)
 
 ### What about doing this from the IDE/code-editor?
 
-Here my setup for neovim (using the `fzf` vim plugin)
+I use neovim as my code editor, one of the cool things is the tight integration with the terminal allowing to reuse some of the little scripts we have been talking about. Here my setup (using the `fzf` plugin for the case of debugging)
 
 ```lua
--- launch executable in a new tab (terminal buffer, non-blocking)
-vim.api.nvim_set_keymap('n', '<Leader>xx', [[ :tabe | term xx<CR> ]], noremap)
+local noremap = { noremap=true, silent=true }
 
--- launch executable on the debugger using the builtin debug capabilities (i.e. ability to set breakpoints in the editor)
+-- launch debugger using termdebug (i.e. set breakpoints in the editor)
 vim.cmd [[:packadd termdebug]]
 vim.g.termdebug_wide = 1
 vim.api.nvim_set_keymap('n', '<Leader>dd', [[ :call fzf#run(fzf#wrap({'source': 'fx', 'sink': 'Termdebug'}))<CR>]], noremap)
+
+-- launch executable in new tab (terminal buffer, non-blocking)
+vim.api.nvim_set_keymap('n', '<Leader>xx', [[ :tabe | term xx<CR> ]], noremap)
 ```
 
 Whaaaaat!? Exactly! :exploding_head:
+
+---
 
 Regardless of this particular setup, I think the beauty of it is on the simple interface, allowing to quickly
 create all sorts of throw away scripts adding a fancy selector to all sort of things (i.e. want to pimp up your
