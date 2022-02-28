@@ -20,6 +20,7 @@ DNEG for a while and then switched to my current job in the research department 
 My day to day job is also a bit different, nowadays I find myself working on c++ projects developing
 prototypes and/or experimental extensions to Foundry products.
 
+
 Now, back to the topic... What's that `fzf` thingy I wanted to share about?
 
 Well, I work a lot on the terminal (Linux) and during the years I have treassured quite a collection
@@ -31,6 +32,7 @@ https://github.com/junegunn/fzf
 part is how easy it is to integrate it into all sort of workflows, just pipe the content to be filtered
 into it!
 
+
 A very useful thing I do a lot with `fzf` is to run a particular executable of the project I'm
 working on (yes, there might be many executables on a given cmake project).
 
@@ -41,10 +43,10 @@ current directory (usually the root of the project, I usually create a `build` f
 containing the generated project out of cmake where things get built, so this should cover that use case).
 
 i.e. `~/bin/fx`
-```bash
+{{< highlight bash >}}
 #!/bin/env bash
 find . -type f -executable -exec file {} \; | grep -wE executable | grep -Po ".*(?=:)"
-```
+{{</ highlight >}}
 
 2. Now we can simply pipe the results into `fzf` in order to filter the results and launch the executable
 in a particular way, in my case I change directory to the executable folder and run it from there
@@ -53,7 +55,7 @@ dynamic libraries into the binary folder and setting the rpath to `$ORIGIN` in o
 works on Windows... aaaarg!? :see_no_evil:).
 
 i.e. `~/bin/xx`
-```bash
+{{< highlight bash >}}
 #!/bin/env bash
 result=$( fx | fzf )
 if [[ -z $result ]]; then
@@ -61,7 +63,7 @@ if [[ -z $result ]]; then
 fi
 pushd $(dirname $result) > /dev/null
 ./$(basename $result)
-```
+{{</ highlight >}}
 
 3. We are done! type `xx` on the terminal and enjoy your fancy selector to launch executables within your project!
 
@@ -70,7 +72,7 @@ Wait, what about debugging?
 Right, you can do the same thing to launch your application under a debugger (in my case gdb).
 
 i.e. `~/bin/dd`
-```bash
+{{< highlight bash >}}
 #!/bin/env bash
 result=$( fx | fzf )
 if [[ -z $result ]]; then
@@ -78,12 +80,13 @@ if [[ -z $result ]]; then
 fi
 pushd $(dirname $result) > /dev/null
 gdb ./$(basename $result)
-```
+{{</ highlight >}}
+
 
 That's cool, but what about doing this from the IDE/code-editor?!
 
 i.e. Here my setup for neovim (written in lua, using the native `fzf` vim plugin)
-```lua
+{{< highlight lua >}}
 -- launch executable in a new tab (terminal buffer, non-blocking)
 vim.api.nvim_set_keymap('n', '<Leader>xx', [[ :tabe | term xx<CR> ]], noremap)
 
@@ -91,7 +94,7 @@ vim.api.nvim_set_keymap('n', '<Leader>xx', [[ :tabe | term xx<CR> ]], noremap)
 vim.cmd [[:packadd termdebug]]
 vim.g.termdebug_wide = 1
 vim.api.nvim_set_keymap('n', '<Leader>dd', [[ :call fzf#run(fzf#wrap({'source': 'fx', 'sink': 'Termdebug'}))<CR>]], noremap)
-```
+{{</ highlight >}}
 
 Whaaaaat!? Exactly! :exploding_head:
 
