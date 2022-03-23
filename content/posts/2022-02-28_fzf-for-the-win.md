@@ -1,7 +1,7 @@
 ---
 
 title: FZF for the win!
-description: If you spend time in the terminal, then you probably will like fzf.
+description: If you spend any time in the terminal then you likely need to refer to things often by its name/path/identifier, in which case having the ability to select candidates via a fuzzy finder is a great addition to your toolbox!
 date: 2022-02-28
 categories: [Tutorials]
 tags: [thoughts]
