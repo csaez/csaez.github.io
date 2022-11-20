@@ -64,6 +64,7 @@ enableEmoji = true
 
 [params.social]
     Twitter = "@csaezmargotta"
+    Mastodon = "@cesarsaez@hachyderm.io"
     GitHub = "csaez"
     Linkedin = "cesarsaez"
     Youtubechannel = "UCRjk6bi_1ZQ9sL69agz0xMg"
