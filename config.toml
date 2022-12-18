@@ -63,7 +63,6 @@ enableEmoji = true
     dateFormat = "02-01"
 
 [params.social]
-    Twitter = "@csaezmargotta"
     Mastodon = "@cesarsaez@hachyderm.io"
     GitHub = "csaez"
     Linkedin = "cesarsaez"
