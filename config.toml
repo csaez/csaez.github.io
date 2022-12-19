@@ -50,7 +50,7 @@ enableEmoji = true
       enable = true
       avatarURL = "/images/avatar.jpg"
       title = "Cesar Saez"
-      subtitle = "Hi there, I'm a software engineer working on tech for the VFX industry, currently working as Lead Research Engineer, AI at Foundry (based in the UK)."
+      subtitle = "Hi there, I'm a software engineer working on tech for the VFX industry. I'm currently leading the AI Research team at Foundry (based in the UK)."
       typeit = false
       social = true
 
