@@ -68,10 +68,11 @@ enableEmoji = true
     Youtubechannel = "UCRjk6bi_1ZQ9sL69agz0xMg"
     Email = "hi@cesarsaez.me"
     RSS = true
-
-[params.social.Mastodon]
-    id = "@cesarsaez"
-    prefix = "https://hachyderm.io"
+    [params.social.Mastodon]
+        weight = 0
+        id = "@cesarsaez"
+        prefix = "https://hachyderm.io"
+        tittle = "Mastodon"
 
 [author]
   name = "Cesar Saez"
