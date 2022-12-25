@@ -1,9 +1,12 @@
 baseURL = 'https://cesarsaez.me/'
-languageCode = 'en-us'
 title = 'Cesar Saez'
 theme = "LoveIt"
+languageName = "English"
+languageCode = "en-us"
 defaultTheme = "dark"
 gitRepo = "https://github.com/csaez/csaez.github.io"
+enableGitInfo = true
+enableRobotsTXT = true
 enableEmoji = true
 
 [markup]
