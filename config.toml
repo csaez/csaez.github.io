@@ -1,5 +1,5 @@
-baseURL = 'https://cesarsaez.me/'
-title = 'Cesar Saez'
+baseURL = "https://cesarsaez.me/"
+title = "Cesar Saez"
 theme = "LoveIt"
 languageName = "English"
 languageCode = "en-us"
