@@ -62,14 +62,16 @@ enableEmoji = true
     [params.page.toc]
       auto = false
     
-    [params.page.comment.utterances]
+    [params.page.comment]
       enable = true
-      # owner/repo
-      repo = "csaez/utterances-repo"
-      issueTerm = "pathname"
-      label = ""
-      lightTheme = "github-light"
-      darkTheme = "github-dark"
+      [params.page.comment.utterances]
+        enable = true
+        # owner/repo
+        repo = "csaez/utterances-repo"
+        issueTerm = "pathname"
+        label = ""
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
 
 [params.section]
     dateFormat = "02-01"
@@ -89,7 +91,7 @@ enableEmoji = true
 [author]
   name = "Cesar Saez"
   email = "hi@cesarsaez.me"
-  link = ""
+  link = "https://www.cesarsaez.me"
 
 [menu]
   [[menu.main]]
