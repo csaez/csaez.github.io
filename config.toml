@@ -1,8 +1,5 @@
 baseURL = "https://www.cesarsaez.me/"
-
 theme = "LoveIt"
-themesDir = "themes/LoveIt"
-
 title = "Cesar Saez"
 
 defaultContentLanguage = "en"
