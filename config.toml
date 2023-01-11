@@ -100,7 +100,7 @@ enableEmoji = true
       avatarURL = "/images/avatar.jpg"
       title = "Cesar Saez"
       subtitle = "Hi there, I'm a software engineer working on tech for the VFX industry. I'm currently leading the AI Research team at Foundry (based in the UK)."
-      typeit = true
+      typeit = false
       social = true
 
     [params.home.posts]
