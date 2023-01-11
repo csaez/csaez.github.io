@@ -1,0 +1,23 @@
+# mscreen
+
+<!--more-->
+Hi folks,
+
+I would like to introduce a little python library I've been working on my spare
+time to help TDs and TAs to draw OpenGL primitives in Maya viewport for
+debugging purposes and/or non-critical tools (adding graphics as hints on tools
+and what not).
+
+Instead of me writing a wall of text I recorded a short video showing the main
+features in action.
+
+{{< vimeo 172564385 >}}
+
+
+The [source code of `mscreen`](https://github.com/csaez/mscreen) is available
+on GitHub, and released under the MIT license. There's also some technical docs
+at [https://www.cesarsaez.me/mscreen](http://www.cesarsaez.me/mscreen).
+
+
+I hope you like it, enjoy :smiley:
+

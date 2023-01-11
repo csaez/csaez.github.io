@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://cesarsaez.me/sitemap.xml
+Sitemap: https://www.cesarsaez.me/sitemap.xml
