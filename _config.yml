@@ -14,13 +14,13 @@ resume_name:                    "Cesar Saez"
 resume_title:                   "Lead Software Engineer"
 
 # used for the contact button in _layouts/resume.html
-resume_contact_email:           "hi@cesarsaez.me"
+resume_contact_email:           "hi@cesarsaez.com"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
 resume_contact_telephone:       "0730 756 4233"
 resume_contact_address:         "London, UK"
 
-resume_header_contact_info:     "London, UK • 0730 756 4233 • hi@cesarsaez.me"
+resume_header_contact_info:     "London, UK - 0730 756 4233 - hi@cesarsaez.com"
 display_header_contact_info:    "false"
 
 resume_header_intro: "<p>Engineering leader with 10+ years of experience in R&D for high-end animation and VFX. I lead cross-functional teams bridging research and production, delivering reliable, high-performance tools for creative professionals.</p><p>Skilled in system design, cross-platform development, and technical mentorship, with a strong track record of improving artist workflows and product quality. Passionate about empowering teams and evolving how technology supports creativity.</p>"
@@ -47,7 +47,8 @@ resume_section_associations:    false
 # Resume social links
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
-  resume_github_url:            "https://github.com/csaez"
+  resume_github_url:            "https://www.github.com/csaez"
+  resume_mastodon_url:          "https://www.hachyderm.io/@cesarsaez"
   # resume_twitter_url:           "http://twitter.com/jglovier"
   # resume_dribbble_url:          "https://dribbble.com/jag"
   # resume_facebook_url:          "insert Facebook URL here"
