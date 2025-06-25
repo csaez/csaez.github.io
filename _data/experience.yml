@@ -1,0 +1,81 @@
+# Jobs
+- company: Foundry, London
+  position: Lead Software Engineer, Katana
+  duration: Jul 2025 – Present
+  summary: |
+    <ul>
+    <li>Leading a cross-functional scrum team focused on delivering native USD workflows in Katana</li>
+    <li>Responsible for setting technical direction and ensuring performant, artist-focused USD integrations</li>
+    <li>Collaborating with engineering, product, and UX to evolve Katana’s architecture for modern production pipelines</li>
+    <li>Building on prior experience leading AI R&D teams and working on real-time and USD-driven systems across Foundry</li>
+    </ul>
+
+- company: Foundry, London
+  position: Lead Research Engineer, AI
+  duration: 2022 - Jul 2025
+  summary: |
+    <ul>
+      <!--Lead with headline role-->
+      <li>Led two AI Research teams integrating ML features into Foundry’s product line (including Nuke).</li>
+
+      <!--Org-wide & people management-->
+      <li>Conducted 1:1s and performance reviews; advocated for promotions and supported professional growth for direct reports.</li>
+      <li>Co-developed a structured hiring process with an evaluation framework used across the research org, improving consistency and scalability of hiring.</li>
+
+      <!--Cross-team & leadership process-->
+      <li>As research scaled from 1 to 4 teams, introduced shared agile practices and hosted cross-team sprint reviews and retrospectives.</li>
+      <li>Coordinated with product, UX, and engineering teams to align timelines and shape roadmap feasibility.</li>
+      <li>Represented the team in quarterly exec reviews (QBRs), helping communicate progress and direction to leadership.</li>
+
+      <!--Strategic technical output-->
+      <li>Designed and maintained a shared ML infrastructure library (exchange formats, inference abstractions) enabling integration of AI-powered features across Foundry products beyond Nuke.</li>
+
+      <!--Feature-level delivery-->
+      <li>Delivered artist-facing features (e.g. CopyCat, Inference, Cattery), improving workflow speed and accessibility.</li>
+
+      <!--Culture & knowledge contribution-->
+      <li>Created a C++ onboarding video series adopted across Foundry Engineering, streamlining internal training and knowledge sharing.</li>
+    </ul>
+
+- company: Foundry, London
+  position: Senior Research Engineer, Real-Time
+  duration: Sep 2020 – Jul 2022
+  summary: |
+    <ul>
+    <li>Contributed to the redesign of Nuke’s 3D system based on Pixar’s USD — now shipping in Nuke 14+.</li>
+    <li>Co-led prototype efforts for Nuke Stage, a real-time compositing tool for LED volume workflows.</li>
+    <li>Developed GPU-driven compositing and camera tracking integration for virtual production scenarios.</li>
+    </ul>
+
+- company: DNEG, London
+  position: Software Engineer, R&D
+  duration: Aug 2019 – Sep 2020
+  summary: |
+    <ul>
+    <li>Built core libraries and asset resolution systems for the Scene Description platform, based on USD.</li>
+    <li>Focused on performance and thread safety in high-concurrency environments for asset versioning.</li>
+    <li>Collaborated across pipeline, layout, and tools teams to support studio-wide workflows.</li>
+    </ul>
+
+- company: Netflix Animation Studios, Sydney
+  position: Software Engineer, R&D
+  duration: Feb 2016 – Aug 2019
+  summary: |
+    <ul>
+    <li>Developed and maintained in-house rigging and authoring frameworks used across feature animation.</li>
+    <li>Designed scalable production pipelines using USD, enabling more flexible asset interchange and studio growth.</li>
+    <li>Acted as internal consultant across departments, supporting shows like LEGO Batman and Peter Rabbit.</li>
+    </ul>
+
+
+- company: Earlier Career in Animation/VFX
+  position: Senior/Lead Character TD, Rigging Supervisor
+  duration: 2005 – 2015
+  summary: |
+    <ul>
+    <li>Held lead and supervisor roles on multiple feature film and TV projects across high-end animation and VFX studios.</li>
+    <li>Led cross-functional teams of riggers, animators, and tools developers, often balancing creative demands with technical constraints.</li>
+    <li>Oversaw delivery of character setups, tools, and workflows under tight production schedules.</li>
+    <li>Introduced and documented standards that improved artist efficiency and reduced shot revisions.</li>
+    <li>Collaborated with directors and production to ensure delivery under tight schedules.</li>
+    </ul>
