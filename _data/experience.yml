@@ -42,9 +42,9 @@
   duration: Sep 2020 – Jul 2022
   summary: |
     <ul>
-    <li>Contributed to the redesign of Nuke’s 3D system based on Pixar’s USD — now shipping in Nuke 14+.</li>
-    <li>Co-led prototype efforts for Nuke Stage, a real-time compositing tool for LED volume workflows.</li>
-    <li>Developed GPU-driven compositing and camera tracking integration for virtual production scenarios.</li>
+    <li>Joined early prototyping of Nuke’s new 3D system based on USD, work that led to the redesign now shipping in Nuke 14+.</li>
+    <li>Co-led prototype efforts for Nuke Stage, a real-time compositing tool for Virtual Production.</li>
+    <li>Focused on GPU-driven compositing effects and camera tracking integration for virtual production scenarios.</li>
     </ul>
 
 - company: DNEG, London
@@ -63,8 +63,8 @@
   summary: |
     <ul>
     <li>Developed and maintained in-house rigging and authoring frameworks used across feature animation.</li>
-    <li>Designed scalable production pipelines using USD, enabling more flexible asset interchange and studio growth.</li>
-    <li>Acted as internal consultant across departments, supporting shows like LEGO Batman and Peter Rabbit.</li>
+    <li>Developed scalable production pipelines using USD, enabling more flexible asset interchange and studio growth.</li>
+    <li>Acted as internal consultant across departments, supporting shows like the LEGO movies and Peter Rabbit.</li>
     </ul>
 
 
