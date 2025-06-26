@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Cesar Saez"
-resume_title:                   "Lead Software Engineer"
+resume_title:                   "Leading with empathy, still coding with care"
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "hi@cesarsaez.com"
