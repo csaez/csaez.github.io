@@ -5,9 +5,7 @@
 
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
-    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
-      <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
+    <div class="wrapper">
 
       <header class="page-header">
 
@@ -21,7 +19,7 @@
 
         <!-- To display contact info here, change `display_header_contact_info` value in _config.yml to true -->
         {% if site.display_header_contact_info == 'true' %}
-        <div class="header-contact-info">
+        <div class="header-contact-info print-only">
           <p>{{ site.resume_header_contact_info }}</p>
         </div>
         {% endif %}
