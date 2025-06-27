@@ -197,6 +197,7 @@
 .print-only { display: none !important }
 
 @media print {
+  .wrapper { max-width: 100% }
   .no-print { display: none !important }
   .print-only { display: block !important }
   body { font-size: 12px; line-height: 1rem; }
