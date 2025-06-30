@@ -4,10 +4,14 @@
   duration: Jul 2025 – Present
   summary: |
     <ul>
-    <li>Leading a cross-functional scrum team focused on delivering native USD workflows in Katana</li>
-    <li>Responsible for setting technical direction and ensuring performant, artist-focused USD integrations</li>
-    <li>Collaborating with engineering, product, and UX to evolve Katana’s architecture for modern production pipelines</li>
-    <li>Building on prior experience leading AI R&D teams and working on real-time and USD-driven systems across Foundry</li>
+      <li>Leading a cross-functional Scrum team responsible for the evolution of Katana, Foundry’s flagship look development and lighting tool.</li>
+      <li>Acting as line manager for engineers and QA, supporting team growth, performance, and development through mentorship and regular feedback.</li>
+      <li>Collaborating with product and UX stakeholders to define feature scope, drive estimation and phasing, and align development with customer needs.</li>
+      <li>Guiding technical direction across Katana’s C++/Python codebase, focusing on performance, usability, and modern production pipeline requirements.</li>
+      <li>Enabling modern scene pipeline workflows through integration of Universal Scene Description (USD) and scalable asset APIs.</li>
+      <li>Maintaining a hands-on role in the development of new features, infrastructure, and cross-platform tooling (Linux, Windows, Qt).</li>
+      <li>Reporting progress, risks, and technical milestones to both internal leadership and non-technical stakeholders.</li>
+      <li>Supporting customer-facing interactions by helping translate artist workflows and feedback into actionable technical direction.</li>
     </ul>
 
 - company: Foundry, London
