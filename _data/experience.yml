@@ -4,14 +4,11 @@
   duration: Jul 2025 – Present
   summary: |
     <ul>
-      <li>Leading a cross-functional Scrum team responsible for the evolution of Katana, Foundry’s flagship look development and lighting tool.</li>
-      <li>Acting as line manager for engineers and QA, supporting team growth, performance, and development through mentorship and regular feedback.</li>
-      <li>Collaborating with product and UX stakeholders to define feature scope, drive estimation and phasing, and align development with customer needs.</li>
-      <li>Guiding technical direction across Katana’s C++/Python codebase, focusing on performance, usability, and modern production pipeline requirements.</li>
-      <li>Enabling modern scene pipeline workflows through integration of Universal Scene Description (USD) and scalable asset APIs.</li>
-      <li>Maintaining a hands-on role in the development of new features, infrastructure, and cross-platform tooling (Linux, Windows).</li>
-      <li>Reporting progress, risks, and technical milestones to both internal leadership and non-technical stakeholders.</li>
-      <li>Supporting customer-facing interactions by helping translate artist workflows and feedback into actionable technical direction.</li>
+      <li>Expanded developer tooling and infrastructure across all 3 Katana teams. Integrated <code>ccache</code>, <code>pyinstrument</code>, and modernized Python IDE environments, reducing local build times by 90% (from 20 minutes to under ~2 minutes).</li>
+      <li>Maintained ahead-of-schedule feature delivery for the Kraken team, sustaining high throughput despite organizational reductions in floating architect headcount.</li>
+      <li>Led technical architecture and hands-on C++/Python development for next-generation rendering workflows, focusing on deep Universal Scene Description (USD) integration, <b>UsdSuperLayer</b>, and <b>Gaussian Splatting</b>.</li>
+      <li>Guided technical direction and mentored peers through informal influence, offering architectural advice and code review practices that are utilized across the wider Katana group.</li>
+      <li>Aligned Katana’s engineering execution with the broader product vision, ensuring complex, high-risk technical features were translated into predictable, stable deliveries.</li>
     </ul>
 
 - company: Foundry, London
