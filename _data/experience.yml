@@ -4,8 +4,8 @@
   duration: Jul 2025 – Present
   summary: |
     <ul>
-      <li><strong>Lead a cross-functional Scrum team</strong> responsible for the technical evolution of Katana's core commercial rendering features, driving deep Universal Scene Description (USD) integration and Gaussian Splatting capabilities.</li>
-      <li><strong>Drove a cross-team Developer Experience (DevEx) initiative</strong> spanning 3 Katana engineering groups. Championed the adoption of <code>ccache</code> and <code>pyinstrument</code>, reducing local build times by 50–90% (saving up to 18 minutes per build) and accelerating wider organizational velocity.</li>
+      <li><strong>Lead a cross-functional Scrum team</strong> responsible for the technical evolution of Katana's core features, driving deep Universal Scene Description (USD) integration.</li>
+      <li><strong>Drove a cross-team Developer Experience (DevEx) initiative</strong> spanning 3 Katana engineering groups. Championed the adoption of <code>ccache</code>, reducing local build times by 50–90% (saving up to 18 minutes per build) and accelerating wider organizational velocity.</li>
       <li><strong>Maintained ahead-of-schedule feature delivery</strong> for the Kraken team, absorbing broader architectural responsibilities during organizational restructuring to stabilize the product roadmap.</li>
       <li><strong>Elevated baseline engineering quality</strong> across the wider Katana group by standardizing code review practices, establishing architectural guidelines, and mentoring peers through technical influence.</li>
       <li><strong>Partner closely with product and UX leadership</strong> to de-risk complex technical features, translating high-level vision into predictable engineering phasing.</li>
@@ -16,7 +16,7 @@
   duration: Jul 2022 - Jul 2025
   summary: |
     <ul>
-      <li><strong>Led two AI Research teams</strong> to successfully integrate machine learning features (e.g., CopyCat, Inference, Cattery) into Foundry's flagship commercial products.</li>
+      <li><strong>Led two AI Research teams</strong> to successfully integrate machine learning features (e.g., CopyCat, Inference, Cattery) into Foundry's flagship commercial product.</li>
       <li><strong>Played a key role in scaling the AI Research department from 1 to 4 teams</strong>, aligning agile practices and leading cross-team sprint reviews to maintain technical cohesion.</li>
       <li><strong>Line-managed 6 direct reports</strong>, conducting performance reviews, advocating for promotions, and cultivating a culture focused on continuous professional growth and psychological safety.</li>
       <li><strong>Co-developed a standardized technical hiring framework</strong> adopted across the entire R&D organization, significantly improving candidate evaluation consistency and scalability.</li>
