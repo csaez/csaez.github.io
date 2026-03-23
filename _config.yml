@@ -19,7 +19,7 @@ resume_contact_email:           "hi@cesarsaez.com"
 resume_header_contact_info:     "London, UK - hi@cesarsaez.com"
 display_header_contact_info:    "true"
 
-resume_header_intro: "Engineering leader with 10+ years building high-performance software, including commercial DCC software and applied AI tools. I bridge deep technical execution with strategic roadmap delivery, cultivating the systems and culture that empower engineering teams to build reliable products at scale."
+resume_header_intro: "<p>Engineering leader with 10+ years building the core technology behind commercial DCCs, real-time virtual production, and applied AI. I lead the teams that turn complex R&D into reliable software, bridging technical execution with strategic roadmap delivery to cultivate scalable systems and top-tier engineering cultures.</p>"
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
 # or remove the resume_looking_for_work option entirely
