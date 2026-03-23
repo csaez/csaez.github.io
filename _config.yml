@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Cesar Saez"
-resume_title:                   "Leading with empathy, coding with care"
+resume_title:                   "Engineering Manager & Technical Leader"
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "hi@cesarsaez.com"
@@ -19,8 +19,7 @@ resume_contact_email:           "hi@cesarsaez.com"
 resume_header_contact_info:     "London, UK - hi@cesarsaez.com"
 display_header_contact_info:    "true"
 
-resume_header_intro: "<p>Engineering leader with 10+ years building production-grade software for creative teams in animation and VFX. I lead cross-functional teams to deliver high-performance tools that solve real problems at scale, balancing deep technical craft with mentorship and clarity.</p><p>I'm passionate about great workflows, reliable systems, and creating space for engineers to grow. I'm now looking to expand that impact by shaping engineering culture and supporting other leaders as part of the next chapter in my journey.</p>"
-
+resume_header_intro: "<p>Engineering leader with 10+ years building high-performance software, commercial DCC software and applied AI tools. Currently managing cross-functional engineering teams, I specialize in bridging deep technical execution with strategic roadmap delivery. Having scaled R&D processes, driven cross-team DevEx initiatives, and co-led multi-team expansions, my focus is on cultivating the engineering cultures and systems that empower top-tier talent to deliver reliable products at scale.</p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
