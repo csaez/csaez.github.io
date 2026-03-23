@@ -29,8 +29,8 @@
   duration: Sep 2020 – Jul 2022
   summary: |
     <ul>
-      <li>Co-led applied R&D and technical prototyping for Nuke Stage, engineering a commercial virtual production solution focused on real-time compositing and GPU-driven effects.</li>
-      <li>Engineered early prototypes for Nuke's USD-based 3D system, establishing the architectural foundation for the redesigned 3D system shipped in Nuke 14+.</li>
+      <li><strong>Co-led applied R&D and technical prototyping for Nuke Stage</strong>, engineering a commercial virtual production solution focused on real-time compositing and GPU-driven effects.</li>
+      <li><strong>Engineered early prototypes for Nuke's USD-based 3D system</strong>, establishing the architectural foundation for the redesigned 3D system shipped in Nuke 14+.</li>
     </ul>
 
 - company: DNEG, London
@@ -38,19 +38,17 @@
   duration: Aug 2019 – Sep 2020
   summary: |
     <ul>
-    <li>Built core libraries and asset resolution systems for the Scene Description platform, based on USD.</li>
-    <li>Focused on performance and thread safety in high-concurrency environments for asset versioning.</li>
-    <li>Collaborated across pipeline, layout, and tools teams to support studio-wide workflows.</li>
+    <li><strong>Built core libraries and asset resolution systems</strong> for the Scene Description platform, based on Universal Scene Description.</li>
+    <li>Collaborated across pipeline, layout, and tools teams to support <strong>studio-wide workflows</strong>.</li>
     </ul>
 
-- company: Netflix Animation Studios, Sydney
+- company: Animal Logic (now Netflix Animation Studios), Sydney
   position: Software Engineer, R&D
   duration: Feb 2016 – Aug 2019
   summary: |
     <ul>
-    <li>Developed and maintained in-house rigging and authoring frameworks used across feature animation.</li>
-    <li>Developed scalable production pipelines using USD, enabling more flexible asset interchange and studio growth.</li>
-    <li>Acted as internal consultant across departments, supporting shows like the LEGO movies and Peter Rabbit.</li>
+    <li><strong>Developed and maintained in-house rigging and authoring frameworks</strong> used across feature animation.</li>
+    <li><strong>Developed scalable production pipelines using USD</strong>, enabling more flexible asset interchange and studio growth.</li>
     </ul>
 
 
@@ -59,9 +57,9 @@
   duration: 2005 – 2015
   summary: |
     <ul>
-    <li>Held lead and supervisor roles on multiple feature film and TV projects across high-end animation and VFX studios.</li>
-    <li>Led cross-functional teams of riggers, animators, and tools developers, often balancing creative demands with technical constraints.</li>
-    <li>Oversaw delivery of character setups, tools, and workflows under tight production schedules.</li>
-    <li>Introduced and documented standards that improved artist efficiency and reduced shot revisions.</li>
-    <li>Collaborated with directors and production to ensure delivery under tight schedules.</li>
+    <li><strong>Held lead and supervisor roles</strong> on multiple feature film and TV projects across high-end animation and VFX studios.</li>
+    <li><strong>Led cross-functional teams</strong> of riggers, animators, and tools developers, often balancing creative demands with technical constraints.</li>
+    <li><strong>Oversaw delivery</strong> of character setups, tools, and workflows under tight production schedules.</li>
+    <li><strong>Introduced and documented standards</strong> that improved artist efficiency and reduced shot revisions.</li>
+    <li><strong>Collaborated with directors and production</strong> to ensure delivery under tight schedules.</li>
     </ul>
