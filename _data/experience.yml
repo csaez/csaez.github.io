@@ -4,11 +4,11 @@
   duration: Jul 2025 – Present
   summary: |
     <ul>
-      <li>Expanded developer tooling and infrastructure across all 3 Katana teams. Integrated <code>ccache</code>, <code>pyinstrument</code>, and modernized Python IDE environments, reducing local build times by 90% (from 20 minutes to under ~2 minutes).</li>
-      <li>Maintained ahead-of-schedule feature delivery for the Kraken team, sustaining high throughput despite organizational reductions in floating architect headcount.</li>
-      <li>Led technical architecture and hands-on C++/Python development for next-generation rendering workflows, focusing on deep Universal Scene Description (USD) integration, <b>UsdSuperLayer</b>, and <b>Gaussian Splatting</b>.</li>
-      <li>Guided technical direction and mentored peers through informal influence, offering architectural advice and code review practices that are utilized across the wider Katana group.</li>
-      <li>Aligned Katana’s engineering execution with the broader product vision, ensuring complex, high-risk technical features were translated into predictable, stable deliveries.</li>
+      <li><strong>Lead a cross-functional Scrum team</strong> responsible for the technical evolution of Katana's core commercial rendering features, driving deep Universal Scene Description (USD) integration and Gaussian Splatting capabilities.</li>
+      <li><strong>Drove a cross-team Developer Experience (DevEx) initiative</strong> spanning 3 Katana engineering groups. Championed the adoption of <code>ccache</code> and <code>pyinstrument</code>, reducing local build times by 50–90% (saving up to 18 minutes per build) and accelerating wider organizational velocity.</li>
+      <li><strong>Maintained ahead-of-schedule feature delivery</strong> for the Kraken team, absorbing broader architectural responsibilities during organizational restructuring to stabilize the product roadmap.</li>
+      <li><strong>Elevated baseline engineering quality</strong> across the wider Katana group by standardizing code review practices, establishing architectural guidelines, and mentoring peers through technical influence.</li>
+      <li><strong>Partner closely with product and UX leadership</strong> to de-risk complex technical features, translating high-level vision into predictable engineering phasing.</li>
     </ul>
 
 - company: Foundry, London
@@ -16,26 +16,12 @@
   duration: Jul 2022 - Jul 2025
   summary: |
     <ul>
-      <!--Lead with headline role-->
-      <li>Led two AI Research teams integrating ML features into Foundry’s product line (including Nuke).</li>
-
-      <!--Org-wide & people management-->
-      <li>Conducted 1:1s and performance reviews; advocated for promotions and supported professional growth for direct reports.</li>
-      <li>Co-developed a structured hiring process with an evaluation framework used across the research org, improving consistency and scalability of hiring.</li>
-
-      <!--Cross-team & leadership process-->
-      <li>Helped scale AI Research from 1 to 4 teams by aligning agile practices and leading cross-team sprint reviews and retrospectives.</li>
-      <li>Coordinated with product, design, and engineering teams to align timelines and shape roadmap feasibility.</li>
-      <li>Represented the team in quarterly exec reviews (QBRs), helping communicate progress and direction to leadership.</li>
-
-      <!--Strategic technical output-->
-      <li>Designed and maintained a shared ML infrastructure library (exchange formats, inference abstractions) enabling integration of AI-powered features across Foundry products beyond Nuke.</li>
-
-      <!--Feature-level delivery-->
-      <li>Delivered artist-facing features (e.g. CopyCat, Inference, Cattery), improving workflow speed and accessibility.</li>
-
-      <!--Culture & knowledge contribution-->
-      <li>Created a C++ onboarding video series adopted across Foundry Engineering, streamlining internal training and knowledge sharing.</li>
+      <li><strong>Led two AI Research teams</strong> to successfully integrate machine learning features (e.g., CopyCat, Inference, Cattery) into Foundry's flagship commercial products.</li>
+      <li><strong>Played a key role in scaling the AI Research department from 1 to 4 teams</strong>, aligning agile practices and leading cross-team sprint reviews to maintain technical cohesion.</li>
+      <li><strong>Line-managed 6 direct reports</strong>, conducting performance reviews, advocating for promotions, and cultivating a culture focused on continuous professional growth and psychological safety.</li>
+      <li><strong>Co-developed a standardized technical hiring framework</strong> adopted across the entire R&D organization, significantly improving candidate evaluation consistency and scalability.</li>
+      <li><strong>Architected a shared ML infrastructure library</strong> (exchange formats, inference abstractions) enabling AI feature integration across multiple Foundry products.</li>
+      <li><strong>Created a C++ onboarding video series</strong> adopted globally by Foundry Engineering, reducing ramp-up time for new hires.</li>
     </ul>
 
 - company: Foundry, London
@@ -43,9 +29,8 @@
   duration: Sep 2020 – Jul 2022
   summary: |
     <ul>
-    <li>Co-led prototype efforts for Nuke Stage, a real-time compositing tool for Virtual Production.</li>
-    <li>Focused on GPU-driven compositing effects and camera tracking integration for virtual production scenarios.</li>
-    <li>Joined early prototyping of Nuke’s new 3D system based on USD, work that led to the redesign now shipping in Nuke 14+.</li>
+      <li>Co-led applied R&D and technical prototyping for Nuke Stage, engineering a commercial virtual production solution focused on real-time compositing and GPU-driven effects.</li>
+      <li>Engineered early prototypes for Nuke's USD-based 3D system, establishing the architectural foundation for the redesigned 3D system shipped in Nuke 14+.</li>
     </ul>
 
 - company: DNEG, London
