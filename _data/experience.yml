@@ -4,11 +4,12 @@
   duration: Jul 2025 – Present
   summary: |
     <ul>
-      <li><strong>Lead a cross-functional Scrum team</strong> responsible for the technical evolution of Katana's core features, driving deep Universal Scene Description (USD) integration.</li>
-      <li><strong>Drove a cross-team Developer Experience (DevEx) initiative</strong> spanning 3 Katana engineering groups. Championed the adoption of <code>ccache</code>, reducing local build times by 50–90% (saving up to 18 minutes per build) and accelerating wider organizational velocity.</li>
-      <li><strong>Maintained ahead-of-schedule feature delivery</strong> for the Kraken team, absorbing broader architectural responsibilities during organizational restructuring to stabilize the product roadmap.</li>
-      <li><strong>Elevated baseline engineering quality</strong> across the wider Katana group by standardizing code review practices, establishing architectural guidelines, and mentoring peers through technical influence.</li>
-      <li><strong>Partner closely with product and UX leadership</strong> to de-risk complex technical features, translating high-level vision into predictable engineering phasing.</li>
+      <li><strong>Scaled Pod Operations:</strong> Implemented a decentralized "Feature Facilitator" rotation for the Katana pod. Handed day-to-day execution to senior ICs, enabling the team to run autonomously and hit ahead-of-schedule delivery while I focused on cross-product strategy.</li>
+      <li><strong>De-risked Complex Product Delivery:</strong> Partnered closely with Product and UX leadership to drive Katana's core technical evolution, including deep Universal Scene Description (USD) integration. Translated high-level product vision into predictable, phased engineering roadmaps.</li>
+      <li><strong>Led Cross-Org AI Strategy (S100):</strong> Currently driving the technical proposal and cross-functional alignment (Katana, Nuke, Griptape and AI Research) for Katana’s generative AI integration. Championing a lightweight architecture to bypass a costly, multi-quarter native UI rebuild, prioritizing rapid time-to-market.</li>
+      <li><strong>Stabilized Portfolio During Restructuring:</strong> Acted as the operational anchor during a major leadership transition. Absorbed broader portfolio-level responsibilities to stabilize the Katana and Kraken roadmaps, partnering with Directors to align engineering phasing with shifting executive mandates.</li>
+      <li><strong>Improved Org-Wide DevEx:</strong> Drove a Developer Experience initiative spanning 3 Katana and 1 Mari engineering groups. Championed the adoption of <code>ccache</code>, cutting local build times by 50–90% (saving up to 18 minutes per build) and measurably accelerating wider organizational velocity.</li>
+      <li><strong>Elevated Engineering Baselines:</strong> Standardized code review practices and architectural guidelines across the wider Katana portfolio. Actively practice high-leverage delegation, handing off high-visibility R&D spikes (e.g., Claude Code integration) to peer leads to up-skill the wider engineering bench.</li>
     </ul>
 
 - company: Foundry, London
@@ -16,12 +17,12 @@
   duration: Jul 2022 - Jul 2025
   summary: |
     <ul>
-      <li><strong>Led two AI Research teams</strong> to successfully integrate machine learning features (e.g., CopyCat, Inference, Cattery) into Foundry's flagship commercial product.</li>
-      <li><strong>Played a key role in scaling the AI Research department from 1 to 4 teams</strong>, aligning agile practices and leading cross-team sprint reviews to maintain technical cohesion.</li>
-      <li><strong>Line-managed 6 direct reports</strong>, conducting performance reviews, advocating for promotions, and cultivating a culture focused on continuous professional growth and psychological safety.</li>
-      <li><strong>Co-developed a standardized technical hiring framework</strong> adopted across the entire R&D organization, significantly improving candidate evaluation consistency and scalability.</li>
-      <li><strong>Architected a shared ML infrastructure library</strong> (exchange formats, inference abstractions) enabling AI feature integration across multiple Foundry products.</li>
-      <li><strong>Created a C++ onboarding video series</strong> adopted globally by Foundry Engineering, reducing ramp-up time for new hires.</li>
+      <li><strong>Led two parallel AI Research teams</strong> to successfully integrate machine learning features (e.g., CopyCat, Inference, Cattery) into Foundry's flagship commercial product ecosystem.</li>
+      <li><strong>Scaled the AI Research department from 1 to 4 teams</strong>, orchestrating cross-team agile practices and sprint reviews to maintain strict technical alignment across parallel roadmaps.</li>
+      <li><strong>Managed a team of 6 direct reports</strong>, driving performance reviews, promotion cycles, and cultivating a high-retention culture rooted in continuous professional growth and psychological safety.</li>
+      <li><strong>Standardized the technical hiring framework</strong> across the entire R&D organization, significantly improving candidate evaluation consistency, reducing bias, and enabling scalable hiring.</li>
+      <li><strong>Architected foundational ML infrastructure</strong> (exchange formats, inference abstractions) enabling rapid, standardized AI feature integration across multiple Foundry products.</li>
+      <li><strong>Created a globally adopted C++ onboarding program</strong> for Foundry Engineering, drastically reducing ramp-up time for new technical hires.</li>
     </ul>
 
 - company: Foundry, London
@@ -29,8 +30,8 @@
   duration: Sep 2020 – Jul 2022
   summary: |
     <ul>
-      <li><strong>Co-led applied R&D and technical prototyping for Nuke Stage</strong>, engineering a commercial virtual production solution focused on real-time compositing and GPU-driven effects.</li>
-      <li><strong>Engineered early prototypes for Nuke's USD-based 3D system</strong>, establishing the architectural foundation for the redesigned 3D system shipped in Nuke 14+.</li>
+      <li><strong>Co-led applied R&D and technical prototyping</strong> for Nuke Stage, engineering a commercial virtual production solution focused on real-time compositing and GPU-driven effects.</li>
+      <li><strong>Architected foundational prototypes</strong> for Nuke's USD-based 3D system, establishing the core technical architecture shipped in Nuke 14+.</li>
     </ul>
 
 - company: DNEG, London
@@ -38,8 +39,8 @@
   duration: Aug 2019 – Sep 2020
   summary: |
     <ul>
-    <li><strong>Built core libraries and asset resolution systems</strong> for the Scene Description platform, based on Universal Scene Description.</li>
-    <li>Collaborated across pipeline, layout, and tools teams to support <strong>studio-wide workflows</strong>.</li>
+      <li><strong>Engineered core libraries and asset resolution systems</strong> for the Scene Description platform, leveraging Universal Scene Description (USD).</li>
+      <li><strong>Drove studio-wide workflows</strong> by collaborating across pipeline, layout, and tools teams to support massive-scale feature film production.</li>
     </ul>
 
 - company: Animal Logic (now Netflix Animation Studios), Sydney
@@ -47,19 +48,16 @@
   duration: Feb 2016 – Aug 2019
   summary: |
     <ul>
-    <li><strong>Developed and maintained in-house rigging and authoring frameworks</strong> used across feature animation.</li>
-    <li><strong>Developed scalable production pipelines using USD</strong>, enabling more flexible asset interchange and studio growth.</li>
+      <li><strong>Developed and maintained in-house authoring frameworks</strong> used across feature animation pipelines.</li>
+      <li><strong>Engineered scalable production pipelines using USD</strong>, enabling flexible asset interchange and facilitating studio-wide growth.</li>
     </ul>
-
 
 - company: Earlier Career in Animation/VFX
   position: Senior/Lead Character TD, Rigging Supervisor
   duration: 2005 – 2015
   summary: |
     <ul>
-    <li><strong>Held lead and supervisor roles</strong> on multiple feature film and TV projects across high-end animation and VFX studios.</li>
-    <li><strong>Led cross-functional teams</strong> of riggers, animators, and tools developers, often balancing creative demands with technical constraints.</li>
-    <li><strong>Oversaw delivery</strong> of character setups, tools, and workflows under tight production schedules.</li>
-    <li><strong>Introduced and documented standards</strong> that improved artist efficiency and reduced shot revisions.</li>
-    <li><strong>Collaborated with directors and production</strong> to ensure delivery under tight schedules.</li>
+      <li><strong>Held lead and supervisor roles</strong> on multiple feature film and TV projects across high-end animation and VFX studios.</li>
+      <li><strong>Led cross-functional teams</strong> of riggers, animators, and tools developers, consistently balancing creative director demands with strict technical constraints.</li>
+      <li><strong>Introduced and documented engineering standards</strong> that optimized artist efficiency, reduced shot revisions, and ensured delivery under tight production schedules.</li>
     </ul>
