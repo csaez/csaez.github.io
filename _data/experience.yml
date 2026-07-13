@@ -3,11 +3,14 @@
   position: Lead Software Engineer, Katana (Engineering Manager)
   duration: Jul 2025 - Present
   summary: |
+    - **Expanded to Multi-Team Leadership:** Engineering Manager for two teams
+      (Kraken and Cerberus), overseeing all Hydra deliverables for the Katana 10
+      release, each with dedicated QA and product partners.
     - **Strategic Partner to Portfolio Leadership:** Coaches peer EMs and newly
       promoted leaders on management and organizational challenges, acting as a
       sounding board for portfolio leadership across the Katana organization.
     - **Designed Delivery Model Adopted Org-Wide:** Pioneered a decentralized "Feature
-      Facilitator" rotation within my team (7 direct reports); the model was adopted across all
+      Facilitator" rotation within my team; the model was adopted across all
       three Katana scrum teams (~24 engineers), enabling autonomous day-to-day
       execution and ahead-of-schedule delivery while I shifted focus to
       cross-product strategy.
@@ -17,11 +20,12 @@
       phased roadmaps. Following the reassignment of a key architect and the
       loss of a senior product role, restructured delivery plans to maintain
       schedule commitments and over-deliver on roadmap goals.
-    - **Drove Cross-Org AI Strategy:** Led technical discovery and
-      cross-functional alignment (Katana, Nuke, Griptape, AI Research) for
-      Katana's generative AI integration. Representing the portfolio on the
-      Engineering AI Enablement Working Group, helping define company-wide
-      guidelines for agentic engineering workflows.
+    - **Drove and Delivered a Cross-Org AI Spike:** Led an end-to-end generative
+      AI spike for Katana, coordinating across Griptape, Product, AI Research,
+      and the CTO. Delivered a working demo shared with the Director of Product
+      and featured as an innovation highlight at the company all-hands. Represent
+      the portfolio on the Engineering AI Enablement Working Group, helping shape
+      company-wide guidelines for agentic engineering workflows.
     - **Improved Org-Wide DevEx:** Led a portfolio-wide Developer Experience
       initiative across three engineering teams, reducing local build times
       by up to 90% and removing up to 18 minutes from common development
