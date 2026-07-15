@@ -6,17 +6,19 @@
     - **Manage two engineering teams (~13 people across engineering, QA, and
       product) delivering the core of the next major product release** - one team
       on the underlying data and rendering infrastructure, the other on the
-      user-facing features built on top. Took on the larger area when a peer
-      manager departed, consolidating a domain that had struggled to deliver.
+      user-facing features built on top. Expanded from leading one team to two
+      after an org restructuring, taking on the larger area when a peer manager
+      departed and consolidating a domain that had struggled to deliver.
     - **Kept a team delivering ahead of schedule after it lost its lead architect
       mid-project.** Stepped in to fill the technical gap myself while shifting the
       team from dependence on one expert to broad autonomy. It went on to
       outperform its peers sprint after sprint, routinely finishing early and
       picking up work from other teams.
     - **Designed a delivery process now used across the entire product line.**
-      Created a role and rotation that puts an engineer ahead of each feature to do
-      the upfront analysis, turning planning from open-ended discovery into fast,
-      well-informed estimation. Adopted by all three teams.
+      Introduced a rotating Feature Facilitator role that assigns an engineer to
+      perform upfront technical analysis before implementation. It turned planning
+      from open-ended discovery into fast, well-informed estimation, and was
+      adopted by all three teams.
     - **Shipped a customer-facing feature that would otherwise have slipped a full
       release cycle.** With the roadmap done early, I secured product sign-off and
       delivered it in one sprint - sequencing the breaking changes into the major
@@ -26,27 +28,27 @@
       group.** Built a tooling fix that made IDE and debugger workflows work on our
       codebase for the first time, and drove team-wide adoption of build caching -
       turning slow rebuilds into a non-event.
-    - **Mentor leaders beyond my own teams:** two peer engineering managers, and -
-      at the CTO's recommendation - a senior engineer in another department
+    - **Coach peer engineering managers across multiple organizations,** and - at
+      the CTO's recommendation - mentor a senior engineer in another department
       preparing for a management role.
 
 - company: Foundry, London
   position: Engineering Manager, AI Research
   duration: Jul 2022 - Jul 2025
   summary: |
-    - **Took over a single research team and grew it into a two-team organization
-      I managed directly (up to ~9 people), setting the operating model the wider
-      group scaled on.** As demand rose I hired, split the work into two focused
-      teams, and established the structure and ways of working that later teams
-      adopted as the org expanded to four.
+    - **Grew a single research team into a two-team organization I managed
+      directly (~9 people), setting the operating model a four-team org later
+      scaled on.** As demand rose I hired, split the work into two focused teams,
+      and established the structure and ways of working that new teams adopted as
+      the org expanded.
     - **Developed two senior engineers into engineering managers who now lead
       teams.** For one, that meant a year of deliberate coaching - closing skill
       gaps and helping her choose between an IC and a management path. Building the
       next layer of leadership was a core part of the job, not a byproduct.
-    - **Filled a product and delivery vacuum a normally-supported org would never
-      have to.** With no product or delivery manager early on, I owned roadmapping
-      with product stakeholders, ran the team's planning and tracking, and
-      regularly presented the org's work to the executive team at quarterly
+    - **Filled responsibilities typically handled by dedicated product and
+      delivery managers.** With neither function in place early on, I owned
+      roadmapping with product stakeholders, ran the team's planning and tracking,
+      and regularly presented the org's work to the executive team at quarterly
       reviews.
     - **Led a team of researchers doing novel ML research - building and training
       models - and shipped three flagship features into Nuke** (CopyCat, Inference,
