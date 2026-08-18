@@ -4,62 +4,55 @@
   duration: Jul 2025 - Present
   summary: |
     - **Manage two engineering teams (~13 people across engineering, QA, and
-      product) delivering the core of the next major product release** - one team
-      on the underlying data and rendering infrastructure, the other on the
-      user-facing features built on top. Expanded from leading one team to two
-      after an org restructuring, taking on the larger area when a peer manager
-      departed and consolidating a domain that had struggled to deliver.
+      product) delivering the core of the next major Katana release.** Expanded
+      from one team to two after an org restructuring, taking ownership of a
+      larger product area when a peer manager departed.
     - **Kept a team delivering ahead of schedule after it lost its lead architect
-      mid-project.** Stepped in to fill the technical gap myself while shifting the
-      team from dependence on one expert to broad autonomy. It went on to
-      outperform its peers sprint after sprint, routinely finishing early and
-      picking up work from other teams.
-    - **Designed a delivery process now used across the entire product line.**
-      Introduced a rotating Feature Facilitator role that assigns an engineer to
-      perform upfront technical analysis before implementation. It turned planning
-      from open-ended discovery into fast, well-informed estimation, and was
-      adopted by all three teams.
-    - **Shipped a customer-facing feature that would otherwise have slipped a full
-      release cycle.** With the roadmap done early, I secured product sign-off and
-      delivered it in one sprint - sequencing the breaking changes into the major
-      release so the finished feature could land in the next maintenance update
-      rather than a year later.
-    - **Removed a long-standing productivity blocker for the whole engineering
-      group.** Built a tooling fix that made IDE and debugger workflows work on our
-      codebase for the first time, and drove team-wide adoption of build caching -
-      turning slow rebuilds into a non-event.
-    - **Coach peer engineering managers across multiple organizations,** and - at
-      the CTO's recommendation - mentor a senior engineer in another department
-      preparing for a management role.
+      mid-project.** Stepped in to bridge the technical gap while reducing
+      dependence on a single expert, helping the team consistently finish early
+      and support other teams.
+    - **Designed a delivery process adopted across the entire Katana product
+      line.** Introduced a rotating Feature Facilitator role that gives engineers
+      ownership of upfront technical analysis, improving planning and estimation
+      across all three teams.
+    - **Shaped Foundry's thinking on AI-assisted extensibility.** Identified an
+      opportunity to make creative software easier to extend with AI-assisted
+      development, validated the idea with major VFX studios, and developed it
+      into a strategic proposal for senior leadership.
+    - **Helped define company-wide engineering practice for AI-assisted
+      development.** Co-authored Foundry's guidelines for identifying
+      AI-authored code as part of the AI Enablement working group.
+    - **Coach peer engineering managers across multiple organizations,** and -
+      at the CTO's recommendation - mentor a senior engineer in another
+      department preparing for a management role.
 
 - company: Foundry, London
   position: Engineering Manager, AI Research
   duration: Jul 2022 - Jul 2025
   summary: |
-    - **Grew a single research team into a two-team organization I managed
-      directly (~9 people), setting the operating model a four-team org later
-      scaled on.** As demand rose I hired, split the work into two focused teams,
-      and established the structure and ways of working that new teams adopted as
-      the org expanded.
+    - **Grew a single research team into a two-team organisation I managed
+      directly (~9 people),** creating the operating model that a four-team
+      organisation later scaled on. As demand grew, hired into the team, split
+      the work into two focused groups, and established the structure and ways
+      of working adopted by subsequent teams.
     - **Developed two senior engineers into engineering managers who now lead
-      teams.** For one, that meant a year of deliberate coaching - closing skill
-      gaps and helping her choose between an IC and a management path. Building the
-      next layer of leadership was a core part of the job, not a byproduct.
-    - **Filled responsibilities typically handled by dedicated product and
-      delivery managers.** With neither function in place early on, I owned
-      roadmapping with product stakeholders, ran the team's planning and tracking,
-      and regularly presented the org's work to the executive team at quarterly
+      their own teams.** For one, that meant a year of deliberate coaching -
+      closing skill gaps and helping her choose between an IC and management
+      path. Building the next layer of leadership was a deliberate part of the
+      team's growth.
+    - **Led researchers building production ML capabilities for Nuke.**
+      Expanded CopyCat and Inference with major improvements, including Apple
+      Silicon support, shipped Cattery, and laid the research and engineering
+      foundations for later features including Smart Roto and BigCat.
+    - **Owned product and delivery responsibilities alongside engineering
+      leadership when the organisation lacked dedicated roles.** Set roadmaps
+      with product stakeholders, ran planning and tracking, and regularly
+      presented the organisation's work to the executive team at quarterly
       reviews.
-    - **Led a team of researchers doing novel ML research - building and training
-      models - and shipped three flagship features into Nuke** (CopyCat, Inference,
-      Cattery), Foundry's industry-standard compositing tool used on virtually
-      every major film production for over a decade. I also personally bridged the
-      smaller integration gap into product until that work grew into its own team.
     - **Built and ran the technical hiring framework for research engineering.**
-      Designed a metrics-based scoring system for the technical evaluation and ran
-      a consistent interview panel against it to compare candidates objectively -
-      later adapted and shared with other groups to make hiring more consistent and
-      less biased.
+      Designed a metrics-based scoring system and consistent interview panel to
+      evaluate candidates objectively, later adapting and sharing it with other
+      groups to improve consistency and reduce bias.
 
 - company: Foundry, London
   position: Senior Software Engineer, Real-Time Research
