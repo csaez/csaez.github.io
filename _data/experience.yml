@@ -1,33 +1,38 @@
 # Jobs
 - company: Foundry, London
-  position: Engineering Manager, Katana
+  position: Lead Software Engineer, Katana (Engineering Manager)
   duration: Jul 2025 - Present
   summary: |
-    - **Manage two engineering teams (~13 people across engineering, QA, and
-      product) delivering the core of the next major Katana release.** Expanded
-      from one team to two after an org restructuring, taking ownership of a
-      larger product area when a peer manager departed.
-    - **Kept a team delivering ahead of schedule after it lost its lead architect
-      mid-project.** Stepped in to bridge the technical gap while reducing
-      dependence on a single expert, helping the team consistently finish early
-      and support other teams.
+    - **Managed two engineering teams (~13 people across engineering, QA, and
+      product) delivering the core of Katana.** Shipped the major Katana 8.5/9.0
+      release across two VFX reference platforms and maintained a steady cadence
+      of patch releases throughout, expanding from one team to two after an org
+      restructuring.
+    - **Kept a team delivering consistently ahead of schedule after it lost its
+      lead architect mid-project,** creating enough slack that the team proposed
+      and shipped an additional feature in a single sprint, rounding out the
+      Katana 9 release.
     - **Designed a delivery process adopted across the entire Katana product
-      line.** Introduced a rotating Feature Facilitator role that gives engineers
-      ownership of upfront technical analysis, improving planning and estimation
-      across all three teams.
-    - **Shaped Foundry's thinking on AI-assisted extensibility.** Identified an
-      opportunity to make creative software easier to extend with AI-assisted
-      development, validated the idea with major VFX studios, and developed it
-      into a strategic proposal for senior leadership.
-    - **Helped define company-wide engineering practice for AI-assisted
-      development.** Co-authored Foundry's guidelines for identifying
-      AI-authored code as part of the AI Enablement working group.
-    - **Coach peer engineering managers across multiple organizations,** and -
-      at the CTO's recommendation - mentor a senior engineer in another
-      department preparing for a management role.
+      line:** a rotating Feature Facilitator role that shifted refinement sessions
+      from ad-hoc discovery to cross-functional preparation, increasing tickets
+      refined per session from 2-3 to 10+. Designed within one team, adopted
+      voluntarily by the other two.
+    - **Drove two company-wide AI initiatives above my formal scope:** identified
+      an extensibility opportunity, validated it with major VFX studios, and
+      developed it into a proposal adopted at director level; co-authored
+      Foundry's engineering guidelines for AI-assisted development, now shipped
+      across the organisation.
+    - **Identified and closed a 15-year tooling gap in Katana's Python development
+      environment,** enabling LSP and debugger support for every engineer on the
+      product. Prototyped independently, built the case through a tech talk, and
+      shipped during an innovation sprint without disrupting team delivery.
+    - **Invested actively in people development beyond my formal scope:** two peer
+      EMs coached at my manager's request, two former directs supported through
+      their transition into management, and a senior engineer in Flix mentored
+      at the CTO's recommendation.
 
 - company: Foundry, London
-  position: Engineering Manager, AI Research
+  position: Lead Software Engineer, AI Research (Engineering Manager)
   duration: Jul 2022 - Jul 2025
   summary: |
     - **Grew a single research team into a two-team organisation I managed
@@ -36,55 +41,46 @@
       the work into two focused groups, and established the structure and ways
       of working adopted by subsequent teams.
     - **Developed two senior engineers into engineering managers who now lead
-      their own teams.** For one, that meant a year of deliberate coaching -
-      closing skill gaps and helping her choose between an IC and management
-      path. Building the next layer of leadership was a deliberate part of the
-      team's growth.
-    - **Led researchers building production ML capabilities for Nuke.**
-      Expanded CopyCat and Inference with major improvements, including Apple
-      Silicon support, shipped Cattery, and laid the research and engineering
-      foundations for later features including Smart Roto and BigCat.
+      their own teams,** one through a year of deliberate coaching on skill gaps
+      and career direction, one by recognising her readiness and creating the
+      conditions for her to step up.
+    - **Led researchers shipping production ML capabilities for Nuke,**
+      including major expansions to CopyCat and Inference, and laid the research
+      foundations for features that shipped in subsequent releases.
     - **Owned product and delivery responsibilities alongside engineering
-      leadership when the organisation lacked dedicated roles.** Set roadmaps
-      with product stakeholders, ran planning and tracking, and regularly
-      presented the organisation's work to the executive team at quarterly
-      reviews.
-    - **Built and ran the technical hiring framework for research engineering.**
-      Designed a metrics-based scoring system and consistent interview panel to
-      evaluate candidates objectively, later adapting and sharing it with other
-      groups to improve consistency and reduce bias.
+      leadership when the organisation lacked dedicated roles:** set roadmaps
+      with product stakeholders, ran planning and tracking, and presented the
+      organisation's work to the executive team at quarterly reviews; designed
+      the technical hiring framework for research engineering, later adopted by
+      other groups across the organisation.
 
 - company: Foundry, London
   position: Senior Software Engineer, Real-Time Research
   duration: Sep 2020 - Jul 2022
   summary: |
-    - **Drove early prototyping of what became Nuke Stage, Foundry's real-time
-      virtual production product** (now used on live film productions). As the most
-      senior engineer in the early team, I built prototypes across the stack while
-      the product direction was still being found - GPU compute kernels for 2.5D
-      virtual-production scenarios (on-set color grading, spherical mapping), the
-      application and plugin architecture, camera-tracking integration, and
-      networking. This exploratory work helped shape the direction the shipping
-      product was later built on.
-    - **Joined as the team's USD expert and contributed to the early prototype of
-      Nuke's USD-based 3D system.** Collaborated with the project's lead architect
-      during the prototyping phase, building out core nodes for a plugin that could
-      coexist with Nuke's native 3D system. The prototype was greenlit and matured
-      by the team over several years into what ships today.
+    - **As the most senior engineer on the early Nuke Stage team, prototyped
+      across the full stack while the product direction was still being defined:**
+      GPU kernels, application architecture, camera-tracking integration, and
+      networking. The exploratory work shaped the direction the shipping product
+      was built on and is now used on live film productions.
+    - **Joined as the OpenUSD expert and built the early prototype of Nuke's
+      OpenUSD-based 3D system** in collaboration with the lead architect. The
+      prototype was greenlit and matured by the team into what ships today.
 
 - company: DNEG, London
   position: Software Engineer, R&D
   duration: Aug 2019 - Sep 2020
   summary: |
-    - **Designed and built the asset resolution system for the studio's Scene
-      Description platform** (built on USD) - the layer that determines how assets
-      are located and loaded across productions. Also fixed and improved core
-      systems across the platform as part of the production technology team.
+    - **Designed and built the asset resolution system for the studio's
+      OpenUSD-based Scene Description platform,** the layer responsible for
+      locating and loading assets across productions, and contributed fixes and
+      improvements to core platform systems as part of the production technology
+      team.
     - **Built foundational tools used across major feature-film productions,**
-      including *Tenet*, *No Time to Die*, and *Fast & Furious 9* - the kind of
+      including *Tenet*, *No Time to Die*, and *Fast & Furious 9*, the kind of
       core pipeline systems that outlast any single project.
 
-- company: Animal Logic, Sydney
+- company: Animal Logic (now Netflix Animation), Sydney
   position: Software Engineer, R&D
   duration: Feb 2016 - Aug 2019
   summary: |
@@ -92,16 +88,18 @@
       rigging team worked,** and maintained it across feature animation pipelines.
       Work used on productions including *Captain Marvel*, *The LEGO Movie 2*, and
       the *Peter Rabbit* series.
-    - **Engineered scalable production pipelines using USD,** enabling flexible
-      asset interchange and supporting studio-wide growth.
+    - **Contributed to Animal Logic's early adoption of OpenUSD at feature-film
+      scale,** one of the first studios outside Pixar to do so. Solved the
+      source-of-truth sync problem in a mixed pipeline mid-migration, and helped
+      design the holistic approach that followed.
 
-- company: Earlier Career in Animation/VFX
+- company: VFX Industry, Multiple Studios
   position: Rigging Supervisor / Lead & Senior Character TD
   duration: 2005 - 2015
   summary: |
     - **Rigging Supervisor at Kandor Graphics,** leading the rigging department
-      through full feature-film production - my first people-leadership role,
-      managing a team of artists and coordinating across animation and tools teams.
-    - **Senior character TD on major productions** including *The LEGO Batman
-      Movie* and *The LEGO Ninjago Movie*, before transitioning into software
-      engineering and R&D.
+      through full feature-film production, managing a team of artists and
+      coordinating across animation and tools teams.
+    - **Senior Character TD across features, episodic, and commercial productions**
+      including *The LEGO Batman Movie* and *The LEGO Ninjago Movie*, with credits
+      spanning over a decade of internationally released work.

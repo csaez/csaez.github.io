@@ -155,6 +155,11 @@
     }
   }
 
+  .resume-item-list {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+
   .resume-item-title,
   .resume-item-details,
   .resume-item-copy,
@@ -171,7 +176,16 @@
     }
   }
 
-  .resume-item-copy { margin: .75rem 0 0; }
+  // Keep body-copy line-height consistent with the metadata above it (1.5 body vs 1 on details)
+  .resume-item-copy {
+    margin: .75rem 0 0;
+    line-height: 1.4;
+
+    ul {
+      margin: 0;
+      padding-left: 1.1rem;
+    }
+  }
 }
 
 // footer styles
@@ -197,39 +211,65 @@
 .print-only { display: none !important }
 
 @media print {
-  .wrapper { max-width: 100% }
+  .wrapper { max-width: 100%; padding: 0 12px; }
   .no-print { display: none !important }
   .print-only { display: block !important }
-  body { font-size: 12px; line-height: 1rem; }
+  body { font-size: 12px; line-height: 1.3; }
   .page-header { padding: 1rem 0 .2rem;
     .header-name {
       @include sans_bold;
       font-size: 2rem;
       margin: 0 0 .2rem;
     }
+    .executive-summary { font-size: 11px; line-height: 1.3; }
   }
   .section-header {
     @include section_border_thin;
-    margin-bottom: 1rem;
+    margin-bottom: 0.4rem;
     h2 { font-size: 1.2rem; line-height: 1.5rem; }
   }
   .content-section {
-    margin: 0 0 1rem;
-    .resume-item { margin-bottom: 1rem; }
+    margin: 0 0 0.6rem;
+    .resume-item { margin-bottom: 0.6rem; }
     .resume-item-title {
-      font-size: 16px;
-      line-height: .7em;
+      font-size: 14px;
+      margin: 0 0 0.2rem;
+      line-height: 1.2;
     }
 
     .resume-item-details {
-      font-size: 12px;
-      margin: 0 0 .75rem;
-      line-height: .7em;
-      font-style:italic;
+      font-size: 11px;
+      margin: 0 0 0.2rem;
+      line-height: 1.2;
+      font-style: italic;
 
       &.award-title {
         font-size: 11px;
       }
     }
+
+    .resume-item-copy {
+      font-size: 11px;
+      line-height: 1.3;
+      margin: 0.2rem 0 0;
+
+      ul {
+        margin: 0;
+        padding-left: 1rem;
+      }
+    }
+
+    .resume-item-list {
+      margin: 0;
+      padding-left: 1rem;
+    }
+
+    .resume-item ul {
+      margin: 0;
+      padding-left: 1rem;
+    }
   }
+
+  .resume-item li { page-break-inside: avoid; }
+  .section-header { page-break-after: avoid; }
 }
