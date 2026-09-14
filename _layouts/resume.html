@@ -33,9 +33,13 @@
           {% include icon-links.html %}
         </div>
 
-        <div class="executive-summary" itemprop="description">
+      </header>
+
+      <main class="page-content">
+
+        <article class="executive-summary" itemprop="description">
           {{ site.data.intro.content | markdownify }}
-        </div>
+        </article>
 
         {% if site.resume_looking_for_work == 'yes' %}
         <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
@@ -43,8 +47,6 @@
         <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
         {% else %}
         {% endif %}
-
-      </header>
 
       {% if site.resume_section_impact %}
       <!-- begin Selected Organizational Impact -->
@@ -170,6 +172,8 @@
       </section>
       <!-- end Print Social Links -->
       {% endif %}
+
+      </main>
 
       <!-- <footer class="page-footer"> -->
       <!--   <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p> -->
