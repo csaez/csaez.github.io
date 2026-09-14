@@ -3,29 +3,30 @@
   position: Lead Software Engineer, Katana (Engineering Manager)
   duration: Jul 2025 - Present
   summary: |
-    - **Managed two engineering teams (~13 people across engineering, QA, and
+    - **Led two engineering teams (~13 people across engineering, QA, and
       product) delivering the core of Katana.** Shipped the major Katana 8.5/9.0
       release across two VFX reference platforms and maintained a steady cadence
       of patch releases throughout, expanding from one team to two after an org
       restructuring.
-    - **Kept a team delivering consistently ahead of schedule after it lost its
-      lead architect mid-project,** creating enough slack that the team proposed
-      and shipped an additional feature in a single sprint, rounding out the
-      Katana 9 release.
+    - **Drove two company-wide initiatives by identifying and reframing
+      consequential problems:** identified an extensibility
+      opportunity, validated it with major VFX studios, and developed it into a
+      proposal adopted at director level; co-authored Foundry's
+      engineering guidelines for AI-assisted development, now shipped across the
+      organisation.
+    - **Identified and closed a 15-year tooling gap in Katana's Python development
+      environment,** enabling LSP and debugger support for every engineer on the
+      product. Prototyped independently, built the case through a tech talk, and
+      shipped during an innovation sprint without disrupting team delivery.
     - **Designed a delivery process adopted across the entire Katana product
       line:** a rotating Feature Facilitator role that shifted refinement sessions
       from ad-hoc discovery to cross-functional preparation, increasing tickets
       refined per session from 2-3 to 10+. Designed within one team, adopted
       voluntarily by the other two.
-    - **Drove two company-wide AI initiatives above my formal scope:** identified
-      an extensibility opportunity, validated it with major VFX studios, and
-      developed it into a proposal adopted at director level; co-authored
-      Foundry's engineering guidelines for AI-assisted development, now shipped
-      across the organisation.
-    - **Identified and closed a 15-year tooling gap in Katana's Python development
-      environment,** enabling LSP and debugger support for every engineer on the
-      product. Prototyped independently, built the case through a tech talk, and
-      shipped during an innovation sprint without disrupting team delivery.
+    - **Kept a team delivering consistently ahead of schedule after it lost its
+      lead architect mid-project,** creating enough slack that the team proposed
+      and shipped an additional feature in a single sprint, rounding out the
+      Katana 9 release.
     - **Invested actively in people development beyond my formal scope:** two peer
       EMs coached at my manager's request, two former directs supported through
       their transition into management, and a senior engineer in Flix mentored
@@ -35,24 +36,24 @@
   position: Lead Software Engineer, AI Research (Engineering Manager)
   duration: Jul 2022 - Jul 2025
   summary: |
-    - **Grew a single research team into a two-team organisation I managed
-      directly (~9 people),** creating the operating model that a four-team
-      organisation later scaled on. As demand grew, hired into the team, split
-      the work into two focused groups, and established the structure and ways
-      of working adopted by subsequent teams.
-    - **Developed two senior engineers into engineering managers who now lead
-      their own teams,** one through a year of deliberate coaching on skill gaps
-      and career direction, one by recognising her readiness and creating the
-      conditions for her to step up.
-    - **Led researchers shipping production ML capabilities for Nuke,**
-      including major expansions to CopyCat and Inference, and laid the research
-      foundations for features that shipped in subsequent releases.
-    - **Owned product and delivery responsibilities alongside engineering
+    - **Shaped product direction and operating strategy alongside engineering
       leadership when the organisation lacked dedicated roles:** set roadmaps
       with product stakeholders, ran planning and tracking, and presented the
       organisation's work to the executive team at quarterly reviews; designed
       the technical hiring framework for research engineering, later adopted by
       other groups across the organisation.
+    - **Grew a single research team into a two-team organisation I managed
+      directly (~9 people),** creating the operating model that a four-team
+      organisation later scaled on. As demand grew, hired into the team, split
+      the work into two focused groups, and established the structure and ways
+      of working adopted by subsequent teams.
+    - **Led researchers shipping production ML capabilities for Nuke,**
+      including major expansions to CopyCat and Inference, and laid the research
+      foundations for features that shipped in subsequent releases.
+    - **Developed two senior engineers into engineering managers who now lead
+      their own teams,** one through a year of deliberate coaching on skill gaps
+      and career direction, one by recognising her readiness and creating the
+      conditions for her to step up.
 
 - company: Foundry, London
   position: Senior Software Engineer, Real-Time Research
