@@ -3,17 +3,18 @@
   position: Lead Software Engineer, Katana (Engineering Manager)
   duration: Jul 2025 - Present
   summary: |
-    - **Led two engineering teams (~13 people across engineering, QA, and
-      product) delivering the core of Katana.** Shipped the major Katana 8.5/9.0
-      release across two VFX reference platforms and maintained a steady cadence
-      of patch releases throughout, expanding from one team to two after an org
-      restructuring.
-    - **Drove two company-wide initiatives by identifying and reframing
-      consequential problems:** identified an extensibility
-      opportunity, validated it with major VFX studios, and developed it into a
-      proposal adopted at director level; co-authored Foundry's
-      engineering guidelines for AI-assisted development, now shipped across the
-      organisation.
+    - **Lead two engineering teams (~13 people across engineering, QA, and
+      product) delivering the core of Katana.** Expanded from one team to two
+      following an organisational restructure, while leading the teams through
+      the major Katana 8.5/9.0 release across two VFX reference platforms and
+      maintaining a steady patch-release cadence.
+    - **Drove and contributed to three company-wide initiatives beyond my team:**
+      reframed a customer problem into an extensibility proposal, validated it
+      with major VFX studios, and drove it to director-level adoption; drafted
+      Foundry's now-approved guidelines for labelling AI-generated code; and
+      contributed to how the organisation builds and benchmarks internal AI
+      skills, with the two AI efforts sponsored by the Operational Excellence
+      group.
     - **Identified and closed a 15-year tooling gap in Katana's Python development
       environment,** enabling LSP and debugger support for every engineer on the
       product. Prototyped independently, built the case through a tech talk, and
@@ -21,23 +22,21 @@
     - **Designed a delivery process adopted across the entire Katana product
       line:** a rotating Feature Facilitator role that shifted refinement sessions
       from ad-hoc discovery to cross-functional preparation, increasing tickets
-      refined per session from 2-3 to 10+. Designed within one team, adopted
+      refined per session from 2-3 to 10+. Built within one team, adopted
       voluntarily by the other two.
-    - **Kept a team delivering consistently ahead of schedule after it lost its
-      lead architect mid-project,** creating enough slack that the team proposed
-      and shipped an additional feature in a single sprint, rounding out the
-      Katana 9 release.
-    - **Invested actively in people development beyond my formal scope:** two peer
-      EMs coached at my manager's request, two former directs supported through
-      their transition into management, and a senior engineer in Flix mentored
-      at the CTO's recommendation.
+    - **Maintained consistent delivery through the loss of a lead architect
+      mid-project,** creating enough capacity for the team to propose and ship an
+      additional feature in a single sprint, rounding out the Katana 9 release.
+    - **Invested actively in leadership development beyond my formal scope:**
+      coached two peer EMs, supported two former directs through their transition
+      into management, and mentored a senior engineer in another product group.
 
 - company: Foundry, London
   position: Lead Software Engineer, AI Research (Engineering Manager)
   duration: Jul 2022 - Jul 2025
   summary: |
-    - **Shaped product direction and operating strategy alongside engineering
-      leadership when the organisation lacked dedicated roles:** set roadmaps
+    - **Shaped product direction and how the organisation worked alongside
+      engineering leadership when dedicated roles didn't exist:** set roadmaps
       with product stakeholders, ran planning and tracking, and presented the
       organisation's work to the executive team at quarterly reviews; designed
       the technical hiring framework for research engineering, later adopted by
