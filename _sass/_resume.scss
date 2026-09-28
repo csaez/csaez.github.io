@@ -16,6 +16,12 @@
   }
 }
 
+.executive-summary {
+  @include media_larger_than_mobile {
+    font-size: 1.125rem;
+  }
+}
+
 // page header styles
 
 .page-header { padding: 1.5rem 0;
@@ -67,10 +73,6 @@
         margin: 0;
       }
     }
-  }
-
-  .executive-summary {
-    // @include media_larger_than_mobile { font-size: 1.125rem; }
   }
 }
 
@@ -248,10 +250,20 @@
       }
     }
 
+    .resume-item-title,
+    .resume-item-details {
+      page-break-after: avoid;
+      break-after: avoid-page;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
     .resume-item-copy {
       font-size: 11px;
       line-height: 1.3;
       margin: 0.2rem 0 0;
+      page-break-before: avoid;
+      break-before: avoid-page;
 
       ul {
         margin: 0;

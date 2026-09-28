@@ -1,6 +1,6 @@
 # Jobs
 - company: Foundry, London
-  position: Lead Software Engineer, Katana (Engineering Manager)
+  position: Engineering Manager, Katana / Lead Software Engineer
   duration: Jul 2025 - Present
   summary: |
     - **Lead two engineering teams (~13 people across engineering, QA, and
@@ -8,13 +8,11 @@
       following an organisational restructure, while leading the teams through
       the major Katana 8.5/9.0 release across two VFX reference platforms and
       maintaining a steady patch-release cadence.
-    - **Drove and contributed to three company-wide initiatives beyond my team:**
-      reframed a customer problem into an extensibility proposal, validated it
-      with major VFX studios, and drove it to director-level adoption; drafted
-      Foundry's now-approved guidelines for labelling AI-generated code; and
-      contributed to how the organisation builds and benchmarks internal AI
-      skills, with the two AI efforts sponsored by the Operational Excellence
-      group.
+    - **Reframed a customer problem into an extensibility strategy,** validated
+      it with major VFX studios, and drove adoption at director level.
+    - **Contributed to two Operational Excellence initiatives** shaping Foundry's
+      AI engineering practices, including approved guidelines for labelling
+      AI-generated code.
     - **Identified and closed a 15-year tooling gap in Katana's Python development
       environment,** enabling LSP and debugger support for every engineer on the
       product. Prototyped independently, built the case through a tech talk, and
@@ -24,23 +22,21 @@
       from ad-hoc discovery to cross-functional preparation, increasing tickets
       refined per session from 2-3 to 10+. Built within one team, adopted
       voluntarily by the other two.
-    - **Maintained consistent delivery through the loss of a lead architect
-      mid-project,** creating enough capacity for the team to propose and ship an
-      additional feature in a single sprint, rounding out the Katana 9 release.
+    - **Maintained delivery continuity through a major architecture transition,**
+      creating enough capacity for the team to propose and ship an additional
+      feature within a single sprint, rounding out the Katana 9 release.
     - **Invested actively in leadership development beyond my formal scope:**
       coached two peer EMs, supported two former directs through their transition
       into management, and mentored a senior engineer in another product group.
 
 - company: Foundry, London
-  position: Lead Software Engineer, AI Research (Engineering Manager)
+  position: Engineering Manager, AI Research / Lead Software Engineer
   duration: Jul 2022 - Jul 2025
   summary: |
-    - **Shaped product direction and how the organisation worked alongside
-      engineering leadership when dedicated roles didn't exist:** set roadmaps
-      with product stakeholders, ran planning and tracking, and presented the
-      organisation's work to the executive team at quarterly reviews; designed
-      the technical hiring framework for research engineering, later adopted by
-      other groups across the organisation.
+    - **Set roadmaps with product stakeholders, led planning and tracking, and
+      presented the organisation's work to the executive team at quarterly
+      reviews;** designed the technical hiring framework for research engineering,
+      later adopted by other groups across the organisation.
     - **Grew a single research team into a two-team organisation I managed
       directly (~9 people),** creating the operating model that a four-team
       organisation later scaled on. As demand grew, hired into the team, split
@@ -76,9 +72,9 @@
       locating and loading assets across productions, and contributed fixes and
       improvements to core platform systems as part of the production technology
       team.
-    - **Built foundational tools used across major feature-film productions,**
-      including *Tenet*, *No Time to Die*, and *Fast & Furious 9*, the kind of
-      core pipeline systems that outlast any single project.
+    - **Built foundational pipeline tools used on *Tenet*, *No Time to Die*, and
+      *Fast & Furious 9*,** supporting production systems that remained in use
+      across projects.
 
 - company: Animal Logic (now Netflix Animation), Sydney
   position: Software Engineer, R&D
