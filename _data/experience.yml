@@ -5,9 +5,8 @@
   summary: |
     - **Lead two engineering teams (~13 people across engineering, QA, and
       product) delivering the core of Katana.** Expanded from one team to two
-      following an organisational restructure, while leading the teams through
-      the major Katana 8.5/9.0 release across two VFX reference platforms and
-      maintaining a steady patch-release cadence.
+      following an organisational restructure, absorbing the change without
+      missing a release.
     - **Reframed a customer problem into an extensibility strategy,** validated
       it with major VFX studios, and drove adoption at director level.
     - **Contributed to two Operational Excellence initiatives** shaping Foundry's
@@ -37,11 +36,9 @@
       presented the organisation's work to the executive team at quarterly
       reviews;** designed the technical hiring framework for research engineering,
       later adopted by other groups across the organisation.
-    - **Grew a single research team into a two-team organisation I managed
-      directly (~9 people),** creating the operating model that a four-team
-      organisation later scaled on. As demand grew, hired into the team, split
-      the work into two focused groups, and established the structure and ways
-      of working adopted by subsequent teams.
+    - **Split a single research team into a two-team organisation (~9 people)
+      as demand grew,** designing the operating model that the wider
+      organisation later adopted across four teams.
     - **Led researchers shipping production ML capabilities for Nuke,**
       including major expansions to CopyCat and Inference, and laid the research
       foundations for features that shipped in subsequent releases.
