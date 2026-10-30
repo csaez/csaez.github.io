@@ -30,7 +30,8 @@
         <h1 class="header-name">{{ site.name }}</h1>
         <p class="header-title">{{ site.headline }}</p>
         <p class="header-contact">
-          {%- for item in site.contact %}{% if not loop.first %}<span class="sep"> | </span>{% endif %}<span>{{ item }}</span>{% endfor -%}
+          {#- The separator sits inside the item's span so hiding an item hides its separator too. #}
+          {%- for item in site.contact %}<span{% if item.print_only %} class="print-only"{% endif %}>{% if not loop.first %}<span class="sep"> | </span>{% endif %}{{ item.text or item }}</span>{% endfor -%}
           {#- On screen the icon links cover these; print has no icons. #}
           {%- for link in site.links if link.in_header %}<span class="print-only"><span class="sep"> | </span><a href="{{ link.url }}">{{ link.url | replace("https://", "") | replace("www.", "") }}</a></span>{% endfor -%}
         </p>

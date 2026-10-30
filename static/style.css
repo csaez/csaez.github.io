@@ -448,6 +448,15 @@ li::marker {
   .section-skills li {
     display: block;
   }
+  /* Long titles wrap and push the dates to a lone right-aligned line, which
+     reads as detached; stack them under the title instead. */
+  .role-line {
+    flex-direction: column;
+    row-gap: 0.15rem;
+  }
+  .role-dates {
+    font-size: 0.95rem;
+  }
 }
 
 /* Dark theme: explicit choice (data-theme="dark"), or the system preference

@@ -6,7 +6,12 @@ name = "Cesar Saez"
 headline = "Engineering Leader - Product & Technology"
 email = "hi@cesarsaez.com"
 # Shown in the header (screen and print), followed by links with in_header.
-contact = ["London, UK", "+44 730 756 4233", "hi@cesarsaez.com"]
+# Use { text = "...", print_only = true } to keep an item off the screen.
+contact = [
+  "London, UK",
+  { text = "+44 730 756 4233", print_only = true },
+  "hi@cesarsaez.com",
+]
 show_avatar = true
 looking_for_work = true
 
