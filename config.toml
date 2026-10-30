@@ -1,9 +1,9 @@
 title = "Cesar Saez - Engineering Leader - Resume"
-description = "Engineering Leader - Product & Technology"
+description = "Engineering Leader - Delivery, Developer Productivity & AI-Native Engineering"
 url = "https://www.cesarsaez.com"
 
 name = "Cesar Saez"
-headline = "Engineering Leader - Product & Technology"
+headline = "Engineering Leader - Delivery, Developer Productivity & AI-Native Engineering"
 email = "hi@cesarsaez.com"
 # Shown in the header (screen and print), followed by links with in_header.
 # Use { text = "...", print_only = true } to keep an item off the screen.
@@ -16,7 +16,7 @@ show_avatar = true
 looking_for_work = true
 
 # Order here is the order on the page. Remove a name to hide the section.
-sections = ["impact", "skills", "experience", "recommendations", "education"]
+sections = ["impact", "skills", "experience", "education"]
 
 # Rendered as icons on screen. in_header = true also prints the URL in the contact line.
 [[links]]

@@ -1,5 +1,13 @@
 # Recommendations
 
+## Ricard Miras Bellavista
+
+### Character TD and Developer at 23lunes
+
+The best assets of Cesar are their creativity in front of problems and his incredible human touch.
+During his time as Lead Character TD, he worked to provide flexibility and reliability to the rigs, as well as tools for all the departments.
+Then, he took the helm of the rigging department and thanks to him we were able to work as a solid team, bringing solutions for all the studio, and facing long-term goals for next productions. And after all this, it seems that we only scratch the surface of his ideas and potential.
+
 ## Eoin Murphy
 
 ### Senior Software Engineer at NVIDIA
@@ -15,14 +23,6 @@ better and cooler ways to do things.
 I had the pleasure of working with Cesar for The Lego Batman movie and Lego Ninjago Movie. He was a great problem
 solver and was always looking for ways to improve our processes and pipeline. I depended on him to assist our more
 entry level team members and he did a great job teaching us new ways to produce better code.
-
-## Ricard Miras Bellavista
-
-### Character TD and Developer at 23lunes
-
-The best assets of Cesar are their creativity in front of problems and his incredible human touch.
-During his time as Lead Character TD, he worked to provide flexibility and reliability to the rigs, as well as tools for all the departments.
-Then, he took the helm of the rigging department and thanks to him we were able to work as a solid team, bringing solutions for all the studio, and facing long-term goals for next productions. And after all this, it seems that we only scratch the surface of his ideas and potential.
 
 ## Angel Pavon
 

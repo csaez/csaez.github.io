@@ -1,3 +1,3 @@
-- **Leadership & Strategy:** Engineering Strategy, Problem Framing, Organisation Design, Operating Models, Executive Communication, Cross-Functional Leadership
-- **People & Delivery:** Multi-Team Management, Engineering Management, Roadmap Planning, Delivery Process Design, Coaching Managers, Technical Hiring
-- **Technical:** C++, Python, Machine Learning, System Architecture, GPU Computing, High-Performance Computing, OpenUSD, Research Engineering, Developer Experience
+- **Leadership:** Multi-Team Engineering Leadership, Organisation Design, Delivery Systems, Coaching, Hiring
+- **Effectiveness & AI:** Developer Productivity, AI-Native Engineering, Agent-Ready SDKs
+- **Technical:** C++, Python, Build Systems, GPU Computing, Machine Learning, OpenUSD

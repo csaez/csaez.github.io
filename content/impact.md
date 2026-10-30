@@ -1,4 +1,12 @@
-- **Led organisations of up to 13 people** across engineering, QA, and product.
-- **Turned a customer problem into an extensibility strategy** adopted at director level.
-- **Designed an engineering operating model that became the template for four teams across two product areas.**
-- **Developed four engineers toward engineering management** across three organisations.
+- **Delivery:** shipped eight feature releases across Nuke and Katana while
+  splitting a team and absorbing a restructure that doubled my scope.
+- **Engineering effectiveness:** 3-4x more tickets refined per session, typical
+  code review under two days in two teams, and local builds cut from ~20 min
+  to ~2 min.
+- **Organisational influence:** practices adopted beyond my teams, including a
+  refinement model used across Katana, AI research ways of working used by four
+  teams, and a company-wide guideline for AI-generated code.
+- **Leadership development:** grew two engineers into the engineering managers
+  who succeeded me, promoted two to senior, and coached two peer managers. At
+  the CTO's request, I mentor a senior engineer in another product toward
+  management.
