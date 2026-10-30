@@ -1,369 +1,595 @@
-html {
-  font-family: sans-serif;
-  
-  text-size-adjust: 100%;
+/* Self-hosted so print embeds real TrueType fonts (Google Fonts CSS produced
+   Type 3 fonts in the PDF, which some ATS parsers handle badly). */
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/source-sans-3-400.woff2") format("woff2");
 }
-body {
-  margin: 0;
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/source-sans-3-400-italic.woff2") format("woff2");
 }
-article, header, main, section {
-  display: block;
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/source-sans-3-600.woff2") format("woff2");
 }
-a {
-  background-color: transparent;
+/* Without this, bold film titles in bullets get a synthesized Type 3 font. */
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/source-sans-3-600-italic.woff2") format("woff2");
 }
-a:active, a:hover {
-  outline: 0;
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/source-sans-3-700.woff2") format("woff2");
 }
-strong {
-  font-weight: bold;
+
+/* Tokyo Night palette (folke/tokyonight.nvim): Day on light screens, Moon on
+   dark ones. Day's own fg is blue, so ink tones come from the Moon/Night side
+   of the family; Day's mid greys fail WCAG AA for body text. */
+:root {
+  --text: #222436; /* moon bg */
+  --body: #444a73; /* moon terminal_black */
+  --muted: #565f89; /* night comment */
+  --accent: #3760bf; /* day fg */
+  --accent-2: #7847bd; /* day purple */
+  --rule: #c4c8da; /* day bg_highlight */
+  --bg: #e1e2e7; /* day bg */
+  --card: #d0d5e3; /* day bg_dark */
+  --selection: #b7c1e3; /* day bg_visual */
+  --on-accent: #e1e2e7;
+  --item-body: var(--body);
+  color-scheme: light;
 }
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-img {
-  border: 0;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 html {
-  background: #fff;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background: var(--bg);
 }
+
 body {
-  font-family: "Lora", "Minion Pro", Palatino, Georgia, serif;
-  color: #333;
-  font-size: 16px;
-  line-height: 1.5;
+  margin: 0;
+  font-family: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
 }
-blockquote {
-  font-style: italic;
-  position: relative;
-  margin-block-end: 0.5rem;
-  margin-inline-start: 1.5rem;
-  margin-inline-end: 0;
+
+a {
+  color: var(--accent);
+  text-decoration: none;
 }
-blockquote:before {
-  content: "“";
-  position: absolute;
-  left: -0.5rem;
+a:hover {
+  text-decoration: underline;
 }
-blockquote:after {
-  content: "”";
-  margin-right: -1rem;
-}
-cite {
-  font-style: normal;
-  font-weight: bold;
-  display: block;
-  text-align: right;
-}
-.wrapper:before, .wrapper:after {
-  content: "";
-  display: table;
-}
-.wrapper:after {
-  clear: both;
-}
-.wrapper {
-  max-width: 728px;
-  padding: 0 24px;
-  margin: 0 auto;
-  zoom: 1;
-}
-.group:before, .group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  zoom: 1;
-}
-::-moz-selection {
-  background: rgba(51, 51, 51, 0.8);
-  color: #fff;
-  text-shadow: none;
-}
-::selection {
-  background: rgba(51, 51, 51, 0.8);
-  color: #fff;
-  text-shadow: none;
-}
-.section-header {
-  border-top: 4px solid #c7c7c7;
-  border-bottom: 2px solid #c7c7c7;
-  padding: .2rem 0 .4rem;
-  margin-bottom: 1.5rem;
-}
-.section-header h2 {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 900;
-  font-size: 1.75rem;
-  letter-spacing: -.05rem;
+
+h1, h2, h3, h4, p, ul, figure, blockquote {
   margin: 0;
 }
-@media (min-width: 600px) {
-  .executive-summary {
-    font-size: 1.125rem;
-  }
+
+::selection {
+  background: var(--selection);
+  color: var(--text);
 }
-.page-header {
-  padding: 1.5rem 0;
-}
-.page-header .avatar {
-  width: 95px;
-  max-width: 100%;
-  overflow: hidden;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
+
+/* Source Sans 3 is narrow, so a pixel width gives ~95 chars per line; cap the
+   measure in ch to stay near the readable 65-80. */
+.wrapper {
+  max-width: calc(72ch + 48px);
   margin: 0 auto;
-  display: block;
+  padding: 3rem 24px 4rem;
 }
-.page-header .header-name {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 3rem;
-  font-weight: 900;
-  text-align: center;
-  letter-spacing: -.15rem;
-  line-height: 1;
-  margin: 1rem 0 0;
+
+/* Header */
+
+.page-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "avatar text"
+    "actions actions";
+  column-gap: 1.5rem;
+  row-gap: 1.25rem;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 3px solid var(--accent);
 }
-.page-header .header-contact-info {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
+.avatar {
+  grid-area: avatar;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
 }
-.page-header .header-contact-info p a {
-  color: inherit;
+.header-text {
+  grid-area: text;
 }
-.page-header .title-bar {
-  border-top: 4px solid #c7c7c7;
-  border-bottom: 2px solid #c7c7c7;
-  padding: .2rem 0 .4rem;
-  margin-top: 2rem;
-  padding: .4rem 0;
+.header-name {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--accent);
 }
-.page-header .title-bar:before {
-  display: table;
-  content: "";
+
+.header-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 0.2rem;
 }
-.page-header .title-bar:after {
-  display: table;
-  clear: both;
-  content: "";
+.header-contact {
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+  color: var(--muted);
 }
-.page-header .title-bar .header-title {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 1.75rem;
-  line-height: 2rem;
-  letter-spacing: -.05rem;
-  text-align: center;
-  margin: 0 0 .5rem;
+.header-contact a {
+  color: var(--muted);
 }
-@media (min-width: 600px) {
-  .page-header .title-bar .header-title {
-    float: left;
-    margin: 0;
-  }
+.sep {
+  color: var(--rule);
+}
+
+.header-actions {
+  grid-area: actions;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
 }
 .icon-links {
-  margin: 0;
+  display: flex;
+  gap: 0.5rem;
   padding: 0;
+  margin: 0 auto 0 0;
   list-style: none;
-  position: relative;
-  top: 4px;
-  text-align: center;
-  border-top: 2px solid #c7c7c7;
-  padding-top: .4rem;
 }
-@media (min-width: 600px) {
-  .icon-links {
-    float: right;
-    border-top: none;
-    padding-top: 0;
-  }
+.icon-link {
+  display: block;
+  line-height: 0;
+  color: var(--muted);
+  transition: color 0.15s ease;
 }
-.icon-links .icon-link-item {
-  display: inline-block;
-  margin-left: 5px;
+.icon-link:hover {
+  color: var(--accent);
 }
-.icon-links .icon-link {
-  display: inline-block;
-}
-.icon-links .icon-link:hover .icon path {
-  fill: #333;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-.icon-links .icon {
+.icon {
+  width: 28px;
   height: 28px;
 }
-.contact-button {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #efefef;
+/* Overrides the fill baked into the SVG files. */
+.icon path {
+  fill: currentColor;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.45rem 1.1rem;
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.button:hover {
+  background: transparent;
+  color: var(--accent);
   text-decoration: none;
-  text-align: center;
-  display: block;
-  margin: 1.5rem auto;
-  width: 220px;
-  font-size: 1.375rem;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  color: #333;
-  line-height: 55px;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
-.contact-button:hover {
-  background-color: #333;
-  color: #fff;
+.button-ghost {
+  background: transparent;
+  color: var(--accent);
 }
-.content-section {
-  margin: 0 0 3rem;
+.button-ghost:hover {
+  background: var(--accent);
+  color: var(--on-accent);
 }
-.content-section .resume-item {
+
+/* Sections */
+
+.summary {
+  font-size: 1.1rem;
   margin-bottom: 2rem;
 }
-.content-section .resume-item-title {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+.content-section {
+  margin-bottom: 2.25rem;
+}
+.section-title {
+  font-size: 0.95rem;
   font-weight: 700;
-  margin: 0 0 .75rem;
-  font-size: 1.5rem;
-  letter-spacing: -.05rem;
-  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--rule);
 }
-.content-section .resume-item-details {
-  font-size: 1.125rem;
-  margin: 0 0 .75rem;
-  line-height: 1;
+
+ul {
+  padding-left: 1.15rem;
 }
-.content-section .resume-item-details.award-title {
-  font-size: 1rem;
+li {
+  margin-bottom: 0.6rem;
 }
-.content-section .resume-item-list {
-  margin: 0;
-  padding-left: 1.1rem;
+li::marker {
+  color: var(--accent);
 }
-.content-section .resume-item-title a, .content-section .resume-item-details a, .content-section .resume-item-copy a, .content-section .resume-item-list a {
-  color: #333;
-  text-decoration: none;
-  border-bottom: 1px solid;
+/* Bullets lead with a bold sentence. Dark lead over lighter detail lets the
+   eye skim the leads only, instead of one uniform block of text. */
+.role-body li,
+.section-impact li {
+  color: var(--item-body);
 }
-.content-section .resume-item-title a:hover, .content-section .resume-item-details a:hover, .content-section .resume-item-copy a:hover, .content-section .resume-item-list a:hover {
-  border-bottom: none;
-  color: #9c9c9c;
+.role-body li strong,
+.section-impact li strong {
+  font-weight: 600;
+  color: var(--text);
 }
-.content-section .resume-item-copy {
-  margin: .75rem 0 0;
-  line-height: 1.4;
+
+.section-skills .item-list {
+  list-style: none;
+  padding-left: 0;
 }
-.content-section .resume-item-copy ul {
-  margin: 0;
-  padding-left: 1.1rem;
+/* Label column; the text after <strong> becomes its own grid cell. */
+.section-skills li {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  column-gap: 1rem;
+  color: var(--body);
 }
-.print-only {
-  display: none !important;
+.section-skills li strong {
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
 }
-@media print {
+
+.company {
+  margin-bottom: 2.75rem;
+}
+.company-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--accent-2);
+}
+.role {
+  margin-top: 0.75rem;
+}
+.role + .role {
+  margin-top: 1.75rem;
+}
+/* Role titles were smaller than the bullets under them and read as just
+   another bullet; they need to be the strongest thing inside a company. */
+.role-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 1rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.6rem;
+}
+/* Tighter lines inside a bullet, more air between bullets: each bullet reads
+   as one chunk instead of the list reading as one block. */
+.role-body li {
+  line-height: 1.5;
+  margin-bottom: 0.9rem;
+}
+.role-body li:last-child {
+  margin-bottom: 0;
+}
+@media screen {
+  .role-body {
+    padding-left: 1rem;
+    border-left: 2px solid var(--rule);
+  }
+}
+/* The " | " separator keeps title and dates apart in extracted text while
+   flexbox pushes the dates to the right visually. */
+.role-line .sep {
+  font-size: 0;
+}
+.role-dates {
+  font-weight: 400;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.role-note {
+  color: var(--muted);
+}
+
+/* Recommendations (screen only) */
+
+.quotes {
+  display: grid;
+  gap: 1rem;
+}
+.quote {
+  background: var(--card);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  padding: 1rem 1.25rem;
+}
+.quote blockquote {
+  font-style: italic;
+}
+.quote figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+.quote figcaption strong {
+  color: var(--text);
+}
+
+/* Theme toggle: one circle that matches the social icons and cycles
+   system -> light -> dark. Hidden until JS runs; it does nothing without it. */
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--muted);
+  color: var(--bg);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.theme-toggle[hidden] {
+  display: none;
+}
+.theme-toggle:hover {
+  background: var(--accent-2);
+}
+.theme-toggle svg {
+  display: none;
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.theme-toggle[data-choice="system"] .i-system,
+.theme-toggle[data-choice="light"] .i-light,
+.theme-toggle[data-choice="dark"] .i-dark {
+  display: block;
+}
+
+/* Wide screens: section titles move to a left column so the page uses the
+   width while the text column keeps its ~72ch measure. Screen only; print
+   stays single-column for ATS parsers. */
+@media screen and (min-width: 1100px) {
   .wrapper {
-    max-width: 100%;
-    padding: 0 12px;
+    max-width: calc(72ch + 13rem + 48px);
+  }
+  .summary,
+  .content-section {
+    display: grid;
+    grid-template-columns: 11rem minmax(0, 1fr);
+    column-gap: 2rem;
+  }
+  .summary > * {
+    grid-column: 2;
+  }
+  .section-title {
+    position: sticky;
+    top: 1.5rem;
+    align-self: start;
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    /* Line up with the first line of the section body. */
+    padding-top: 0.3rem;
+    text-align: right;
+  }
+  .section-body {
+    padding-top: 0;
+  }
+  .content-section {
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--rule);
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding-top: 1.5rem;
+  }
+  .page-header {
+    grid-template-columns: 1fr;
+    grid-template-areas: "avatar" "text" "actions";
+    text-align: center;
+    justify-items: center;
+  }
+  .header-actions {
+    justify-content: center;
+  }
+  .icon-links {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .header-name {
+    font-size: 2.2rem;
+  }
+  .section-skills li {
+    display: block;
+  }
+}
+
+/* Dark theme: explicit choice (data-theme="dark"), or the system preference
+   unless light was chosen. Plain CSS cannot share one block between a media
+   query and an attribute selector, hence the copy; keep both in sync. Screen
+   only, so printing from a dark browser still gives the light PDF. */
+@media screen {
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --text: #c8d3f5; /* moon fg */
+    --body: #a9b1d6; /* night fg_dark; moon's #828bb8 is too dim for paragraphs */
+    --muted: #828bb8; /* moon fg_dark */
+    --accent: #82aaff; /* moon blue */
+    --accent-2: #c099ff; /* moon magenta */
+    --rule: #2f334d; /* moon bg_highlight */
+    --bg: #222436; /* moon bg */
+    --card: #1e2030; /* moon bg_dark */
+    --selection: #2d3f76; /* moon bg_visual */
+    --on-accent: #222436;
+    /* Light text on dark glows, so semibold reads much heavier than on paper;
+       a bigger colour gap keeps the bullet lead distinct. 5.4:1 on bg. */
+    --item-body: #8f98c2;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --text: #c8d3f5; /* moon fg */
+    --body: #a9b1d6; /* night fg_dark; moon's #828bb8 is too dim for paragraphs */
+    --muted: #828bb8; /* moon fg_dark */
+    --accent: #82aaff; /* moon blue */
+    --accent-2: #c099ff; /* moon magenta */
+    --rule: #2f334d; /* moon bg_highlight */
+    --bg: #222436; /* moon bg */
+    --card: #1e2030; /* moon bg_dark */
+    --selection: #2d3f76; /* moon bg_visual */
+    --on-accent: #222436;
+    /* Light text on dark glows, so semibold reads much heavier than on paper;
+       a bigger colour gap keeps the bullet lead distinct. 5.4:1 on bg. */
+    --item-body: #8f98c2;
+  }
+}
+
+.print-only {
+  display: none;
+}
+
+/* Print: two A4 pages, one column, plain text order for ATS parsers. */
+
+@page {
+  size: A4;
+  margin: 13mm 20mm 12mm;
+}
+
+@media print {
+  /* Paper is white (browsers drop backgrounds anyway); keep the Day accent. */
+  :root {
+    --bg: #fff;
   }
   .no-print {
     display: none !important;
   }
   .print-only {
-    display: block !important;
+    display: inline;
   }
   body {
-    font-size: 12px;
-    line-height: 1.3;
+    font-size: 10.5pt;
+    line-height: 1.4;
+  }
+  .wrapper {
+    max-width: none;
+    padding: 0;
   }
   .page-header {
-    padding: 1rem 0 .2rem;
+    display: block;
+    border-bottom-width: 2pt;
+    padding-bottom: 6pt;
+    margin-bottom: 8pt;
   }
-  .page-header .header-name {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    margin: 0 0 .2rem;
+  .header-name {
+    font-size: 22pt;
   }
-  .executive-summary {
-    font-size: 11px;
-    line-height: 1.3;
+  .header-title {
+    font-size: 12pt;
+    margin-top: 1pt;
   }
-  .section-header {
-    border-top: 1px solid #c7c7c7;
-    border-bottom: 1px solid #c7c7c7;
-    padding: .2rem 0 .2rem;
-    margin-bottom: 0.4rem;
+  .header-contact {
+    font-size: 9.5pt;
+    margin-top: 2pt;
   }
-  .section-header h2 {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+  .summary {
+    font-size: 10.5pt;
+    margin-bottom: 14pt;
   }
   .content-section {
-    margin: 0 0 0.6rem;
+    margin-bottom: 14pt;
   }
-  .content-section .resume-item {
-    margin-bottom: 0.6rem;
-  }
-  .content-section .resume-item-title {
-    font-size: 14px;
-    margin: 0 0 0.2rem;
-    line-height: 1.2;
-  }
-  .content-section .resume-item-details {
-    font-size: 11px;
-    margin: 0 0 0.2rem;
-    line-height: 1.2;
-    font-style: italic;
-  }
-  .content-section .resume-item-details.award-title {
-    font-size: 11px;
-  }
-  .content-section .resume-item-title, .content-section .resume-item-details {
-    page-break-after: avoid;
+  /* Letter-spacing makes PDF text extract as "S K I L L S", which breaks
+     section detection in ATS parsers. */
+  .section-title {
+    letter-spacing: 0;
+    font-size: 10.5pt;
+    padding-bottom: 2pt;
+    margin-bottom: 6pt;
     break-after: avoid-page;
-    page-break-inside: avoid;
+  }
+  li {
+    margin-bottom: 3.5pt;
     break-inside: avoid;
   }
-  .content-section .resume-item-copy {
-    font-size: 11px;
-    line-height: 1.3;
-    margin: 0.2rem 0 0;
-    page-break-before: avoid;
-    break-before: avoid-page;
+  .section-skills li {
+    grid-template-columns: 38mm 1fr;
+    column-gap: 4mm;
   }
-  .content-section .resume-item-copy ul {
-    margin: 0;
-    padding-left: 1rem;
+  ul {
+    padding-left: 11pt;
   }
-  .content-section .resume-item-list {
-    margin: 0;
-    padding-left: 1rem;
+  .company {
+    margin-bottom: 11pt;
   }
-  .content-section .resume-item ul {
-    margin: 0;
-    padding-left: 1rem;
+  .company-name {
+    font-size: 11.5pt;
+    break-after: avoid-page;
   }
-  .resume-item li {
-    page-break-inside: avoid;
+  .role {
+    margin-top: 2pt;
   }
-  .section-header {
-    page-break-after: avoid;
+  .role + .role {
+    margin-top: 8pt;
+  }
+  .role-body li {
+    font-size: inherit;
+    line-height: inherit;
+    margin-bottom: 3.5pt;
+  }
+  .role-line {
+    font-size: 10.5pt;
+    margin-bottom: 3pt;
+    break-after: avoid-page;
+    break-inside: avoid;
+  }
+  a {
+    color: inherit;
   }
 }

@@ -5,95 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,300,800,700" rel="stylesheet">
+  <meta name="author" content="{{ site.name }}">
+  <link rel="preload" href="fonts/source-sans-3-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/source-sans-3-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
+  <script>
+    // Runs before first paint so a saved choice does not flash the other theme.
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
   <link rel="canonical" href="{{ site.url }}/">
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
-<body class="theme-default">
+<body>
   <div class="wrapper">
 
     <header class="page-header">
       {% if site.show_avatar %}
-      <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
+      <img src="images/avatar.jpg" alt="Photo of {{ site.name }}" class="avatar no-print" width="88" height="88">
       {% endif %}
-      <h1 class="header-name" itemprop="name">{{ site.name }}</h1>
-      {% if site.print_contact %}
-      <div class="header-contact-info print-only"><p>{{ site.print_contact }}</p></div>
-      {% endif %}
-      <div class="title-bar no-print">
-        <h2 class="header-title" itemprop="jobTitle">{{ site.headline }}</h2>
+      <div class="header-text">
+        <h1 class="header-name">{{ site.name }}</h1>
+        <p class="header-title">{{ site.headline }}</p>
+        <p class="header-contact">
+          {%- for item in site.contact %}{% if not loop.first %}<span class="sep"> | </span>{% endif %}<span>{{ item }}</span>{% endfor -%}
+          {#- On screen the icon links cover these; print has no icons. #}
+          {%- for link in site.links if link.in_header %}<span class="print-only"><span class="sep"> | </span><a href="{{ link.url }}">{{ link.url | replace("https://", "") | replace("www.", "") }}</a></span>{% endfor -%}
+        </p>
+      </div>
+      <div class="header-actions no-print">
         <ul class="icon-links">
           {% for link in site.links %}
-          <li class="icon-link-item"><a href="{{ link.url }}"{% if link.rel %} rel="{{ link.rel }}"{% endif %} class="icon-link" itemprop="{{ 'url' if link.icon == 'website' else 'sameAs' }}" aria-label="Go to Cesar's {{ link.label }}">{% include "icons/icon-" ~ link.icon ~ ".html" %}</a></li>
+          <li><a href="{{ link.url }}"{% if link.rel %} rel="{{ link.rel }}"{% endif %} class="icon-link" aria-label="{{ site.name }} on {{ link.label }}">{% include "icons/icon-" ~ link.icon ~ ".html" %}</a></li>
           {% endfor %}
+          <li><button type="button" class="theme-toggle" data-choice="system" title="Theme: system" aria-label="Theme: system (click to change)" hidden>
+            <svg class="i-system" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+            <svg class="i-light" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            <svg class="i-dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button></li>
         </ul>
+        {% if site.looking_for_work %}
+        <a href="mailto:{{ site.email }}" class="button">Contact me</a>
+        {% endif %}
+        <button type="button" class="button button-ghost" onclick="window.print()">Download PDF</button>
       </div>
     </header>
 
     <main class="page-content">
-      <article class="executive-summary" itemprop="description">
+      <section class="summary">
         {{ intro | safe }}
-      </article>
-
-      {% if site.looking_for_work %}
-      <a href="mailto:{{ site.email }}" class="contact-button no-print" itemprop="email">Contact me</a>
-      {% endif %}
+      </section>
 
       {% for s in sections %}
-      <section class="content-section{% if s.no_print %} no-print{% endif %}">
-        <header class="section-header"><h2>{{ s.title }}</h2></header>
+      <section class="content-section section-{{ s.id }}{% if s.no_print %} no-print{% endif %}">
+        <h2 class="section-title">{{ s.title }}</h2>
+        <div class="section-body">
 
         {% if s.kind == "list" %}
-        <div class="resume-item">
-          <ul class="resume-item-list">
-            {% for item in s["items"] %}<li>{{ item | safe }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+        <ul class="item-list">
+          {% for item in s["items"] %}<li>{{ item | safe }}</li>
+          {% endfor %}
+        </ul>
 
         {% elif s.kind == "experience" %}
-        {% for e in s.entries %}
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{{ e.title }}</h3>
-          {% for d in e.details %}<h4 class="resume-item-details" itemprop="description">{{ d }}</h4>
+        {% for company, roles in s.groups %}
+        <div class="company">
+          <h3 class="company-name">{{ company }}</h3>
+          {% for r in roles %}
+          <div class="role">
+            <h4 class="role-line">
+              <span class="role-title">{{ r.details[0] }}</span>
+              {%- if r.details[1] %}<span class="sep"> | </span><span class="role-dates">{{ r.details[1] }}</span>{% endif %}
+            </h4>
+            <div class="role-body">{{ r.body | safe }}</div>
+          </div>
           {% endfor %}
-          <div class="resume-item-copy">{{ e.body | safe }}</div>
         </div>
         {% endfor %}
 
         {% elif s.kind == "education" %}
         {% for e in s.entries %}
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">{{ e.title }}</h3>
-          {% for d in e.details %}<h4 class="resume-item-details group" itemprop="description">{{ d }}</h4>
-          {% endfor %}
-          {% if e.body %}<h5 class="resume-item-details award-title" itemprop="description">{{ e.body | unwrap | safe }}</h5>{% endif %}
+        <div class="company">
+          <h3 class="company-name">{{ e.title }}</h3>
+          <h4 class="role-line">
+            <span class="role-title">{{ e.details[0] }}</span>
+            {%- if e.details[1] %}<span class="sep"> | </span><span class="role-dates">{{ e.details[1] }}</span>{% endif %}
+          </h4>
+          {% if e.body %}<p class="role-note">{{ e.body | unwrap | safe }}</p>{% endif %}
         </div>
         {% endfor %}
 
         {% elif s.kind == "recommendations" %}
-        {% for e in s.entries %}
-        <div class="resume-item">
-          <blockquote>{{ e.body | unwrap | safe }}</blockquote>
-          <cite>&ndash; {{ e.title }}{% if e.details %}, {{ e.details[0] }}{% endif %}</cite>
+        <div class="quotes">
+          {% for e in s.entries %}
+          <figure class="quote">
+            <blockquote>{{ e.body | unwrap | safe }}</blockquote>
+            <figcaption><strong>{{ e.title }}</strong>{% if e.details %}<br>{{ e.details[0] }}{% endif %}</figcaption>
+          </figure>
+          {% endfor %}
         </div>
-        {% endfor %}
         {% endif %}
+        </div>
       </section>
       {% endfor %}
-
-      <section class="content-section print-only">
-        <header class="section-header"><h2>Social Links</h2></header>
-        <div class="resume-item">
-          <ul>
-            {% for link in site.links %}<li><strong>{{ link.label }}</strong>: {{ link.url }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      </section>
     </main>
 
   </div>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.querySelector(".theme-toggle");
+      var order = ["system", "light", "dark"];
+      function apply(choice) {
+        if (choice === "system") delete root.dataset.theme;
+        else root.dataset.theme = choice;
+        btn.dataset.choice = choice;
+        btn.title = "Theme: " + choice;
+        btn.setAttribute("aria-label", "Theme: " + choice + " (click to change)");
+      }
+      btn.addEventListener("click", function () {
+        var next = order[(order.indexOf(btn.dataset.choice) + 1) % order.length];
+        try {
+          if (next === "system") localStorage.removeItem("theme");
+          else localStorage.setItem("theme", next);
+        } catch (e) {}
+        apply(next);
+      });
+      apply(root.dataset.theme || "system");
+      btn.hidden = false;
+    })();
+  </script>
 </body>
 </html>

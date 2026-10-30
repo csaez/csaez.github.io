@@ -43,8 +43,16 @@ repository settings, Pages > Source must be set to "GitHub Actions".
   support a new `icon` value in `[[links]]`.
 - `style.css` is plain CSS with no build step. Rules for unused elements were
   pruned, so check it when adding new markup.
+- Print targets two A4 pages and ATS-friendly text extraction: one column, no
+  letter-spacing on headings, fonts self-hosted in `static/fonts/` so the PDF
+  embeds TrueType fonts. If you add a font weight or style that is used in
+  print, add its `@font-face` too, or Chrome synthesizes a Type 3 font. Check
+  with `pdffonts` and `pdftotext` after printing.
+- Consecutive `experience.md` entries with the same `##` title are grouped
+  under one company heading.
 
 ## Credits
 
 Visual design based on [resume-template](https://github.com/jglovier/resume-template)
-by Joel Glovier.
+by Joel Glovier. Font: [Source Sans 3](https://github.com/adobe-fonts/source-sans)
+(SIL Open Font License).

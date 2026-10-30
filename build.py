@@ -71,6 +71,17 @@ def parse_entries(text: str) -> list[Entry]:
     return entries
 
 
+def group_by_title(entries: list[Entry]) -> list[tuple[str, list[Entry]]]:
+    """Merge consecutive entries sharing a title (several roles at one company)."""
+    groups: list[tuple[str, list[Entry]]] = []
+    for e in entries:
+        if groups and groups[-1][0] == e.title:
+            groups[-1][1].append(e)
+        else:
+            groups.append((e.title, [e]))
+    return groups
+
+
 def list_items(text: str) -> list[str]:
     """Render each top-level bullet as inline HTML."""
     items = []
@@ -93,15 +104,18 @@ def build_sections(names: list[str]) -> list[dict]:
                     "kind": "list",
                     "title": LIST_SECTIONS[name],
                     "items": list_items(text),
+                    "no_print": name in NO_PRINT,
                 }
             )
         elif name in ENTRY_SECTIONS:
+            entries = parse_entries(text)
             sections.append(
                 {
                     "id": name,
                     "kind": name,
                     "title": ENTRY_SECTIONS[name],
-                    "entries": parse_entries(text),
+                    "entries": entries,
+                    "groups": group_by_title(entries),
                     "no_print": name in NO_PRINT,
                 }
             )
