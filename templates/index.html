@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,300,800,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="{{ site.url }}/">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body class="theme-default">
+  <div class="wrapper">
+
+    <header class="page-header">
+      {% if site.show_avatar %}
+      <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
+      {% endif %}
+      <h1 class="header-name" itemprop="name">{{ site.name }}</h1>
+      {% if site.print_contact %}
+      <div class="header-contact-info print-only"><p>{{ site.print_contact }}</p></div>
+      {% endif %}
+      <div class="title-bar no-print">
+        <h2 class="header-title" itemprop="jobTitle">{{ site.headline }}</h2>
+        <ul class="icon-links">
+          {% for link in site.links %}
+          <li class="icon-link-item"><a href="{{ link.url }}"{% if link.rel %} rel="{{ link.rel }}"{% endif %} class="icon-link" itemprop="{{ 'url' if link.icon == 'website' else 'sameAs' }}" aria-label="Go to Cesar's {{ link.label }}">{% include "icons/icon-" ~ link.icon ~ ".html" %}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <article class="executive-summary" itemprop="description">
+        {{ intro | safe }}
+      </article>
+
+      {% if site.looking_for_work %}
+      <a href="mailto:{{ site.email }}" class="contact-button no-print" itemprop="email">Contact me</a>
+      {% endif %}
+
+      {% for s in sections %}
+      <section class="content-section{% if s.no_print %} no-print{% endif %}">
+        <header class="section-header"><h2>{{ s.title }}</h2></header>
+
+        {% if s.kind == "list" %}
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            {% for item in s["items"] %}<li>{{ item | safe }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        {% elif s.kind == "experience" %}
+        {% for e in s.entries %}
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{{ e.title }}</h3>
+          {% for d in e.details %}<h4 class="resume-item-details" itemprop="description">{{ d }}</h4>
+          {% endfor %}
+          <div class="resume-item-copy">{{ e.body | safe }}</div>
+        </div>
+        {% endfor %}
+
+        {% elif s.kind == "education" %}
+        {% for e in s.entries %}
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">{{ e.title }}</h3>
+          {% for d in e.details %}<h4 class="resume-item-details group" itemprop="description">{{ d }}</h4>
+          {% endfor %}
+          {% if e.body %}<h5 class="resume-item-details award-title" itemprop="description">{{ e.body | unwrap | safe }}</h5>{% endif %}
+        </div>
+        {% endfor %}
+
+        {% elif s.kind == "recommendations" %}
+        {% for e in s.entries %}
+        <div class="resume-item">
+          <blockquote>{{ e.body | unwrap | safe }}</blockquote>
+          <cite>&ndash; {{ e.title }}{% if e.details %}, {{ e.details[0] }}{% endif %}</cite>
+        </div>
+        {% endfor %}
+        {% endif %}
+      </section>
+      {% endfor %}
+
+      <section class="content-section print-only">
+        <header class="section-header"><h2>Social Links</h2></header>
+        <div class="resume-item">
+          <ul>
+            {% for link in site.links %}<li><strong>{{ link.label }}</strong>: {{ link.url }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+    </main>
+
+  </div>
+</body>
+</html>

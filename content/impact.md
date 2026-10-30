@@ -1,0 +1,4 @@
+- **Led organisations of up to 13 people** across engineering, QA, and product.
+- **Turned a customer problem into an extensibility strategy** adopted at director level.
+- **Designed an engineering operating model that became the template for four teams across two product areas.**
+- **Developed four engineers toward engineering management** across three organisations.

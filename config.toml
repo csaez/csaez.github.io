@@ -1,0 +1,35 @@
+title = "Cesar Saez"
+description = "Engineering Leader - Product & Technology"
+url = "https://www.cesarsaez.com"
+
+name = "Cesar Saez"
+headline = "Engineering Leader - Product & Technology"
+email = "hi@cesarsaez.com"
+print_contact = "London, UK - +44 730 756 4233 - hi@cesarsaez.com"
+show_avatar = true
+looking_for_work = true
+
+# Order here is the order on the page. Remove a name to hide the section.
+sections = ["impact", "skills", "experience", "recommendations", "education"]
+
+# Rendered as icons in the header and as plain text in print.
+[[links]]
+label = "GitHub"
+url = "https://www.github.com/csaez"
+icon = "github"
+
+[[links]]
+label = "Mastodon"
+url = "https://hachyderm.io/@cesarsaez"
+icon = "mastodon"
+rel = "me"
+
+[[links]]
+label = "LinkedIn"
+url = "https://www.linkedin.com/in/cesarsaez"
+icon = "linkedin"
+
+[[links]]
+label = "Website"
+url = "https://www.cesarsaez.com"
+icon = "website"

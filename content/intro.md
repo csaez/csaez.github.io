@@ -1,0 +1,4 @@
+I operate across engineering, product, and technical direction, leading
+multi-team organisations of up to 13 people, turning ambiguous problems into
+product strategy, and designing operating models that let teams deliver
+consistently at scale, often through influence beyond formal authority.

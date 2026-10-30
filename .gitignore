@@ -1,5 +1,4 @@
-.sass-cache/*
-_site/*
-Gemfile.lock
-vendor/
-.bundle/
+dist/
+__pycache__/
+.venv/
+.ruff_cache/
