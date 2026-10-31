@@ -45,7 +45,6 @@
   --body: #444a73; /* moon terminal_black */
   --muted: #565f89; /* night comment */
   --accent: #3760bf; /* day fg */
-  --accent-2: #7847bd; /* day purple */
   --rule: #c4c8da; /* day bg_highlight */
   --bg: #e1e2e7; /* day bg */
   --card: #d0d5e3; /* day bg_dark */
@@ -277,7 +276,7 @@ li::marker {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.25;
-  color: var(--accent-2);
+  color: var(--text);
 }
 .role {
   margin-top: 0.75rem;
@@ -370,7 +369,7 @@ li::marker {
   display: none;
 }
 .theme-toggle:hover {
-  background: var(--accent-2);
+  background: var(--accent);
 }
 .theme-toggle svg {
   display: none;
@@ -470,7 +469,6 @@ li::marker {
     --body: #a9b1d6; /* night fg_dark; moon's #828bb8 is too dim for paragraphs */
     --muted: #828bb8; /* moon fg_dark */
     --accent: #82aaff; /* moon blue */
-    --accent-2: #c099ff; /* moon magenta */
     --rule: #2f334d; /* moon bg_highlight */
     --bg: #222436; /* moon bg */
     --card: #1e2030; /* moon bg_dark */
@@ -488,7 +486,6 @@ li::marker {
     --body: #a9b1d6; /* night fg_dark; moon's #828bb8 is too dim for paragraphs */
     --muted: #828bb8; /* moon fg_dark */
     --accent: #82aaff; /* moon blue */
-    --accent-2: #c099ff; /* moon magenta */
     --rule: #2f334d; /* moon bg_highlight */
     --bg: #222436; /* moon bg */
     --card: #1e2030; /* moon bg_dark */
