@@ -91,21 +91,11 @@
   outside Pixar,** solving source-of-truth sync in a pipeline mid-migration and
   helping design the approach that followed.
 
-## Animal Logic (now Netflix Animation), Sydney
-
-### Senior Character Technical Director
-
-### Feb 2015 - Feb 2016
-
-- **Built hero character rigs (the control systems animators use) for the LEGO
-  franchise** (*The LEGO Batman Movie*, *The LEGO Ninjago Movie*, *The LEGO
-  Movie 2*), including large mechanical rigs and procedural systems.
-
 ## VFX Industry, Multiple Studios
 
 ### Rigging Supervisor / Lead & Senior Character TD
 
-### 2005 - 2015
+### 2005 - 2016
 
 - **Rigging Supervisor at Kandor Graphics,** leading the character-rigging
   team through a feature film; Senior Character TD on a decade of released productions.
