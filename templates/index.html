@@ -77,6 +77,11 @@
           <h3 class="company-name">{{ company }}</h3>
           {% for r in roles %}
           <div class="role">
+            {%- if not loop.first %}
+            {#- ATS parsers read each position as company, title, dates; without
+                this a later role in a group has no employer near it. #}
+            <p class="company-name company-repeat print-only">{{ company }}</p>
+            {%- endif %}
             <h4 class="role-line">
               <span class="role-title">{{ r.details[0] }}</span>
               {%- if r.details[1] %}<span class="sep"> | </span><span class="role-dates">{{ r.details[1] }}</span>{% endif %}
