@@ -5,6 +5,7 @@ import shutil
 import sys
 import tomllib
 from pathlib import Path
+from collections.abc import Callable
 from typing import NamedTuple
 
 import markdown
@@ -46,7 +47,7 @@ def read(name: str) -> str:
     return (ROOT / "content" / f"{name}.md").read_text(encoding="utf-8")
 
 
-def parse_entries(text: str) -> list[Entry]:
+def parse_entries(text: str, render: Callable[[str], str] = md) -> list[Entry]:
     """Split a document into entries: ``##`` title, ``###`` details, rest body."""
     entries: list[Entry] = []
     title: str | None = None
@@ -55,7 +56,7 @@ def parse_entries(text: str) -> list[Entry]:
 
     def flush() -> None:
         if title is not None:
-            entries.append(Entry(title, details, md("\n".join(body).strip())))
+            entries.append(Entry(title, details, render("\n".join(body).strip())))
 
     for line in text.splitlines():
         if line.startswith("## "):
@@ -124,6 +125,30 @@ def build_sections(names: list[str]) -> list[dict]:
     return sections
 
 
+def build_llms(site: dict, names: list[str]) -> str:
+    """Plain Markdown version of the page for LLM crawlers (llms.txt)."""
+    out = [f"# {site['name']}", "", f"> {site['headline']}", ""]
+    out += [read("intro").strip(), ""]
+    contact = [c for c in site["contact"] if isinstance(c, str)]
+    out += [f"- Website: {site['url']}", "- Contact: " + ", ".join(contact)]
+    out += [
+        f"- {k['label']}: {k['url']}" for k in site["links"] if not k.get("print_only")
+    ]
+    out += [""]
+    for name in names:
+        text = read(name)
+        if name in LIST_SECTIONS:
+            out += [f"## {LIST_SECTIONS[name]}", "", text.strip(), ""]
+        else:
+            out += [f"## {ENTRY_SECTIONS[name]}", ""]
+            for e in parse_entries(text, render=str):
+                out += [f"### {e.title}"]
+                if e.details:
+                    out += ["", "**" + " | ".join(e.details) + "**"]
+                out += ["", e.body, ""]
+    return "\n".join(out).rstrip() + "\n"
+
+
 def main() -> None:
     with (ROOT / "config.toml").open("rb") as f:
         site = tomllib.load(f)
@@ -143,6 +168,7 @@ def main() -> None:
         shutil.rmtree(OUT)
     shutil.copytree(ROOT / "static", OUT)
     (OUT / "index.html").write_text(html, encoding="utf-8")
+    (OUT / "llms.txt").write_text(build_llms(site, site["sections"]), encoding="utf-8")
     print(f"built {OUT}")
 
 

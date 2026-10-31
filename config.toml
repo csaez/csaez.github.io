@@ -19,6 +19,7 @@ looking_for_work = true
 sections = ["impact", "skills", "experience", "education"]
 
 # Rendered as icons on screen. in_header = true also prints the URL in the contact line.
+# print_only = true hides the icon on screen (e.g. a link to the site itself).
 [[links]]
 label = "GitHub"
 url = "https://github.com/csaez"
@@ -40,4 +41,6 @@ icon = "linkedin"
 [[links]]
 label = "Website"
 url = "https://www.cesarsaez.com"
+in_header = true
+print_only = true
 icon = "website"
