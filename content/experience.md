@@ -32,9 +32,6 @@
   compiler caching (local builds ~20 min to ~2 min); zero-setup Python IDE and
   debugger support, closing a 15-year tooling gap; one-click profiling; and an
   engineering-insights platform over GitLab and Jira.
-- **Technical contributions** include Gaussian Splatting support (AI-based 3D
-  capture), scene-layering features, and an OpenUSD upgrade aligning two
-  products.
 
 ## Foundry, London
 
